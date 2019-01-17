@@ -4941,9 +4941,11 @@ extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize217 = { sizeof (Inval
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize218 = { sizeof (IndexOutOfRangeException_t1578797820), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize219 = { sizeof (InvalidOperationException_t56020091), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize220 = { sizeof (Int16_t2552820387)+ sizeof (RuntimeObject), sizeof(int16_t), 0, 0 };
-extern const int32_t g_FieldOffsetTable220[1] = 
+extern const int32_t g_FieldOffsetTable220[3] = 
 {
 	Int16_t2552820387::get_offset_of_m_value_0() + static_cast<int32_t>(sizeof(RuntimeObject)),
+	0,
+	0,
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize221 = { sizeof (Int32_t2950945753)+ sizeof (RuntimeObject), sizeof(int32_t), 0, 0 };
 extern const int32_t g_FieldOffsetTable221[3] = 
@@ -4953,9 +4955,11 @@ extern const int32_t g_FieldOffsetTable221[3] =
 	0,
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize222 = { sizeof (Int64_t3736567304)+ sizeof (RuntimeObject), sizeof(int64_t), 0, 0 };
-extern const int32_t g_FieldOffsetTable222[1] = 
+extern const int32_t g_FieldOffsetTable222[3] = 
 {
 	Int64_t3736567304::get_offset_of_m_value_0() + static_cast<int32_t>(sizeof(RuntimeObject)),
+	0,
+	0,
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize223 = { 0, -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize224 = { sizeof (InvalidTimeZoneException_t4066718130), -1, 0, 0 };
@@ -5235,9 +5239,11 @@ extern const int32_t g_FieldOffsetTable271[3] =
 	0,
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize272 = { sizeof (UInt64_t4134040092)+ sizeof (RuntimeObject), sizeof(uint64_t), 0, 0 };
-extern const int32_t g_FieldOffsetTable272[1] = 
+extern const int32_t g_FieldOffsetTable272[3] = 
 {
 	UInt64_t4134040092::get_offset_of_m_value_0() + static_cast<int32_t>(sizeof(RuntimeObject)),
+	0,
+	0,
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize273 = { sizeof (UnauthorizedAccessException_t490705335), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize274 = { sizeof (UnhandledExceptionEventArgs_t2886101344), -1, 0, 0 };

@@ -98,8 +98,8 @@ extern RuntimeClass* Single_t1397266774_il2cpp_TypeInfo_var;
 extern RuntimeClass* Double_t594665363_il2cpp_TypeInfo_var;
 extern RuntimeClass* IEnumerator_t1853284238_il2cpp_TypeInfo_var;
 extern RuntimeClass* IDisposable_t3640265483_il2cpp_TypeInfo_var;
-extern const RuntimeMethod* KeyValuePair_2_get_Key_m256823211_RuntimeMethod_var;
-extern const RuntimeMethod* KeyValuePair_2_get_Value_m4108279609_RuntimeMethod_var;
+extern const RuntimeMethod* KeyValuePair_2_get_Key_m2973773633_RuntimeMethod_var;
+extern const RuntimeMethod* KeyValuePair_2_get_Value_m2151159939_RuntimeMethod_var;
 extern Il2CppCodeGenString* _stringLiteral1202628576;
 extern Il2CppCodeGenString* _stringLiteral3959746398;
 extern const uint32_t CustomEventData_Add_m2564314129_MetadataUsageId;
@@ -123,8 +123,8 @@ struct Exception_t1436737249_marshaled_com;
 #pragma clang diagnostic pop
 #endif
 #endif // RUNTIMEOBJECT_H
-#ifndef U3CMODULEU3E_T692745545_H
-#define U3CMODULEU3E_T692745545_H
+#ifndef U3CMODULEU3E_T692745548_H
+#define U3CMODULEU3E_T692745548_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -132,7 +132,7 @@ struct Exception_t1436737249_marshaled_com;
 #endif
 
 // <Module>
-struct  U3CModuleU3E_t692745545 
+struct  U3CModuleU3E_t692745548 
 {
 public:
 
@@ -142,7 +142,7 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // U3CMODULEU3E_T692745545_H
+#endif // U3CMODULEU3E_T692745548_H
 #ifndef STRING_T_H
 #define STRING_T_H
 #ifdef __clang__
@@ -740,15 +740,15 @@ struct Double_t594665363_StaticFields
 {
 public:
 	// System.Double System.Double::NegativeZero
-	double ___NegativeZero_1;
+	double ___NegativeZero_7;
 
 public:
-	inline static int32_t get_offset_of_NegativeZero_1() { return static_cast<int32_t>(offsetof(Double_t594665363_StaticFields, ___NegativeZero_1)); }
-	inline double get_NegativeZero_1() const { return ___NegativeZero_1; }
-	inline double* get_address_of_NegativeZero_1() { return &___NegativeZero_1; }
-	inline void set_NegativeZero_1(double value)
+	inline static int32_t get_offset_of_NegativeZero_7() { return static_cast<int32_t>(offsetof(Double_t594665363_StaticFields, ___NegativeZero_7)); }
+	inline double get_NegativeZero_7() const { return ___NegativeZero_7; }
+	inline double* get_address_of_NegativeZero_7() { return &___NegativeZero_7; }
+	inline void set_NegativeZero_7(double value)
 	{
-		___NegativeZero_1 = value;
+		___NegativeZero_7 = value;
 	}
 };
 
@@ -1680,9 +1680,9 @@ extern "C"  bool CustomEventData_AddDouble_m631895201 (CustomEventData_t31752248
 // System.Decimal System.Convert::ToDecimal(System.Decimal)
 extern "C"  Decimal_t2948259380  Convert_ToDecimal_m1783778724 (RuntimeObject * __this /* static, unused */, Decimal_t2948259380  p0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // !0 System.Collections.Generic.KeyValuePair`2<System.String,System.Object>::get_Key()
-#define KeyValuePair_2_get_Key_m256823211(__this, method) ((  String_t* (*) (KeyValuePair_2_t968067334 *, const RuntimeMethod*))KeyValuePair_2_get_Key_m4184817181_gshared)(__this, method)
+#define KeyValuePair_2_get_Key_m2973773633(__this, method) ((  String_t* (*) (KeyValuePair_2_t968067334 *, const RuntimeMethod*))KeyValuePair_2_get_Key_m4184817181_gshared)(__this, method)
 // !1 System.Collections.Generic.KeyValuePair`2<System.String,System.Object>::get_Value()
-#define KeyValuePair_2_get_Value_m4108279609(__this, method) ((  RuntimeObject * (*) (KeyValuePair_2_t968067334 *, const RuntimeMethod*))KeyValuePair_2_get_Value_m1132502692_gshared)(__this, method)
+#define KeyValuePair_2_get_Value_m2151159939(__this, method) ((  RuntimeObject * (*) (KeyValuePair_2_t968067334 *, const RuntimeMethod*))KeyValuePair_2_get_Value_m1132502692_gshared)(__this, method)
 // System.Boolean UnityEngine.Analytics.CustomEventData::Add(System.String,System.String)
 extern "C"  bool CustomEventData_Add_m2889310798 (CustomEventData_t317522481 * __this, String_t* ___key0, String_t* ___value1, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Type System.Object::GetType()
@@ -2400,9 +2400,9 @@ IL_000e:
 			NullCheck(L_2);
 			KeyValuePair_2_t968067334  L_3 = InterfaceFuncInvoker0< KeyValuePair_2_t968067334  >::Invoke(0 /* !0 System.Collections.Generic.IEnumerator`1<System.Collections.Generic.KeyValuePair`2<System.String,System.Object>>::get_Current() */, IEnumerator_1_t1400637802_il2cpp_TypeInfo_var, L_2);
 			V_0 = L_3;
-			String_t* L_4 = KeyValuePair_2_get_Key_m256823211((&V_0), /*hidden argument*/KeyValuePair_2_get_Key_m256823211_RuntimeMethod_var);
+			String_t* L_4 = KeyValuePair_2_get_Key_m2973773633((&V_0), /*hidden argument*/KeyValuePair_2_get_Key_m2973773633_RuntimeMethod_var);
 			V_2 = L_4;
-			RuntimeObject * L_5 = KeyValuePair_2_get_Value_m4108279609((&V_0), /*hidden argument*/KeyValuePair_2_get_Value_m4108279609_RuntimeMethod_var);
+			RuntimeObject * L_5 = KeyValuePair_2_get_Value_m2151159939((&V_0), /*hidden argument*/KeyValuePair_2_get_Value_m2151159939_RuntimeMethod_var);
 			V_3 = L_5;
 			RuntimeObject * L_6 = V_3;
 			if (L_6)
@@ -2568,7 +2568,7 @@ IL_0143:
 
 IL_0154:
 		{
-			String_t* L_40 = KeyValuePair_2_get_Key_m256823211((&V_0), /*hidden argument*/KeyValuePair_2_get_Key_m256823211_RuntimeMethod_var);
+			String_t* L_40 = KeyValuePair_2_get_Key_m2973773633((&V_0), /*hidden argument*/KeyValuePair_2_get_Key_m2973773633_RuntimeMethod_var);
 			RuntimeObject * L_41 = V_3;
 			CustomEventData_Add_m3128853075(__this, L_40, ((*(uint32_t*)((uint32_t*)UnBox(L_41, UInt32_t2560061978_il2cpp_TypeInfo_var)))), /*hidden argument*/NULL);
 			goto IL_0276;

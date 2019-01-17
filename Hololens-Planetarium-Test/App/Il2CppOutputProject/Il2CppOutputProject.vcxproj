@@ -55,7 +55,19 @@
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Bulk_Generics_14.cpp">
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Bulk_Generics_15.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Bulk_Generics_16.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Bulk_Generics_17.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Bulk_Generics_18.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Bulk_Generics_19.cpp">
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Bulk_Generics_2.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Bulk_Generics_20.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Bulk_Generics_3.cpp">
     </ClCompile>
@@ -161,6 +173,8 @@
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Bulk_UnityEngine.InputModule_0.cpp">
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Bulk_UnityEngine.Networking_0.cpp">
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Bulk_UnityEngine.Physics2DModule_0.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Bulk_UnityEngine.PhysicsModule_0.cpp">
@@ -173,6 +187,8 @@
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Bulk_UnityEngine.UIModule_0.cpp">
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Bulk_UnityEngine.UNETModule_0.cpp">
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Bulk_UnityEngine.UnityAnalyticsModule_0.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Bulk_UnityEngine.UnityConnectModule_0.cpp">
@@ -183,15 +199,21 @@
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Bulk_UnityEngine.UnityWebRequestTextureModule_0.cpp">
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Bulk_UnityEngine.UnityWebRequestWWWModule_0.cpp">
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Bulk_UnityEngine.VideoModule_0.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Bulk_UnityEngine.VRModule_0.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Bulk_UnityEngine.WebModule_0.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Bulk_UnityEngine_0.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\GenericMethods0.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\GenericMethods1.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\GenericMethods2.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Il2CppAttributes.cpp">
     </ClCompile>
@@ -262,6 +284,10 @@
     <ClCompile Include="Source\il2cppOutput\Il2CppCompilerCalculateTypeValues_36Table.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Il2CppCompilerCalculateTypeValues_37Table.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppCompilerCalculateTypeValues_38Table.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppCompilerCalculateTypeValues_39Table.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Il2CppCompilerCalculateTypeValues_3Table.cpp">
     </ClCompile>

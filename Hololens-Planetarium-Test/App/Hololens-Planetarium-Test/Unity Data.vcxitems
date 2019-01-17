@@ -43,6 +43,12 @@
     <None Include="$(MSBuildThisFileDirectory)Data\preserved_derived_types.xml">
       <DeploymentContent>true</DeploymentContent>
     </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\resources.assets">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\resources.assets.resS">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
     <None Include="$(MSBuildThisFileDirectory)Data\sharedassets0.assets">
       <DeploymentContent>true</DeploymentContent>
     </None>

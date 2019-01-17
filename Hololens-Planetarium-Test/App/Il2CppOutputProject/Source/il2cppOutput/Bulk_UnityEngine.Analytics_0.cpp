@@ -78,7 +78,7 @@ extern RuntimeClass* TrackableProperty_t3943537984_il2cpp_TypeInfo_var;
 extern const RuntimeMethod* Dictionary_2__ctor_m15304876_RuntimeMethod_var;
 extern const uint32_t AnalyticsTracker__ctor_m3762295226_MetadataUsageId;
 extern RuntimeClass* Object_t631007953_il2cpp_TypeInfo_var;
-extern const RuntimeMethod* Dictionary_2_Clear_m3181358953_RuntimeMethod_var;
+extern const RuntimeMethod* Dictionary_2_Clear_m1759170625_RuntimeMethod_var;
 extern const RuntimeMethod* List_1_get_Count_m3935023107_RuntimeMethod_var;
 extern const RuntimeMethod* List_1_get_Item_m1027239081_RuntimeMethod_var;
 extern const RuntimeMethod* Dictionary_2_set_Item_m3155846050_RuntimeMethod_var;
@@ -111,8 +111,8 @@ struct ObjectU5BU5D_t2843939325;
 #pragma clang diagnostic pop
 #endif
 #endif // RUNTIMEOBJECT_H
-#ifndef U3CMODULEU3E_T692745558_H
-#define U3CMODULEU3E_T692745558_H
+#ifndef U3CMODULEU3E_T692745562_H
+#define U3CMODULEU3E_T692745562_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -120,7 +120,7 @@ struct ObjectU5BU5D_t2843939325;
 #endif
 
 // <Module>
-struct  U3CModuleU3E_t692745558 
+struct  U3CModuleU3E_t692745562 
 {
 public:
 
@@ -130,7 +130,7 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // U3CMODULEU3E_T692745558_H
+#endif // U3CMODULEU3E_T692745562_H
 #ifndef FIELDWITHTARGET_T3058750293_H
 #define FIELDWITHTARGET_T3058750293_H
 #ifdef __clang__
@@ -1537,7 +1537,7 @@ extern "C"  void AnalyticsTracker_SendEvent_m2955089255 (AnalyticsTracker_t73102
 // UnityEngine.Analytics.AnalyticsResult UnityEngine.Analytics.Analytics::CustomEvent(System.String,System.Collections.Generic.IDictionary`2<System.String,System.Object>)
 extern "C"  int32_t Analytics_CustomEvent_m3835919949 (RuntimeObject * __this /* static, unused */, String_t* p0, RuntimeObject* p1, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Collections.Generic.Dictionary`2<System.String,System.Object>::Clear()
-#define Dictionary_2_Clear_m3181358953(__this, method) ((  void (*) (Dictionary_2_t2865362463 *, const RuntimeMethod*))Dictionary_2_Clear_m1938428402_gshared)(__this, method)
+#define Dictionary_2_Clear_m1759170625(__this, method) ((  void (*) (Dictionary_2_t2865362463 *, const RuntimeMethod*))Dictionary_2_Clear_m1938428402_gshared)(__this, method)
 // System.Collections.Generic.List`1<UnityEngine.Analytics.TrackableProperty/FieldWithTarget> UnityEngine.Analytics.TrackableProperty::get_fields()
 extern "C"  List_1_t235857739 * TrackableProperty_get_fields_m3682628132 (TrackableProperty_t3943537984 * __this, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Int32 System.Collections.Generic.List`1<UnityEngine.Analytics.TrackableProperty/FieldWithTarget>::get_Count()
@@ -1813,7 +1813,7 @@ extern "C"  void AnalyticsTracker_BuildParameters_m43920649 (AnalyticsTracker_t7
 	{
 		Dictionary_2_t2865362463 * L_4 = __this->get_m_Dict_3();
 		NullCheck(L_4);
-		Dictionary_2_Clear_m3181358953(L_4, /*hidden argument*/Dictionary_2_Clear_m3181358953_RuntimeMethod_var);
+		Dictionary_2_Clear_m1759170625(L_4, /*hidden argument*/Dictionary_2_Clear_m1759170625_RuntimeMethod_var);
 	}
 
 IL_0024:

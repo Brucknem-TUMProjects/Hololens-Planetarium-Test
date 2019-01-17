@@ -662,32 +662,22 @@ struct DelegateData_t1677132599;
 struct bucketU5BU5D_t876121385;
 // System.Collections.IEqualityComparer
 struct IEqualityComparer_t1493878338;
-// System.Xml.Schema.DatatypeImplementation[]
-struct DatatypeImplementationU5BU5D_t1069202138;
-// System.Xml.Schema.DatatypeImplementation/SchemaDatatypeMap[]
-struct SchemaDatatypeMapU5BU5D_t4071411298;
-// System.Delegate[]
-struct DelegateU5BU5D_t1703627840;
+// System.Xml.Schema.XmlSchemaContent
+struct XmlSchemaContent_t1040349258;
 // System.Xml.Schema.Asttree[]
 struct AsttreeU5BU5D_t3174926177;
+// System.Delegate[]
+struct DelegateU5BU5D_t1703627840;
 // System.Reflection.MemberFilter
 struct MemberFilter_t426314064;
 // System.Type[]
 struct TypeU5BU5D_t3940880105;
 // System.Reflection.Binder
 struct Binder_t2999457153;
-// System.Xml.Schema.XmlSchemaContent
-struct XmlSchemaContent_t1040349258;
-// System.Xml.Schema.XmlAtomicValue/NamespacePrefixForQName
-struct NamespacePrefixForQName_t198417103;
-// System.Xml.XmlTextReaderImpl
-struct XmlTextReaderImpl_t178060594;
-// System.Xml.XmlValidatingReaderImpl/ValidationEventHandling
-struct ValidationEventHandling_t3812646699;
-// System.Xml.XmlParserContext
-struct XmlParserContext_t2544895291;
-// System.Xml.ReadContentAsBinaryHelper
-struct ReadContentAsBinaryHelper_t3017207972;
+// System.Xml.Schema.DatatypeImplementation[]
+struct DatatypeImplementationU5BU5D_t1069202138;
+// System.Xml.Schema.DatatypeImplementation/SchemaDatatypeMap[]
+struct SchemaDatatypeMapU5BU5D_t4071411298;
 // System.Xml.Schema.FacetsChecker/FacetsCompiler/Map[]
 struct MapU5BU5D_t475731498;
 // System.Text.RegularExpressions.RegexRunnerFactory
@@ -702,10 +692,20 @@ struct RegexCode_t4293407246;
 struct LinkedList_1_t3068621835;
 // System.Xml.Schema.ConstraintStruct[]
 struct ConstraintStructU5BU5D_t3023613795;
+// System.Xml.Schema.XmlAtomicValue/NamespacePrefixForQName
+struct NamespacePrefixForQName_t198417103;
 // System.UriParser
 struct UriParser_t3890150400;
 // System.Uri/UriInfo
 struct UriInfo_t1092684687;
+// System.Xml.XmlTextReaderImpl
+struct XmlTextReaderImpl_t178060594;
+// System.Xml.XmlValidatingReaderImpl/ValidationEventHandling
+struct ValidationEventHandling_t3812646699;
+// System.Xml.XmlParserContext
+struct XmlParserContext_t2544895291;
+// System.Xml.ReadContentAsBinaryHelper
+struct ReadContentAsBinaryHelper_t3017207972;
 // System.Xml.Schema.ValidationEventArgs
 struct ValidationEventArgs_t2784773869;
 // System.IAsyncResult
@@ -11469,35 +11469,83 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // INT64_T3736567304_H
-#ifndef INT16_T2552820387_H
-#define INT16_T2552820387_H
+#ifndef DATETIME_T3738529785_H
+#define DATETIME_T3738529785_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// System.Int16
-struct  Int16_t2552820387 
+// System.DateTime
+struct  DateTime_t3738529785 
 {
 public:
-	// System.Int16 System.Int16::m_value
-	int16_t ___m_value_0;
+	// System.UInt64 System.DateTime::dateData
+	uint64_t ___dateData_4;
 
 public:
-	inline static int32_t get_offset_of_m_value_0() { return static_cast<int32_t>(offsetof(Int16_t2552820387, ___m_value_0)); }
-	inline int16_t get_m_value_0() const { return ___m_value_0; }
-	inline int16_t* get_address_of_m_value_0() { return &___m_value_0; }
-	inline void set_m_value_0(int16_t value)
+	inline static int32_t get_offset_of_dateData_4() { return static_cast<int32_t>(offsetof(DateTime_t3738529785, ___dateData_4)); }
+	inline uint64_t get_dateData_4() const { return ___dateData_4; }
+	inline uint64_t* get_address_of_dateData_4() { return &___dateData_4; }
+	inline void set_dateData_4(uint64_t value)
 	{
-		___m_value_0 = value;
+		___dateData_4 = value;
+	}
+};
+
+struct DateTime_t3738529785_StaticFields
+{
+public:
+	// System.Int32[] System.DateTime::DaysToMonth365
+	Int32U5BU5D_t385246372* ___DaysToMonth365_0;
+	// System.Int32[] System.DateTime::DaysToMonth366
+	Int32U5BU5D_t385246372* ___DaysToMonth366_1;
+	// System.DateTime System.DateTime::MinValue
+	DateTime_t3738529785  ___MinValue_2;
+	// System.DateTime System.DateTime::MaxValue
+	DateTime_t3738529785  ___MaxValue_3;
+
+public:
+	inline static int32_t get_offset_of_DaysToMonth365_0() { return static_cast<int32_t>(offsetof(DateTime_t3738529785_StaticFields, ___DaysToMonth365_0)); }
+	inline Int32U5BU5D_t385246372* get_DaysToMonth365_0() const { return ___DaysToMonth365_0; }
+	inline Int32U5BU5D_t385246372** get_address_of_DaysToMonth365_0() { return &___DaysToMonth365_0; }
+	inline void set_DaysToMonth365_0(Int32U5BU5D_t385246372* value)
+	{
+		___DaysToMonth365_0 = value;
+		Il2CppCodeGenWriteBarrier((&___DaysToMonth365_0), value);
+	}
+
+	inline static int32_t get_offset_of_DaysToMonth366_1() { return static_cast<int32_t>(offsetof(DateTime_t3738529785_StaticFields, ___DaysToMonth366_1)); }
+	inline Int32U5BU5D_t385246372* get_DaysToMonth366_1() const { return ___DaysToMonth366_1; }
+	inline Int32U5BU5D_t385246372** get_address_of_DaysToMonth366_1() { return &___DaysToMonth366_1; }
+	inline void set_DaysToMonth366_1(Int32U5BU5D_t385246372* value)
+	{
+		___DaysToMonth366_1 = value;
+		Il2CppCodeGenWriteBarrier((&___DaysToMonth366_1), value);
+	}
+
+	inline static int32_t get_offset_of_MinValue_2() { return static_cast<int32_t>(offsetof(DateTime_t3738529785_StaticFields, ___MinValue_2)); }
+	inline DateTime_t3738529785  get_MinValue_2() const { return ___MinValue_2; }
+	inline DateTime_t3738529785 * get_address_of_MinValue_2() { return &___MinValue_2; }
+	inline void set_MinValue_2(DateTime_t3738529785  value)
+	{
+		___MinValue_2 = value;
+	}
+
+	inline static int32_t get_offset_of_MaxValue_3() { return static_cast<int32_t>(offsetof(DateTime_t3738529785_StaticFields, ___MaxValue_3)); }
+	inline DateTime_t3738529785  get_MaxValue_3() const { return ___MaxValue_3; }
+	inline DateTime_t3738529785 * get_address_of_MaxValue_3() { return &___MaxValue_3; }
+	inline void set_MaxValue_3(DateTime_t3738529785  value)
+	{
+		___MaxValue_3 = value;
 	}
 };
 
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // INT16_T2552820387_H
+#endif // DATETIME_T3738529785_H
 #ifndef INT32_T2950945753_H
 #define INT32_T2950945753_H
 #ifdef __clang__
@@ -11527,6 +11575,62 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // INT32_T2950945753_H
+#ifndef INT16_T2552820387_H
+#define INT16_T2552820387_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Int16
+struct  Int16_t2552820387 
+{
+public:
+	// System.Int16 System.Int16::m_value
+	int16_t ___m_value_0;
+
+public:
+	inline static int32_t get_offset_of_m_value_0() { return static_cast<int32_t>(offsetof(Int16_t2552820387, ___m_value_0)); }
+	inline int16_t get_m_value_0() const { return ___m_value_0; }
+	inline int16_t* get_address_of_m_value_0() { return &___m_value_0; }
+	inline void set_m_value_0(int16_t value)
+	{
+		___m_value_0 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // INT16_T2552820387_H
+#ifndef VOID_T1185182177_H
+#define VOID_T1185182177_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Void
+struct  Void_t1185182177 
+{
+public:
+	union
+	{
+		struct
+		{
+		};
+		uint8_t Void_t1185182177__padding[1];
+	};
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // VOID_T1185182177_H
 #ifndef DECIMAL_T2948259380_H
 #define DECIMAL_T2948259380_H
 #ifdef __clang__
@@ -11673,83 +11777,6 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // DECIMAL_T2948259380_H
-#ifndef DATETIME_T3738529785_H
-#define DATETIME_T3738529785_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.DateTime
-struct  DateTime_t3738529785 
-{
-public:
-	// System.UInt64 System.DateTime::dateData
-	uint64_t ___dateData_4;
-
-public:
-	inline static int32_t get_offset_of_dateData_4() { return static_cast<int32_t>(offsetof(DateTime_t3738529785, ___dateData_4)); }
-	inline uint64_t get_dateData_4() const { return ___dateData_4; }
-	inline uint64_t* get_address_of_dateData_4() { return &___dateData_4; }
-	inline void set_dateData_4(uint64_t value)
-	{
-		___dateData_4 = value;
-	}
-};
-
-struct DateTime_t3738529785_StaticFields
-{
-public:
-	// System.Int32[] System.DateTime::DaysToMonth365
-	Int32U5BU5D_t385246372* ___DaysToMonth365_0;
-	// System.Int32[] System.DateTime::DaysToMonth366
-	Int32U5BU5D_t385246372* ___DaysToMonth366_1;
-	// System.DateTime System.DateTime::MinValue
-	DateTime_t3738529785  ___MinValue_2;
-	// System.DateTime System.DateTime::MaxValue
-	DateTime_t3738529785  ___MaxValue_3;
-
-public:
-	inline static int32_t get_offset_of_DaysToMonth365_0() { return static_cast<int32_t>(offsetof(DateTime_t3738529785_StaticFields, ___DaysToMonth365_0)); }
-	inline Int32U5BU5D_t385246372* get_DaysToMonth365_0() const { return ___DaysToMonth365_0; }
-	inline Int32U5BU5D_t385246372** get_address_of_DaysToMonth365_0() { return &___DaysToMonth365_0; }
-	inline void set_DaysToMonth365_0(Int32U5BU5D_t385246372* value)
-	{
-		___DaysToMonth365_0 = value;
-		Il2CppCodeGenWriteBarrier((&___DaysToMonth365_0), value);
-	}
-
-	inline static int32_t get_offset_of_DaysToMonth366_1() { return static_cast<int32_t>(offsetof(DateTime_t3738529785_StaticFields, ___DaysToMonth366_1)); }
-	inline Int32U5BU5D_t385246372* get_DaysToMonth366_1() const { return ___DaysToMonth366_1; }
-	inline Int32U5BU5D_t385246372** get_address_of_DaysToMonth366_1() { return &___DaysToMonth366_1; }
-	inline void set_DaysToMonth366_1(Int32U5BU5D_t385246372* value)
-	{
-		___DaysToMonth366_1 = value;
-		Il2CppCodeGenWriteBarrier((&___DaysToMonth366_1), value);
-	}
-
-	inline static int32_t get_offset_of_MinValue_2() { return static_cast<int32_t>(offsetof(DateTime_t3738529785_StaticFields, ___MinValue_2)); }
-	inline DateTime_t3738529785  get_MinValue_2() const { return ___MinValue_2; }
-	inline DateTime_t3738529785 * get_address_of_MinValue_2() { return &___MinValue_2; }
-	inline void set_MinValue_2(DateTime_t3738529785  value)
-	{
-		___MinValue_2 = value;
-	}
-
-	inline static int32_t get_offset_of_MaxValue_3() { return static_cast<int32_t>(offsetof(DateTime_t3738529785_StaticFields, ___MaxValue_3)); }
-	inline DateTime_t3738529785  get_MaxValue_3() const { return ___MaxValue_3; }
-	inline DateTime_t3738529785 * get_address_of_MaxValue_3() { return &___MaxValue_3; }
-	inline void set_MaxValue_3(DateTime_t3738529785  value)
-	{
-		___MaxValue_3 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // DATETIME_T3738529785_H
 #ifndef BYTE_T1134296376_H
 #define BYTE_T1134296376_H
 #ifdef __clang__
@@ -11779,6 +11806,35 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // BYTE_T1134296376_H
+#ifndef SINGLE_T1397266774_H
+#define SINGLE_T1397266774_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Single
+struct  Single_t1397266774 
+{
+public:
+	// System.Single System.Single::m_value
+	float ___m_value_0;
+
+public:
+	inline static int32_t get_offset_of_m_value_0() { return static_cast<int32_t>(offsetof(Single_t1397266774, ___m_value_0)); }
+	inline float get_m_value_0() const { return ___m_value_0; }
+	inline float* get_address_of_m_value_0() { return &___m_value_0; }
+	inline void set_m_value_0(float value)
+	{
+		___m_value_0 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // SINGLE_T1397266774_H
 #ifndef BOOLEAN_T97287965_H
 #define BOOLEAN_T97287965_H
 #ifdef __clang__
@@ -11836,107 +11892,6 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // BOOLEAN_T97287965_H
-#ifndef VOID_T1185182177_H
-#define VOID_T1185182177_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Void
-struct  Void_t1185182177 
-{
-public:
-	union
-	{
-		struct
-		{
-		};
-		uint8_t Void_t1185182177__padding[1];
-	};
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // VOID_T1185182177_H
-#ifndef DOUBLE_T594665363_H
-#define DOUBLE_T594665363_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Double
-struct  Double_t594665363 
-{
-public:
-	// System.Double System.Double::m_value
-	double ___m_value_0;
-
-public:
-	inline static int32_t get_offset_of_m_value_0() { return static_cast<int32_t>(offsetof(Double_t594665363, ___m_value_0)); }
-	inline double get_m_value_0() const { return ___m_value_0; }
-	inline double* get_address_of_m_value_0() { return &___m_value_0; }
-	inline void set_m_value_0(double value)
-	{
-		___m_value_0 = value;
-	}
-};
-
-struct Double_t594665363_StaticFields
-{
-public:
-	// System.Double System.Double::NegativeZero
-	double ___NegativeZero_1;
-
-public:
-	inline static int32_t get_offset_of_NegativeZero_1() { return static_cast<int32_t>(offsetof(Double_t594665363_StaticFields, ___NegativeZero_1)); }
-	inline double get_NegativeZero_1() const { return ___NegativeZero_1; }
-	inline double* get_address_of_NegativeZero_1() { return &___NegativeZero_1; }
-	inline void set_NegativeZero_1(double value)
-	{
-		___NegativeZero_1 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // DOUBLE_T594665363_H
-#ifndef SINGLE_T1397266774_H
-#define SINGLE_T1397266774_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Single
-struct  Single_t1397266774 
-{
-public:
-	// System.Single System.Single::m_value
-	float ___m_value_0;
-
-public:
-	inline static int32_t get_offset_of_m_value_0() { return static_cast<int32_t>(offsetof(Single_t1397266774, ___m_value_0)); }
-	inline float get_m_value_0() const { return ___m_value_0; }
-	inline float* get_address_of_m_value_0() { return &___m_value_0; }
-	inline void set_m_value_0(float value)
-	{
-		___m_value_0 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // SINGLE_T1397266774_H
 #ifndef XSDDURATION_T3210533101_H
 #define XSDDURATION_T3210533101_H
 #ifdef __clang__
@@ -12026,870 +11981,51 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // XSDDURATION_T3210533101_H
-#ifndef XPATHNODETYPE_T3031007223_H
-#define XPATHNODETYPE_T3031007223_H
+#ifndef DOUBLE_T594665363_H
+#define DOUBLE_T594665363_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// System.Xml.XPath.XPathNodeType
-struct  XPathNodeType_t3031007223 
+// System.Double
+struct  Double_t594665363 
 {
 public:
-	// System.Int32 System.Xml.XPath.XPathNodeType::value__
-	int32_t ___value___2;
+	// System.Double System.Double::m_value
+	double ___m_value_0;
 
 public:
-	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(XPathNodeType_t3031007223, ___value___2)); }
-	inline int32_t get_value___2() const { return ___value___2; }
-	inline int32_t* get_address_of_value___2() { return &___value___2; }
-	inline void set_value___2(int32_t value)
+	inline static int32_t get_offset_of_m_value_0() { return static_cast<int32_t>(offsetof(Double_t594665363, ___m_value_0)); }
+	inline double get_m_value_0() const { return ___m_value_0; }
+	inline double* get_address_of_m_value_0() { return &___m_value_0; }
+	inline void set_m_value_0(double value)
 	{
-		___value___2 = value;
+		___m_value_0 = value;
+	}
+};
+
+struct Double_t594665363_StaticFields
+{
+public:
+	// System.Double System.Double::NegativeZero
+	double ___NegativeZero_7;
+
+public:
+	inline static int32_t get_offset_of_NegativeZero_7() { return static_cast<int32_t>(offsetof(Double_t594665363_StaticFields, ___NegativeZero_7)); }
+	inline double get_NegativeZero_7() const { return ___NegativeZero_7; }
+	inline double* get_address_of_NegativeZero_7() { return &___NegativeZero_7; }
+	inline void set_NegativeZero_7(double value)
+	{
+		___NegativeZero_7 = value;
 	}
 };
 
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // XPATHNODETYPE_T3031007223_H
-#ifndef LEAFRANGENODE_T169161297_H
-#define LEAFRANGENODE_T169161297_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.LeafRangeNode
-struct  LeafRangeNode_t169161297  : public LeafNode_t3044180503
-{
-public:
-	// System.Decimal System.Xml.Schema.LeafRangeNode::min
-	Decimal_t2948259380  ___min_1;
-	// System.Decimal System.Xml.Schema.LeafRangeNode::max
-	Decimal_t2948259380  ___max_2;
-	// System.Xml.Schema.BitSet System.Xml.Schema.LeafRangeNode::nextIteration
-	BitSet_t1154229585 * ___nextIteration_3;
-
-public:
-	inline static int32_t get_offset_of_min_1() { return static_cast<int32_t>(offsetof(LeafRangeNode_t169161297, ___min_1)); }
-	inline Decimal_t2948259380  get_min_1() const { return ___min_1; }
-	inline Decimal_t2948259380 * get_address_of_min_1() { return &___min_1; }
-	inline void set_min_1(Decimal_t2948259380  value)
-	{
-		___min_1 = value;
-	}
-
-	inline static int32_t get_offset_of_max_2() { return static_cast<int32_t>(offsetof(LeafRangeNode_t169161297, ___max_2)); }
-	inline Decimal_t2948259380  get_max_2() const { return ___max_2; }
-	inline Decimal_t2948259380 * get_address_of_max_2() { return &___max_2; }
-	inline void set_max_2(Decimal_t2948259380  value)
-	{
-		___max_2 = value;
-	}
-
-	inline static int32_t get_offset_of_nextIteration_3() { return static_cast<int32_t>(offsetof(LeafRangeNode_t169161297, ___nextIteration_3)); }
-	inline BitSet_t1154229585 * get_nextIteration_3() const { return ___nextIteration_3; }
-	inline BitSet_t1154229585 ** get_address_of_nextIteration_3() { return &___nextIteration_3; }
-	inline void set_nextIteration_3(BitSet_t1154229585 * value)
-	{
-		___nextIteration_3 = value;
-		Il2CppCodeGenWriteBarrier((&___nextIteration_3), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // LEAFRANGENODE_T169161297_H
-#ifndef XMLSCHEMASUBSTITUTIONGROUPV1COMPAT_T651033058_H
-#define XMLSCHEMASUBSTITUTIONGROUPV1COMPAT_T651033058_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.XmlSchemaSubstitutionGroupV1Compat
-struct  XmlSchemaSubstitutionGroupV1Compat_t651033058  : public XmlSchemaSubstitutionGroup_t2412016498
-{
-public:
-	// System.Xml.Schema.XmlSchemaChoice System.Xml.Schema.XmlSchemaSubstitutionGroupV1Compat::choice
-	XmlSchemaChoice_t959520675 * ___choice_8;
-
-public:
-	inline static int32_t get_offset_of_choice_8() { return static_cast<int32_t>(offsetof(XmlSchemaSubstitutionGroupV1Compat_t651033058, ___choice_8)); }
-	inline XmlSchemaChoice_t959520675 * get_choice_8() const { return ___choice_8; }
-	inline XmlSchemaChoice_t959520675 ** get_address_of_choice_8() { return &___choice_8; }
-	inline void set_choice_8(XmlSchemaChoice_t959520675 * value)
-	{
-		___choice_8 = value;
-		Il2CppCodeGenWriteBarrier((&___choice_8), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // XMLSCHEMASUBSTITUTIONGROUPV1COMPAT_T651033058_H
-#ifndef XMLSCHEMASIMPLETYPECONTENT_T599285223_H
-#define XMLSCHEMASIMPLETYPECONTENT_T599285223_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.XmlSchemaSimpleTypeContent
-struct  XmlSchemaSimpleTypeContent_t599285223  : public XmlSchemaAnnotated_t2603549639
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // XMLSCHEMASIMPLETYPECONTENT_T599285223_H
-#ifndef AXISTYPE_T3322599580_H
-#define AXISTYPE_T3322599580_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// MS.Internal.Xml.XPath.Axis/AxisType
-struct  AxisType_t3322599580 
-{
-public:
-	// System.Int32 MS.Internal.Xml.XPath.Axis/AxisType::value__
-	int32_t ___value___2;
-
-public:
-	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(AxisType_t3322599580, ___value___2)); }
-	inline int32_t get_value___2() const { return ___value___2; }
-	inline int32_t* get_address_of_value___2() { return &___value___2; }
-	inline void set_value___2(int32_t value)
-	{
-		___value___2 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // AXISTYPE_T3322599580_H
-#ifndef XMLSCHEMADATATYPEVARIETY_T1737164534_H
-#define XMLSCHEMADATATYPEVARIETY_T1737164534_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.XmlSchemaDatatypeVariety
-struct  XmlSchemaDatatypeVariety_t1737164534 
-{
-public:
-	// System.Int32 System.Xml.Schema.XmlSchemaDatatypeVariety::value__
-	int32_t ___value___2;
-
-public:
-	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(XmlSchemaDatatypeVariety_t1737164534, ___value___2)); }
-	inline int32_t get_value___2() const { return ___value___2; }
-	inline int32_t* get_address_of_value___2() { return &___value___2; }
-	inline void set_value___2(int32_t value)
-	{
-		___value___2 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // XMLSCHEMADATATYPEVARIETY_T1737164534_H
-#ifndef XMLSCHEMAWHITESPACE_T472242436_H
-#define XMLSCHEMAWHITESPACE_T472242436_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.XmlSchemaWhiteSpace
-struct  XmlSchemaWhiteSpace_t472242436 
-{
-public:
-	// System.Int32 System.Xml.Schema.XmlSchemaWhiteSpace::value__
-	int32_t ___value___2;
-
-public:
-	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(XmlSchemaWhiteSpace_t472242436, ___value___2)); }
-	inline int32_t get_value___2() const { return ___value___2; }
-	inline int32_t* get_address_of_value___2() { return &___value___2; }
-	inline void set_value___2(int32_t value)
-	{
-		___value___2 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // XMLSCHEMAWHITESPACE_T472242436_H
-#ifndef SCHEMATYPE_T3738787686_H
-#define SCHEMATYPE_T3738787686_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.SchemaType
-struct  SchemaType_t3738787686 
-{
-public:
-	// System.Int32 System.Xml.Schema.SchemaType::value__
-	int32_t ___value___2;
-
-public:
-	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(SchemaType_t3738787686, ___value___2)); }
-	inline int32_t get_value___2() const { return ___value___2; }
-	inline int32_t* get_address_of_value___2() { return &___value___2; }
-	inline void set_value___2(int32_t value)
-	{
-		___value___2 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // SCHEMATYPE_T3738787686_H
-#ifndef XMLSCHEMAIDENTITYCONSTRAINT_T297318432_H
-#define XMLSCHEMAIDENTITYCONSTRAINT_T297318432_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.XmlSchemaIdentityConstraint
-struct  XmlSchemaIdentityConstraint_t297318432  : public XmlSchemaAnnotated_t2603549639
-{
-public:
-	// System.String System.Xml.Schema.XmlSchemaIdentityConstraint::name
-	String_t* ___name_9;
-	// System.Xml.Schema.XmlSchemaXPath System.Xml.Schema.XmlSchemaIdentityConstraint::selector
-	XmlSchemaXPath_t3156455507 * ___selector_10;
-	// System.Xml.Schema.XmlSchemaObjectCollection System.Xml.Schema.XmlSchemaIdentityConstraint::fields
-	XmlSchemaObjectCollection_t1064819932 * ___fields_11;
-	// System.Xml.XmlQualifiedName System.Xml.Schema.XmlSchemaIdentityConstraint::qualifiedName
-	XmlQualifiedName_t2760654312 * ___qualifiedName_12;
-	// System.Xml.Schema.CompiledIdentityConstraint System.Xml.Schema.XmlSchemaIdentityConstraint::compiledConstraint
-	CompiledIdentityConstraint_t1335094965 * ___compiledConstraint_13;
-
-public:
-	inline static int32_t get_offset_of_name_9() { return static_cast<int32_t>(offsetof(XmlSchemaIdentityConstraint_t297318432, ___name_9)); }
-	inline String_t* get_name_9() const { return ___name_9; }
-	inline String_t** get_address_of_name_9() { return &___name_9; }
-	inline void set_name_9(String_t* value)
-	{
-		___name_9 = value;
-		Il2CppCodeGenWriteBarrier((&___name_9), value);
-	}
-
-	inline static int32_t get_offset_of_selector_10() { return static_cast<int32_t>(offsetof(XmlSchemaIdentityConstraint_t297318432, ___selector_10)); }
-	inline XmlSchemaXPath_t3156455507 * get_selector_10() const { return ___selector_10; }
-	inline XmlSchemaXPath_t3156455507 ** get_address_of_selector_10() { return &___selector_10; }
-	inline void set_selector_10(XmlSchemaXPath_t3156455507 * value)
-	{
-		___selector_10 = value;
-		Il2CppCodeGenWriteBarrier((&___selector_10), value);
-	}
-
-	inline static int32_t get_offset_of_fields_11() { return static_cast<int32_t>(offsetof(XmlSchemaIdentityConstraint_t297318432, ___fields_11)); }
-	inline XmlSchemaObjectCollection_t1064819932 * get_fields_11() const { return ___fields_11; }
-	inline XmlSchemaObjectCollection_t1064819932 ** get_address_of_fields_11() { return &___fields_11; }
-	inline void set_fields_11(XmlSchemaObjectCollection_t1064819932 * value)
-	{
-		___fields_11 = value;
-		Il2CppCodeGenWriteBarrier((&___fields_11), value);
-	}
-
-	inline static int32_t get_offset_of_qualifiedName_12() { return static_cast<int32_t>(offsetof(XmlSchemaIdentityConstraint_t297318432, ___qualifiedName_12)); }
-	inline XmlQualifiedName_t2760654312 * get_qualifiedName_12() const { return ___qualifiedName_12; }
-	inline XmlQualifiedName_t2760654312 ** get_address_of_qualifiedName_12() { return &___qualifiedName_12; }
-	inline void set_qualifiedName_12(XmlQualifiedName_t2760654312 * value)
-	{
-		___qualifiedName_12 = value;
-		Il2CppCodeGenWriteBarrier((&___qualifiedName_12), value);
-	}
-
-	inline static int32_t get_offset_of_compiledConstraint_13() { return static_cast<int32_t>(offsetof(XmlSchemaIdentityConstraint_t297318432, ___compiledConstraint_13)); }
-	inline CompiledIdentityConstraint_t1335094965 * get_compiledConstraint_13() const { return ___compiledConstraint_13; }
-	inline CompiledIdentityConstraint_t1335094965 ** get_address_of_compiledConstraint_13() { return &___compiledConstraint_13; }
-	inline void set_compiledConstraint_13(CompiledIdentityConstraint_t1335094965 * value)
-	{
-		___compiledConstraint_13 = value;
-		Il2CppCodeGenWriteBarrier((&___compiledConstraint_13), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // XMLSCHEMAIDENTITYCONSTRAINT_T297318432_H
-#ifndef RESTRICTIONFLAGS_T1570337630_H
-#define RESTRICTIONFLAGS_T1570337630_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.RestrictionFlags
-struct  RestrictionFlags_t1570337630 
-{
-public:
-	// System.Int32 System.Xml.Schema.RestrictionFlags::value__
-	int32_t ___value___2;
-
-public:
-	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(RestrictionFlags_t1570337630, ___value___2)); }
-	inline int32_t get_value___2() const { return ___value___2; }
-	inline int32_t* get_address_of_value___2() { return &___value___2; }
-	inline void set_value___2(int32_t value)
-	{
-		___value___2 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // RESTRICTIONFLAGS_T1570337630_H
-#ifndef XMLSEVERITYTYPE_T1894651412_H
-#define XMLSEVERITYTYPE_T1894651412_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.XmlSeverityType
-struct  XmlSeverityType_t1894651412 
-{
-public:
-	// System.Int32 System.Xml.Schema.XmlSeverityType::value__
-	int32_t ___value___2;
-
-public:
-	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(XmlSeverityType_t1894651412, ___value___2)); }
-	inline int32_t get_value___2() const { return ___value___2; }
-	inline int32_t* get_address_of_value___2() { return &___value___2; }
-	inline void set_value___2(int32_t value)
-	{
-		___value___2 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // XMLSEVERITYTYPE_T1894651412_H
-#ifndef XMLSCHEMANOTATION_T2664560277_H
-#define XMLSCHEMANOTATION_T2664560277_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.XmlSchemaNotation
-struct  XmlSchemaNotation_t2664560277  : public XmlSchemaAnnotated_t2603549639
-{
-public:
-	// System.String System.Xml.Schema.XmlSchemaNotation::name
-	String_t* ___name_9;
-	// System.String System.Xml.Schema.XmlSchemaNotation::publicId
-	String_t* ___publicId_10;
-	// System.String System.Xml.Schema.XmlSchemaNotation::systemId
-	String_t* ___systemId_11;
-	// System.Xml.XmlQualifiedName System.Xml.Schema.XmlSchemaNotation::qname
-	XmlQualifiedName_t2760654312 * ___qname_12;
-
-public:
-	inline static int32_t get_offset_of_name_9() { return static_cast<int32_t>(offsetof(XmlSchemaNotation_t2664560277, ___name_9)); }
-	inline String_t* get_name_9() const { return ___name_9; }
-	inline String_t** get_address_of_name_9() { return &___name_9; }
-	inline void set_name_9(String_t* value)
-	{
-		___name_9 = value;
-		Il2CppCodeGenWriteBarrier((&___name_9), value);
-	}
-
-	inline static int32_t get_offset_of_publicId_10() { return static_cast<int32_t>(offsetof(XmlSchemaNotation_t2664560277, ___publicId_10)); }
-	inline String_t* get_publicId_10() const { return ___publicId_10; }
-	inline String_t** get_address_of_publicId_10() { return &___publicId_10; }
-	inline void set_publicId_10(String_t* value)
-	{
-		___publicId_10 = value;
-		Il2CppCodeGenWriteBarrier((&___publicId_10), value);
-	}
-
-	inline static int32_t get_offset_of_systemId_11() { return static_cast<int32_t>(offsetof(XmlSchemaNotation_t2664560277, ___systemId_11)); }
-	inline String_t* get_systemId_11() const { return ___systemId_11; }
-	inline String_t** get_address_of_systemId_11() { return &___systemId_11; }
-	inline void set_systemId_11(String_t* value)
-	{
-		___systemId_11 = value;
-		Il2CppCodeGenWriteBarrier((&___systemId_11), value);
-	}
-
-	inline static int32_t get_offset_of_qname_12() { return static_cast<int32_t>(offsetof(XmlSchemaNotation_t2664560277, ___qname_12)); }
-	inline XmlQualifiedName_t2760654312 * get_qname_12() const { return ___qname_12; }
-	inline XmlQualifiedName_t2760654312 ** get_address_of_qname_12() { return &___qname_12; }
-	inline void set_qname_12(XmlQualifiedName_t2760654312 * value)
-	{
-		___qname_12 = value;
-		Il2CppCodeGenWriteBarrier((&___qname_12), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // XMLSCHEMANOTATION_T2664560277_H
-#ifndef XMLSCHEMAGROUP_T1441741786_H
-#define XMLSCHEMAGROUP_T1441741786_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.XmlSchemaGroup
-struct  XmlSchemaGroup_t1441741786  : public XmlSchemaAnnotated_t2603549639
-{
-public:
-	// System.String System.Xml.Schema.XmlSchemaGroup::name
-	String_t* ___name_9;
-	// System.Xml.Schema.XmlSchemaGroupBase System.Xml.Schema.XmlSchemaGroup::particle
-	XmlSchemaGroupBase_t3631079376 * ___particle_10;
-	// System.Xml.Schema.XmlSchemaParticle System.Xml.Schema.XmlSchemaGroup::canonicalParticle
-	XmlSchemaParticle_t3828501457 * ___canonicalParticle_11;
-	// System.Xml.XmlQualifiedName System.Xml.Schema.XmlSchemaGroup::qname
-	XmlQualifiedName_t2760654312 * ___qname_12;
-	// System.Xml.Schema.XmlSchemaGroup System.Xml.Schema.XmlSchemaGroup::redefined
-	XmlSchemaGroup_t1441741786 * ___redefined_13;
-	// System.Int32 System.Xml.Schema.XmlSchemaGroup::selfReferenceCount
-	int32_t ___selfReferenceCount_14;
-
-public:
-	inline static int32_t get_offset_of_name_9() { return static_cast<int32_t>(offsetof(XmlSchemaGroup_t1441741786, ___name_9)); }
-	inline String_t* get_name_9() const { return ___name_9; }
-	inline String_t** get_address_of_name_9() { return &___name_9; }
-	inline void set_name_9(String_t* value)
-	{
-		___name_9 = value;
-		Il2CppCodeGenWriteBarrier((&___name_9), value);
-	}
-
-	inline static int32_t get_offset_of_particle_10() { return static_cast<int32_t>(offsetof(XmlSchemaGroup_t1441741786, ___particle_10)); }
-	inline XmlSchemaGroupBase_t3631079376 * get_particle_10() const { return ___particle_10; }
-	inline XmlSchemaGroupBase_t3631079376 ** get_address_of_particle_10() { return &___particle_10; }
-	inline void set_particle_10(XmlSchemaGroupBase_t3631079376 * value)
-	{
-		___particle_10 = value;
-		Il2CppCodeGenWriteBarrier((&___particle_10), value);
-	}
-
-	inline static int32_t get_offset_of_canonicalParticle_11() { return static_cast<int32_t>(offsetof(XmlSchemaGroup_t1441741786, ___canonicalParticle_11)); }
-	inline XmlSchemaParticle_t3828501457 * get_canonicalParticle_11() const { return ___canonicalParticle_11; }
-	inline XmlSchemaParticle_t3828501457 ** get_address_of_canonicalParticle_11() { return &___canonicalParticle_11; }
-	inline void set_canonicalParticle_11(XmlSchemaParticle_t3828501457 * value)
-	{
-		___canonicalParticle_11 = value;
-		Il2CppCodeGenWriteBarrier((&___canonicalParticle_11), value);
-	}
-
-	inline static int32_t get_offset_of_qname_12() { return static_cast<int32_t>(offsetof(XmlSchemaGroup_t1441741786, ___qname_12)); }
-	inline XmlQualifiedName_t2760654312 * get_qname_12() const { return ___qname_12; }
-	inline XmlQualifiedName_t2760654312 ** get_address_of_qname_12() { return &___qname_12; }
-	inline void set_qname_12(XmlQualifiedName_t2760654312 * value)
-	{
-		___qname_12 = value;
-		Il2CppCodeGenWriteBarrier((&___qname_12), value);
-	}
-
-	inline static int32_t get_offset_of_redefined_13() { return static_cast<int32_t>(offsetof(XmlSchemaGroup_t1441741786, ___redefined_13)); }
-	inline XmlSchemaGroup_t1441741786 * get_redefined_13() const { return ___redefined_13; }
-	inline XmlSchemaGroup_t1441741786 ** get_address_of_redefined_13() { return &___redefined_13; }
-	inline void set_redefined_13(XmlSchemaGroup_t1441741786 * value)
-	{
-		___redefined_13 = value;
-		Il2CppCodeGenWriteBarrier((&___redefined_13), value);
-	}
-
-	inline static int32_t get_offset_of_selfReferenceCount_14() { return static_cast<int32_t>(offsetof(XmlSchemaGroup_t1441741786, ___selfReferenceCount_14)); }
-	inline int32_t get_selfReferenceCount_14() const { return ___selfReferenceCount_14; }
-	inline int32_t* get_address_of_selfReferenceCount_14() { return &___selfReferenceCount_14; }
-	inline void set_selfReferenceCount_14(int32_t value)
-	{
-		___selfReferenceCount_14 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // XMLSCHEMAGROUP_T1441741786_H
-#ifndef XMLNODETYPE_T1672767151_H
-#define XMLNODETYPE_T1672767151_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.XmlNodeType
-struct  XmlNodeType_t1672767151 
-{
-public:
-	// System.Int32 System.Xml.XmlNodeType::value__
-	int32_t ___value___2;
-
-public:
-	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(XmlNodeType_t1672767151, ___value___2)); }
-	inline int32_t get_value___2() const { return ___value___2; }
-	inline int32_t* get_address_of_value___2() { return &___value___2; }
-	inline void set_value___2(int32_t value)
-	{
-		___value___2 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // XMLNODETYPE_T1672767151_H
-#ifndef PLUSNODE_T298745815_H
-#define PLUSNODE_T298745815_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.PlusNode
-struct  PlusNode_t298745815  : public InteriorNode_t2330896169
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // PLUSNODE_T298745815_H
-#ifndef STARNODE_T3054257770_H
-#define STARNODE_T3054257770_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.StarNode
-struct  StarNode_t3054257770  : public InteriorNode_t2330896169
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // STARNODE_T3054257770_H
-#ifndef QMARKNODE_T2041675929_H
-#define QMARKNODE_T2041675929_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.QmarkNode
-struct  QmarkNode_t2041675929  : public InteriorNode_t2330896169
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // QMARKNODE_T2041675929_H
-#ifndef REGEXOPTIONS_T92845595_H
-#define REGEXOPTIONS_T92845595_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Text.RegularExpressions.RegexOptions
-struct  RegexOptions_t92845595 
-{
-public:
-	// System.Int32 System.Text.RegularExpressions.RegexOptions::value__
-	int32_t ___value___2;
-
-public:
-	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(RegexOptions_t92845595, ___value___2)); }
-	inline int32_t get_value___2() const { return ___value___2; }
-	inline int32_t* get_address_of_value___2() { return &___value___2; }
-	inline void set_value___2(int32_t value)
-	{
-		___value___2 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // REGEXOPTIONS_T92845595_H
-#ifndef DURATIONTYPE_T3437374716_H
-#define DURATIONTYPE_T3437374716_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.XsdDuration/DurationType
-struct  DurationType_t3437374716 
-{
-public:
-	// System.Int32 System.Xml.Schema.XsdDuration/DurationType::value__
-	int32_t ___value___2;
-
-public:
-	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(DurationType_t3437374716, ___value___2)); }
-	inline int32_t get_value___2() const { return ___value___2; }
-	inline int32_t* get_address_of_value___2() { return &___value___2; }
-	inline void set_value___2(int32_t value)
-	{
-		___value___2 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // DURATIONTYPE_T3437374716_H
-#ifndef SEQUENCENODE_T3837141573_H
-#define SEQUENCENODE_T3837141573_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.SequenceNode
-struct  SequenceNode_t3837141573  : public InteriorNode_t2330896169
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // SEQUENCENODE_T3837141573_H
-#ifndef XMLPROCESSINGINSTRUCTION_T425688976_H
-#define XMLPROCESSINGINSTRUCTION_T425688976_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.XmlProcessingInstruction
-struct  XmlProcessingInstruction_t425688976  : public XmlLinkedNode_t1437094927
-{
-public:
-	// System.String System.Xml.XmlProcessingInstruction::target
-	String_t* ___target_2;
-	// System.String System.Xml.XmlProcessingInstruction::data
-	String_t* ___data_3;
-
-public:
-	inline static int32_t get_offset_of_target_2() { return static_cast<int32_t>(offsetof(XmlProcessingInstruction_t425688976, ___target_2)); }
-	inline String_t* get_target_2() const { return ___target_2; }
-	inline String_t** get_address_of_target_2() { return &___target_2; }
-	inline void set_target_2(String_t* value)
-	{
-		___target_2 = value;
-		Il2CppCodeGenWriteBarrier((&___target_2), value);
-	}
-
-	inline static int32_t get_offset_of_data_3() { return static_cast<int32_t>(offsetof(XmlProcessingInstruction_t425688976, ___data_3)); }
-	inline String_t* get_data_3() const { return ___data_3; }
-	inline String_t** get_address_of_data_3() { return &___data_3; }
-	inline void set_data_3(String_t* value)
-	{
-		___data_3 = value;
-		Il2CppCodeGenWriteBarrier((&___data_3), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // XMLPROCESSINGINSTRUCTION_T425688976_H
-#ifndef XMLEXCEPTION_T1761730631_H
-#define XMLEXCEPTION_T1761730631_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.XmlException
-struct  XmlException_t1761730631  : public SystemException_t176217640
-{
-public:
-	// System.String System.Xml.XmlException::res
-	String_t* ___res_16;
-	// System.String[] System.Xml.XmlException::args
-	StringU5BU5D_t1281789340* ___args_17;
-	// System.Int32 System.Xml.XmlException::lineNumber
-	int32_t ___lineNumber_18;
-	// System.Int32 System.Xml.XmlException::linePosition
-	int32_t ___linePosition_19;
-	// System.String System.Xml.XmlException::sourceUri
-	String_t* ___sourceUri_20;
-	// System.String System.Xml.XmlException::message
-	String_t* ___message_21;
-
-public:
-	inline static int32_t get_offset_of_res_16() { return static_cast<int32_t>(offsetof(XmlException_t1761730631, ___res_16)); }
-	inline String_t* get_res_16() const { return ___res_16; }
-	inline String_t** get_address_of_res_16() { return &___res_16; }
-	inline void set_res_16(String_t* value)
-	{
-		___res_16 = value;
-		Il2CppCodeGenWriteBarrier((&___res_16), value);
-	}
-
-	inline static int32_t get_offset_of_args_17() { return static_cast<int32_t>(offsetof(XmlException_t1761730631, ___args_17)); }
-	inline StringU5BU5D_t1281789340* get_args_17() const { return ___args_17; }
-	inline StringU5BU5D_t1281789340** get_address_of_args_17() { return &___args_17; }
-	inline void set_args_17(StringU5BU5D_t1281789340* value)
-	{
-		___args_17 = value;
-		Il2CppCodeGenWriteBarrier((&___args_17), value);
-	}
-
-	inline static int32_t get_offset_of_lineNumber_18() { return static_cast<int32_t>(offsetof(XmlException_t1761730631, ___lineNumber_18)); }
-	inline int32_t get_lineNumber_18() const { return ___lineNumber_18; }
-	inline int32_t* get_address_of_lineNumber_18() { return &___lineNumber_18; }
-	inline void set_lineNumber_18(int32_t value)
-	{
-		___lineNumber_18 = value;
-	}
-
-	inline static int32_t get_offset_of_linePosition_19() { return static_cast<int32_t>(offsetof(XmlException_t1761730631, ___linePosition_19)); }
-	inline int32_t get_linePosition_19() const { return ___linePosition_19; }
-	inline int32_t* get_address_of_linePosition_19() { return &___linePosition_19; }
-	inline void set_linePosition_19(int32_t value)
-	{
-		___linePosition_19 = value;
-	}
-
-	inline static int32_t get_offset_of_sourceUri_20() { return static_cast<int32_t>(offsetof(XmlException_t1761730631, ___sourceUri_20)); }
-	inline String_t* get_sourceUri_20() const { return ___sourceUri_20; }
-	inline String_t** get_address_of_sourceUri_20() { return &___sourceUri_20; }
-	inline void set_sourceUri_20(String_t* value)
-	{
-		___sourceUri_20 = value;
-		Il2CppCodeGenWriteBarrier((&___sourceUri_20), value);
-	}
-
-	inline static int32_t get_offset_of_message_21() { return static_cast<int32_t>(offsetof(XmlException_t1761730631, ___message_21)); }
-	inline String_t* get_message_21() const { return ___message_21; }
-	inline String_t** get_address_of_message_21() { return &___message_21; }
-	inline void set_message_21(String_t* value)
-	{
-		___message_21 = value;
-		Il2CppCodeGenWriteBarrier((&___message_21), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // XMLEXCEPTION_T1761730631_H
-#ifndef CHOICENODE_T2375417343_H
-#define CHOICENODE_T2375417343_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.ChoiceNode
-struct  ChoiceNode_t2375417343  : public InteriorNode_t2330896169
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // CHOICENODE_T2375417343_H
-#ifndef RESERVE_T3586464976_H
-#define RESERVE_T3586464976_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.SchemaAttDef/Reserve
-struct  Reserve_t3586464976 
-{
-public:
-	// System.Int32 System.Xml.Schema.SchemaAttDef/Reserve::value__
-	int32_t ___value___2;
-
-public:
-	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(Reserve_t3586464976, ___value___2)); }
-	inline int32_t get_value___2() const { return ___value___2; }
-	inline int32_t* get_address_of_value___2() { return &___value___2; }
-	inline void set_value___2(int32_t value)
-	{
-		___value___2 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // RESERVE_T3586464976_H
+#endif // DOUBLE_T594665363_H
 #ifndef ARGUMENTEXCEPTION_T132251570_H
 #define ARGUMENTEXCEPTION_T132251570_H
 #ifdef __clang__
@@ -12920,6 +12056,75 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // ARGUMENTEXCEPTION_T132251570_H
+#ifndef XMLNAMEDNODEMAP_T2821286253_H
+#define XMLNAMEDNODEMAP_T2821286253_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.XmlNamedNodeMap
+struct  XmlNamedNodeMap_t2821286253  : public RuntimeObject
+{
+public:
+	// System.Xml.XmlNode System.Xml.XmlNamedNodeMap::parent
+	XmlNode_t3767805227 * ___parent_0;
+	// System.Xml.XmlNamedNodeMap/SmallXmlNodeList System.Xml.XmlNamedNodeMap::nodes
+	SmallXmlNodeList_t242297918  ___nodes_1;
+
+public:
+	inline static int32_t get_offset_of_parent_0() { return static_cast<int32_t>(offsetof(XmlNamedNodeMap_t2821286253, ___parent_0)); }
+	inline XmlNode_t3767805227 * get_parent_0() const { return ___parent_0; }
+	inline XmlNode_t3767805227 ** get_address_of_parent_0() { return &___parent_0; }
+	inline void set_parent_0(XmlNode_t3767805227 * value)
+	{
+		___parent_0 = value;
+		Il2CppCodeGenWriteBarrier((&___parent_0), value);
+	}
+
+	inline static int32_t get_offset_of_nodes_1() { return static_cast<int32_t>(offsetof(XmlNamedNodeMap_t2821286253, ___nodes_1)); }
+	inline SmallXmlNodeList_t242297918  get_nodes_1() const { return ___nodes_1; }
+	inline SmallXmlNodeList_t242297918 * get_address_of_nodes_1() { return &___nodes_1; }
+	inline void set_nodes_1(SmallXmlNodeList_t242297918  value)
+	{
+		___nodes_1 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // XMLNAMEDNODEMAP_T2821286253_H
+#ifndef RESERVE_T3586464976_H
+#define RESERVE_T3586464976_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.SchemaAttDef/Reserve
+struct  Reserve_t3586464976 
+{
+public:
+	// System.Int32 System.Xml.Schema.SchemaAttDef/Reserve::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(Reserve_t3586464976, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // RESERVE_T3586464976_H
 #ifndef DATETIMEKIND_T3468814247_H
 #define DATETIMEKIND_T3468814247_H
 #ifdef __clang__
@@ -13237,26 +12442,6 @@ struct XsdDateTime_t3560162142_marshaled_com
 	uint32_t ___extra_1;
 };
 #endif // XSDDATETIME_T3560162142_H
-#ifndef FORMATEXCEPTION_T154580423_H
-#define FORMATEXCEPTION_T154580423_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.FormatException
-struct  FormatException_t154580423  : public SystemException_t176217640
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // FORMATEXCEPTION_T154580423_H
 #ifndef XMLSCHEMAATTRIBUTEGROUP_T246430545_H
 #define XMLSCHEMAATTRIBUTEGROUP_T246430545_H
 #ifdef __clang__
@@ -13363,6 +12548,1316 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // XMLSCHEMAATTRIBUTEGROUP_T246430545_H
+#ifndef REGEXOPTIONS_T92845595_H
+#define REGEXOPTIONS_T92845595_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Text.RegularExpressions.RegexOptions
+struct  RegexOptions_t92845595 
+{
+public:
+	// System.Int32 System.Text.RegularExpressions.RegexOptions::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(RegexOptions_t92845595, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // REGEXOPTIONS_T92845595_H
+#ifndef RUNTIMETYPEHANDLE_T3027515415_H
+#define RUNTIMETYPEHANDLE_T3027515415_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.RuntimeTypeHandle
+struct  RuntimeTypeHandle_t3027515415 
+{
+public:
+	// System.IntPtr System.RuntimeTypeHandle::value
+	intptr_t ___value_0;
+
+public:
+	inline static int32_t get_offset_of_value_0() { return static_cast<int32_t>(offsetof(RuntimeTypeHandle_t3027515415, ___value_0)); }
+	inline intptr_t get_value_0() const { return ___value_0; }
+	inline intptr_t* get_address_of_value_0() { return &___value_0; }
+	inline void set_value_0(intptr_t value)
+	{
+		___value_0 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // RUNTIMETYPEHANDLE_T3027515415_H
+#ifndef FACETTYPE_T2273005353_H
+#define FACETTYPE_T2273005353_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.FacetType
+struct  FacetType_t2273005353 
+{
+public:
+	// System.Int32 System.Xml.Schema.FacetType::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(FacetType_t2273005353, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // FACETTYPE_T2273005353_H
+#ifndef FORMATEXCEPTION_T154580423_H
+#define FORMATEXCEPTION_T154580423_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.FormatException
+struct  FormatException_t154580423  : public SystemException_t176217640
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // FORMATEXCEPTION_T154580423_H
+#ifndef XMLSCHEMAIDENTITYCONSTRAINT_T297318432_H
+#define XMLSCHEMAIDENTITYCONSTRAINT_T297318432_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.XmlSchemaIdentityConstraint
+struct  XmlSchemaIdentityConstraint_t297318432  : public XmlSchemaAnnotated_t2603549639
+{
+public:
+	// System.String System.Xml.Schema.XmlSchemaIdentityConstraint::name
+	String_t* ___name_9;
+	// System.Xml.Schema.XmlSchemaXPath System.Xml.Schema.XmlSchemaIdentityConstraint::selector
+	XmlSchemaXPath_t3156455507 * ___selector_10;
+	// System.Xml.Schema.XmlSchemaObjectCollection System.Xml.Schema.XmlSchemaIdentityConstraint::fields
+	XmlSchemaObjectCollection_t1064819932 * ___fields_11;
+	// System.Xml.XmlQualifiedName System.Xml.Schema.XmlSchemaIdentityConstraint::qualifiedName
+	XmlQualifiedName_t2760654312 * ___qualifiedName_12;
+	// System.Xml.Schema.CompiledIdentityConstraint System.Xml.Schema.XmlSchemaIdentityConstraint::compiledConstraint
+	CompiledIdentityConstraint_t1335094965 * ___compiledConstraint_13;
+
+public:
+	inline static int32_t get_offset_of_name_9() { return static_cast<int32_t>(offsetof(XmlSchemaIdentityConstraint_t297318432, ___name_9)); }
+	inline String_t* get_name_9() const { return ___name_9; }
+	inline String_t** get_address_of_name_9() { return &___name_9; }
+	inline void set_name_9(String_t* value)
+	{
+		___name_9 = value;
+		Il2CppCodeGenWriteBarrier((&___name_9), value);
+	}
+
+	inline static int32_t get_offset_of_selector_10() { return static_cast<int32_t>(offsetof(XmlSchemaIdentityConstraint_t297318432, ___selector_10)); }
+	inline XmlSchemaXPath_t3156455507 * get_selector_10() const { return ___selector_10; }
+	inline XmlSchemaXPath_t3156455507 ** get_address_of_selector_10() { return &___selector_10; }
+	inline void set_selector_10(XmlSchemaXPath_t3156455507 * value)
+	{
+		___selector_10 = value;
+		Il2CppCodeGenWriteBarrier((&___selector_10), value);
+	}
+
+	inline static int32_t get_offset_of_fields_11() { return static_cast<int32_t>(offsetof(XmlSchemaIdentityConstraint_t297318432, ___fields_11)); }
+	inline XmlSchemaObjectCollection_t1064819932 * get_fields_11() const { return ___fields_11; }
+	inline XmlSchemaObjectCollection_t1064819932 ** get_address_of_fields_11() { return &___fields_11; }
+	inline void set_fields_11(XmlSchemaObjectCollection_t1064819932 * value)
+	{
+		___fields_11 = value;
+		Il2CppCodeGenWriteBarrier((&___fields_11), value);
+	}
+
+	inline static int32_t get_offset_of_qualifiedName_12() { return static_cast<int32_t>(offsetof(XmlSchemaIdentityConstraint_t297318432, ___qualifiedName_12)); }
+	inline XmlQualifiedName_t2760654312 * get_qualifiedName_12() const { return ___qualifiedName_12; }
+	inline XmlQualifiedName_t2760654312 ** get_address_of_qualifiedName_12() { return &___qualifiedName_12; }
+	inline void set_qualifiedName_12(XmlQualifiedName_t2760654312 * value)
+	{
+		___qualifiedName_12 = value;
+		Il2CppCodeGenWriteBarrier((&___qualifiedName_12), value);
+	}
+
+	inline static int32_t get_offset_of_compiledConstraint_13() { return static_cast<int32_t>(offsetof(XmlSchemaIdentityConstraint_t297318432, ___compiledConstraint_13)); }
+	inline CompiledIdentityConstraint_t1335094965 * get_compiledConstraint_13() const { return ___compiledConstraint_13; }
+	inline CompiledIdentityConstraint_t1335094965 ** get_address_of_compiledConstraint_13() { return &___compiledConstraint_13; }
+	inline void set_compiledConstraint_13(CompiledIdentityConstraint_t1335094965 * value)
+	{
+		___compiledConstraint_13 = value;
+		Il2CppCodeGenWriteBarrier((&___compiledConstraint_13), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // XMLSCHEMAIDENTITYCONSTRAINT_T297318432_H
+#ifndef XMLSCHEMAFORM_T4264307319_H
+#define XMLSCHEMAFORM_T4264307319_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.XmlSchemaForm
+struct  XmlSchemaForm_t4264307319 
+{
+public:
+	// System.Int32 System.Xml.Schema.XmlSchemaForm::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(XmlSchemaForm_t4264307319, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // XMLSCHEMAFORM_T4264307319_H
+#ifndef XMLNODETYPE_T1672767151_H
+#define XMLNODETYPE_T1672767151_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.XmlNodeType
+struct  XmlNodeType_t1672767151 
+{
+public:
+	// System.Int32 System.Xml.XmlNodeType::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(XmlNodeType_t1672767151, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // XMLNODETYPE_T1672767151_H
+#ifndef SCHEMATYPE_T3738787686_H
+#define SCHEMATYPE_T3738787686_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.SchemaType
+struct  SchemaType_t3738787686 
+{
+public:
+	// System.Int32 System.Xml.Schema.SchemaType::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(SchemaType_t3738787686, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // SCHEMATYPE_T3738787686_H
+#ifndef XMLSEVERITYTYPE_T1894651412_H
+#define XMLSEVERITYTYPE_T1894651412_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.XmlSeverityType
+struct  XmlSeverityType_t1894651412 
+{
+public:
+	// System.Int32 System.Xml.Schema.XmlSeverityType::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(XmlSeverityType_t1894651412, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // XMLSEVERITYTYPE_T1894651412_H
+#ifndef XMLSCHEMASIMPLETYPECONTENT_T599285223_H
+#define XMLSCHEMASIMPLETYPECONTENT_T599285223_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.XmlSchemaSimpleTypeContent
+struct  XmlSchemaSimpleTypeContent_t599285223  : public XmlSchemaAnnotated_t2603549639
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // XMLSCHEMASIMPLETYPECONTENT_T599285223_H
+#ifndef XMLCHARACTERDATA_T1167807131_H
+#define XMLCHARACTERDATA_T1167807131_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.XmlCharacterData
+struct  XmlCharacterData_t1167807131  : public XmlLinkedNode_t1437094927
+{
+public:
+	// System.String System.Xml.XmlCharacterData::data
+	String_t* ___data_2;
+
+public:
+	inline static int32_t get_offset_of_data_2() { return static_cast<int32_t>(offsetof(XmlCharacterData_t1167807131, ___data_2)); }
+	inline String_t* get_data_2() const { return ___data_2; }
+	inline String_t** get_address_of_data_2() { return &___data_2; }
+	inline void set_data_2(String_t* value)
+	{
+		___data_2 = value;
+		Il2CppCodeGenWriteBarrier((&___data_2), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // XMLCHARACTERDATA_T1167807131_H
+#ifndef XMLSCHEMASUBSTITUTIONGROUPV1COMPAT_T651033058_H
+#define XMLSCHEMASUBSTITUTIONGROUPV1COMPAT_T651033058_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.XmlSchemaSubstitutionGroupV1Compat
+struct  XmlSchemaSubstitutionGroupV1Compat_t651033058  : public XmlSchemaSubstitutionGroup_t2412016498
+{
+public:
+	// System.Xml.Schema.XmlSchemaChoice System.Xml.Schema.XmlSchemaSubstitutionGroupV1Compat::choice
+	XmlSchemaChoice_t959520675 * ___choice_8;
+
+public:
+	inline static int32_t get_offset_of_choice_8() { return static_cast<int32_t>(offsetof(XmlSchemaSubstitutionGroupV1Compat_t651033058, ___choice_8)); }
+	inline XmlSchemaChoice_t959520675 * get_choice_8() const { return ___choice_8; }
+	inline XmlSchemaChoice_t959520675 ** get_address_of_choice_8() { return &___choice_8; }
+	inline void set_choice_8(XmlSchemaChoice_t959520675 * value)
+	{
+		___choice_8 = value;
+		Il2CppCodeGenWriteBarrier((&___choice_8), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // XMLSCHEMASUBSTITUTIONGROUPV1COMPAT_T651033058_H
+#ifndef XMLSCHEMAGROUP_T1441741786_H
+#define XMLSCHEMAGROUP_T1441741786_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.XmlSchemaGroup
+struct  XmlSchemaGroup_t1441741786  : public XmlSchemaAnnotated_t2603549639
+{
+public:
+	// System.String System.Xml.Schema.XmlSchemaGroup::name
+	String_t* ___name_9;
+	// System.Xml.Schema.XmlSchemaGroupBase System.Xml.Schema.XmlSchemaGroup::particle
+	XmlSchemaGroupBase_t3631079376 * ___particle_10;
+	// System.Xml.Schema.XmlSchemaParticle System.Xml.Schema.XmlSchemaGroup::canonicalParticle
+	XmlSchemaParticle_t3828501457 * ___canonicalParticle_11;
+	// System.Xml.XmlQualifiedName System.Xml.Schema.XmlSchemaGroup::qname
+	XmlQualifiedName_t2760654312 * ___qname_12;
+	// System.Xml.Schema.XmlSchemaGroup System.Xml.Schema.XmlSchemaGroup::redefined
+	XmlSchemaGroup_t1441741786 * ___redefined_13;
+	// System.Int32 System.Xml.Schema.XmlSchemaGroup::selfReferenceCount
+	int32_t ___selfReferenceCount_14;
+
+public:
+	inline static int32_t get_offset_of_name_9() { return static_cast<int32_t>(offsetof(XmlSchemaGroup_t1441741786, ___name_9)); }
+	inline String_t* get_name_9() const { return ___name_9; }
+	inline String_t** get_address_of_name_9() { return &___name_9; }
+	inline void set_name_9(String_t* value)
+	{
+		___name_9 = value;
+		Il2CppCodeGenWriteBarrier((&___name_9), value);
+	}
+
+	inline static int32_t get_offset_of_particle_10() { return static_cast<int32_t>(offsetof(XmlSchemaGroup_t1441741786, ___particle_10)); }
+	inline XmlSchemaGroupBase_t3631079376 * get_particle_10() const { return ___particle_10; }
+	inline XmlSchemaGroupBase_t3631079376 ** get_address_of_particle_10() { return &___particle_10; }
+	inline void set_particle_10(XmlSchemaGroupBase_t3631079376 * value)
+	{
+		___particle_10 = value;
+		Il2CppCodeGenWriteBarrier((&___particle_10), value);
+	}
+
+	inline static int32_t get_offset_of_canonicalParticle_11() { return static_cast<int32_t>(offsetof(XmlSchemaGroup_t1441741786, ___canonicalParticle_11)); }
+	inline XmlSchemaParticle_t3828501457 * get_canonicalParticle_11() const { return ___canonicalParticle_11; }
+	inline XmlSchemaParticle_t3828501457 ** get_address_of_canonicalParticle_11() { return &___canonicalParticle_11; }
+	inline void set_canonicalParticle_11(XmlSchemaParticle_t3828501457 * value)
+	{
+		___canonicalParticle_11 = value;
+		Il2CppCodeGenWriteBarrier((&___canonicalParticle_11), value);
+	}
+
+	inline static int32_t get_offset_of_qname_12() { return static_cast<int32_t>(offsetof(XmlSchemaGroup_t1441741786, ___qname_12)); }
+	inline XmlQualifiedName_t2760654312 * get_qname_12() const { return ___qname_12; }
+	inline XmlQualifiedName_t2760654312 ** get_address_of_qname_12() { return &___qname_12; }
+	inline void set_qname_12(XmlQualifiedName_t2760654312 * value)
+	{
+		___qname_12 = value;
+		Il2CppCodeGenWriteBarrier((&___qname_12), value);
+	}
+
+	inline static int32_t get_offset_of_redefined_13() { return static_cast<int32_t>(offsetof(XmlSchemaGroup_t1441741786, ___redefined_13)); }
+	inline XmlSchemaGroup_t1441741786 * get_redefined_13() const { return ___redefined_13; }
+	inline XmlSchemaGroup_t1441741786 ** get_address_of_redefined_13() { return &___redefined_13; }
+	inline void set_redefined_13(XmlSchemaGroup_t1441741786 * value)
+	{
+		___redefined_13 = value;
+		Il2CppCodeGenWriteBarrier((&___redefined_13), value);
+	}
+
+	inline static int32_t get_offset_of_selfReferenceCount_14() { return static_cast<int32_t>(offsetof(XmlSchemaGroup_t1441741786, ___selfReferenceCount_14)); }
+	inline int32_t get_selfReferenceCount_14() const { return ___selfReferenceCount_14; }
+	inline int32_t* get_address_of_selfReferenceCount_14() { return &___selfReferenceCount_14; }
+	inline void set_selfReferenceCount_14(int32_t value)
+	{
+		___selfReferenceCount_14 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // XMLSCHEMAGROUP_T1441741786_H
+#ifndef XMLSCHEMADATATYPEVARIETY_T1737164534_H
+#define XMLSCHEMADATATYPEVARIETY_T1737164534_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.XmlSchemaDatatypeVariety
+struct  XmlSchemaDatatypeVariety_t1737164534 
+{
+public:
+	// System.Int32 System.Xml.Schema.XmlSchemaDatatypeVariety::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(XmlSchemaDatatypeVariety_t1737164534, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // XMLSCHEMADATATYPEVARIETY_T1737164534_H
+#ifndef TIMESPAN_T881159249_H
+#define TIMESPAN_T881159249_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.TimeSpan
+struct  TimeSpan_t881159249 
+{
+public:
+	// System.Int64 System.TimeSpan::_ticks
+	int64_t ____ticks_3;
+
+public:
+	inline static int32_t get_offset_of__ticks_3() { return static_cast<int32_t>(offsetof(TimeSpan_t881159249, ____ticks_3)); }
+	inline int64_t get__ticks_3() const { return ____ticks_3; }
+	inline int64_t* get_address_of__ticks_3() { return &____ticks_3; }
+	inline void set__ticks_3(int64_t value)
+	{
+		____ticks_3 = value;
+	}
+};
+
+struct TimeSpan_t881159249_StaticFields
+{
+public:
+	// System.TimeSpan System.TimeSpan::Zero
+	TimeSpan_t881159249  ___Zero_0;
+	// System.TimeSpan System.TimeSpan::MaxValue
+	TimeSpan_t881159249  ___MaxValue_1;
+	// System.TimeSpan System.TimeSpan::MinValue
+	TimeSpan_t881159249  ___MinValue_2;
+	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.TimeSpan::_legacyConfigChecked
+	bool ____legacyConfigChecked_4;
+	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.TimeSpan::_legacyMode
+	bool ____legacyMode_5;
+
+public:
+	inline static int32_t get_offset_of_Zero_0() { return static_cast<int32_t>(offsetof(TimeSpan_t881159249_StaticFields, ___Zero_0)); }
+	inline TimeSpan_t881159249  get_Zero_0() const { return ___Zero_0; }
+	inline TimeSpan_t881159249 * get_address_of_Zero_0() { return &___Zero_0; }
+	inline void set_Zero_0(TimeSpan_t881159249  value)
+	{
+		___Zero_0 = value;
+	}
+
+	inline static int32_t get_offset_of_MaxValue_1() { return static_cast<int32_t>(offsetof(TimeSpan_t881159249_StaticFields, ___MaxValue_1)); }
+	inline TimeSpan_t881159249  get_MaxValue_1() const { return ___MaxValue_1; }
+	inline TimeSpan_t881159249 * get_address_of_MaxValue_1() { return &___MaxValue_1; }
+	inline void set_MaxValue_1(TimeSpan_t881159249  value)
+	{
+		___MaxValue_1 = value;
+	}
+
+	inline static int32_t get_offset_of_MinValue_2() { return static_cast<int32_t>(offsetof(TimeSpan_t881159249_StaticFields, ___MinValue_2)); }
+	inline TimeSpan_t881159249  get_MinValue_2() const { return ___MinValue_2; }
+	inline TimeSpan_t881159249 * get_address_of_MinValue_2() { return &___MinValue_2; }
+	inline void set_MinValue_2(TimeSpan_t881159249  value)
+	{
+		___MinValue_2 = value;
+	}
+
+	inline static int32_t get_offset_of__legacyConfigChecked_4() { return static_cast<int32_t>(offsetof(TimeSpan_t881159249_StaticFields, ____legacyConfigChecked_4)); }
+	inline bool get__legacyConfigChecked_4() const { return ____legacyConfigChecked_4; }
+	inline bool* get_address_of__legacyConfigChecked_4() { return &____legacyConfigChecked_4; }
+	inline void set__legacyConfigChecked_4(bool value)
+	{
+		____legacyConfigChecked_4 = value;
+	}
+
+	inline static int32_t get_offset_of__legacyMode_5() { return static_cast<int32_t>(offsetof(TimeSpan_t881159249_StaticFields, ____legacyMode_5)); }
+	inline bool get__legacyMode_5() const { return ____legacyMode_5; }
+	inline bool* get_address_of__legacyMode_5() { return &____legacyMode_5; }
+	inline void set__legacyMode_5(bool value)
+	{
+		____legacyMode_5 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // TIMESPAN_T881159249_H
+#ifndef INVALIDOPERATIONEXCEPTION_T56020091_H
+#define INVALIDOPERATIONEXCEPTION_T56020091_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.InvalidOperationException
+struct  InvalidOperationException_t56020091  : public SystemException_t176217640
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // INVALIDOPERATIONEXCEPTION_T56020091_H
+#ifndef LISTTYPE_T2118133397_H
+#define LISTTYPE_T2118133397_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.NamespaceList/ListType
+struct  ListType_t2118133397 
+{
+public:
+	// System.Int32 System.Xml.Schema.NamespaceList/ListType::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(ListType_t2118133397, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // LISTTYPE_T2118133397_H
+#ifndef LEAFRANGENODE_T169161297_H
+#define LEAFRANGENODE_T169161297_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.LeafRangeNode
+struct  LeafRangeNode_t169161297  : public LeafNode_t3044180503
+{
+public:
+	// System.Decimal System.Xml.Schema.LeafRangeNode::min
+	Decimal_t2948259380  ___min_1;
+	// System.Decimal System.Xml.Schema.LeafRangeNode::max
+	Decimal_t2948259380  ___max_2;
+	// System.Xml.Schema.BitSet System.Xml.Schema.LeafRangeNode::nextIteration
+	BitSet_t1154229585 * ___nextIteration_3;
+
+public:
+	inline static int32_t get_offset_of_min_1() { return static_cast<int32_t>(offsetof(LeafRangeNode_t169161297, ___min_1)); }
+	inline Decimal_t2948259380  get_min_1() const { return ___min_1; }
+	inline Decimal_t2948259380 * get_address_of_min_1() { return &___min_1; }
+	inline void set_min_1(Decimal_t2948259380  value)
+	{
+		___min_1 = value;
+	}
+
+	inline static int32_t get_offset_of_max_2() { return static_cast<int32_t>(offsetof(LeafRangeNode_t169161297, ___max_2)); }
+	inline Decimal_t2948259380  get_max_2() const { return ___max_2; }
+	inline Decimal_t2948259380 * get_address_of_max_2() { return &___max_2; }
+	inline void set_max_2(Decimal_t2948259380  value)
+	{
+		___max_2 = value;
+	}
+
+	inline static int32_t get_offset_of_nextIteration_3() { return static_cast<int32_t>(offsetof(LeafRangeNode_t169161297, ___nextIteration_3)); }
+	inline BitSet_t1154229585 * get_nextIteration_3() const { return ___nextIteration_3; }
+	inline BitSet_t1154229585 ** get_address_of_nextIteration_3() { return &___nextIteration_3; }
+	inline void set_nextIteration_3(BitSet_t1154229585 * value)
+	{
+		___nextIteration_3 = value;
+		Il2CppCodeGenWriteBarrier((&___nextIteration_3), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // LEAFRANGENODE_T169161297_H
+#ifndef XMLELEMENT_T561603118_H
+#define XMLELEMENT_T561603118_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.XmlElement
+struct  XmlElement_t561603118  : public XmlLinkedNode_t1437094927
+{
+public:
+	// System.Xml.XmlName System.Xml.XmlElement::name
+	XmlName_t4150142242 * ___name_2;
+	// System.Xml.XmlAttributeCollection System.Xml.XmlElement::attributes
+	XmlAttributeCollection_t2316283784 * ___attributes_3;
+	// System.Xml.XmlLinkedNode System.Xml.XmlElement::lastChild
+	XmlLinkedNode_t1437094927 * ___lastChild_4;
+
+public:
+	inline static int32_t get_offset_of_name_2() { return static_cast<int32_t>(offsetof(XmlElement_t561603118, ___name_2)); }
+	inline XmlName_t4150142242 * get_name_2() const { return ___name_2; }
+	inline XmlName_t4150142242 ** get_address_of_name_2() { return &___name_2; }
+	inline void set_name_2(XmlName_t4150142242 * value)
+	{
+		___name_2 = value;
+		Il2CppCodeGenWriteBarrier((&___name_2), value);
+	}
+
+	inline static int32_t get_offset_of_attributes_3() { return static_cast<int32_t>(offsetof(XmlElement_t561603118, ___attributes_3)); }
+	inline XmlAttributeCollection_t2316283784 * get_attributes_3() const { return ___attributes_3; }
+	inline XmlAttributeCollection_t2316283784 ** get_address_of_attributes_3() { return &___attributes_3; }
+	inline void set_attributes_3(XmlAttributeCollection_t2316283784 * value)
+	{
+		___attributes_3 = value;
+		Il2CppCodeGenWriteBarrier((&___attributes_3), value);
+	}
+
+	inline static int32_t get_offset_of_lastChild_4() { return static_cast<int32_t>(offsetof(XmlElement_t561603118, ___lastChild_4)); }
+	inline XmlLinkedNode_t1437094927 * get_lastChild_4() const { return ___lastChild_4; }
+	inline XmlLinkedNode_t1437094927 ** get_address_of_lastChild_4() { return &___lastChild_4; }
+	inline void set_lastChild_4(XmlLinkedNode_t1437094927 * value)
+	{
+		___lastChild_4 = value;
+		Il2CppCodeGenWriteBarrier((&___lastChild_4), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // XMLELEMENT_T561603118_H
+#ifndef URIKIND_T3816567336_H
+#define URIKIND_T3816567336_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.UriKind
+struct  UriKind_t3816567336 
+{
+public:
+	// System.Int32 System.UriKind::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(UriKind_t3816567336, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // URIKIND_T3816567336_H
+#ifndef NUMERIC10FACETSCHECKER_T3323854505_H
+#define NUMERIC10FACETSCHECKER_T3323854505_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.Numeric10FacetsChecker
+struct  Numeric10FacetsChecker_t3323854505  : public FacetsChecker_t3316496195
+{
+public:
+	// System.Decimal System.Xml.Schema.Numeric10FacetsChecker::maxValue
+	Decimal_t2948259380  ___maxValue_1;
+	// System.Decimal System.Xml.Schema.Numeric10FacetsChecker::minValue
+	Decimal_t2948259380  ___minValue_2;
+
+public:
+	inline static int32_t get_offset_of_maxValue_1() { return static_cast<int32_t>(offsetof(Numeric10FacetsChecker_t3323854505, ___maxValue_1)); }
+	inline Decimal_t2948259380  get_maxValue_1() const { return ___maxValue_1; }
+	inline Decimal_t2948259380 * get_address_of_maxValue_1() { return &___maxValue_1; }
+	inline void set_maxValue_1(Decimal_t2948259380  value)
+	{
+		___maxValue_1 = value;
+	}
+
+	inline static int32_t get_offset_of_minValue_2() { return static_cast<int32_t>(offsetof(Numeric10FacetsChecker_t3323854505, ___minValue_2)); }
+	inline Decimal_t2948259380  get_minValue_2() const { return ___minValue_2; }
+	inline Decimal_t2948259380 * get_address_of_minValue_2() { return &___minValue_2; }
+	inline void set_minValue_2(Decimal_t2948259380  value)
+	{
+		___minValue_2 = value;
+	}
+};
+
+struct Numeric10FacetsChecker_t3323854505_StaticFields
+{
+public:
+	// System.Char[] System.Xml.Schema.Numeric10FacetsChecker::signs
+	CharU5BU5D_t3528271667* ___signs_0;
+
+public:
+	inline static int32_t get_offset_of_signs_0() { return static_cast<int32_t>(offsetof(Numeric10FacetsChecker_t3323854505_StaticFields, ___signs_0)); }
+	inline CharU5BU5D_t3528271667* get_signs_0() const { return ___signs_0; }
+	inline CharU5BU5D_t3528271667** get_address_of_signs_0() { return &___signs_0; }
+	inline void set_signs_0(CharU5BU5D_t3528271667* value)
+	{
+		___signs_0 = value;
+		Il2CppCodeGenWriteBarrier((&___signs_0), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // NUMERIC10FACETSCHECKER_T3323854505_H
+#ifndef DELEGATE_T1188392813_H
+#define DELEGATE_T1188392813_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Delegate
+struct  Delegate_t1188392813  : public RuntimeObject
+{
+public:
+	// System.IntPtr System.Delegate::method_ptr
+	Il2CppMethodPointer ___method_ptr_0;
+	// System.IntPtr System.Delegate::invoke_impl
+	intptr_t ___invoke_impl_1;
+	// System.Object System.Delegate::m_target
+	RuntimeObject * ___m_target_2;
+	// System.IntPtr System.Delegate::method
+	intptr_t ___method_3;
+	// System.IntPtr System.Delegate::delegate_trampoline
+	intptr_t ___delegate_trampoline_4;
+	// System.IntPtr System.Delegate::extra_arg
+	intptr_t ___extra_arg_5;
+	// System.IntPtr System.Delegate::method_code
+	intptr_t ___method_code_6;
+	// System.Reflection.MethodInfo System.Delegate::method_info
+	MethodInfo_t * ___method_info_7;
+	// System.Reflection.MethodInfo System.Delegate::original_method_info
+	MethodInfo_t * ___original_method_info_8;
+	// System.DelegateData System.Delegate::data
+	DelegateData_t1677132599 * ___data_9;
+	// System.Boolean System.Delegate::method_is_virtual
+	bool ___method_is_virtual_10;
+
+public:
+	inline static int32_t get_offset_of_method_ptr_0() { return static_cast<int32_t>(offsetof(Delegate_t1188392813, ___method_ptr_0)); }
+	inline Il2CppMethodPointer get_method_ptr_0() const { return ___method_ptr_0; }
+	inline Il2CppMethodPointer* get_address_of_method_ptr_0() { return &___method_ptr_0; }
+	inline void set_method_ptr_0(Il2CppMethodPointer value)
+	{
+		___method_ptr_0 = value;
+	}
+
+	inline static int32_t get_offset_of_invoke_impl_1() { return static_cast<int32_t>(offsetof(Delegate_t1188392813, ___invoke_impl_1)); }
+	inline intptr_t get_invoke_impl_1() const { return ___invoke_impl_1; }
+	inline intptr_t* get_address_of_invoke_impl_1() { return &___invoke_impl_1; }
+	inline void set_invoke_impl_1(intptr_t value)
+	{
+		___invoke_impl_1 = value;
+	}
+
+	inline static int32_t get_offset_of_m_target_2() { return static_cast<int32_t>(offsetof(Delegate_t1188392813, ___m_target_2)); }
+	inline RuntimeObject * get_m_target_2() const { return ___m_target_2; }
+	inline RuntimeObject ** get_address_of_m_target_2() { return &___m_target_2; }
+	inline void set_m_target_2(RuntimeObject * value)
+	{
+		___m_target_2 = value;
+		Il2CppCodeGenWriteBarrier((&___m_target_2), value);
+	}
+
+	inline static int32_t get_offset_of_method_3() { return static_cast<int32_t>(offsetof(Delegate_t1188392813, ___method_3)); }
+	inline intptr_t get_method_3() const { return ___method_3; }
+	inline intptr_t* get_address_of_method_3() { return &___method_3; }
+	inline void set_method_3(intptr_t value)
+	{
+		___method_3 = value;
+	}
+
+	inline static int32_t get_offset_of_delegate_trampoline_4() { return static_cast<int32_t>(offsetof(Delegate_t1188392813, ___delegate_trampoline_4)); }
+	inline intptr_t get_delegate_trampoline_4() const { return ___delegate_trampoline_4; }
+	inline intptr_t* get_address_of_delegate_trampoline_4() { return &___delegate_trampoline_4; }
+	inline void set_delegate_trampoline_4(intptr_t value)
+	{
+		___delegate_trampoline_4 = value;
+	}
+
+	inline static int32_t get_offset_of_extra_arg_5() { return static_cast<int32_t>(offsetof(Delegate_t1188392813, ___extra_arg_5)); }
+	inline intptr_t get_extra_arg_5() const { return ___extra_arg_5; }
+	inline intptr_t* get_address_of_extra_arg_5() { return &___extra_arg_5; }
+	inline void set_extra_arg_5(intptr_t value)
+	{
+		___extra_arg_5 = value;
+	}
+
+	inline static int32_t get_offset_of_method_code_6() { return static_cast<int32_t>(offsetof(Delegate_t1188392813, ___method_code_6)); }
+	inline intptr_t get_method_code_6() const { return ___method_code_6; }
+	inline intptr_t* get_address_of_method_code_6() { return &___method_code_6; }
+	inline void set_method_code_6(intptr_t value)
+	{
+		___method_code_6 = value;
+	}
+
+	inline static int32_t get_offset_of_method_info_7() { return static_cast<int32_t>(offsetof(Delegate_t1188392813, ___method_info_7)); }
+	inline MethodInfo_t * get_method_info_7() const { return ___method_info_7; }
+	inline MethodInfo_t ** get_address_of_method_info_7() { return &___method_info_7; }
+	inline void set_method_info_7(MethodInfo_t * value)
+	{
+		___method_info_7 = value;
+		Il2CppCodeGenWriteBarrier((&___method_info_7), value);
+	}
+
+	inline static int32_t get_offset_of_original_method_info_8() { return static_cast<int32_t>(offsetof(Delegate_t1188392813, ___original_method_info_8)); }
+	inline MethodInfo_t * get_original_method_info_8() const { return ___original_method_info_8; }
+	inline MethodInfo_t ** get_address_of_original_method_info_8() { return &___original_method_info_8; }
+	inline void set_original_method_info_8(MethodInfo_t * value)
+	{
+		___original_method_info_8 = value;
+		Il2CppCodeGenWriteBarrier((&___original_method_info_8), value);
+	}
+
+	inline static int32_t get_offset_of_data_9() { return static_cast<int32_t>(offsetof(Delegate_t1188392813, ___data_9)); }
+	inline DelegateData_t1677132599 * get_data_9() const { return ___data_9; }
+	inline DelegateData_t1677132599 ** get_address_of_data_9() { return &___data_9; }
+	inline void set_data_9(DelegateData_t1677132599 * value)
+	{
+		___data_9 = value;
+		Il2CppCodeGenWriteBarrier((&___data_9), value);
+	}
+
+	inline static int32_t get_offset_of_method_is_virtual_10() { return static_cast<int32_t>(offsetof(Delegate_t1188392813, ___method_is_virtual_10)); }
+	inline bool get_method_is_virtual_10() const { return ___method_is_virtual_10; }
+	inline bool* get_address_of_method_is_virtual_10() { return &___method_is_virtual_10; }
+	inline void set_method_is_virtual_10(bool value)
+	{
+		___method_is_virtual_10 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+// Native definition for P/Invoke marshalling of System.Delegate
+struct Delegate_t1188392813_marshaled_pinvoke
+{
+	intptr_t ___method_ptr_0;
+	intptr_t ___invoke_impl_1;
+	Il2CppIUnknown* ___m_target_2;
+	intptr_t ___method_3;
+	intptr_t ___delegate_trampoline_4;
+	intptr_t ___extra_arg_5;
+	intptr_t ___method_code_6;
+	MethodInfo_t * ___method_info_7;
+	MethodInfo_t * ___original_method_info_8;
+	DelegateData_t1677132599 * ___data_9;
+	int32_t ___method_is_virtual_10;
+};
+// Native definition for COM marshalling of System.Delegate
+struct Delegate_t1188392813_marshaled_com
+{
+	intptr_t ___method_ptr_0;
+	intptr_t ___invoke_impl_1;
+	Il2CppIUnknown* ___m_target_2;
+	intptr_t ___method_3;
+	intptr_t ___delegate_trampoline_4;
+	intptr_t ___extra_arg_5;
+	intptr_t ___method_code_6;
+	MethodInfo_t * ___method_info_7;
+	MethodInfo_t * ___original_method_info_8;
+	DelegateData_t1677132599 * ___data_9;
+	int32_t ___method_is_virtual_10;
+};
+#endif // DELEGATE_T1188392813_H
+#ifndef XMLTOKENIZEDTYPE_T3348692225_H
+#define XMLTOKENIZEDTYPE_T3348692225_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.XmlTokenizedType
+struct  XmlTokenizedType_t3348692225 
+{
+public:
+	// System.Int32 System.Xml.XmlTokenizedType::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(XmlTokenizedType_t3348692225, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // XMLTOKENIZEDTYPE_T3348692225_H
+#ifndef XMLSCHEMAEXCEPTION_T3511258692_H
+#define XMLSCHEMAEXCEPTION_T3511258692_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.XmlSchemaException
+struct  XmlSchemaException_t3511258692  : public SystemException_t176217640
+{
+public:
+	// System.String System.Xml.Schema.XmlSchemaException::res
+	String_t* ___res_16;
+	// System.String[] System.Xml.Schema.XmlSchemaException::args
+	StringU5BU5D_t1281789340* ___args_17;
+	// System.String System.Xml.Schema.XmlSchemaException::sourceUri
+	String_t* ___sourceUri_18;
+	// System.Int32 System.Xml.Schema.XmlSchemaException::lineNumber
+	int32_t ___lineNumber_19;
+	// System.Int32 System.Xml.Schema.XmlSchemaException::linePosition
+	int32_t ___linePosition_20;
+	// System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaException::sourceSchemaObject
+	XmlSchemaObject_t1315720168 * ___sourceSchemaObject_21;
+	// System.String System.Xml.Schema.XmlSchemaException::message
+	String_t* ___message_22;
+
+public:
+	inline static int32_t get_offset_of_res_16() { return static_cast<int32_t>(offsetof(XmlSchemaException_t3511258692, ___res_16)); }
+	inline String_t* get_res_16() const { return ___res_16; }
+	inline String_t** get_address_of_res_16() { return &___res_16; }
+	inline void set_res_16(String_t* value)
+	{
+		___res_16 = value;
+		Il2CppCodeGenWriteBarrier((&___res_16), value);
+	}
+
+	inline static int32_t get_offset_of_args_17() { return static_cast<int32_t>(offsetof(XmlSchemaException_t3511258692, ___args_17)); }
+	inline StringU5BU5D_t1281789340* get_args_17() const { return ___args_17; }
+	inline StringU5BU5D_t1281789340** get_address_of_args_17() { return &___args_17; }
+	inline void set_args_17(StringU5BU5D_t1281789340* value)
+	{
+		___args_17 = value;
+		Il2CppCodeGenWriteBarrier((&___args_17), value);
+	}
+
+	inline static int32_t get_offset_of_sourceUri_18() { return static_cast<int32_t>(offsetof(XmlSchemaException_t3511258692, ___sourceUri_18)); }
+	inline String_t* get_sourceUri_18() const { return ___sourceUri_18; }
+	inline String_t** get_address_of_sourceUri_18() { return &___sourceUri_18; }
+	inline void set_sourceUri_18(String_t* value)
+	{
+		___sourceUri_18 = value;
+		Il2CppCodeGenWriteBarrier((&___sourceUri_18), value);
+	}
+
+	inline static int32_t get_offset_of_lineNumber_19() { return static_cast<int32_t>(offsetof(XmlSchemaException_t3511258692, ___lineNumber_19)); }
+	inline int32_t get_lineNumber_19() const { return ___lineNumber_19; }
+	inline int32_t* get_address_of_lineNumber_19() { return &___lineNumber_19; }
+	inline void set_lineNumber_19(int32_t value)
+	{
+		___lineNumber_19 = value;
+	}
+
+	inline static int32_t get_offset_of_linePosition_20() { return static_cast<int32_t>(offsetof(XmlSchemaException_t3511258692, ___linePosition_20)); }
+	inline int32_t get_linePosition_20() const { return ___linePosition_20; }
+	inline int32_t* get_address_of_linePosition_20() { return &___linePosition_20; }
+	inline void set_linePosition_20(int32_t value)
+	{
+		___linePosition_20 = value;
+	}
+
+	inline static int32_t get_offset_of_sourceSchemaObject_21() { return static_cast<int32_t>(offsetof(XmlSchemaException_t3511258692, ___sourceSchemaObject_21)); }
+	inline XmlSchemaObject_t1315720168 * get_sourceSchemaObject_21() const { return ___sourceSchemaObject_21; }
+	inline XmlSchemaObject_t1315720168 ** get_address_of_sourceSchemaObject_21() { return &___sourceSchemaObject_21; }
+	inline void set_sourceSchemaObject_21(XmlSchemaObject_t1315720168 * value)
+	{
+		___sourceSchemaObject_21 = value;
+		Il2CppCodeGenWriteBarrier((&___sourceSchemaObject_21), value);
+	}
+
+	inline static int32_t get_offset_of_message_22() { return static_cast<int32_t>(offsetof(XmlSchemaException_t3511258692, ___message_22)); }
+	inline String_t* get_message_22() const { return ___message_22; }
+	inline String_t** get_address_of_message_22() { return &___message_22; }
+	inline void set_message_22(String_t* value)
+	{
+		___message_22 = value;
+		Il2CppCodeGenWriteBarrier((&___message_22), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // XMLSCHEMAEXCEPTION_T3511258692_H
+#ifndef DURATIONTYPE_T3437374716_H
+#define DURATIONTYPE_T3437374716_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.XsdDuration/DurationType
+struct  DurationType_t3437374716 
+{
+public:
+	// System.Int32 System.Xml.Schema.XsdDuration/DurationType::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(DurationType_t3437374716, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // DURATIONTYPE_T3437374716_H
+#ifndef XMLEXCEPTION_T1761730631_H
+#define XMLEXCEPTION_T1761730631_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.XmlException
+struct  XmlException_t1761730631  : public SystemException_t176217640
+{
+public:
+	// System.String System.Xml.XmlException::res
+	String_t* ___res_16;
+	// System.String[] System.Xml.XmlException::args
+	StringU5BU5D_t1281789340* ___args_17;
+	// System.Int32 System.Xml.XmlException::lineNumber
+	int32_t ___lineNumber_18;
+	// System.Int32 System.Xml.XmlException::linePosition
+	int32_t ___linePosition_19;
+	// System.String System.Xml.XmlException::sourceUri
+	String_t* ___sourceUri_20;
+	// System.String System.Xml.XmlException::message
+	String_t* ___message_21;
+
+public:
+	inline static int32_t get_offset_of_res_16() { return static_cast<int32_t>(offsetof(XmlException_t1761730631, ___res_16)); }
+	inline String_t* get_res_16() const { return ___res_16; }
+	inline String_t** get_address_of_res_16() { return &___res_16; }
+	inline void set_res_16(String_t* value)
+	{
+		___res_16 = value;
+		Il2CppCodeGenWriteBarrier((&___res_16), value);
+	}
+
+	inline static int32_t get_offset_of_args_17() { return static_cast<int32_t>(offsetof(XmlException_t1761730631, ___args_17)); }
+	inline StringU5BU5D_t1281789340* get_args_17() const { return ___args_17; }
+	inline StringU5BU5D_t1281789340** get_address_of_args_17() { return &___args_17; }
+	inline void set_args_17(StringU5BU5D_t1281789340* value)
+	{
+		___args_17 = value;
+		Il2CppCodeGenWriteBarrier((&___args_17), value);
+	}
+
+	inline static int32_t get_offset_of_lineNumber_18() { return static_cast<int32_t>(offsetof(XmlException_t1761730631, ___lineNumber_18)); }
+	inline int32_t get_lineNumber_18() const { return ___lineNumber_18; }
+	inline int32_t* get_address_of_lineNumber_18() { return &___lineNumber_18; }
+	inline void set_lineNumber_18(int32_t value)
+	{
+		___lineNumber_18 = value;
+	}
+
+	inline static int32_t get_offset_of_linePosition_19() { return static_cast<int32_t>(offsetof(XmlException_t1761730631, ___linePosition_19)); }
+	inline int32_t get_linePosition_19() const { return ___linePosition_19; }
+	inline int32_t* get_address_of_linePosition_19() { return &___linePosition_19; }
+	inline void set_linePosition_19(int32_t value)
+	{
+		___linePosition_19 = value;
+	}
+
+	inline static int32_t get_offset_of_sourceUri_20() { return static_cast<int32_t>(offsetof(XmlException_t1761730631, ___sourceUri_20)); }
+	inline String_t* get_sourceUri_20() const { return ___sourceUri_20; }
+	inline String_t** get_address_of_sourceUri_20() { return &___sourceUri_20; }
+	inline void set_sourceUri_20(String_t* value)
+	{
+		___sourceUri_20 = value;
+		Il2CppCodeGenWriteBarrier((&___sourceUri_20), value);
+	}
+
+	inline static int32_t get_offset_of_message_21() { return static_cast<int32_t>(offsetof(XmlException_t1761730631, ___message_21)); }
+	inline String_t* get_message_21() const { return ___message_21; }
+	inline String_t** get_address_of_message_21() { return &___message_21; }
+	inline void set_message_21(String_t* value)
+	{
+		___message_21 = value;
+		Il2CppCodeGenWriteBarrier((&___message_21), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // XMLEXCEPTION_T1761730631_H
+#ifndef STARNODE_T3054257770_H
+#define STARNODE_T3054257770_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.StarNode
+struct  StarNode_t3054257770  : public InteriorNode_t2330896169
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // STARNODE_T3054257770_H
+#ifndef QMARKNODE_T2041675929_H
+#define QMARKNODE_T2041675929_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.QmarkNode
+struct  QmarkNode_t2041675929  : public InteriorNode_t2330896169
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // QMARKNODE_T2041675929_H
+#ifndef PLUSNODE_T298745815_H
+#define PLUSNODE_T298745815_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.PlusNode
+struct  PlusNode_t298745815  : public InteriorNode_t2330896169
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // PLUSNODE_T298745815_H
+#ifndef XMLPROCESSINGINSTRUCTION_T425688976_H
+#define XMLPROCESSINGINSTRUCTION_T425688976_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.XmlProcessingInstruction
+struct  XmlProcessingInstruction_t425688976  : public XmlLinkedNode_t1437094927
+{
+public:
+	// System.String System.Xml.XmlProcessingInstruction::target
+	String_t* ___target_2;
+	// System.String System.Xml.XmlProcessingInstruction::data
+	String_t* ___data_3;
+
+public:
+	inline static int32_t get_offset_of_target_2() { return static_cast<int32_t>(offsetof(XmlProcessingInstruction_t425688976, ___target_2)); }
+	inline String_t* get_target_2() const { return ___target_2; }
+	inline String_t** get_address_of_target_2() { return &___target_2; }
+	inline void set_target_2(String_t* value)
+	{
+		___target_2 = value;
+		Il2CppCodeGenWriteBarrier((&___target_2), value);
+	}
+
+	inline static int32_t get_offset_of_data_3() { return static_cast<int32_t>(offsetof(XmlProcessingInstruction_t425688976, ___data_3)); }
+	inline String_t* get_data_3() const { return ___data_3; }
+	inline String_t** get_address_of_data_3() { return &___data_3; }
+	inline void set_data_3(String_t* value)
+	{
+		___data_3 = value;
+		Il2CppCodeGenWriteBarrier((&___data_3), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // XMLPROCESSINGINSTRUCTION_T425688976_H
 #ifndef XMLENTITYREFERENCE_T1966808559_H
 #define XMLENTITYREFERENCE_T1966808559_H
 #ifdef __clang__
@@ -13404,23 +13899,23 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // XMLENTITYREFERENCE_T1966808559_H
-#ifndef FACETTYPE_T2273005353_H
-#define FACETTYPE_T2273005353_H
+#ifndef COMPOSITOR_T1780395003_H
+#define COMPOSITOR_T1780395003_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// System.Xml.Schema.FacetType
-struct  FacetType_t2273005353 
+// System.Xml.Schema.Compositor
+struct  Compositor_t1780395003 
 {
 public:
-	// System.Int32 System.Xml.Schema.FacetType::value__
+	// System.Int32 System.Xml.Schema.Compositor::value__
 	int32_t ___value___2;
 
 public:
-	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(FacetType_t2273005353, ___value___2)); }
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(Compositor_t1780395003, ___value___2)); }
 	inline int32_t get_value___2() const { return ___value___2; }
 	inline int32_t* get_address_of_value___2() { return &___value___2; }
 	inline void set_value___2(int32_t value)
@@ -13432,36 +13927,570 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // FACETTYPE_T2273005353_H
-#ifndef RUNTIMETYPEHANDLE_T3027515415_H
-#define RUNTIMETYPEHANDLE_T3027515415_H
+#endif // COMPOSITOR_T1780395003_H
+#ifndef CHOICENODE_T2375417343_H
+#define CHOICENODE_T2375417343_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// System.RuntimeTypeHandle
-struct  RuntimeTypeHandle_t3027515415 
+// System.Xml.Schema.ChoiceNode
+struct  ChoiceNode_t2375417343  : public InteriorNode_t2330896169
 {
 public:
-	// System.IntPtr System.RuntimeTypeHandle::value
-	intptr_t ___value_0;
 
 public:
-	inline static int32_t get_offset_of_value_0() { return static_cast<int32_t>(offsetof(RuntimeTypeHandle_t3027515415, ___value_0)); }
-	inline intptr_t get_value_0() const { return ___value_0; }
-	inline intptr_t* get_address_of_value_0() { return &___value_0; }
-	inline void set_value_0(intptr_t value)
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // CHOICENODE_T2375417343_H
+#ifndef SEQUENCENODE_T3837141573_H
+#define SEQUENCENODE_T3837141573_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.SequenceNode
+struct  SequenceNode_t3837141573  : public InteriorNode_t2330896169
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // SEQUENCENODE_T3837141573_H
+#ifndef ARITHMETICEXCEPTION_T4283546778_H
+#define ARITHMETICEXCEPTION_T4283546778_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.ArithmeticException
+struct  ArithmeticException_t4283546778  : public SystemException_t176217640
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // ARITHMETICEXCEPTION_T4283546778_H
+#ifndef NOTSUPPORTEDEXCEPTION_T1314879016_H
+#define NOTSUPPORTEDEXCEPTION_T1314879016_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.NotSupportedException
+struct  NotSupportedException_t1314879016  : public SystemException_t176217640
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // NOTSUPPORTEDEXCEPTION_T1314879016_H
+#ifndef CONSTRAINTROLE_T1918123008_H
+#define CONSTRAINTROLE_T1918123008_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.CompiledIdentityConstraint/ConstraintRole
+struct  ConstraintRole_t1918123008 
+{
+public:
+	// System.Int32 System.Xml.Schema.CompiledIdentityConstraint/ConstraintRole::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(ConstraintRole_t1918123008, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
 	{
-		___value_0 = value;
+		___value___2 = value;
 	}
 };
 
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // RUNTIMETYPEHANDLE_T3027515415_H
+#endif // CONSTRAINTROLE_T1918123008_H
+#ifndef BINDINGFLAGS_T2721792723_H
+#define BINDINGFLAGS_T2721792723_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Reflection.BindingFlags
+struct  BindingFlags_t2721792723 
+{
+public:
+	// System.Int32 System.Reflection.BindingFlags::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(BindingFlags_t2721792723, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // BINDINGFLAGS_T2721792723_H
+#ifndef XSDDATETIMEFLAGS_T970071748_H
+#define XSDDATETIMEFLAGS_T970071748_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.XsdDateTimeFlags
+struct  XsdDateTimeFlags_t970071748 
+{
+public:
+	// System.Int32 System.Xml.Schema.XsdDateTimeFlags::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(XsdDateTimeFlags_t970071748, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // XSDDATETIMEFLAGS_T970071748_H
+#ifndef FLAGS_T2372798318_H
+#define FLAGS_T2372798318_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Uri/Flags
+struct  Flags_t2372798318 
+{
+public:
+	// System.UInt64 System.Uri/Flags::value__
+	uint64_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(Flags_t2372798318, ___value___2)); }
+	inline uint64_t get_value___2() const { return ___value___2; }
+	inline uint64_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(uint64_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // FLAGS_T2372798318_H
+#ifndef STRINGCOMPARISON_T3657712135_H
+#define STRINGCOMPARISON_T3657712135_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.StringComparison
+struct  StringComparison_t3657712135 
+{
+public:
+	// System.Int32 System.StringComparison::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(StringComparison_t3657712135, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // STRINGCOMPARISON_T3657712135_H
+#ifndef XMLSCHEMAUSE_T647315988_H
+#define XMLSCHEMAUSE_T647315988_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.XmlSchemaUse
+struct  XmlSchemaUse_t647315988 
+{
+public:
+	// System.Int32 System.Xml.Schema.XmlSchemaUse::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(XmlSchemaUse_t647315988, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // XMLSCHEMAUSE_T647315988_H
+#ifndef XMLSCHEMADERIVATIONMETHOD_T1774354337_H
+#define XMLSCHEMADERIVATIONMETHOD_T1774354337_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.XmlSchemaDerivationMethod
+struct  XmlSchemaDerivationMethod_t1774354337 
+{
+public:
+	// System.Int32 System.Xml.Schema.XmlSchemaDerivationMethod::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(XmlSchemaDerivationMethod_t1774354337, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // XMLSCHEMADERIVATIONMETHOD_T1774354337_H
+#ifndef XMLSCHEMAATTRIBUTEGROUPREF_T846390688_H
+#define XMLSCHEMAATTRIBUTEGROUPREF_T846390688_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.XmlSchemaAttributeGroupRef
+struct  XmlSchemaAttributeGroupRef_t846390688  : public XmlSchemaAnnotated_t2603549639
+{
+public:
+	// System.Xml.XmlQualifiedName System.Xml.Schema.XmlSchemaAttributeGroupRef::refName
+	XmlQualifiedName_t2760654312 * ___refName_9;
+
+public:
+	inline static int32_t get_offset_of_refName_9() { return static_cast<int32_t>(offsetof(XmlSchemaAttributeGroupRef_t846390688, ___refName_9)); }
+	inline XmlQualifiedName_t2760654312 * get_refName_9() const { return ___refName_9; }
+	inline XmlQualifiedName_t2760654312 ** get_address_of_refName_9() { return &___refName_9; }
+	inline void set_refName_9(XmlQualifiedName_t2760654312 * value)
+	{
+		___refName_9 = value;
+		Il2CppCodeGenWriteBarrier((&___refName_9), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // XMLSCHEMAATTRIBUTEGROUPREF_T846390688_H
+#ifndef URIFORMAT_T2031163398_H
+#define URIFORMAT_T2031163398_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.UriFormat
+struct  UriFormat_t2031163398 
+{
+public:
+	// System.Int32 System.UriFormat::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(UriFormat_t2031163398, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // URIFORMAT_T2031163398_H
+#ifndef VALIDATIONTYPE_T4049928607_H
+#define VALIDATIONTYPE_T4049928607_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.ValidationType
+struct  ValidationType_t4049928607 
+{
+public:
+	// System.Int32 System.Xml.ValidationType::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(ValidationType_t4049928607, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // VALIDATIONTYPE_T4049928607_H
+#ifndef OCCURS_T3988442794_H
+#define OCCURS_T3988442794_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.XmlSchemaParticle/Occurs
+struct  Occurs_t3988442794 
+{
+public:
+	// System.Int32 System.Xml.Schema.XmlSchemaParticle/Occurs::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(Occurs_t3988442794, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // OCCURS_T3988442794_H
+#ifndef HASHTABLE_T1853889766_H
+#define HASHTABLE_T1853889766_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Collections.Hashtable
+struct  Hashtable_t1853889766  : public RuntimeObject
+{
+public:
+	// System.Collections.Hashtable/bucket[] System.Collections.Hashtable::buckets
+	bucketU5BU5D_t876121385* ___buckets_10;
+	// System.Int32 System.Collections.Hashtable::count
+	int32_t ___count_11;
+	// System.Int32 System.Collections.Hashtable::occupancy
+	int32_t ___occupancy_12;
+	// System.Int32 System.Collections.Hashtable::loadsize
+	int32_t ___loadsize_13;
+	// System.Single System.Collections.Hashtable::loadFactor
+	float ___loadFactor_14;
+	// System.Int32 modreq(System.Runtime.CompilerServices.IsVolatile) System.Collections.Hashtable::version
+	int32_t ___version_15;
+	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.Collections.Hashtable::isWriterInProgress
+	bool ___isWriterInProgress_16;
+	// System.Collections.ICollection System.Collections.Hashtable::keys
+	RuntimeObject* ___keys_17;
+	// System.Collections.ICollection System.Collections.Hashtable::values
+	RuntimeObject* ___values_18;
+	// System.Collections.IEqualityComparer System.Collections.Hashtable::_keycomparer
+	RuntimeObject* ____keycomparer_19;
+	// System.Object System.Collections.Hashtable::_syncRoot
+	RuntimeObject * ____syncRoot_20;
+
+public:
+	inline static int32_t get_offset_of_buckets_10() { return static_cast<int32_t>(offsetof(Hashtable_t1853889766, ___buckets_10)); }
+	inline bucketU5BU5D_t876121385* get_buckets_10() const { return ___buckets_10; }
+	inline bucketU5BU5D_t876121385** get_address_of_buckets_10() { return &___buckets_10; }
+	inline void set_buckets_10(bucketU5BU5D_t876121385* value)
+	{
+		___buckets_10 = value;
+		Il2CppCodeGenWriteBarrier((&___buckets_10), value);
+	}
+
+	inline static int32_t get_offset_of_count_11() { return static_cast<int32_t>(offsetof(Hashtable_t1853889766, ___count_11)); }
+	inline int32_t get_count_11() const { return ___count_11; }
+	inline int32_t* get_address_of_count_11() { return &___count_11; }
+	inline void set_count_11(int32_t value)
+	{
+		___count_11 = value;
+	}
+
+	inline static int32_t get_offset_of_occupancy_12() { return static_cast<int32_t>(offsetof(Hashtable_t1853889766, ___occupancy_12)); }
+	inline int32_t get_occupancy_12() const { return ___occupancy_12; }
+	inline int32_t* get_address_of_occupancy_12() { return &___occupancy_12; }
+	inline void set_occupancy_12(int32_t value)
+	{
+		___occupancy_12 = value;
+	}
+
+	inline static int32_t get_offset_of_loadsize_13() { return static_cast<int32_t>(offsetof(Hashtable_t1853889766, ___loadsize_13)); }
+	inline int32_t get_loadsize_13() const { return ___loadsize_13; }
+	inline int32_t* get_address_of_loadsize_13() { return &___loadsize_13; }
+	inline void set_loadsize_13(int32_t value)
+	{
+		___loadsize_13 = value;
+	}
+
+	inline static int32_t get_offset_of_loadFactor_14() { return static_cast<int32_t>(offsetof(Hashtable_t1853889766, ___loadFactor_14)); }
+	inline float get_loadFactor_14() const { return ___loadFactor_14; }
+	inline float* get_address_of_loadFactor_14() { return &___loadFactor_14; }
+	inline void set_loadFactor_14(float value)
+	{
+		___loadFactor_14 = value;
+	}
+
+	inline static int32_t get_offset_of_version_15() { return static_cast<int32_t>(offsetof(Hashtable_t1853889766, ___version_15)); }
+	inline int32_t get_version_15() const { return ___version_15; }
+	inline int32_t* get_address_of_version_15() { return &___version_15; }
+	inline void set_version_15(int32_t value)
+	{
+		___version_15 = value;
+	}
+
+	inline static int32_t get_offset_of_isWriterInProgress_16() { return static_cast<int32_t>(offsetof(Hashtable_t1853889766, ___isWriterInProgress_16)); }
+	inline bool get_isWriterInProgress_16() const { return ___isWriterInProgress_16; }
+	inline bool* get_address_of_isWriterInProgress_16() { return &___isWriterInProgress_16; }
+	inline void set_isWriterInProgress_16(bool value)
+	{
+		___isWriterInProgress_16 = value;
+	}
+
+	inline static int32_t get_offset_of_keys_17() { return static_cast<int32_t>(offsetof(Hashtable_t1853889766, ___keys_17)); }
+	inline RuntimeObject* get_keys_17() const { return ___keys_17; }
+	inline RuntimeObject** get_address_of_keys_17() { return &___keys_17; }
+	inline void set_keys_17(RuntimeObject* value)
+	{
+		___keys_17 = value;
+		Il2CppCodeGenWriteBarrier((&___keys_17), value);
+	}
+
+	inline static int32_t get_offset_of_values_18() { return static_cast<int32_t>(offsetof(Hashtable_t1853889766, ___values_18)); }
+	inline RuntimeObject* get_values_18() const { return ___values_18; }
+	inline RuntimeObject** get_address_of_values_18() { return &___values_18; }
+	inline void set_values_18(RuntimeObject* value)
+	{
+		___values_18 = value;
+		Il2CppCodeGenWriteBarrier((&___values_18), value);
+	}
+
+	inline static int32_t get_offset_of__keycomparer_19() { return static_cast<int32_t>(offsetof(Hashtable_t1853889766, ____keycomparer_19)); }
+	inline RuntimeObject* get__keycomparer_19() const { return ____keycomparer_19; }
+	inline RuntimeObject** get_address_of__keycomparer_19() { return &____keycomparer_19; }
+	inline void set__keycomparer_19(RuntimeObject* value)
+	{
+		____keycomparer_19 = value;
+		Il2CppCodeGenWriteBarrier((&____keycomparer_19), value);
+	}
+
+	inline static int32_t get_offset_of__syncRoot_20() { return static_cast<int32_t>(offsetof(Hashtable_t1853889766, ____syncRoot_20)); }
+	inline RuntimeObject * get__syncRoot_20() const { return ____syncRoot_20; }
+	inline RuntimeObject ** get_address_of__syncRoot_20() { return &____syncRoot_20; }
+	inline void set__syncRoot_20(RuntimeObject * value)
+	{
+		____syncRoot_20 = value;
+		Il2CppCodeGenWriteBarrier((&____syncRoot_20), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // HASHTABLE_T1853889766_H
+#ifndef PARSINGFUNCTION_T767331079_H
+#define PARSINGFUNCTION_T767331079_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.XmlValidatingReaderImpl/ParsingFunction
+struct  ParsingFunction_t767331079 
+{
+public:
+	// System.Int32 System.Xml.XmlValidatingReaderImpl/ParsingFunction::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(ParsingFunction_t767331079, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // PARSINGFUNCTION_T767331079_H
 #ifndef XMLSCHEMACONTENTPROCESSING_T826201100_H
 #define XMLSCHEMACONTENTPROCESSING_T826201100_H
 #ifdef __clang__
@@ -13491,6 +14520,93 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // XMLSCHEMACONTENTPROCESSING_T826201100_H
+#ifndef TYPECODE_T2987224087_H
+#define TYPECODE_T2987224087_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.TypeCode
+struct  TypeCode_t2987224087 
+{
+public:
+	// System.Int32 System.TypeCode::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(TypeCode_t2987224087, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // TYPECODE_T2987224087_H
+#ifndef XMLTYPECODE_T2623622950_H
+#define XMLTYPECODE_T2623622950_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.XmlTypeCode
+struct  XmlTypeCode_t2623622950 
+{
+public:
+	// System.Int32 System.Xml.Schema.XmlTypeCode::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(XmlTypeCode_t2623622950, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // XMLTYPECODE_T2623622950_H
+#ifndef URIIDNSCOPE_T1847433844_H
+#define URIIDNSCOPE_T1847433844_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.UriIdnScope
+struct  UriIdnScope_t1847433844 
+{
+public:
+	// System.Int32 System.UriIdnScope::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(UriIdnScope_t1847433844, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // URIIDNSCOPE_T1847433844_H
 #ifndef UNION_T2178763312_H
 #define UNION_T2178763312_H
 #ifdef __clang__
@@ -13743,23 +14859,23 @@ struct Union_t2178763312_marshaled_com
 	};
 };
 #endif // UNION_T2178763312_H
-#ifndef OCCURS_T3988442794_H
-#define OCCURS_T3988442794_H
+#ifndef RESTRICTIONFLAGS_T1570337630_H
+#define RESTRICTIONFLAGS_T1570337630_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// System.Xml.Schema.XmlSchemaParticle/Occurs
-struct  Occurs_t3988442794 
+// System.Xml.Schema.RestrictionFlags
+struct  RestrictionFlags_t1570337630 
 {
 public:
-	// System.Int32 System.Xml.Schema.XmlSchemaParticle/Occurs::value__
+	// System.Int32 System.Xml.Schema.RestrictionFlags::value__
 	int32_t ___value___2;
 
 public:
-	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(Occurs_t3988442794, ___value___2)); }
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(RestrictionFlags_t1570337630, ___value___2)); }
 	inline int32_t get_value___2() const { return ___value___2; }
 	inline int32_t* get_address_of_value___2() { return &___value___2; }
 	inline void set_value___2(int32_t value)
@@ -13771,24 +14887,87 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // OCCURS_T3988442794_H
-#ifndef PARSINGFUNCTION_T767331079_H
-#define PARSINGFUNCTION_T767331079_H
+#endif // RESTRICTIONFLAGS_T1570337630_H
+#ifndef XMLSCHEMANOTATION_T2664560277_H
+#define XMLSCHEMANOTATION_T2664560277_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// System.Xml.XmlValidatingReaderImpl/ParsingFunction
-struct  ParsingFunction_t767331079 
+// System.Xml.Schema.XmlSchemaNotation
+struct  XmlSchemaNotation_t2664560277  : public XmlSchemaAnnotated_t2603549639
 {
 public:
-	// System.Int32 System.Xml.XmlValidatingReaderImpl/ParsingFunction::value__
+	// System.String System.Xml.Schema.XmlSchemaNotation::name
+	String_t* ___name_9;
+	// System.String System.Xml.Schema.XmlSchemaNotation::publicId
+	String_t* ___publicId_10;
+	// System.String System.Xml.Schema.XmlSchemaNotation::systemId
+	String_t* ___systemId_11;
+	// System.Xml.XmlQualifiedName System.Xml.Schema.XmlSchemaNotation::qname
+	XmlQualifiedName_t2760654312 * ___qname_12;
+
+public:
+	inline static int32_t get_offset_of_name_9() { return static_cast<int32_t>(offsetof(XmlSchemaNotation_t2664560277, ___name_9)); }
+	inline String_t* get_name_9() const { return ___name_9; }
+	inline String_t** get_address_of_name_9() { return &___name_9; }
+	inline void set_name_9(String_t* value)
+	{
+		___name_9 = value;
+		Il2CppCodeGenWriteBarrier((&___name_9), value);
+	}
+
+	inline static int32_t get_offset_of_publicId_10() { return static_cast<int32_t>(offsetof(XmlSchemaNotation_t2664560277, ___publicId_10)); }
+	inline String_t* get_publicId_10() const { return ___publicId_10; }
+	inline String_t** get_address_of_publicId_10() { return &___publicId_10; }
+	inline void set_publicId_10(String_t* value)
+	{
+		___publicId_10 = value;
+		Il2CppCodeGenWriteBarrier((&___publicId_10), value);
+	}
+
+	inline static int32_t get_offset_of_systemId_11() { return static_cast<int32_t>(offsetof(XmlSchemaNotation_t2664560277, ___systemId_11)); }
+	inline String_t* get_systemId_11() const { return ___systemId_11; }
+	inline String_t** get_address_of_systemId_11() { return &___systemId_11; }
+	inline void set_systemId_11(String_t* value)
+	{
+		___systemId_11 = value;
+		Il2CppCodeGenWriteBarrier((&___systemId_11), value);
+	}
+
+	inline static int32_t get_offset_of_qname_12() { return static_cast<int32_t>(offsetof(XmlSchemaNotation_t2664560277, ___qname_12)); }
+	inline XmlQualifiedName_t2760654312 * get_qname_12() const { return ___qname_12; }
+	inline XmlQualifiedName_t2760654312 ** get_address_of_qname_12() { return &___qname_12; }
+	inline void set_qname_12(XmlQualifiedName_t2760654312 * value)
+	{
+		___qname_12 = value;
+		Il2CppCodeGenWriteBarrier((&___qname_12), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // XMLSCHEMANOTATION_T2664560277_H
+#ifndef XMLSCHEMAWHITESPACE_T472242436_H
+#define XMLSCHEMAWHITESPACE_T472242436_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.XmlSchemaWhiteSpace
+struct  XmlSchemaWhiteSpace_t472242436 
+{
+public:
+	// System.Int32 System.Xml.Schema.XmlSchemaWhiteSpace::value__
 	int32_t ___value___2;
 
 public:
-	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(ParsingFunction_t767331079, ___value___2)); }
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(XmlSchemaWhiteSpace_t472242436, ___value___2)); }
 	inline int32_t get_value___2() const { return ___value___2; }
 	inline int32_t* get_address_of_value___2() { return &___value___2; }
 	inline void set_value___2(int32_t value)
@@ -13800,24 +14979,64 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // PARSINGFUNCTION_T767331079_H
-#ifndef VALIDATIONTYPE_T4049928607_H
-#define VALIDATIONTYPE_T4049928607_H
+#endif // XMLSCHEMAWHITESPACE_T472242436_H
+#ifndef XMLSCHEMACONTENTMODEL_T602185179_H
+#define XMLSCHEMACONTENTMODEL_T602185179_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// System.Xml.ValidationType
-struct  ValidationType_t4049928607 
+// System.Xml.Schema.XmlSchemaContentModel
+struct  XmlSchemaContentModel_t602185179  : public XmlSchemaAnnotated_t2603549639
 {
 public:
-	// System.Int32 System.Xml.ValidationType::value__
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // XMLSCHEMACONTENTMODEL_T602185179_H
+#ifndef XMLSCHEMACONTENT_T1040349258_H
+#define XMLSCHEMACONTENT_T1040349258_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.XmlSchemaContent
+struct  XmlSchemaContent_t1040349258  : public XmlSchemaAnnotated_t2603549639
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // XMLSCHEMACONTENT_T1040349258_H
+#ifndef XPATHNODETYPE_T3031007223_H
+#define XPATHNODETYPE_T3031007223_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.XPath.XPathNodeType
+struct  XPathNodeType_t3031007223 
+{
+public:
+	// System.Int32 System.Xml.XPath.XPathNodeType::value__
 	int32_t ___value___2;
 
 public:
-	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(ValidationType_t4049928607, ___value___2)); }
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(XPathNodeType_t3031007223, ___value___2)); }
 	inline int32_t get_value___2() const { return ___value___2; }
 	inline int32_t* get_address_of_value___2() { return &___value___2; }
 	inline void set_value___2(int32_t value)
@@ -13829,845 +15048,7 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // VALIDATIONTYPE_T4049928607_H
-#ifndef XSDDATETIMEFLAGS_T970071748_H
-#define XSDDATETIMEFLAGS_T970071748_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.XsdDateTimeFlags
-struct  XsdDateTimeFlags_t970071748 
-{
-public:
-	// System.Int32 System.Xml.Schema.XsdDateTimeFlags::value__
-	int32_t ___value___2;
-
-public:
-	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(XsdDateTimeFlags_t970071748, ___value___2)); }
-	inline int32_t get_value___2() const { return ___value___2; }
-	inline int32_t* get_address_of_value___2() { return &___value___2; }
-	inline void set_value___2(int32_t value)
-	{
-		___value___2 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // XSDDATETIMEFLAGS_T970071748_H
-#ifndef NOTSUPPORTEDEXCEPTION_T1314879016_H
-#define NOTSUPPORTEDEXCEPTION_T1314879016_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.NotSupportedException
-struct  NotSupportedException_t1314879016  : public SystemException_t176217640
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // NOTSUPPORTEDEXCEPTION_T1314879016_H
-#ifndef BINDINGFLAGS_T2721792723_H
-#define BINDINGFLAGS_T2721792723_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Reflection.BindingFlags
-struct  BindingFlags_t2721792723 
-{
-public:
-	// System.Int32 System.Reflection.BindingFlags::value__
-	int32_t ___value___2;
-
-public:
-	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(BindingFlags_t2721792723, ___value___2)); }
-	inline int32_t get_value___2() const { return ___value___2; }
-	inline int32_t* get_address_of_value___2() { return &___value___2; }
-	inline void set_value___2(int32_t value)
-	{
-		___value___2 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // BINDINGFLAGS_T2721792723_H
-#ifndef TYPECODE_T2987224087_H
-#define TYPECODE_T2987224087_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.TypeCode
-struct  TypeCode_t2987224087 
-{
-public:
-	// System.Int32 System.TypeCode::value__
-	int32_t ___value___2;
-
-public:
-	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(TypeCode_t2987224087, ___value___2)); }
-	inline int32_t get_value___2() const { return ___value___2; }
-	inline int32_t* get_address_of_value___2() { return &___value___2; }
-	inline void set_value___2(int32_t value)
-	{
-		___value___2 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // TYPECODE_T2987224087_H
-#ifndef XMLTYPECODE_T2623622950_H
-#define XMLTYPECODE_T2623622950_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.XmlTypeCode
-struct  XmlTypeCode_t2623622950 
-{
-public:
-	// System.Int32 System.Xml.Schema.XmlTypeCode::value__
-	int32_t ___value___2;
-
-public:
-	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(XmlTypeCode_t2623622950, ___value___2)); }
-	inline int32_t get_value___2() const { return ___value___2; }
-	inline int32_t* get_address_of_value___2() { return &___value___2; }
-	inline void set_value___2(int32_t value)
-	{
-		___value___2 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // XMLTYPECODE_T2623622950_H
-#ifndef XMLCHARACTERDATA_T1167807131_H
-#define XMLCHARACTERDATA_T1167807131_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.XmlCharacterData
-struct  XmlCharacterData_t1167807131  : public XmlLinkedNode_t1437094927
-{
-public:
-	// System.String System.Xml.XmlCharacterData::data
-	String_t* ___data_2;
-
-public:
-	inline static int32_t get_offset_of_data_2() { return static_cast<int32_t>(offsetof(XmlCharacterData_t1167807131, ___data_2)); }
-	inline String_t* get_data_2() const { return ___data_2; }
-	inline String_t** get_address_of_data_2() { return &___data_2; }
-	inline void set_data_2(String_t* value)
-	{
-		___data_2 = value;
-		Il2CppCodeGenWriteBarrier((&___data_2), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // XMLCHARACTERDATA_T1167807131_H
-#ifndef XMLSCHEMAFORM_T4264307319_H
-#define XMLSCHEMAFORM_T4264307319_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.XmlSchemaForm
-struct  XmlSchemaForm_t4264307319 
-{
-public:
-	// System.Int32 System.Xml.Schema.XmlSchemaForm::value__
-	int32_t ___value___2;
-
-public:
-	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(XmlSchemaForm_t4264307319, ___value___2)); }
-	inline int32_t get_value___2() const { return ___value___2; }
-	inline int32_t* get_address_of_value___2() { return &___value___2; }
-	inline void set_value___2(int32_t value)
-	{
-		___value___2 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // XMLSCHEMAFORM_T4264307319_H
-#ifndef XMLNAMEDNODEMAP_T2821286253_H
-#define XMLNAMEDNODEMAP_T2821286253_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.XmlNamedNodeMap
-struct  XmlNamedNodeMap_t2821286253  : public RuntimeObject
-{
-public:
-	// System.Xml.XmlNode System.Xml.XmlNamedNodeMap::parent
-	XmlNode_t3767805227 * ___parent_0;
-	// System.Xml.XmlNamedNodeMap/SmallXmlNodeList System.Xml.XmlNamedNodeMap::nodes
-	SmallXmlNodeList_t242297918  ___nodes_1;
-
-public:
-	inline static int32_t get_offset_of_parent_0() { return static_cast<int32_t>(offsetof(XmlNamedNodeMap_t2821286253, ___parent_0)); }
-	inline XmlNode_t3767805227 * get_parent_0() const { return ___parent_0; }
-	inline XmlNode_t3767805227 ** get_address_of_parent_0() { return &___parent_0; }
-	inline void set_parent_0(XmlNode_t3767805227 * value)
-	{
-		___parent_0 = value;
-		Il2CppCodeGenWriteBarrier((&___parent_0), value);
-	}
-
-	inline static int32_t get_offset_of_nodes_1() { return static_cast<int32_t>(offsetof(XmlNamedNodeMap_t2821286253, ___nodes_1)); }
-	inline SmallXmlNodeList_t242297918  get_nodes_1() const { return ___nodes_1; }
-	inline SmallXmlNodeList_t242297918 * get_address_of_nodes_1() { return &___nodes_1; }
-	inline void set_nodes_1(SmallXmlNodeList_t242297918  value)
-	{
-		___nodes_1 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // XMLNAMEDNODEMAP_T2821286253_H
-#ifndef DELEGATE_T1188392813_H
-#define DELEGATE_T1188392813_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Delegate
-struct  Delegate_t1188392813  : public RuntimeObject
-{
-public:
-	// System.IntPtr System.Delegate::method_ptr
-	Il2CppMethodPointer ___method_ptr_0;
-	// System.IntPtr System.Delegate::invoke_impl
-	intptr_t ___invoke_impl_1;
-	// System.Object System.Delegate::m_target
-	RuntimeObject * ___m_target_2;
-	// System.IntPtr System.Delegate::method
-	intptr_t ___method_3;
-	// System.IntPtr System.Delegate::delegate_trampoline
-	intptr_t ___delegate_trampoline_4;
-	// System.IntPtr System.Delegate::extra_arg
-	intptr_t ___extra_arg_5;
-	// System.IntPtr System.Delegate::method_code
-	intptr_t ___method_code_6;
-	// System.Reflection.MethodInfo System.Delegate::method_info
-	MethodInfo_t * ___method_info_7;
-	// System.Reflection.MethodInfo System.Delegate::original_method_info
-	MethodInfo_t * ___original_method_info_8;
-	// System.DelegateData System.Delegate::data
-	DelegateData_t1677132599 * ___data_9;
-	// System.Boolean System.Delegate::method_is_virtual
-	bool ___method_is_virtual_10;
-
-public:
-	inline static int32_t get_offset_of_method_ptr_0() { return static_cast<int32_t>(offsetof(Delegate_t1188392813, ___method_ptr_0)); }
-	inline Il2CppMethodPointer get_method_ptr_0() const { return ___method_ptr_0; }
-	inline Il2CppMethodPointer* get_address_of_method_ptr_0() { return &___method_ptr_0; }
-	inline void set_method_ptr_0(Il2CppMethodPointer value)
-	{
-		___method_ptr_0 = value;
-	}
-
-	inline static int32_t get_offset_of_invoke_impl_1() { return static_cast<int32_t>(offsetof(Delegate_t1188392813, ___invoke_impl_1)); }
-	inline intptr_t get_invoke_impl_1() const { return ___invoke_impl_1; }
-	inline intptr_t* get_address_of_invoke_impl_1() { return &___invoke_impl_1; }
-	inline void set_invoke_impl_1(intptr_t value)
-	{
-		___invoke_impl_1 = value;
-	}
-
-	inline static int32_t get_offset_of_m_target_2() { return static_cast<int32_t>(offsetof(Delegate_t1188392813, ___m_target_2)); }
-	inline RuntimeObject * get_m_target_2() const { return ___m_target_2; }
-	inline RuntimeObject ** get_address_of_m_target_2() { return &___m_target_2; }
-	inline void set_m_target_2(RuntimeObject * value)
-	{
-		___m_target_2 = value;
-		Il2CppCodeGenWriteBarrier((&___m_target_2), value);
-	}
-
-	inline static int32_t get_offset_of_method_3() { return static_cast<int32_t>(offsetof(Delegate_t1188392813, ___method_3)); }
-	inline intptr_t get_method_3() const { return ___method_3; }
-	inline intptr_t* get_address_of_method_3() { return &___method_3; }
-	inline void set_method_3(intptr_t value)
-	{
-		___method_3 = value;
-	}
-
-	inline static int32_t get_offset_of_delegate_trampoline_4() { return static_cast<int32_t>(offsetof(Delegate_t1188392813, ___delegate_trampoline_4)); }
-	inline intptr_t get_delegate_trampoline_4() const { return ___delegate_trampoline_4; }
-	inline intptr_t* get_address_of_delegate_trampoline_4() { return &___delegate_trampoline_4; }
-	inline void set_delegate_trampoline_4(intptr_t value)
-	{
-		___delegate_trampoline_4 = value;
-	}
-
-	inline static int32_t get_offset_of_extra_arg_5() { return static_cast<int32_t>(offsetof(Delegate_t1188392813, ___extra_arg_5)); }
-	inline intptr_t get_extra_arg_5() const { return ___extra_arg_5; }
-	inline intptr_t* get_address_of_extra_arg_5() { return &___extra_arg_5; }
-	inline void set_extra_arg_5(intptr_t value)
-	{
-		___extra_arg_5 = value;
-	}
-
-	inline static int32_t get_offset_of_method_code_6() { return static_cast<int32_t>(offsetof(Delegate_t1188392813, ___method_code_6)); }
-	inline intptr_t get_method_code_6() const { return ___method_code_6; }
-	inline intptr_t* get_address_of_method_code_6() { return &___method_code_6; }
-	inline void set_method_code_6(intptr_t value)
-	{
-		___method_code_6 = value;
-	}
-
-	inline static int32_t get_offset_of_method_info_7() { return static_cast<int32_t>(offsetof(Delegate_t1188392813, ___method_info_7)); }
-	inline MethodInfo_t * get_method_info_7() const { return ___method_info_7; }
-	inline MethodInfo_t ** get_address_of_method_info_7() { return &___method_info_7; }
-	inline void set_method_info_7(MethodInfo_t * value)
-	{
-		___method_info_7 = value;
-		Il2CppCodeGenWriteBarrier((&___method_info_7), value);
-	}
-
-	inline static int32_t get_offset_of_original_method_info_8() { return static_cast<int32_t>(offsetof(Delegate_t1188392813, ___original_method_info_8)); }
-	inline MethodInfo_t * get_original_method_info_8() const { return ___original_method_info_8; }
-	inline MethodInfo_t ** get_address_of_original_method_info_8() { return &___original_method_info_8; }
-	inline void set_original_method_info_8(MethodInfo_t * value)
-	{
-		___original_method_info_8 = value;
-		Il2CppCodeGenWriteBarrier((&___original_method_info_8), value);
-	}
-
-	inline static int32_t get_offset_of_data_9() { return static_cast<int32_t>(offsetof(Delegate_t1188392813, ___data_9)); }
-	inline DelegateData_t1677132599 * get_data_9() const { return ___data_9; }
-	inline DelegateData_t1677132599 ** get_address_of_data_9() { return &___data_9; }
-	inline void set_data_9(DelegateData_t1677132599 * value)
-	{
-		___data_9 = value;
-		Il2CppCodeGenWriteBarrier((&___data_9), value);
-	}
-
-	inline static int32_t get_offset_of_method_is_virtual_10() { return static_cast<int32_t>(offsetof(Delegate_t1188392813, ___method_is_virtual_10)); }
-	inline bool get_method_is_virtual_10() const { return ___method_is_virtual_10; }
-	inline bool* get_address_of_method_is_virtual_10() { return &___method_is_virtual_10; }
-	inline void set_method_is_virtual_10(bool value)
-	{
-		___method_is_virtual_10 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-// Native definition for P/Invoke marshalling of System.Delegate
-struct Delegate_t1188392813_marshaled_pinvoke
-{
-	intptr_t ___method_ptr_0;
-	intptr_t ___invoke_impl_1;
-	Il2CppIUnknown* ___m_target_2;
-	intptr_t ___method_3;
-	intptr_t ___delegate_trampoline_4;
-	intptr_t ___extra_arg_5;
-	intptr_t ___method_code_6;
-	MethodInfo_t * ___method_info_7;
-	MethodInfo_t * ___original_method_info_8;
-	DelegateData_t1677132599 * ___data_9;
-	int32_t ___method_is_virtual_10;
-};
-// Native definition for COM marshalling of System.Delegate
-struct Delegate_t1188392813_marshaled_com
-{
-	intptr_t ___method_ptr_0;
-	intptr_t ___invoke_impl_1;
-	Il2CppIUnknown* ___m_target_2;
-	intptr_t ___method_3;
-	intptr_t ___delegate_trampoline_4;
-	intptr_t ___extra_arg_5;
-	intptr_t ___method_code_6;
-	MethodInfo_t * ___method_info_7;
-	MethodInfo_t * ___original_method_info_8;
-	DelegateData_t1677132599 * ___data_9;
-	int32_t ___method_is_virtual_10;
-};
-#endif // DELEGATE_T1188392813_H
-#ifndef COMPOSITOR_T1780395003_H
-#define COMPOSITOR_T1780395003_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.Compositor
-struct  Compositor_t1780395003 
-{
-public:
-	// System.Int32 System.Xml.Schema.Compositor::value__
-	int32_t ___value___2;
-
-public:
-	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(Compositor_t1780395003, ___value___2)); }
-	inline int32_t get_value___2() const { return ___value___2; }
-	inline int32_t* get_address_of_value___2() { return &___value___2; }
-	inline void set_value___2(int32_t value)
-	{
-		___value___2 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // COMPOSITOR_T1780395003_H
-#ifndef NUMERIC10FACETSCHECKER_T3323854505_H
-#define NUMERIC10FACETSCHECKER_T3323854505_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.Numeric10FacetsChecker
-struct  Numeric10FacetsChecker_t3323854505  : public FacetsChecker_t3316496195
-{
-public:
-	// System.Decimal System.Xml.Schema.Numeric10FacetsChecker::maxValue
-	Decimal_t2948259380  ___maxValue_1;
-	// System.Decimal System.Xml.Schema.Numeric10FacetsChecker::minValue
-	Decimal_t2948259380  ___minValue_2;
-
-public:
-	inline static int32_t get_offset_of_maxValue_1() { return static_cast<int32_t>(offsetof(Numeric10FacetsChecker_t3323854505, ___maxValue_1)); }
-	inline Decimal_t2948259380  get_maxValue_1() const { return ___maxValue_1; }
-	inline Decimal_t2948259380 * get_address_of_maxValue_1() { return &___maxValue_1; }
-	inline void set_maxValue_1(Decimal_t2948259380  value)
-	{
-		___maxValue_1 = value;
-	}
-
-	inline static int32_t get_offset_of_minValue_2() { return static_cast<int32_t>(offsetof(Numeric10FacetsChecker_t3323854505, ___minValue_2)); }
-	inline Decimal_t2948259380  get_minValue_2() const { return ___minValue_2; }
-	inline Decimal_t2948259380 * get_address_of_minValue_2() { return &___minValue_2; }
-	inline void set_minValue_2(Decimal_t2948259380  value)
-	{
-		___minValue_2 = value;
-	}
-};
-
-struct Numeric10FacetsChecker_t3323854505_StaticFields
-{
-public:
-	// System.Char[] System.Xml.Schema.Numeric10FacetsChecker::signs
-	CharU5BU5D_t3528271667* ___signs_0;
-
-public:
-	inline static int32_t get_offset_of_signs_0() { return static_cast<int32_t>(offsetof(Numeric10FacetsChecker_t3323854505_StaticFields, ___signs_0)); }
-	inline CharU5BU5D_t3528271667* get_signs_0() const { return ___signs_0; }
-	inline CharU5BU5D_t3528271667** get_address_of_signs_0() { return &___signs_0; }
-	inline void set_signs_0(CharU5BU5D_t3528271667* value)
-	{
-		___signs_0 = value;
-		Il2CppCodeGenWriteBarrier((&___signs_0), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // NUMERIC10FACETSCHECKER_T3323854505_H
-#ifndef HASHTABLE_T1853889766_H
-#define HASHTABLE_T1853889766_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Collections.Hashtable
-struct  Hashtable_t1853889766  : public RuntimeObject
-{
-public:
-	// System.Collections.Hashtable/bucket[] System.Collections.Hashtable::buckets
-	bucketU5BU5D_t876121385* ___buckets_0;
-	// System.Int32 System.Collections.Hashtable::count
-	int32_t ___count_1;
-	// System.Int32 System.Collections.Hashtable::occupancy
-	int32_t ___occupancy_2;
-	// System.Int32 System.Collections.Hashtable::loadsize
-	int32_t ___loadsize_3;
-	// System.Single System.Collections.Hashtable::loadFactor
-	float ___loadFactor_4;
-	// System.Int32 modreq(System.Runtime.CompilerServices.IsVolatile) System.Collections.Hashtable::version
-	int32_t ___version_5;
-	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.Collections.Hashtable::isWriterInProgress
-	bool ___isWriterInProgress_6;
-	// System.Collections.ICollection System.Collections.Hashtable::keys
-	RuntimeObject* ___keys_7;
-	// System.Collections.ICollection System.Collections.Hashtable::values
-	RuntimeObject* ___values_8;
-	// System.Collections.IEqualityComparer System.Collections.Hashtable::_keycomparer
-	RuntimeObject* ____keycomparer_9;
-	// System.Object System.Collections.Hashtable::_syncRoot
-	RuntimeObject * ____syncRoot_10;
-
-public:
-	inline static int32_t get_offset_of_buckets_0() { return static_cast<int32_t>(offsetof(Hashtable_t1853889766, ___buckets_0)); }
-	inline bucketU5BU5D_t876121385* get_buckets_0() const { return ___buckets_0; }
-	inline bucketU5BU5D_t876121385** get_address_of_buckets_0() { return &___buckets_0; }
-	inline void set_buckets_0(bucketU5BU5D_t876121385* value)
-	{
-		___buckets_0 = value;
-		Il2CppCodeGenWriteBarrier((&___buckets_0), value);
-	}
-
-	inline static int32_t get_offset_of_count_1() { return static_cast<int32_t>(offsetof(Hashtable_t1853889766, ___count_1)); }
-	inline int32_t get_count_1() const { return ___count_1; }
-	inline int32_t* get_address_of_count_1() { return &___count_1; }
-	inline void set_count_1(int32_t value)
-	{
-		___count_1 = value;
-	}
-
-	inline static int32_t get_offset_of_occupancy_2() { return static_cast<int32_t>(offsetof(Hashtable_t1853889766, ___occupancy_2)); }
-	inline int32_t get_occupancy_2() const { return ___occupancy_2; }
-	inline int32_t* get_address_of_occupancy_2() { return &___occupancy_2; }
-	inline void set_occupancy_2(int32_t value)
-	{
-		___occupancy_2 = value;
-	}
-
-	inline static int32_t get_offset_of_loadsize_3() { return static_cast<int32_t>(offsetof(Hashtable_t1853889766, ___loadsize_3)); }
-	inline int32_t get_loadsize_3() const { return ___loadsize_3; }
-	inline int32_t* get_address_of_loadsize_3() { return &___loadsize_3; }
-	inline void set_loadsize_3(int32_t value)
-	{
-		___loadsize_3 = value;
-	}
-
-	inline static int32_t get_offset_of_loadFactor_4() { return static_cast<int32_t>(offsetof(Hashtable_t1853889766, ___loadFactor_4)); }
-	inline float get_loadFactor_4() const { return ___loadFactor_4; }
-	inline float* get_address_of_loadFactor_4() { return &___loadFactor_4; }
-	inline void set_loadFactor_4(float value)
-	{
-		___loadFactor_4 = value;
-	}
-
-	inline static int32_t get_offset_of_version_5() { return static_cast<int32_t>(offsetof(Hashtable_t1853889766, ___version_5)); }
-	inline int32_t get_version_5() const { return ___version_5; }
-	inline int32_t* get_address_of_version_5() { return &___version_5; }
-	inline void set_version_5(int32_t value)
-	{
-		___version_5 = value;
-	}
-
-	inline static int32_t get_offset_of_isWriterInProgress_6() { return static_cast<int32_t>(offsetof(Hashtable_t1853889766, ___isWriterInProgress_6)); }
-	inline bool get_isWriterInProgress_6() const { return ___isWriterInProgress_6; }
-	inline bool* get_address_of_isWriterInProgress_6() { return &___isWriterInProgress_6; }
-	inline void set_isWriterInProgress_6(bool value)
-	{
-		___isWriterInProgress_6 = value;
-	}
-
-	inline static int32_t get_offset_of_keys_7() { return static_cast<int32_t>(offsetof(Hashtable_t1853889766, ___keys_7)); }
-	inline RuntimeObject* get_keys_7() const { return ___keys_7; }
-	inline RuntimeObject** get_address_of_keys_7() { return &___keys_7; }
-	inline void set_keys_7(RuntimeObject* value)
-	{
-		___keys_7 = value;
-		Il2CppCodeGenWriteBarrier((&___keys_7), value);
-	}
-
-	inline static int32_t get_offset_of_values_8() { return static_cast<int32_t>(offsetof(Hashtable_t1853889766, ___values_8)); }
-	inline RuntimeObject* get_values_8() const { return ___values_8; }
-	inline RuntimeObject** get_address_of_values_8() { return &___values_8; }
-	inline void set_values_8(RuntimeObject* value)
-	{
-		___values_8 = value;
-		Il2CppCodeGenWriteBarrier((&___values_8), value);
-	}
-
-	inline static int32_t get_offset_of__keycomparer_9() { return static_cast<int32_t>(offsetof(Hashtable_t1853889766, ____keycomparer_9)); }
-	inline RuntimeObject* get__keycomparer_9() const { return ____keycomparer_9; }
-	inline RuntimeObject** get_address_of__keycomparer_9() { return &____keycomparer_9; }
-	inline void set__keycomparer_9(RuntimeObject* value)
-	{
-		____keycomparer_9 = value;
-		Il2CppCodeGenWriteBarrier((&____keycomparer_9), value);
-	}
-
-	inline static int32_t get_offset_of__syncRoot_10() { return static_cast<int32_t>(offsetof(Hashtable_t1853889766, ____syncRoot_10)); }
-	inline RuntimeObject * get__syncRoot_10() const { return ____syncRoot_10; }
-	inline RuntimeObject ** get_address_of__syncRoot_10() { return &____syncRoot_10; }
-	inline void set__syncRoot_10(RuntimeObject * value)
-	{
-		____syncRoot_10 = value;
-		Il2CppCodeGenWriteBarrier((&____syncRoot_10), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // HASHTABLE_T1853889766_H
-#ifndef FLAGS_T2372798318_H
-#define FLAGS_T2372798318_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Uri/Flags
-struct  Flags_t2372798318 
-{
-public:
-	// System.UInt64 System.Uri/Flags::value__
-	uint64_t ___value___2;
-
-public:
-	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(Flags_t2372798318, ___value___2)); }
-	inline uint64_t get_value___2() const { return ___value___2; }
-	inline uint64_t* get_address_of_value___2() { return &___value___2; }
-	inline void set_value___2(uint64_t value)
-	{
-		___value___2 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // FLAGS_T2372798318_H
-#ifndef ARITHMETICEXCEPTION_T4283546778_H
-#define ARITHMETICEXCEPTION_T4283546778_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.ArithmeticException
-struct  ArithmeticException_t4283546778  : public SystemException_t176217640
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // ARITHMETICEXCEPTION_T4283546778_H
-#ifndef URIIDNSCOPE_T1847433844_H
-#define URIIDNSCOPE_T1847433844_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.UriIdnScope
-struct  UriIdnScope_t1847433844 
-{
-public:
-	// System.Int32 System.UriIdnScope::value__
-	int32_t ___value___2;
-
-public:
-	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(UriIdnScope_t1847433844, ___value___2)); }
-	inline int32_t get_value___2() const { return ___value___2; }
-	inline int32_t* get_address_of_value___2() { return &___value___2; }
-	inline void set_value___2(int32_t value)
-	{
-		___value___2 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // URIIDNSCOPE_T1847433844_H
-#ifndef INVALIDOPERATIONEXCEPTION_T56020091_H
-#define INVALIDOPERATIONEXCEPTION_T56020091_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.InvalidOperationException
-struct  InvalidOperationException_t56020091  : public SystemException_t176217640
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // INVALIDOPERATIONEXCEPTION_T56020091_H
-#ifndef XMLSCHEMAEXCEPTION_T3511258692_H
-#define XMLSCHEMAEXCEPTION_T3511258692_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.XmlSchemaException
-struct  XmlSchemaException_t3511258692  : public SystemException_t176217640
-{
-public:
-	// System.String System.Xml.Schema.XmlSchemaException::res
-	String_t* ___res_16;
-	// System.String[] System.Xml.Schema.XmlSchemaException::args
-	StringU5BU5D_t1281789340* ___args_17;
-	// System.String System.Xml.Schema.XmlSchemaException::sourceUri
-	String_t* ___sourceUri_18;
-	// System.Int32 System.Xml.Schema.XmlSchemaException::lineNumber
-	int32_t ___lineNumber_19;
-	// System.Int32 System.Xml.Schema.XmlSchemaException::linePosition
-	int32_t ___linePosition_20;
-	// System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaException::sourceSchemaObject
-	XmlSchemaObject_t1315720168 * ___sourceSchemaObject_21;
-	// System.String System.Xml.Schema.XmlSchemaException::message
-	String_t* ___message_22;
-
-public:
-	inline static int32_t get_offset_of_res_16() { return static_cast<int32_t>(offsetof(XmlSchemaException_t3511258692, ___res_16)); }
-	inline String_t* get_res_16() const { return ___res_16; }
-	inline String_t** get_address_of_res_16() { return &___res_16; }
-	inline void set_res_16(String_t* value)
-	{
-		___res_16 = value;
-		Il2CppCodeGenWriteBarrier((&___res_16), value);
-	}
-
-	inline static int32_t get_offset_of_args_17() { return static_cast<int32_t>(offsetof(XmlSchemaException_t3511258692, ___args_17)); }
-	inline StringU5BU5D_t1281789340* get_args_17() const { return ___args_17; }
-	inline StringU5BU5D_t1281789340** get_address_of_args_17() { return &___args_17; }
-	inline void set_args_17(StringU5BU5D_t1281789340* value)
-	{
-		___args_17 = value;
-		Il2CppCodeGenWriteBarrier((&___args_17), value);
-	}
-
-	inline static int32_t get_offset_of_sourceUri_18() { return static_cast<int32_t>(offsetof(XmlSchemaException_t3511258692, ___sourceUri_18)); }
-	inline String_t* get_sourceUri_18() const { return ___sourceUri_18; }
-	inline String_t** get_address_of_sourceUri_18() { return &___sourceUri_18; }
-	inline void set_sourceUri_18(String_t* value)
-	{
-		___sourceUri_18 = value;
-		Il2CppCodeGenWriteBarrier((&___sourceUri_18), value);
-	}
-
-	inline static int32_t get_offset_of_lineNumber_19() { return static_cast<int32_t>(offsetof(XmlSchemaException_t3511258692, ___lineNumber_19)); }
-	inline int32_t get_lineNumber_19() const { return ___lineNumber_19; }
-	inline int32_t* get_address_of_lineNumber_19() { return &___lineNumber_19; }
-	inline void set_lineNumber_19(int32_t value)
-	{
-		___lineNumber_19 = value;
-	}
-
-	inline static int32_t get_offset_of_linePosition_20() { return static_cast<int32_t>(offsetof(XmlSchemaException_t3511258692, ___linePosition_20)); }
-	inline int32_t get_linePosition_20() const { return ___linePosition_20; }
-	inline int32_t* get_address_of_linePosition_20() { return &___linePosition_20; }
-	inline void set_linePosition_20(int32_t value)
-	{
-		___linePosition_20 = value;
-	}
-
-	inline static int32_t get_offset_of_sourceSchemaObject_21() { return static_cast<int32_t>(offsetof(XmlSchemaException_t3511258692, ___sourceSchemaObject_21)); }
-	inline XmlSchemaObject_t1315720168 * get_sourceSchemaObject_21() const { return ___sourceSchemaObject_21; }
-	inline XmlSchemaObject_t1315720168 ** get_address_of_sourceSchemaObject_21() { return &___sourceSchemaObject_21; }
-	inline void set_sourceSchemaObject_21(XmlSchemaObject_t1315720168 * value)
-	{
-		___sourceSchemaObject_21 = value;
-		Il2CppCodeGenWriteBarrier((&___sourceSchemaObject_21), value);
-	}
-
-	inline static int32_t get_offset_of_message_22() { return static_cast<int32_t>(offsetof(XmlSchemaException_t3511258692, ___message_22)); }
-	inline String_t* get_message_22() const { return ___message_22; }
-	inline String_t** get_address_of_message_22() { return &___message_22; }
-	inline void set_message_22(String_t* value)
-	{
-		___message_22 = value;
-		Il2CppCodeGenWriteBarrier((&___message_22), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // XMLSCHEMAEXCEPTION_T3511258692_H
-#ifndef XMLTOKENIZEDTYPE_T3348692225_H
-#define XMLTOKENIZEDTYPE_T3348692225_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.XmlTokenizedType
-struct  XmlTokenizedType_t3348692225 
-{
-public:
-	// System.Int32 System.Xml.XmlTokenizedType::value__
-	int32_t ___value___2;
-
-public:
-	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(XmlTokenizedType_t3348692225, ___value___2)); }
-	inline int32_t get_value___2() const { return ___value___2; }
-	inline int32_t* get_address_of_value___2() { return &___value___2; }
-	inline void set_value___2(int32_t value)
-	{
-		___value___2 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // XMLTOKENIZEDTYPE_T3348692225_H
+#endif // XPATHNODETYPE_T3031007223_H
 #ifndef XMLSCHEMACONTENTTYPE_T3022550233_H
 #define XMLSCHEMACONTENTTYPE_T3022550233_H
 #ifdef __clang__
@@ -14697,271 +15078,6 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // XMLSCHEMACONTENTTYPE_T3022550233_H
-#ifndef LISTTYPE_T2118133397_H
-#define LISTTYPE_T2118133397_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.NamespaceList/ListType
-struct  ListType_t2118133397 
-{
-public:
-	// System.Int32 System.Xml.Schema.NamespaceList/ListType::value__
-	int32_t ___value___2;
-
-public:
-	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(ListType_t2118133397, ___value___2)); }
-	inline int32_t get_value___2() const { return ___value___2; }
-	inline int32_t* get_address_of_value___2() { return &___value___2; }
-	inline void set_value___2(int32_t value)
-	{
-		___value___2 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // LISTTYPE_T2118133397_H
-#ifndef TIMESPAN_T881159249_H
-#define TIMESPAN_T881159249_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.TimeSpan
-struct  TimeSpan_t881159249 
-{
-public:
-	// System.Int64 System.TimeSpan::_ticks
-	int64_t ____ticks_3;
-
-public:
-	inline static int32_t get_offset_of__ticks_3() { return static_cast<int32_t>(offsetof(TimeSpan_t881159249, ____ticks_3)); }
-	inline int64_t get__ticks_3() const { return ____ticks_3; }
-	inline int64_t* get_address_of__ticks_3() { return &____ticks_3; }
-	inline void set__ticks_3(int64_t value)
-	{
-		____ticks_3 = value;
-	}
-};
-
-struct TimeSpan_t881159249_StaticFields
-{
-public:
-	// System.TimeSpan System.TimeSpan::Zero
-	TimeSpan_t881159249  ___Zero_0;
-	// System.TimeSpan System.TimeSpan::MaxValue
-	TimeSpan_t881159249  ___MaxValue_1;
-	// System.TimeSpan System.TimeSpan::MinValue
-	TimeSpan_t881159249  ___MinValue_2;
-	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.TimeSpan::_legacyConfigChecked
-	bool ____legacyConfigChecked_4;
-	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.TimeSpan::_legacyMode
-	bool ____legacyMode_5;
-
-public:
-	inline static int32_t get_offset_of_Zero_0() { return static_cast<int32_t>(offsetof(TimeSpan_t881159249_StaticFields, ___Zero_0)); }
-	inline TimeSpan_t881159249  get_Zero_0() const { return ___Zero_0; }
-	inline TimeSpan_t881159249 * get_address_of_Zero_0() { return &___Zero_0; }
-	inline void set_Zero_0(TimeSpan_t881159249  value)
-	{
-		___Zero_0 = value;
-	}
-
-	inline static int32_t get_offset_of_MaxValue_1() { return static_cast<int32_t>(offsetof(TimeSpan_t881159249_StaticFields, ___MaxValue_1)); }
-	inline TimeSpan_t881159249  get_MaxValue_1() const { return ___MaxValue_1; }
-	inline TimeSpan_t881159249 * get_address_of_MaxValue_1() { return &___MaxValue_1; }
-	inline void set_MaxValue_1(TimeSpan_t881159249  value)
-	{
-		___MaxValue_1 = value;
-	}
-
-	inline static int32_t get_offset_of_MinValue_2() { return static_cast<int32_t>(offsetof(TimeSpan_t881159249_StaticFields, ___MinValue_2)); }
-	inline TimeSpan_t881159249  get_MinValue_2() const { return ___MinValue_2; }
-	inline TimeSpan_t881159249 * get_address_of_MinValue_2() { return &___MinValue_2; }
-	inline void set_MinValue_2(TimeSpan_t881159249  value)
-	{
-		___MinValue_2 = value;
-	}
-
-	inline static int32_t get_offset_of__legacyConfigChecked_4() { return static_cast<int32_t>(offsetof(TimeSpan_t881159249_StaticFields, ____legacyConfigChecked_4)); }
-	inline bool get__legacyConfigChecked_4() const { return ____legacyConfigChecked_4; }
-	inline bool* get_address_of__legacyConfigChecked_4() { return &____legacyConfigChecked_4; }
-	inline void set__legacyConfigChecked_4(bool value)
-	{
-		____legacyConfigChecked_4 = value;
-	}
-
-	inline static int32_t get_offset_of__legacyMode_5() { return static_cast<int32_t>(offsetof(TimeSpan_t881159249_StaticFields, ____legacyMode_5)); }
-	inline bool get__legacyMode_5() const { return ____legacyMode_5; }
-	inline bool* get_address_of__legacyMode_5() { return &____legacyMode_5; }
-	inline void set__legacyMode_5(bool value)
-	{
-		____legacyMode_5 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // TIMESPAN_T881159249_H
-#ifndef XMLELEMENT_T561603118_H
-#define XMLELEMENT_T561603118_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.XmlElement
-struct  XmlElement_t561603118  : public XmlLinkedNode_t1437094927
-{
-public:
-	// System.Xml.XmlName System.Xml.XmlElement::name
-	XmlName_t4150142242 * ___name_2;
-	// System.Xml.XmlAttributeCollection System.Xml.XmlElement::attributes
-	XmlAttributeCollection_t2316283784 * ___attributes_3;
-	// System.Xml.XmlLinkedNode System.Xml.XmlElement::lastChild
-	XmlLinkedNode_t1437094927 * ___lastChild_4;
-
-public:
-	inline static int32_t get_offset_of_name_2() { return static_cast<int32_t>(offsetof(XmlElement_t561603118, ___name_2)); }
-	inline XmlName_t4150142242 * get_name_2() const { return ___name_2; }
-	inline XmlName_t4150142242 ** get_address_of_name_2() { return &___name_2; }
-	inline void set_name_2(XmlName_t4150142242 * value)
-	{
-		___name_2 = value;
-		Il2CppCodeGenWriteBarrier((&___name_2), value);
-	}
-
-	inline static int32_t get_offset_of_attributes_3() { return static_cast<int32_t>(offsetof(XmlElement_t561603118, ___attributes_3)); }
-	inline XmlAttributeCollection_t2316283784 * get_attributes_3() const { return ___attributes_3; }
-	inline XmlAttributeCollection_t2316283784 ** get_address_of_attributes_3() { return &___attributes_3; }
-	inline void set_attributes_3(XmlAttributeCollection_t2316283784 * value)
-	{
-		___attributes_3 = value;
-		Il2CppCodeGenWriteBarrier((&___attributes_3), value);
-	}
-
-	inline static int32_t get_offset_of_lastChild_4() { return static_cast<int32_t>(offsetof(XmlElement_t561603118, ___lastChild_4)); }
-	inline XmlLinkedNode_t1437094927 * get_lastChild_4() const { return ___lastChild_4; }
-	inline XmlLinkedNode_t1437094927 ** get_address_of_lastChild_4() { return &___lastChild_4; }
-	inline void set_lastChild_4(XmlLinkedNode_t1437094927 * value)
-	{
-		___lastChild_4 = value;
-		Il2CppCodeGenWriteBarrier((&___lastChild_4), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // XMLELEMENT_T561603118_H
-#ifndef XMLSCHEMACONTENT_T1040349258_H
-#define XMLSCHEMACONTENT_T1040349258_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.XmlSchemaContent
-struct  XmlSchemaContent_t1040349258  : public XmlSchemaAnnotated_t2603549639
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // XMLSCHEMACONTENT_T1040349258_H
-#ifndef XMLSCHEMACONTENTMODEL_T602185179_H
-#define XMLSCHEMACONTENTMODEL_T602185179_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.XmlSchemaContentModel
-struct  XmlSchemaContentModel_t602185179  : public XmlSchemaAnnotated_t2603549639
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // XMLSCHEMACONTENTMODEL_T602185179_H
-#ifndef XMLSCHEMAATTRIBUTEGROUPREF_T846390688_H
-#define XMLSCHEMAATTRIBUTEGROUPREF_T846390688_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.XmlSchemaAttributeGroupRef
-struct  XmlSchemaAttributeGroupRef_t846390688  : public XmlSchemaAnnotated_t2603549639
-{
-public:
-	// System.Xml.XmlQualifiedName System.Xml.Schema.XmlSchemaAttributeGroupRef::refName
-	XmlQualifiedName_t2760654312 * ___refName_9;
-
-public:
-	inline static int32_t get_offset_of_refName_9() { return static_cast<int32_t>(offsetof(XmlSchemaAttributeGroupRef_t846390688, ___refName_9)); }
-	inline XmlQualifiedName_t2760654312 * get_refName_9() const { return ___refName_9; }
-	inline XmlQualifiedName_t2760654312 ** get_address_of_refName_9() { return &___refName_9; }
-	inline void set_refName_9(XmlQualifiedName_t2760654312 * value)
-	{
-		___refName_9 = value;
-		Il2CppCodeGenWriteBarrier((&___refName_9), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // XMLSCHEMAATTRIBUTEGROUPREF_T846390688_H
-#ifndef XMLSCHEMADERIVATIONMETHOD_T1774354337_H
-#define XMLSCHEMADERIVATIONMETHOD_T1774354337_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.XmlSchemaDerivationMethod
-struct  XmlSchemaDerivationMethod_t1774354337 
-{
-public:
-	// System.Int32 System.Xml.Schema.XmlSchemaDerivationMethod::value__
-	int32_t ___value___2;
-
-public:
-	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(XmlSchemaDerivationMethod_t1774354337, ___value___2)); }
-	inline int32_t get_value___2() const { return ___value___2; }
-	inline int32_t* get_address_of_value___2() { return &___value___2; }
-	inline void set_value___2(int32_t value)
-	{
-		___value___2 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // XMLSCHEMADERIVATIONMETHOD_T1774354337_H
 #ifndef USE_T2902096781_H
 #define USE_T2902096781_H
 #ifdef __clang__
@@ -14991,23 +15107,23 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // USE_T2902096781_H
-#ifndef URIKIND_T3816567336_H
-#define URIKIND_T3816567336_H
+#ifndef AXISTYPE_T3322599580_H
+#define AXISTYPE_T3322599580_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// System.UriKind
-struct  UriKind_t3816567336 
+// MS.Internal.Xml.XPath.Axis/AxisType
+struct  AxisType_t3322599580 
 {
 public:
-	// System.Int32 System.UriKind::value__
+	// System.Int32 MS.Internal.Xml.XPath.Axis/AxisType::value__
 	int32_t ___value___2;
 
 public:
-	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(UriKind_t3816567336, ___value___2)); }
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(AxisType_t3322599580, ___value___2)); }
 	inline int32_t get_value___2() const { return ___value___2; }
 	inline int32_t* get_address_of_value___2() { return &___value___2; }
 	inline void set_value___2(int32_t value)
@@ -15019,94 +15135,167 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // URIKIND_T3816567336_H
-#ifndef CONSTRAINTROLE_T1918123008_H
-#define CONSTRAINTROLE_T1918123008_H
+#endif // AXISTYPE_T3322599580_H
+#ifndef XMLSCHEMASIMPLECONTENT_T4264369274_H
+#define XMLSCHEMASIMPLECONTENT_T4264369274_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// System.Xml.Schema.CompiledIdentityConstraint/ConstraintRole
-struct  ConstraintRole_t1918123008 
+// System.Xml.Schema.XmlSchemaSimpleContent
+struct  XmlSchemaSimpleContent_t4264369274  : public XmlSchemaContentModel_t602185179
 {
 public:
-	// System.Int32 System.Xml.Schema.CompiledIdentityConstraint/ConstraintRole::value__
-	int32_t ___value___2;
+	// System.Xml.Schema.XmlSchemaContent System.Xml.Schema.XmlSchemaSimpleContent::content
+	XmlSchemaContent_t1040349258 * ___content_9;
 
 public:
-	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(ConstraintRole_t1918123008, ___value___2)); }
-	inline int32_t get_value___2() const { return ___value___2; }
-	inline int32_t* get_address_of_value___2() { return &___value___2; }
-	inline void set_value___2(int32_t value)
+	inline static int32_t get_offset_of_content_9() { return static_cast<int32_t>(offsetof(XmlSchemaSimpleContent_t4264369274, ___content_9)); }
+	inline XmlSchemaContent_t1040349258 * get_content_9() const { return ___content_9; }
+	inline XmlSchemaContent_t1040349258 ** get_address_of_content_9() { return &___content_9; }
+	inline void set_content_9(XmlSchemaContent_t1040349258 * value)
 	{
-		___value___2 = value;
+		___content_9 = value;
+		Il2CppCodeGenWriteBarrier((&___content_9), value);
 	}
 };
 
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // CONSTRAINTROLE_T1918123008_H
-#ifndef XMLSCHEMAUSE_T647315988_H
-#define XMLSCHEMAUSE_T647315988_H
+#endif // XMLSCHEMASIMPLECONTENT_T4264369274_H
+#ifndef XMLSIGNIFICANTWHITESPACE_T1052520128_H
+#define XMLSIGNIFICANTWHITESPACE_T1052520128_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// System.Xml.Schema.XmlSchemaUse
-struct  XmlSchemaUse_t647315988 
+// System.Xml.XmlSignificantWhitespace
+struct  XmlSignificantWhitespace_t1052520128  : public XmlCharacterData_t1167807131
 {
 public:
-	// System.Int32 System.Xml.Schema.XmlSchemaUse::value__
-	int32_t ___value___2;
 
 public:
-	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(XmlSchemaUse_t647315988, ___value___2)); }
-	inline int32_t get_value___2() const { return ___value___2; }
-	inline int32_t* get_address_of_value___2() { return &___value___2; }
-	inline void set_value___2(int32_t value)
-	{
-		___value___2 = value;
-	}
 };
 
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // XMLSCHEMAUSE_T647315988_H
-#ifndef STRINGCOMPARISON_T3657712135_H
-#define STRINGCOMPARISON_T3657712135_H
+#endif // XMLSIGNIFICANTWHITESPACE_T1052520128_H
+#ifndef XMLTEXT_T2682211705_H
+#define XMLTEXT_T2682211705_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// System.StringComparison
-struct  StringComparison_t3657712135 
+// System.Xml.XmlText
+struct  XmlText_t2682211705  : public XmlCharacterData_t1167807131
 {
 public:
-	// System.Int32 System.StringComparison::value__
-	int32_t ___value___2;
 
 public:
-	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(StringComparison_t3657712135, ___value___2)); }
-	inline int32_t get_value___2() const { return ___value___2; }
-	inline int32_t* get_address_of_value___2() { return &___value___2; }
-	inline void set_value___2(int32_t value)
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // XMLTEXT_T2682211705_H
+#ifndef COMPILEDIDENTITYCONSTRAINT_T1335094965_H
+#define COMPILEDIDENTITYCONSTRAINT_T1335094965_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.CompiledIdentityConstraint
+struct  CompiledIdentityConstraint_t1335094965  : public RuntimeObject
+{
+public:
+	// System.Xml.XmlQualifiedName System.Xml.Schema.CompiledIdentityConstraint::name
+	XmlQualifiedName_t2760654312 * ___name_0;
+	// System.Xml.Schema.CompiledIdentityConstraint/ConstraintRole System.Xml.Schema.CompiledIdentityConstraint::role
+	int32_t ___role_1;
+	// System.Xml.Schema.Asttree System.Xml.Schema.CompiledIdentityConstraint::selector
+	Asttree_t1394951200 * ___selector_2;
+	// System.Xml.Schema.Asttree[] System.Xml.Schema.CompiledIdentityConstraint::fields
+	AsttreeU5BU5D_t3174926177* ___fields_3;
+	// System.Xml.XmlQualifiedName System.Xml.Schema.CompiledIdentityConstraint::refer
+	XmlQualifiedName_t2760654312 * ___refer_4;
+
+public:
+	inline static int32_t get_offset_of_name_0() { return static_cast<int32_t>(offsetof(CompiledIdentityConstraint_t1335094965, ___name_0)); }
+	inline XmlQualifiedName_t2760654312 * get_name_0() const { return ___name_0; }
+	inline XmlQualifiedName_t2760654312 ** get_address_of_name_0() { return &___name_0; }
+	inline void set_name_0(XmlQualifiedName_t2760654312 * value)
 	{
-		___value___2 = value;
+		___name_0 = value;
+		Il2CppCodeGenWriteBarrier((&___name_0), value);
+	}
+
+	inline static int32_t get_offset_of_role_1() { return static_cast<int32_t>(offsetof(CompiledIdentityConstraint_t1335094965, ___role_1)); }
+	inline int32_t get_role_1() const { return ___role_1; }
+	inline int32_t* get_address_of_role_1() { return &___role_1; }
+	inline void set_role_1(int32_t value)
+	{
+		___role_1 = value;
+	}
+
+	inline static int32_t get_offset_of_selector_2() { return static_cast<int32_t>(offsetof(CompiledIdentityConstraint_t1335094965, ___selector_2)); }
+	inline Asttree_t1394951200 * get_selector_2() const { return ___selector_2; }
+	inline Asttree_t1394951200 ** get_address_of_selector_2() { return &___selector_2; }
+	inline void set_selector_2(Asttree_t1394951200 * value)
+	{
+		___selector_2 = value;
+		Il2CppCodeGenWriteBarrier((&___selector_2), value);
+	}
+
+	inline static int32_t get_offset_of_fields_3() { return static_cast<int32_t>(offsetof(CompiledIdentityConstraint_t1335094965, ___fields_3)); }
+	inline AsttreeU5BU5D_t3174926177* get_fields_3() const { return ___fields_3; }
+	inline AsttreeU5BU5D_t3174926177** get_address_of_fields_3() { return &___fields_3; }
+	inline void set_fields_3(AsttreeU5BU5D_t3174926177* value)
+	{
+		___fields_3 = value;
+		Il2CppCodeGenWriteBarrier((&___fields_3), value);
+	}
+
+	inline static int32_t get_offset_of_refer_4() { return static_cast<int32_t>(offsetof(CompiledIdentityConstraint_t1335094965, ___refer_4)); }
+	inline XmlQualifiedName_t2760654312 * get_refer_4() const { return ___refer_4; }
+	inline XmlQualifiedName_t2760654312 ** get_address_of_refer_4() { return &___refer_4; }
+	inline void set_refer_4(XmlQualifiedName_t2760654312 * value)
+	{
+		___refer_4 = value;
+		Il2CppCodeGenWriteBarrier((&___refer_4), value);
+	}
+};
+
+struct CompiledIdentityConstraint_t1335094965_StaticFields
+{
+public:
+	// System.Xml.Schema.CompiledIdentityConstraint System.Xml.Schema.CompiledIdentityConstraint::Empty
+	CompiledIdentityConstraint_t1335094965 * ___Empty_5;
+
+public:
+	inline static int32_t get_offset_of_Empty_5() { return static_cast<int32_t>(offsetof(CompiledIdentityConstraint_t1335094965_StaticFields, ___Empty_5)); }
+	inline CompiledIdentityConstraint_t1335094965 * get_Empty_5() const { return ___Empty_5; }
+	inline CompiledIdentityConstraint_t1335094965 ** get_address_of_Empty_5() { return &___Empty_5; }
+	inline void set_Empty_5(CompiledIdentityConstraint_t1335094965 * value)
+	{
+		___Empty_5 = value;
+		Il2CppCodeGenWriteBarrier((&___Empty_5), value);
 	}
 };
 
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // STRINGCOMPARISON_T3657712135_H
+#endif // COMPILEDIDENTITYCONSTRAINT_T1335094965_H
 #ifndef XMLSCHEMA_T3742557897_H
 #define XMLSCHEMA_T3742557897_H
 #ifdef __clang__
@@ -15408,255 +15597,481 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // XMLSCHEMA_T3742557897_H
-#ifndef SCHEMAINFO_T3347508623_H
-#define SCHEMAINFO_T3347508623_H
+#ifndef MULTICASTDELEGATE_T157516450_H
+#define MULTICASTDELEGATE_T157516450_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// System.Xml.Schema.SchemaInfo
-struct  SchemaInfo_t3347508623  : public RuntimeObject
+// System.MulticastDelegate
+struct  MulticastDelegate_t157516450  : public Delegate_t1188392813
 {
 public:
-	// System.Collections.Generic.Dictionary`2<System.Xml.XmlQualifiedName,System.Xml.Schema.SchemaElementDecl> System.Xml.Schema.SchemaInfo::elementDecls
-	Dictionary_2_t2242461324 * ___elementDecls_0;
-	// System.Collections.Generic.Dictionary`2<System.Xml.XmlQualifiedName,System.Xml.Schema.SchemaElementDecl> System.Xml.Schema.SchemaInfo::undeclaredElementDecls
-	Dictionary_2_t2242461324 * ___undeclaredElementDecls_1;
-	// System.Collections.Generic.Dictionary`2<System.Xml.XmlQualifiedName,System.Xml.Schema.SchemaEntity> System.Xml.Schema.SchemaInfo::generalEntities
-	Dictionary_2_t1552439284 * ___generalEntities_2;
-	// System.Collections.Generic.Dictionary`2<System.Xml.XmlQualifiedName,System.Xml.Schema.SchemaEntity> System.Xml.Schema.SchemaInfo::parameterEntities
-	Dictionary_2_t1552439284 * ___parameterEntities_3;
-	// System.Xml.XmlQualifiedName System.Xml.Schema.SchemaInfo::docTypeName
-	XmlQualifiedName_t2760654312 * ___docTypeName_4;
-	// System.String System.Xml.Schema.SchemaInfo::internalDtdSubset
-	String_t* ___internalDtdSubset_5;
-	// System.Boolean System.Xml.Schema.SchemaInfo::hasNonCDataAttributes
-	bool ___hasNonCDataAttributes_6;
-	// System.Boolean System.Xml.Schema.SchemaInfo::hasDefaultAttributes
-	bool ___hasDefaultAttributes_7;
-	// System.Collections.Generic.Dictionary`2<System.String,System.Boolean> System.Xml.Schema.SchemaInfo::targetNamespaces
-	Dictionary_2_t4177511560 * ___targetNamespaces_8;
-	// System.Collections.Generic.Dictionary`2<System.Xml.XmlQualifiedName,System.Xml.Schema.SchemaAttDef> System.Xml.Schema.SchemaInfo::attributeDecls
-	Dictionary_2_t2404538479 * ___attributeDecls_9;
-	// System.Int32 System.Xml.Schema.SchemaInfo::errorCount
-	int32_t ___errorCount_10;
-	// System.Xml.Schema.SchemaType System.Xml.Schema.SchemaInfo::schemaType
-	int32_t ___schemaType_11;
-	// System.Collections.Generic.Dictionary`2<System.Xml.XmlQualifiedName,System.Xml.Schema.SchemaElementDecl> System.Xml.Schema.SchemaInfo::elementDeclsByType
-	Dictionary_2_t2242461324 * ___elementDeclsByType_12;
-	// System.Collections.Generic.Dictionary`2<System.String,System.Xml.Schema.SchemaNotation> System.Xml.Schema.SchemaInfo::notations
-	Dictionary_2_t1732933766 * ___notations_13;
+	// System.Delegate[] System.MulticastDelegate::delegates
+	DelegateU5BU5D_t1703627840* ___delegates_11;
 
 public:
-	inline static int32_t get_offset_of_elementDecls_0() { return static_cast<int32_t>(offsetof(SchemaInfo_t3347508623, ___elementDecls_0)); }
-	inline Dictionary_2_t2242461324 * get_elementDecls_0() const { return ___elementDecls_0; }
-	inline Dictionary_2_t2242461324 ** get_address_of_elementDecls_0() { return &___elementDecls_0; }
-	inline void set_elementDecls_0(Dictionary_2_t2242461324 * value)
+	inline static int32_t get_offset_of_delegates_11() { return static_cast<int32_t>(offsetof(MulticastDelegate_t157516450, ___delegates_11)); }
+	inline DelegateU5BU5D_t1703627840* get_delegates_11() const { return ___delegates_11; }
+	inline DelegateU5BU5D_t1703627840** get_address_of_delegates_11() { return &___delegates_11; }
+	inline void set_delegates_11(DelegateU5BU5D_t1703627840* value)
 	{
-		___elementDecls_0 = value;
-		Il2CppCodeGenWriteBarrier((&___elementDecls_0), value);
-	}
-
-	inline static int32_t get_offset_of_undeclaredElementDecls_1() { return static_cast<int32_t>(offsetof(SchemaInfo_t3347508623, ___undeclaredElementDecls_1)); }
-	inline Dictionary_2_t2242461324 * get_undeclaredElementDecls_1() const { return ___undeclaredElementDecls_1; }
-	inline Dictionary_2_t2242461324 ** get_address_of_undeclaredElementDecls_1() { return &___undeclaredElementDecls_1; }
-	inline void set_undeclaredElementDecls_1(Dictionary_2_t2242461324 * value)
-	{
-		___undeclaredElementDecls_1 = value;
-		Il2CppCodeGenWriteBarrier((&___undeclaredElementDecls_1), value);
-	}
-
-	inline static int32_t get_offset_of_generalEntities_2() { return static_cast<int32_t>(offsetof(SchemaInfo_t3347508623, ___generalEntities_2)); }
-	inline Dictionary_2_t1552439284 * get_generalEntities_2() const { return ___generalEntities_2; }
-	inline Dictionary_2_t1552439284 ** get_address_of_generalEntities_2() { return &___generalEntities_2; }
-	inline void set_generalEntities_2(Dictionary_2_t1552439284 * value)
-	{
-		___generalEntities_2 = value;
-		Il2CppCodeGenWriteBarrier((&___generalEntities_2), value);
-	}
-
-	inline static int32_t get_offset_of_parameterEntities_3() { return static_cast<int32_t>(offsetof(SchemaInfo_t3347508623, ___parameterEntities_3)); }
-	inline Dictionary_2_t1552439284 * get_parameterEntities_3() const { return ___parameterEntities_3; }
-	inline Dictionary_2_t1552439284 ** get_address_of_parameterEntities_3() { return &___parameterEntities_3; }
-	inline void set_parameterEntities_3(Dictionary_2_t1552439284 * value)
-	{
-		___parameterEntities_3 = value;
-		Il2CppCodeGenWriteBarrier((&___parameterEntities_3), value);
-	}
-
-	inline static int32_t get_offset_of_docTypeName_4() { return static_cast<int32_t>(offsetof(SchemaInfo_t3347508623, ___docTypeName_4)); }
-	inline XmlQualifiedName_t2760654312 * get_docTypeName_4() const { return ___docTypeName_4; }
-	inline XmlQualifiedName_t2760654312 ** get_address_of_docTypeName_4() { return &___docTypeName_4; }
-	inline void set_docTypeName_4(XmlQualifiedName_t2760654312 * value)
-	{
-		___docTypeName_4 = value;
-		Il2CppCodeGenWriteBarrier((&___docTypeName_4), value);
-	}
-
-	inline static int32_t get_offset_of_internalDtdSubset_5() { return static_cast<int32_t>(offsetof(SchemaInfo_t3347508623, ___internalDtdSubset_5)); }
-	inline String_t* get_internalDtdSubset_5() const { return ___internalDtdSubset_5; }
-	inline String_t** get_address_of_internalDtdSubset_5() { return &___internalDtdSubset_5; }
-	inline void set_internalDtdSubset_5(String_t* value)
-	{
-		___internalDtdSubset_5 = value;
-		Il2CppCodeGenWriteBarrier((&___internalDtdSubset_5), value);
-	}
-
-	inline static int32_t get_offset_of_hasNonCDataAttributes_6() { return static_cast<int32_t>(offsetof(SchemaInfo_t3347508623, ___hasNonCDataAttributes_6)); }
-	inline bool get_hasNonCDataAttributes_6() const { return ___hasNonCDataAttributes_6; }
-	inline bool* get_address_of_hasNonCDataAttributes_6() { return &___hasNonCDataAttributes_6; }
-	inline void set_hasNonCDataAttributes_6(bool value)
-	{
-		___hasNonCDataAttributes_6 = value;
-	}
-
-	inline static int32_t get_offset_of_hasDefaultAttributes_7() { return static_cast<int32_t>(offsetof(SchemaInfo_t3347508623, ___hasDefaultAttributes_7)); }
-	inline bool get_hasDefaultAttributes_7() const { return ___hasDefaultAttributes_7; }
-	inline bool* get_address_of_hasDefaultAttributes_7() { return &___hasDefaultAttributes_7; }
-	inline void set_hasDefaultAttributes_7(bool value)
-	{
-		___hasDefaultAttributes_7 = value;
-	}
-
-	inline static int32_t get_offset_of_targetNamespaces_8() { return static_cast<int32_t>(offsetof(SchemaInfo_t3347508623, ___targetNamespaces_8)); }
-	inline Dictionary_2_t4177511560 * get_targetNamespaces_8() const { return ___targetNamespaces_8; }
-	inline Dictionary_2_t4177511560 ** get_address_of_targetNamespaces_8() { return &___targetNamespaces_8; }
-	inline void set_targetNamespaces_8(Dictionary_2_t4177511560 * value)
-	{
-		___targetNamespaces_8 = value;
-		Il2CppCodeGenWriteBarrier((&___targetNamespaces_8), value);
-	}
-
-	inline static int32_t get_offset_of_attributeDecls_9() { return static_cast<int32_t>(offsetof(SchemaInfo_t3347508623, ___attributeDecls_9)); }
-	inline Dictionary_2_t2404538479 * get_attributeDecls_9() const { return ___attributeDecls_9; }
-	inline Dictionary_2_t2404538479 ** get_address_of_attributeDecls_9() { return &___attributeDecls_9; }
-	inline void set_attributeDecls_9(Dictionary_2_t2404538479 * value)
-	{
-		___attributeDecls_9 = value;
-		Il2CppCodeGenWriteBarrier((&___attributeDecls_9), value);
-	}
-
-	inline static int32_t get_offset_of_errorCount_10() { return static_cast<int32_t>(offsetof(SchemaInfo_t3347508623, ___errorCount_10)); }
-	inline int32_t get_errorCount_10() const { return ___errorCount_10; }
-	inline int32_t* get_address_of_errorCount_10() { return &___errorCount_10; }
-	inline void set_errorCount_10(int32_t value)
-	{
-		___errorCount_10 = value;
-	}
-
-	inline static int32_t get_offset_of_schemaType_11() { return static_cast<int32_t>(offsetof(SchemaInfo_t3347508623, ___schemaType_11)); }
-	inline int32_t get_schemaType_11() const { return ___schemaType_11; }
-	inline int32_t* get_address_of_schemaType_11() { return &___schemaType_11; }
-	inline void set_schemaType_11(int32_t value)
-	{
-		___schemaType_11 = value;
-	}
-
-	inline static int32_t get_offset_of_elementDeclsByType_12() { return static_cast<int32_t>(offsetof(SchemaInfo_t3347508623, ___elementDeclsByType_12)); }
-	inline Dictionary_2_t2242461324 * get_elementDeclsByType_12() const { return ___elementDeclsByType_12; }
-	inline Dictionary_2_t2242461324 ** get_address_of_elementDeclsByType_12() { return &___elementDeclsByType_12; }
-	inline void set_elementDeclsByType_12(Dictionary_2_t2242461324 * value)
-	{
-		___elementDeclsByType_12 = value;
-		Il2CppCodeGenWriteBarrier((&___elementDeclsByType_12), value);
-	}
-
-	inline static int32_t get_offset_of_notations_13() { return static_cast<int32_t>(offsetof(SchemaInfo_t3347508623, ___notations_13)); }
-	inline Dictionary_2_t1732933766 * get_notations_13() const { return ___notations_13; }
-	inline Dictionary_2_t1732933766 ** get_address_of_notations_13() { return &___notations_13; }
-	inline void set_notations_13(Dictionary_2_t1732933766 * value)
-	{
-		___notations_13 = value;
-		Il2CppCodeGenWriteBarrier((&___notations_13), value);
+		___delegates_11 = value;
+		Il2CppCodeGenWriteBarrier((&___delegates_11), value);
 	}
 };
 
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // SCHEMAINFO_T3347508623_H
-#ifndef XMLCDATASECTION_T3267478366_H
-#define XMLCDATASECTION_T3267478366_H
+// Native definition for P/Invoke marshalling of System.MulticastDelegate
+struct MulticastDelegate_t157516450_marshaled_pinvoke : public Delegate_t1188392813_marshaled_pinvoke
+{
+	DelegateU5BU5D_t1703627840* ___delegates_11;
+};
+// Native definition for COM marshalling of System.MulticastDelegate
+struct MulticastDelegate_t157516450_marshaled_com : public Delegate_t1188392813_marshaled_com
+{
+	DelegateU5BU5D_t1703627840* ___delegates_11;
+};
+#endif // MULTICASTDELEGATE_T157516450_H
+#ifndef TYPE_T_H
+#define TYPE_T_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// System.Xml.XmlCDataSection
-struct  XmlCDataSection_t3267478366  : public XmlCharacterData_t1167807131
+// System.Type
+struct  Type_t  : public MemberInfo_t
 {
 public:
+	// System.RuntimeTypeHandle System.Type::_impl
+	RuntimeTypeHandle_t3027515415  ____impl_0;
 
 public:
+	inline static int32_t get_offset_of__impl_0() { return static_cast<int32_t>(offsetof(Type_t, ____impl_0)); }
+	inline RuntimeTypeHandle_t3027515415  get__impl_0() const { return ____impl_0; }
+	inline RuntimeTypeHandle_t3027515415 * get_address_of__impl_0() { return &____impl_0; }
+	inline void set__impl_0(RuntimeTypeHandle_t3027515415  value)
+	{
+		____impl_0 = value;
+	}
+};
+
+struct Type_t_StaticFields
+{
+public:
+	// System.Reflection.MemberFilter System.Type::FilterAttribute
+	MemberFilter_t426314064 * ___FilterAttribute_1;
+	// System.Reflection.MemberFilter System.Type::FilterName
+	MemberFilter_t426314064 * ___FilterName_2;
+	// System.Reflection.MemberFilter System.Type::FilterNameIgnoreCase
+	MemberFilter_t426314064 * ___FilterNameIgnoreCase_3;
+	// System.Object System.Type::Missing
+	RuntimeObject * ___Missing_4;
+	// System.Char System.Type::Delimiter
+	Il2CppChar ___Delimiter_5;
+	// System.Type[] System.Type::EmptyTypes
+	TypeU5BU5D_t3940880105* ___EmptyTypes_6;
+	// System.Reflection.Binder System.Type::defaultBinder
+	Binder_t2999457153 * ___defaultBinder_7;
+
+public:
+	inline static int32_t get_offset_of_FilterAttribute_1() { return static_cast<int32_t>(offsetof(Type_t_StaticFields, ___FilterAttribute_1)); }
+	inline MemberFilter_t426314064 * get_FilterAttribute_1() const { return ___FilterAttribute_1; }
+	inline MemberFilter_t426314064 ** get_address_of_FilterAttribute_1() { return &___FilterAttribute_1; }
+	inline void set_FilterAttribute_1(MemberFilter_t426314064 * value)
+	{
+		___FilterAttribute_1 = value;
+		Il2CppCodeGenWriteBarrier((&___FilterAttribute_1), value);
+	}
+
+	inline static int32_t get_offset_of_FilterName_2() { return static_cast<int32_t>(offsetof(Type_t_StaticFields, ___FilterName_2)); }
+	inline MemberFilter_t426314064 * get_FilterName_2() const { return ___FilterName_2; }
+	inline MemberFilter_t426314064 ** get_address_of_FilterName_2() { return &___FilterName_2; }
+	inline void set_FilterName_2(MemberFilter_t426314064 * value)
+	{
+		___FilterName_2 = value;
+		Il2CppCodeGenWriteBarrier((&___FilterName_2), value);
+	}
+
+	inline static int32_t get_offset_of_FilterNameIgnoreCase_3() { return static_cast<int32_t>(offsetof(Type_t_StaticFields, ___FilterNameIgnoreCase_3)); }
+	inline MemberFilter_t426314064 * get_FilterNameIgnoreCase_3() const { return ___FilterNameIgnoreCase_3; }
+	inline MemberFilter_t426314064 ** get_address_of_FilterNameIgnoreCase_3() { return &___FilterNameIgnoreCase_3; }
+	inline void set_FilterNameIgnoreCase_3(MemberFilter_t426314064 * value)
+	{
+		___FilterNameIgnoreCase_3 = value;
+		Il2CppCodeGenWriteBarrier((&___FilterNameIgnoreCase_3), value);
+	}
+
+	inline static int32_t get_offset_of_Missing_4() { return static_cast<int32_t>(offsetof(Type_t_StaticFields, ___Missing_4)); }
+	inline RuntimeObject * get_Missing_4() const { return ___Missing_4; }
+	inline RuntimeObject ** get_address_of_Missing_4() { return &___Missing_4; }
+	inline void set_Missing_4(RuntimeObject * value)
+	{
+		___Missing_4 = value;
+		Il2CppCodeGenWriteBarrier((&___Missing_4), value);
+	}
+
+	inline static int32_t get_offset_of_Delimiter_5() { return static_cast<int32_t>(offsetof(Type_t_StaticFields, ___Delimiter_5)); }
+	inline Il2CppChar get_Delimiter_5() const { return ___Delimiter_5; }
+	inline Il2CppChar* get_address_of_Delimiter_5() { return &___Delimiter_5; }
+	inline void set_Delimiter_5(Il2CppChar value)
+	{
+		___Delimiter_5 = value;
+	}
+
+	inline static int32_t get_offset_of_EmptyTypes_6() { return static_cast<int32_t>(offsetof(Type_t_StaticFields, ___EmptyTypes_6)); }
+	inline TypeU5BU5D_t3940880105* get_EmptyTypes_6() const { return ___EmptyTypes_6; }
+	inline TypeU5BU5D_t3940880105** get_address_of_EmptyTypes_6() { return &___EmptyTypes_6; }
+	inline void set_EmptyTypes_6(TypeU5BU5D_t3940880105* value)
+	{
+		___EmptyTypes_6 = value;
+		Il2CppCodeGenWriteBarrier((&___EmptyTypes_6), value);
+	}
+
+	inline static int32_t get_offset_of_defaultBinder_7() { return static_cast<int32_t>(offsetof(Type_t_StaticFields, ___defaultBinder_7)); }
+	inline Binder_t2999457153 * get_defaultBinder_7() const { return ___defaultBinder_7; }
+	inline Binder_t2999457153 ** get_address_of_defaultBinder_7() { return &___defaultBinder_7; }
+	inline void set_defaultBinder_7(Binder_t2999457153 * value)
+	{
+		___defaultBinder_7 = value;
+		Il2CppCodeGenWriteBarrier((&___defaultBinder_7), value);
+	}
 };
 
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // XMLCDATASECTION_T3267478366_H
-#ifndef XMLSIGNIFICANTWHITESPACE_T1052520128_H
-#define XMLSIGNIFICANTWHITESPACE_T1052520128_H
+#endif // TYPE_T_H
+#ifndef XMLSCHEMAANYATTRIBUTE_T963227996_H
+#define XMLSCHEMAANYATTRIBUTE_T963227996_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// System.Xml.XmlSignificantWhitespace
-struct  XmlSignificantWhitespace_t1052520128  : public XmlCharacterData_t1167807131
+// System.Xml.Schema.XmlSchemaAnyAttribute
+struct  XmlSchemaAnyAttribute_t963227996  : public XmlSchemaAnnotated_t2603549639
 {
 public:
+	// System.String System.Xml.Schema.XmlSchemaAnyAttribute::ns
+	String_t* ___ns_9;
+	// System.Xml.Schema.XmlSchemaContentProcessing System.Xml.Schema.XmlSchemaAnyAttribute::processContents
+	int32_t ___processContents_10;
+	// System.Xml.Schema.NamespaceList System.Xml.Schema.XmlSchemaAnyAttribute::namespaceList
+	NamespaceList_t60893868 * ___namespaceList_11;
 
 public:
+	inline static int32_t get_offset_of_ns_9() { return static_cast<int32_t>(offsetof(XmlSchemaAnyAttribute_t963227996, ___ns_9)); }
+	inline String_t* get_ns_9() const { return ___ns_9; }
+	inline String_t** get_address_of_ns_9() { return &___ns_9; }
+	inline void set_ns_9(String_t* value)
+	{
+		___ns_9 = value;
+		Il2CppCodeGenWriteBarrier((&___ns_9), value);
+	}
+
+	inline static int32_t get_offset_of_processContents_10() { return static_cast<int32_t>(offsetof(XmlSchemaAnyAttribute_t963227996, ___processContents_10)); }
+	inline int32_t get_processContents_10() const { return ___processContents_10; }
+	inline int32_t* get_address_of_processContents_10() { return &___processContents_10; }
+	inline void set_processContents_10(int32_t value)
+	{
+		___processContents_10 = value;
+	}
+
+	inline static int32_t get_offset_of_namespaceList_11() { return static_cast<int32_t>(offsetof(XmlSchemaAnyAttribute_t963227996, ___namespaceList_11)); }
+	inline NamespaceList_t60893868 * get_namespaceList_11() const { return ___namespaceList_11; }
+	inline NamespaceList_t60893868 ** get_address_of_namespaceList_11() { return &___namespaceList_11; }
+	inline void set_namespaceList_11(NamespaceList_t60893868 * value)
+	{
+		___namespaceList_11 = value;
+		Il2CppCodeGenWriteBarrier((&___namespaceList_11), value);
+	}
 };
 
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // XMLSIGNIFICANTWHITESPACE_T1052520128_H
-#ifndef XMLTEXT_T2682211705_H
-#define XMLTEXT_T2682211705_H
+#endif // XMLSCHEMAANYATTRIBUTE_T963227996_H
+#ifndef XMLSCHEMAEXTERNAL_T3074890143_H
+#define XMLSCHEMAEXTERNAL_T3074890143_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// System.Xml.XmlText
-struct  XmlText_t2682211705  : public XmlCharacterData_t1167807131
+// System.Xml.Schema.XmlSchemaExternal
+struct  XmlSchemaExternal_t3074890143  : public XmlSchemaObject_t1315720168
 {
 public:
+	// System.String System.Xml.Schema.XmlSchemaExternal::location
+	String_t* ___location_6;
+	// System.Uri System.Xml.Schema.XmlSchemaExternal::baseUri
+	Uri_t100236324 * ___baseUri_7;
+	// System.Xml.Schema.XmlSchema System.Xml.Schema.XmlSchemaExternal::schema
+	XmlSchema_t3742557897 * ___schema_8;
+	// System.String System.Xml.Schema.XmlSchemaExternal::id
+	String_t* ___id_9;
+	// System.Xml.XmlAttribute[] System.Xml.Schema.XmlSchemaExternal::moreAttributes
+	XmlAttributeU5BU5D_t1490365106* ___moreAttributes_10;
+	// System.Xml.Schema.Compositor System.Xml.Schema.XmlSchemaExternal::compositor
+	int32_t ___compositor_11;
 
 public:
+	inline static int32_t get_offset_of_location_6() { return static_cast<int32_t>(offsetof(XmlSchemaExternal_t3074890143, ___location_6)); }
+	inline String_t* get_location_6() const { return ___location_6; }
+	inline String_t** get_address_of_location_6() { return &___location_6; }
+	inline void set_location_6(String_t* value)
+	{
+		___location_6 = value;
+		Il2CppCodeGenWriteBarrier((&___location_6), value);
+	}
+
+	inline static int32_t get_offset_of_baseUri_7() { return static_cast<int32_t>(offsetof(XmlSchemaExternal_t3074890143, ___baseUri_7)); }
+	inline Uri_t100236324 * get_baseUri_7() const { return ___baseUri_7; }
+	inline Uri_t100236324 ** get_address_of_baseUri_7() { return &___baseUri_7; }
+	inline void set_baseUri_7(Uri_t100236324 * value)
+	{
+		___baseUri_7 = value;
+		Il2CppCodeGenWriteBarrier((&___baseUri_7), value);
+	}
+
+	inline static int32_t get_offset_of_schema_8() { return static_cast<int32_t>(offsetof(XmlSchemaExternal_t3074890143, ___schema_8)); }
+	inline XmlSchema_t3742557897 * get_schema_8() const { return ___schema_8; }
+	inline XmlSchema_t3742557897 ** get_address_of_schema_8() { return &___schema_8; }
+	inline void set_schema_8(XmlSchema_t3742557897 * value)
+	{
+		___schema_8 = value;
+		Il2CppCodeGenWriteBarrier((&___schema_8), value);
+	}
+
+	inline static int32_t get_offset_of_id_9() { return static_cast<int32_t>(offsetof(XmlSchemaExternal_t3074890143, ___id_9)); }
+	inline String_t* get_id_9() const { return ___id_9; }
+	inline String_t** get_address_of_id_9() { return &___id_9; }
+	inline void set_id_9(String_t* value)
+	{
+		___id_9 = value;
+		Il2CppCodeGenWriteBarrier((&___id_9), value);
+	}
+
+	inline static int32_t get_offset_of_moreAttributes_10() { return static_cast<int32_t>(offsetof(XmlSchemaExternal_t3074890143, ___moreAttributes_10)); }
+	inline XmlAttributeU5BU5D_t1490365106* get_moreAttributes_10() const { return ___moreAttributes_10; }
+	inline XmlAttributeU5BU5D_t1490365106** get_address_of_moreAttributes_10() { return &___moreAttributes_10; }
+	inline void set_moreAttributes_10(XmlAttributeU5BU5D_t1490365106* value)
+	{
+		___moreAttributes_10 = value;
+		Il2CppCodeGenWriteBarrier((&___moreAttributes_10), value);
+	}
+
+	inline static int32_t get_offset_of_compositor_11() { return static_cast<int32_t>(offsetof(XmlSchemaExternal_t3074890143, ___compositor_11)); }
+	inline int32_t get_compositor_11() const { return ___compositor_11; }
+	inline int32_t* get_address_of_compositor_11() { return &___compositor_11; }
+	inline void set_compositor_11(int32_t value)
+	{
+		___compositor_11 = value;
+	}
 };
 
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // XMLTEXT_T2682211705_H
-#ifndef XMLCOMMENT_T2476947920_H
-#define XMLCOMMENT_T2476947920_H
+#endif // XMLSCHEMAEXTERNAL_T3074890143_H
+#ifndef XMLSCHEMACOMPLEXCONTENTEXTENSION_T2396613513_H
+#define XMLSCHEMACOMPLEXCONTENTEXTENSION_T2396613513_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// System.Xml.XmlComment
-struct  XmlComment_t2476947920  : public XmlCharacterData_t1167807131
+// System.Xml.Schema.XmlSchemaComplexContentExtension
+struct  XmlSchemaComplexContentExtension_t2396613513  : public XmlSchemaContent_t1040349258
 {
 public:
+	// System.Xml.Schema.XmlSchemaParticle System.Xml.Schema.XmlSchemaComplexContentExtension::particle
+	XmlSchemaParticle_t3828501457 * ___particle_9;
+	// System.Xml.Schema.XmlSchemaObjectCollection System.Xml.Schema.XmlSchemaComplexContentExtension::attributes
+	XmlSchemaObjectCollection_t1064819932 * ___attributes_10;
+	// System.Xml.Schema.XmlSchemaAnyAttribute System.Xml.Schema.XmlSchemaComplexContentExtension::anyAttribute
+	XmlSchemaAnyAttribute_t963227996 * ___anyAttribute_11;
+	// System.Xml.XmlQualifiedName System.Xml.Schema.XmlSchemaComplexContentExtension::baseTypeName
+	XmlQualifiedName_t2760654312 * ___baseTypeName_12;
 
 public:
+	inline static int32_t get_offset_of_particle_9() { return static_cast<int32_t>(offsetof(XmlSchemaComplexContentExtension_t2396613513, ___particle_9)); }
+	inline XmlSchemaParticle_t3828501457 * get_particle_9() const { return ___particle_9; }
+	inline XmlSchemaParticle_t3828501457 ** get_address_of_particle_9() { return &___particle_9; }
+	inline void set_particle_9(XmlSchemaParticle_t3828501457 * value)
+	{
+		___particle_9 = value;
+		Il2CppCodeGenWriteBarrier((&___particle_9), value);
+	}
+
+	inline static int32_t get_offset_of_attributes_10() { return static_cast<int32_t>(offsetof(XmlSchemaComplexContentExtension_t2396613513, ___attributes_10)); }
+	inline XmlSchemaObjectCollection_t1064819932 * get_attributes_10() const { return ___attributes_10; }
+	inline XmlSchemaObjectCollection_t1064819932 ** get_address_of_attributes_10() { return &___attributes_10; }
+	inline void set_attributes_10(XmlSchemaObjectCollection_t1064819932 * value)
+	{
+		___attributes_10 = value;
+		Il2CppCodeGenWriteBarrier((&___attributes_10), value);
+	}
+
+	inline static int32_t get_offset_of_anyAttribute_11() { return static_cast<int32_t>(offsetof(XmlSchemaComplexContentExtension_t2396613513, ___anyAttribute_11)); }
+	inline XmlSchemaAnyAttribute_t963227996 * get_anyAttribute_11() const { return ___anyAttribute_11; }
+	inline XmlSchemaAnyAttribute_t963227996 ** get_address_of_anyAttribute_11() { return &___anyAttribute_11; }
+	inline void set_anyAttribute_11(XmlSchemaAnyAttribute_t963227996 * value)
+	{
+		___anyAttribute_11 = value;
+		Il2CppCodeGenWriteBarrier((&___anyAttribute_11), value);
+	}
+
+	inline static int32_t get_offset_of_baseTypeName_12() { return static_cast<int32_t>(offsetof(XmlSchemaComplexContentExtension_t2396613513, ___baseTypeName_12)); }
+	inline XmlQualifiedName_t2760654312 * get_baseTypeName_12() const { return ___baseTypeName_12; }
+	inline XmlQualifiedName_t2760654312 ** get_address_of_baseTypeName_12() { return &___baseTypeName_12; }
+	inline void set_baseTypeName_12(XmlQualifiedName_t2760654312 * value)
+	{
+		___baseTypeName_12 = value;
+		Il2CppCodeGenWriteBarrier((&___baseTypeName_12), value);
+	}
 };
 
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // XMLCOMMENT_T2476947920_H
+#endif // XMLSCHEMACOMPLEXCONTENTEXTENSION_T2396613513_H
+#ifndef XMLSCHEMASIMPLECONTENTRESTRICTION_T2746076865_H
+#define XMLSCHEMASIMPLECONTENTRESTRICTION_T2746076865_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.XmlSchemaSimpleContentRestriction
+struct  XmlSchemaSimpleContentRestriction_t2746076865  : public XmlSchemaContent_t1040349258
+{
+public:
+	// System.Xml.XmlQualifiedName System.Xml.Schema.XmlSchemaSimpleContentRestriction::baseTypeName
+	XmlQualifiedName_t2760654312 * ___baseTypeName_9;
+	// System.Xml.Schema.XmlSchemaSimpleType System.Xml.Schema.XmlSchemaSimpleContentRestriction::baseType
+	XmlSchemaSimpleType_t2678868104 * ___baseType_10;
+	// System.Xml.Schema.XmlSchemaObjectCollection System.Xml.Schema.XmlSchemaSimpleContentRestriction::facets
+	XmlSchemaObjectCollection_t1064819932 * ___facets_11;
+	// System.Xml.Schema.XmlSchemaObjectCollection System.Xml.Schema.XmlSchemaSimpleContentRestriction::attributes
+	XmlSchemaObjectCollection_t1064819932 * ___attributes_12;
+	// System.Xml.Schema.XmlSchemaAnyAttribute System.Xml.Schema.XmlSchemaSimpleContentRestriction::anyAttribute
+	XmlSchemaAnyAttribute_t963227996 * ___anyAttribute_13;
+
+public:
+	inline static int32_t get_offset_of_baseTypeName_9() { return static_cast<int32_t>(offsetof(XmlSchemaSimpleContentRestriction_t2746076865, ___baseTypeName_9)); }
+	inline XmlQualifiedName_t2760654312 * get_baseTypeName_9() const { return ___baseTypeName_9; }
+	inline XmlQualifiedName_t2760654312 ** get_address_of_baseTypeName_9() { return &___baseTypeName_9; }
+	inline void set_baseTypeName_9(XmlQualifiedName_t2760654312 * value)
+	{
+		___baseTypeName_9 = value;
+		Il2CppCodeGenWriteBarrier((&___baseTypeName_9), value);
+	}
+
+	inline static int32_t get_offset_of_baseType_10() { return static_cast<int32_t>(offsetof(XmlSchemaSimpleContentRestriction_t2746076865, ___baseType_10)); }
+	inline XmlSchemaSimpleType_t2678868104 * get_baseType_10() const { return ___baseType_10; }
+	inline XmlSchemaSimpleType_t2678868104 ** get_address_of_baseType_10() { return &___baseType_10; }
+	inline void set_baseType_10(XmlSchemaSimpleType_t2678868104 * value)
+	{
+		___baseType_10 = value;
+		Il2CppCodeGenWriteBarrier((&___baseType_10), value);
+	}
+
+	inline static int32_t get_offset_of_facets_11() { return static_cast<int32_t>(offsetof(XmlSchemaSimpleContentRestriction_t2746076865, ___facets_11)); }
+	inline XmlSchemaObjectCollection_t1064819932 * get_facets_11() const { return ___facets_11; }
+	inline XmlSchemaObjectCollection_t1064819932 ** get_address_of_facets_11() { return &___facets_11; }
+	inline void set_facets_11(XmlSchemaObjectCollection_t1064819932 * value)
+	{
+		___facets_11 = value;
+		Il2CppCodeGenWriteBarrier((&___facets_11), value);
+	}
+
+	inline static int32_t get_offset_of_attributes_12() { return static_cast<int32_t>(offsetof(XmlSchemaSimpleContentRestriction_t2746076865, ___attributes_12)); }
+	inline XmlSchemaObjectCollection_t1064819932 * get_attributes_12() const { return ___attributes_12; }
+	inline XmlSchemaObjectCollection_t1064819932 ** get_address_of_attributes_12() { return &___attributes_12; }
+	inline void set_attributes_12(XmlSchemaObjectCollection_t1064819932 * value)
+	{
+		___attributes_12 = value;
+		Il2CppCodeGenWriteBarrier((&___attributes_12), value);
+	}
+
+	inline static int32_t get_offset_of_anyAttribute_13() { return static_cast<int32_t>(offsetof(XmlSchemaSimpleContentRestriction_t2746076865, ___anyAttribute_13)); }
+	inline XmlSchemaAnyAttribute_t963227996 * get_anyAttribute_13() const { return ___anyAttribute_13; }
+	inline XmlSchemaAnyAttribute_t963227996 ** get_address_of_anyAttribute_13() { return &___anyAttribute_13; }
+	inline void set_anyAttribute_13(XmlSchemaAnyAttribute_t963227996 * value)
+	{
+		___anyAttribute_13 = value;
+		Il2CppCodeGenWriteBarrier((&___anyAttribute_13), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // XMLSCHEMASIMPLECONTENTRESTRICTION_T2746076865_H
+#ifndef XMLSCHEMASIMPLECONTENTEXTENSION_T1269327470_H
+#define XMLSCHEMASIMPLECONTENTEXTENSION_T1269327470_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.XmlSchemaSimpleContentExtension
+struct  XmlSchemaSimpleContentExtension_t1269327470  : public XmlSchemaContent_t1040349258
+{
+public:
+	// System.Xml.Schema.XmlSchemaObjectCollection System.Xml.Schema.XmlSchemaSimpleContentExtension::attributes
+	XmlSchemaObjectCollection_t1064819932 * ___attributes_9;
+	// System.Xml.Schema.XmlSchemaAnyAttribute System.Xml.Schema.XmlSchemaSimpleContentExtension::anyAttribute
+	XmlSchemaAnyAttribute_t963227996 * ___anyAttribute_10;
+	// System.Xml.XmlQualifiedName System.Xml.Schema.XmlSchemaSimpleContentExtension::baseTypeName
+	XmlQualifiedName_t2760654312 * ___baseTypeName_11;
+
+public:
+	inline static int32_t get_offset_of_attributes_9() { return static_cast<int32_t>(offsetof(XmlSchemaSimpleContentExtension_t1269327470, ___attributes_9)); }
+	inline XmlSchemaObjectCollection_t1064819932 * get_attributes_9() const { return ___attributes_9; }
+	inline XmlSchemaObjectCollection_t1064819932 ** get_address_of_attributes_9() { return &___attributes_9; }
+	inline void set_attributes_9(XmlSchemaObjectCollection_t1064819932 * value)
+	{
+		___attributes_9 = value;
+		Il2CppCodeGenWriteBarrier((&___attributes_9), value);
+	}
+
+	inline static int32_t get_offset_of_anyAttribute_10() { return static_cast<int32_t>(offsetof(XmlSchemaSimpleContentExtension_t1269327470, ___anyAttribute_10)); }
+	inline XmlSchemaAnyAttribute_t963227996 * get_anyAttribute_10() const { return ___anyAttribute_10; }
+	inline XmlSchemaAnyAttribute_t963227996 ** get_address_of_anyAttribute_10() { return &___anyAttribute_10; }
+	inline void set_anyAttribute_10(XmlSchemaAnyAttribute_t963227996 * value)
+	{
+		___anyAttribute_10 = value;
+		Il2CppCodeGenWriteBarrier((&___anyAttribute_10), value);
+	}
+
+	inline static int32_t get_offset_of_baseTypeName_11() { return static_cast<int32_t>(offsetof(XmlSchemaSimpleContentExtension_t1269327470, ___baseTypeName_11)); }
+	inline XmlQualifiedName_t2760654312 * get_baseTypeName_11() const { return ___baseTypeName_11; }
+	inline XmlQualifiedName_t2760654312 ** get_address_of_baseTypeName_11() { return &___baseTypeName_11; }
+	inline void set_baseTypeName_11(XmlQualifiedName_t2760654312 * value)
+	{
+		___baseTypeName_11 = value;
+		Il2CppCodeGenWriteBarrier((&___baseTypeName_11), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // XMLSCHEMASIMPLECONTENTEXTENSION_T1269327470_H
 #ifndef XMLSCHEMACOMPLEXCONTENTRESTRICTION_T3155540863_H
 #define XMLSCHEMACOMPLEXCONTENTRESTRICTION_T3155540863_H
 #ifdef __clang__
@@ -15772,143 +16187,144 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // XMLSCHEMASIMPLETYPEUNION_T4071426880_H
-#ifndef XMLSCHEMASIMPLECONTENTRESTRICTION_T2746076865_H
-#define XMLSCHEMASIMPLECONTENTRESTRICTION_T2746076865_H
+#ifndef XMLSCHEMAATTRIBUTE_T2797257020_H
+#define XMLSCHEMAATTRIBUTE_T2797257020_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// System.Xml.Schema.XmlSchemaSimpleContentRestriction
-struct  XmlSchemaSimpleContentRestriction_t2746076865  : public XmlSchemaContent_t1040349258
+// System.Xml.Schema.XmlSchemaAttribute
+struct  XmlSchemaAttribute_t2797257020  : public XmlSchemaAnnotated_t2603549639
 {
 public:
-	// System.Xml.XmlQualifiedName System.Xml.Schema.XmlSchemaSimpleContentRestriction::baseTypeName
-	XmlQualifiedName_t2760654312 * ___baseTypeName_9;
-	// System.Xml.Schema.XmlSchemaSimpleType System.Xml.Schema.XmlSchemaSimpleContentRestriction::baseType
-	XmlSchemaSimpleType_t2678868104 * ___baseType_10;
-	// System.Xml.Schema.XmlSchemaObjectCollection System.Xml.Schema.XmlSchemaSimpleContentRestriction::facets
-	XmlSchemaObjectCollection_t1064819932 * ___facets_11;
-	// System.Xml.Schema.XmlSchemaObjectCollection System.Xml.Schema.XmlSchemaSimpleContentRestriction::attributes
-	XmlSchemaObjectCollection_t1064819932 * ___attributes_12;
-	// System.Xml.Schema.XmlSchemaAnyAttribute System.Xml.Schema.XmlSchemaSimpleContentRestriction::anyAttribute
-	XmlSchemaAnyAttribute_t963227996 * ___anyAttribute_13;
+	// System.String System.Xml.Schema.XmlSchemaAttribute::defaultValue
+	String_t* ___defaultValue_9;
+	// System.String System.Xml.Schema.XmlSchemaAttribute::fixedValue
+	String_t* ___fixedValue_10;
+	// System.String System.Xml.Schema.XmlSchemaAttribute::name
+	String_t* ___name_11;
+	// System.Xml.Schema.XmlSchemaForm System.Xml.Schema.XmlSchemaAttribute::form
+	int32_t ___form_12;
+	// System.Xml.Schema.XmlSchemaUse System.Xml.Schema.XmlSchemaAttribute::use
+	int32_t ___use_13;
+	// System.Xml.XmlQualifiedName System.Xml.Schema.XmlSchemaAttribute::refName
+	XmlQualifiedName_t2760654312 * ___refName_14;
+	// System.Xml.XmlQualifiedName System.Xml.Schema.XmlSchemaAttribute::typeName
+	XmlQualifiedName_t2760654312 * ___typeName_15;
+	// System.Xml.XmlQualifiedName System.Xml.Schema.XmlSchemaAttribute::qualifiedName
+	XmlQualifiedName_t2760654312 * ___qualifiedName_16;
+	// System.Xml.Schema.XmlSchemaSimpleType System.Xml.Schema.XmlSchemaAttribute::type
+	XmlSchemaSimpleType_t2678868104 * ___type_17;
+	// System.Xml.Schema.XmlSchemaSimpleType System.Xml.Schema.XmlSchemaAttribute::attributeType
+	XmlSchemaSimpleType_t2678868104 * ___attributeType_18;
+	// System.Xml.Schema.SchemaAttDef System.Xml.Schema.XmlSchemaAttribute::attDef
+	SchemaAttDef_t2429541159 * ___attDef_19;
 
 public:
-	inline static int32_t get_offset_of_baseTypeName_9() { return static_cast<int32_t>(offsetof(XmlSchemaSimpleContentRestriction_t2746076865, ___baseTypeName_9)); }
-	inline XmlQualifiedName_t2760654312 * get_baseTypeName_9() const { return ___baseTypeName_9; }
-	inline XmlQualifiedName_t2760654312 ** get_address_of_baseTypeName_9() { return &___baseTypeName_9; }
-	inline void set_baseTypeName_9(XmlQualifiedName_t2760654312 * value)
+	inline static int32_t get_offset_of_defaultValue_9() { return static_cast<int32_t>(offsetof(XmlSchemaAttribute_t2797257020, ___defaultValue_9)); }
+	inline String_t* get_defaultValue_9() const { return ___defaultValue_9; }
+	inline String_t** get_address_of_defaultValue_9() { return &___defaultValue_9; }
+	inline void set_defaultValue_9(String_t* value)
 	{
-		___baseTypeName_9 = value;
-		Il2CppCodeGenWriteBarrier((&___baseTypeName_9), value);
+		___defaultValue_9 = value;
+		Il2CppCodeGenWriteBarrier((&___defaultValue_9), value);
 	}
 
-	inline static int32_t get_offset_of_baseType_10() { return static_cast<int32_t>(offsetof(XmlSchemaSimpleContentRestriction_t2746076865, ___baseType_10)); }
-	inline XmlSchemaSimpleType_t2678868104 * get_baseType_10() const { return ___baseType_10; }
-	inline XmlSchemaSimpleType_t2678868104 ** get_address_of_baseType_10() { return &___baseType_10; }
-	inline void set_baseType_10(XmlSchemaSimpleType_t2678868104 * value)
+	inline static int32_t get_offset_of_fixedValue_10() { return static_cast<int32_t>(offsetof(XmlSchemaAttribute_t2797257020, ___fixedValue_10)); }
+	inline String_t* get_fixedValue_10() const { return ___fixedValue_10; }
+	inline String_t** get_address_of_fixedValue_10() { return &___fixedValue_10; }
+	inline void set_fixedValue_10(String_t* value)
 	{
-		___baseType_10 = value;
-		Il2CppCodeGenWriteBarrier((&___baseType_10), value);
+		___fixedValue_10 = value;
+		Il2CppCodeGenWriteBarrier((&___fixedValue_10), value);
 	}
 
-	inline static int32_t get_offset_of_facets_11() { return static_cast<int32_t>(offsetof(XmlSchemaSimpleContentRestriction_t2746076865, ___facets_11)); }
-	inline XmlSchemaObjectCollection_t1064819932 * get_facets_11() const { return ___facets_11; }
-	inline XmlSchemaObjectCollection_t1064819932 ** get_address_of_facets_11() { return &___facets_11; }
-	inline void set_facets_11(XmlSchemaObjectCollection_t1064819932 * value)
+	inline static int32_t get_offset_of_name_11() { return static_cast<int32_t>(offsetof(XmlSchemaAttribute_t2797257020, ___name_11)); }
+	inline String_t* get_name_11() const { return ___name_11; }
+	inline String_t** get_address_of_name_11() { return &___name_11; }
+	inline void set_name_11(String_t* value)
 	{
-		___facets_11 = value;
-		Il2CppCodeGenWriteBarrier((&___facets_11), value);
+		___name_11 = value;
+		Il2CppCodeGenWriteBarrier((&___name_11), value);
 	}
 
-	inline static int32_t get_offset_of_attributes_12() { return static_cast<int32_t>(offsetof(XmlSchemaSimpleContentRestriction_t2746076865, ___attributes_12)); }
-	inline XmlSchemaObjectCollection_t1064819932 * get_attributes_12() const { return ___attributes_12; }
-	inline XmlSchemaObjectCollection_t1064819932 ** get_address_of_attributes_12() { return &___attributes_12; }
-	inline void set_attributes_12(XmlSchemaObjectCollection_t1064819932 * value)
+	inline static int32_t get_offset_of_form_12() { return static_cast<int32_t>(offsetof(XmlSchemaAttribute_t2797257020, ___form_12)); }
+	inline int32_t get_form_12() const { return ___form_12; }
+	inline int32_t* get_address_of_form_12() { return &___form_12; }
+	inline void set_form_12(int32_t value)
 	{
-		___attributes_12 = value;
-		Il2CppCodeGenWriteBarrier((&___attributes_12), value);
+		___form_12 = value;
 	}
 
-	inline static int32_t get_offset_of_anyAttribute_13() { return static_cast<int32_t>(offsetof(XmlSchemaSimpleContentRestriction_t2746076865, ___anyAttribute_13)); }
-	inline XmlSchemaAnyAttribute_t963227996 * get_anyAttribute_13() const { return ___anyAttribute_13; }
-	inline XmlSchemaAnyAttribute_t963227996 ** get_address_of_anyAttribute_13() { return &___anyAttribute_13; }
-	inline void set_anyAttribute_13(XmlSchemaAnyAttribute_t963227996 * value)
+	inline static int32_t get_offset_of_use_13() { return static_cast<int32_t>(offsetof(XmlSchemaAttribute_t2797257020, ___use_13)); }
+	inline int32_t get_use_13() const { return ___use_13; }
+	inline int32_t* get_address_of_use_13() { return &___use_13; }
+	inline void set_use_13(int32_t value)
 	{
-		___anyAttribute_13 = value;
-		Il2CppCodeGenWriteBarrier((&___anyAttribute_13), value);
+		___use_13 = value;
+	}
+
+	inline static int32_t get_offset_of_refName_14() { return static_cast<int32_t>(offsetof(XmlSchemaAttribute_t2797257020, ___refName_14)); }
+	inline XmlQualifiedName_t2760654312 * get_refName_14() const { return ___refName_14; }
+	inline XmlQualifiedName_t2760654312 ** get_address_of_refName_14() { return &___refName_14; }
+	inline void set_refName_14(XmlQualifiedName_t2760654312 * value)
+	{
+		___refName_14 = value;
+		Il2CppCodeGenWriteBarrier((&___refName_14), value);
+	}
+
+	inline static int32_t get_offset_of_typeName_15() { return static_cast<int32_t>(offsetof(XmlSchemaAttribute_t2797257020, ___typeName_15)); }
+	inline XmlQualifiedName_t2760654312 * get_typeName_15() const { return ___typeName_15; }
+	inline XmlQualifiedName_t2760654312 ** get_address_of_typeName_15() { return &___typeName_15; }
+	inline void set_typeName_15(XmlQualifiedName_t2760654312 * value)
+	{
+		___typeName_15 = value;
+		Il2CppCodeGenWriteBarrier((&___typeName_15), value);
+	}
+
+	inline static int32_t get_offset_of_qualifiedName_16() { return static_cast<int32_t>(offsetof(XmlSchemaAttribute_t2797257020, ___qualifiedName_16)); }
+	inline XmlQualifiedName_t2760654312 * get_qualifiedName_16() const { return ___qualifiedName_16; }
+	inline XmlQualifiedName_t2760654312 ** get_address_of_qualifiedName_16() { return &___qualifiedName_16; }
+	inline void set_qualifiedName_16(XmlQualifiedName_t2760654312 * value)
+	{
+		___qualifiedName_16 = value;
+		Il2CppCodeGenWriteBarrier((&___qualifiedName_16), value);
+	}
+
+	inline static int32_t get_offset_of_type_17() { return static_cast<int32_t>(offsetof(XmlSchemaAttribute_t2797257020, ___type_17)); }
+	inline XmlSchemaSimpleType_t2678868104 * get_type_17() const { return ___type_17; }
+	inline XmlSchemaSimpleType_t2678868104 ** get_address_of_type_17() { return &___type_17; }
+	inline void set_type_17(XmlSchemaSimpleType_t2678868104 * value)
+	{
+		___type_17 = value;
+		Il2CppCodeGenWriteBarrier((&___type_17), value);
+	}
+
+	inline static int32_t get_offset_of_attributeType_18() { return static_cast<int32_t>(offsetof(XmlSchemaAttribute_t2797257020, ___attributeType_18)); }
+	inline XmlSchemaSimpleType_t2678868104 * get_attributeType_18() const { return ___attributeType_18; }
+	inline XmlSchemaSimpleType_t2678868104 ** get_address_of_attributeType_18() { return &___attributeType_18; }
+	inline void set_attributeType_18(XmlSchemaSimpleType_t2678868104 * value)
+	{
+		___attributeType_18 = value;
+		Il2CppCodeGenWriteBarrier((&___attributeType_18), value);
+	}
+
+	inline static int32_t get_offset_of_attDef_19() { return static_cast<int32_t>(offsetof(XmlSchemaAttribute_t2797257020, ___attDef_19)); }
+	inline SchemaAttDef_t2429541159 * get_attDef_19() const { return ___attDef_19; }
+	inline SchemaAttDef_t2429541159 ** get_address_of_attDef_19() { return &___attDef_19; }
+	inline void set_attDef_19(SchemaAttDef_t2429541159 * value)
+	{
+		___attDef_19 = value;
+		Il2CppCodeGenWriteBarrier((&___attDef_19), value);
 	}
 };
 
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // XMLSCHEMASIMPLECONTENTRESTRICTION_T2746076865_H
-#ifndef XMLSCHEMACOMPLEXCONTENTEXTENSION_T2396613513_H
-#define XMLSCHEMACOMPLEXCONTENTEXTENSION_T2396613513_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.XmlSchemaComplexContentExtension
-struct  XmlSchemaComplexContentExtension_t2396613513  : public XmlSchemaContent_t1040349258
-{
-public:
-	// System.Xml.Schema.XmlSchemaParticle System.Xml.Schema.XmlSchemaComplexContentExtension::particle
-	XmlSchemaParticle_t3828501457 * ___particle_9;
-	// System.Xml.Schema.XmlSchemaObjectCollection System.Xml.Schema.XmlSchemaComplexContentExtension::attributes
-	XmlSchemaObjectCollection_t1064819932 * ___attributes_10;
-	// System.Xml.Schema.XmlSchemaAnyAttribute System.Xml.Schema.XmlSchemaComplexContentExtension::anyAttribute
-	XmlSchemaAnyAttribute_t963227996 * ___anyAttribute_11;
-	// System.Xml.XmlQualifiedName System.Xml.Schema.XmlSchemaComplexContentExtension::baseTypeName
-	XmlQualifiedName_t2760654312 * ___baseTypeName_12;
-
-public:
-	inline static int32_t get_offset_of_particle_9() { return static_cast<int32_t>(offsetof(XmlSchemaComplexContentExtension_t2396613513, ___particle_9)); }
-	inline XmlSchemaParticle_t3828501457 * get_particle_9() const { return ___particle_9; }
-	inline XmlSchemaParticle_t3828501457 ** get_address_of_particle_9() { return &___particle_9; }
-	inline void set_particle_9(XmlSchemaParticle_t3828501457 * value)
-	{
-		___particle_9 = value;
-		Il2CppCodeGenWriteBarrier((&___particle_9), value);
-	}
-
-	inline static int32_t get_offset_of_attributes_10() { return static_cast<int32_t>(offsetof(XmlSchemaComplexContentExtension_t2396613513, ___attributes_10)); }
-	inline XmlSchemaObjectCollection_t1064819932 * get_attributes_10() const { return ___attributes_10; }
-	inline XmlSchemaObjectCollection_t1064819932 ** get_address_of_attributes_10() { return &___attributes_10; }
-	inline void set_attributes_10(XmlSchemaObjectCollection_t1064819932 * value)
-	{
-		___attributes_10 = value;
-		Il2CppCodeGenWriteBarrier((&___attributes_10), value);
-	}
-
-	inline static int32_t get_offset_of_anyAttribute_11() { return static_cast<int32_t>(offsetof(XmlSchemaComplexContentExtension_t2396613513, ___anyAttribute_11)); }
-	inline XmlSchemaAnyAttribute_t963227996 * get_anyAttribute_11() const { return ___anyAttribute_11; }
-	inline XmlSchemaAnyAttribute_t963227996 ** get_address_of_anyAttribute_11() { return &___anyAttribute_11; }
-	inline void set_anyAttribute_11(XmlSchemaAnyAttribute_t963227996 * value)
-	{
-		___anyAttribute_11 = value;
-		Il2CppCodeGenWriteBarrier((&___anyAttribute_11), value);
-	}
-
-	inline static int32_t get_offset_of_baseTypeName_12() { return static_cast<int32_t>(offsetof(XmlSchemaComplexContentExtension_t2396613513, ___baseTypeName_12)); }
-	inline XmlQualifiedName_t2760654312 * get_baseTypeName_12() const { return ___baseTypeName_12; }
-	inline XmlQualifiedName_t2760654312 ** get_address_of_baseTypeName_12() { return &___baseTypeName_12; }
-	inline void set_baseTypeName_12(XmlQualifiedName_t2760654312 * value)
-	{
-		___baseTypeName_12 = value;
-		Il2CppCodeGenWriteBarrier((&___baseTypeName_12), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // XMLSCHEMACOMPLEXCONTENTEXTENSION_T2396613513_H
+#endif // XMLSCHEMAATTRIBUTE_T2797257020_H
 #ifndef DATATYPEIMPLEMENTATION_T3722098011_H
 #define DATATYPEIMPLEMENTATION_T3722098011_H
 #ifdef __clang__
@@ -16934,46 +17350,6 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // DATATYPEIMPLEMENTATION_T3722098011_H
-#ifndef MULTICASTDELEGATE_T157516450_H
-#define MULTICASTDELEGATE_T157516450_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.MulticastDelegate
-struct  MulticastDelegate_t157516450  : public Delegate_t1188392813
-{
-public:
-	// System.Delegate[] System.MulticastDelegate::delegates
-	DelegateU5BU5D_t1703627840* ___delegates_11;
-
-public:
-	inline static int32_t get_offset_of_delegates_11() { return static_cast<int32_t>(offsetof(MulticastDelegate_t157516450, ___delegates_11)); }
-	inline DelegateU5BU5D_t1703627840* get_delegates_11() const { return ___delegates_11; }
-	inline DelegateU5BU5D_t1703627840** get_address_of_delegates_11() { return &___delegates_11; }
-	inline void set_delegates_11(DelegateU5BU5D_t1703627840* value)
-	{
-		___delegates_11 = value;
-		Il2CppCodeGenWriteBarrier((&___delegates_11), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-// Native definition for P/Invoke marshalling of System.MulticastDelegate
-struct MulticastDelegate_t157516450_marshaled_pinvoke : public Delegate_t1188392813_marshaled_pinvoke
-{
-	DelegateU5BU5D_t1703627840* ___delegates_11;
-};
-// Native definition for COM marshalling of System.MulticastDelegate
-struct MulticastDelegate_t157516450_marshaled_com : public Delegate_t1188392813_marshaled_com
-{
-	DelegateU5BU5D_t1703627840* ___delegates_11;
-};
-#endif // MULTICASTDELEGATE_T157516450_H
 #ifndef XMLBASECONVERTER_T885945787_H
 #define XMLBASECONVERTER_T885945787_H
 #ifdef __clang__
@@ -17350,6 +17726,116 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // XMLBASECONVERTER_T885945787_H
+#ifndef XMLCOMMENT_T2476947920_H
+#define XMLCOMMENT_T2476947920_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.XmlComment
+struct  XmlComment_t2476947920  : public XmlCharacterData_t1167807131
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // XMLCOMMENT_T2476947920_H
+#ifndef XMLCDATASECTION_T3267478366_H
+#define XMLCDATASECTION_T3267478366_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.XmlCDataSection
+struct  XmlCDataSection_t3267478366  : public XmlCharacterData_t1167807131
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // XMLCDATASECTION_T3267478366_H
+#ifndef XMLSCHEMACOMPLEXCONTENT_T3528540772_H
+#define XMLSCHEMACOMPLEXCONTENT_T3528540772_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.XmlSchemaComplexContent
+struct  XmlSchemaComplexContent_t3528540772  : public XmlSchemaContentModel_t602185179
+{
+public:
+	// System.Xml.Schema.XmlSchemaContent System.Xml.Schema.XmlSchemaComplexContent::content
+	XmlSchemaContent_t1040349258 * ___content_9;
+	// System.Boolean System.Xml.Schema.XmlSchemaComplexContent::isMixed
+	bool ___isMixed_10;
+	// System.Boolean System.Xml.Schema.XmlSchemaComplexContent::hasMixedAttribute
+	bool ___hasMixedAttribute_11;
+
+public:
+	inline static int32_t get_offset_of_content_9() { return static_cast<int32_t>(offsetof(XmlSchemaComplexContent_t3528540772, ___content_9)); }
+	inline XmlSchemaContent_t1040349258 * get_content_9() const { return ___content_9; }
+	inline XmlSchemaContent_t1040349258 ** get_address_of_content_9() { return &___content_9; }
+	inline void set_content_9(XmlSchemaContent_t1040349258 * value)
+	{
+		___content_9 = value;
+		Il2CppCodeGenWriteBarrier((&___content_9), value);
+	}
+
+	inline static int32_t get_offset_of_isMixed_10() { return static_cast<int32_t>(offsetof(XmlSchemaComplexContent_t3528540772, ___isMixed_10)); }
+	inline bool get_isMixed_10() const { return ___isMixed_10; }
+	inline bool* get_address_of_isMixed_10() { return &___isMixed_10; }
+	inline void set_isMixed_10(bool value)
+	{
+		___isMixed_10 = value;
+	}
+
+	inline static int32_t get_offset_of_hasMixedAttribute_11() { return static_cast<int32_t>(offsetof(XmlSchemaComplexContent_t3528540772, ___hasMixedAttribute_11)); }
+	inline bool get_hasMixedAttribute_11() const { return ___hasMixedAttribute_11; }
+	inline bool* get_address_of_hasMixedAttribute_11() { return &___hasMixedAttribute_11; }
+	inline void set_hasMixedAttribute_11(bool value)
+	{
+		___hasMixedAttribute_11 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // XMLSCHEMACOMPLEXCONTENT_T3528540772_H
+#ifndef XMLATTRIBUTECOLLECTION_T2316283784_H
+#define XMLATTRIBUTECOLLECTION_T2316283784_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.XmlAttributeCollection
+struct  XmlAttributeCollection_t2316283784  : public XmlNamedNodeMap_t2821286253
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // XMLATTRIBUTECOLLECTION_T2316283784_H
 #ifndef XMLSCHEMAKEYREF_T3124006214_H
 #define XMLSCHEMAKEYREF_T3124006214_H
 #ifdef __clang__
@@ -17505,1014 +17991,175 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // XMLSCHEMATYPE_T2033747345_H
-#ifndef XMLSCHEMAEXTERNAL_T3074890143_H
-#define XMLSCHEMAEXTERNAL_T3074890143_H
+#ifndef SCHEMAINFO_T3347508623_H
+#define SCHEMAINFO_T3347508623_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// System.Xml.Schema.XmlSchemaExternal
-struct  XmlSchemaExternal_t3074890143  : public XmlSchemaObject_t1315720168
+// System.Xml.Schema.SchemaInfo
+struct  SchemaInfo_t3347508623  : public RuntimeObject
 {
 public:
-	// System.String System.Xml.Schema.XmlSchemaExternal::location
-	String_t* ___location_6;
-	// System.Uri System.Xml.Schema.XmlSchemaExternal::baseUri
-	Uri_t100236324 * ___baseUri_7;
-	// System.Xml.Schema.XmlSchema System.Xml.Schema.XmlSchemaExternal::schema
-	XmlSchema_t3742557897 * ___schema_8;
-	// System.String System.Xml.Schema.XmlSchemaExternal::id
-	String_t* ___id_9;
-	// System.Xml.XmlAttribute[] System.Xml.Schema.XmlSchemaExternal::moreAttributes
-	XmlAttributeU5BU5D_t1490365106* ___moreAttributes_10;
-	// System.Xml.Schema.Compositor System.Xml.Schema.XmlSchemaExternal::compositor
-	int32_t ___compositor_11;
+	// System.Collections.Generic.Dictionary`2<System.Xml.XmlQualifiedName,System.Xml.Schema.SchemaElementDecl> System.Xml.Schema.SchemaInfo::elementDecls
+	Dictionary_2_t2242461324 * ___elementDecls_0;
+	// System.Collections.Generic.Dictionary`2<System.Xml.XmlQualifiedName,System.Xml.Schema.SchemaElementDecl> System.Xml.Schema.SchemaInfo::undeclaredElementDecls
+	Dictionary_2_t2242461324 * ___undeclaredElementDecls_1;
+	// System.Collections.Generic.Dictionary`2<System.Xml.XmlQualifiedName,System.Xml.Schema.SchemaEntity> System.Xml.Schema.SchemaInfo::generalEntities
+	Dictionary_2_t1552439284 * ___generalEntities_2;
+	// System.Collections.Generic.Dictionary`2<System.Xml.XmlQualifiedName,System.Xml.Schema.SchemaEntity> System.Xml.Schema.SchemaInfo::parameterEntities
+	Dictionary_2_t1552439284 * ___parameterEntities_3;
+	// System.Xml.XmlQualifiedName System.Xml.Schema.SchemaInfo::docTypeName
+	XmlQualifiedName_t2760654312 * ___docTypeName_4;
+	// System.String System.Xml.Schema.SchemaInfo::internalDtdSubset
+	String_t* ___internalDtdSubset_5;
+	// System.Boolean System.Xml.Schema.SchemaInfo::hasNonCDataAttributes
+	bool ___hasNonCDataAttributes_6;
+	// System.Boolean System.Xml.Schema.SchemaInfo::hasDefaultAttributes
+	bool ___hasDefaultAttributes_7;
+	// System.Collections.Generic.Dictionary`2<System.String,System.Boolean> System.Xml.Schema.SchemaInfo::targetNamespaces
+	Dictionary_2_t4177511560 * ___targetNamespaces_8;
+	// System.Collections.Generic.Dictionary`2<System.Xml.XmlQualifiedName,System.Xml.Schema.SchemaAttDef> System.Xml.Schema.SchemaInfo::attributeDecls
+	Dictionary_2_t2404538479 * ___attributeDecls_9;
+	// System.Int32 System.Xml.Schema.SchemaInfo::errorCount
+	int32_t ___errorCount_10;
+	// System.Xml.Schema.SchemaType System.Xml.Schema.SchemaInfo::schemaType
+	int32_t ___schemaType_11;
+	// System.Collections.Generic.Dictionary`2<System.Xml.XmlQualifiedName,System.Xml.Schema.SchemaElementDecl> System.Xml.Schema.SchemaInfo::elementDeclsByType
+	Dictionary_2_t2242461324 * ___elementDeclsByType_12;
+	// System.Collections.Generic.Dictionary`2<System.String,System.Xml.Schema.SchemaNotation> System.Xml.Schema.SchemaInfo::notations
+	Dictionary_2_t1732933766 * ___notations_13;
 
 public:
-	inline static int32_t get_offset_of_location_6() { return static_cast<int32_t>(offsetof(XmlSchemaExternal_t3074890143, ___location_6)); }
-	inline String_t* get_location_6() const { return ___location_6; }
-	inline String_t** get_address_of_location_6() { return &___location_6; }
-	inline void set_location_6(String_t* value)
+	inline static int32_t get_offset_of_elementDecls_0() { return static_cast<int32_t>(offsetof(SchemaInfo_t3347508623, ___elementDecls_0)); }
+	inline Dictionary_2_t2242461324 * get_elementDecls_0() const { return ___elementDecls_0; }
+	inline Dictionary_2_t2242461324 ** get_address_of_elementDecls_0() { return &___elementDecls_0; }
+	inline void set_elementDecls_0(Dictionary_2_t2242461324 * value)
 	{
-		___location_6 = value;
-		Il2CppCodeGenWriteBarrier((&___location_6), value);
+		___elementDecls_0 = value;
+		Il2CppCodeGenWriteBarrier((&___elementDecls_0), value);
 	}
 
-	inline static int32_t get_offset_of_baseUri_7() { return static_cast<int32_t>(offsetof(XmlSchemaExternal_t3074890143, ___baseUri_7)); }
-	inline Uri_t100236324 * get_baseUri_7() const { return ___baseUri_7; }
-	inline Uri_t100236324 ** get_address_of_baseUri_7() { return &___baseUri_7; }
-	inline void set_baseUri_7(Uri_t100236324 * value)
+	inline static int32_t get_offset_of_undeclaredElementDecls_1() { return static_cast<int32_t>(offsetof(SchemaInfo_t3347508623, ___undeclaredElementDecls_1)); }
+	inline Dictionary_2_t2242461324 * get_undeclaredElementDecls_1() const { return ___undeclaredElementDecls_1; }
+	inline Dictionary_2_t2242461324 ** get_address_of_undeclaredElementDecls_1() { return &___undeclaredElementDecls_1; }
+	inline void set_undeclaredElementDecls_1(Dictionary_2_t2242461324 * value)
 	{
-		___baseUri_7 = value;
-		Il2CppCodeGenWriteBarrier((&___baseUri_7), value);
+		___undeclaredElementDecls_1 = value;
+		Il2CppCodeGenWriteBarrier((&___undeclaredElementDecls_1), value);
 	}
 
-	inline static int32_t get_offset_of_schema_8() { return static_cast<int32_t>(offsetof(XmlSchemaExternal_t3074890143, ___schema_8)); }
-	inline XmlSchema_t3742557897 * get_schema_8() const { return ___schema_8; }
-	inline XmlSchema_t3742557897 ** get_address_of_schema_8() { return &___schema_8; }
-	inline void set_schema_8(XmlSchema_t3742557897 * value)
+	inline static int32_t get_offset_of_generalEntities_2() { return static_cast<int32_t>(offsetof(SchemaInfo_t3347508623, ___generalEntities_2)); }
+	inline Dictionary_2_t1552439284 * get_generalEntities_2() const { return ___generalEntities_2; }
+	inline Dictionary_2_t1552439284 ** get_address_of_generalEntities_2() { return &___generalEntities_2; }
+	inline void set_generalEntities_2(Dictionary_2_t1552439284 * value)
 	{
-		___schema_8 = value;
-		Il2CppCodeGenWriteBarrier((&___schema_8), value);
+		___generalEntities_2 = value;
+		Il2CppCodeGenWriteBarrier((&___generalEntities_2), value);
 	}
 
-	inline static int32_t get_offset_of_id_9() { return static_cast<int32_t>(offsetof(XmlSchemaExternal_t3074890143, ___id_9)); }
-	inline String_t* get_id_9() const { return ___id_9; }
-	inline String_t** get_address_of_id_9() { return &___id_9; }
-	inline void set_id_9(String_t* value)
+	inline static int32_t get_offset_of_parameterEntities_3() { return static_cast<int32_t>(offsetof(SchemaInfo_t3347508623, ___parameterEntities_3)); }
+	inline Dictionary_2_t1552439284 * get_parameterEntities_3() const { return ___parameterEntities_3; }
+	inline Dictionary_2_t1552439284 ** get_address_of_parameterEntities_3() { return &___parameterEntities_3; }
+	inline void set_parameterEntities_3(Dictionary_2_t1552439284 * value)
 	{
-		___id_9 = value;
-		Il2CppCodeGenWriteBarrier((&___id_9), value);
+		___parameterEntities_3 = value;
+		Il2CppCodeGenWriteBarrier((&___parameterEntities_3), value);
 	}
 
-	inline static int32_t get_offset_of_moreAttributes_10() { return static_cast<int32_t>(offsetof(XmlSchemaExternal_t3074890143, ___moreAttributes_10)); }
-	inline XmlAttributeU5BU5D_t1490365106* get_moreAttributes_10() const { return ___moreAttributes_10; }
-	inline XmlAttributeU5BU5D_t1490365106** get_address_of_moreAttributes_10() { return &___moreAttributes_10; }
-	inline void set_moreAttributes_10(XmlAttributeU5BU5D_t1490365106* value)
+	inline static int32_t get_offset_of_docTypeName_4() { return static_cast<int32_t>(offsetof(SchemaInfo_t3347508623, ___docTypeName_4)); }
+	inline XmlQualifiedName_t2760654312 * get_docTypeName_4() const { return ___docTypeName_4; }
+	inline XmlQualifiedName_t2760654312 ** get_address_of_docTypeName_4() { return &___docTypeName_4; }
+	inline void set_docTypeName_4(XmlQualifiedName_t2760654312 * value)
 	{
-		___moreAttributes_10 = value;
-		Il2CppCodeGenWriteBarrier((&___moreAttributes_10), value);
+		___docTypeName_4 = value;
+		Il2CppCodeGenWriteBarrier((&___docTypeName_4), value);
 	}
 
-	inline static int32_t get_offset_of_compositor_11() { return static_cast<int32_t>(offsetof(XmlSchemaExternal_t3074890143, ___compositor_11)); }
-	inline int32_t get_compositor_11() const { return ___compositor_11; }
-	inline int32_t* get_address_of_compositor_11() { return &___compositor_11; }
-	inline void set_compositor_11(int32_t value)
+	inline static int32_t get_offset_of_internalDtdSubset_5() { return static_cast<int32_t>(offsetof(SchemaInfo_t3347508623, ___internalDtdSubset_5)); }
+	inline String_t* get_internalDtdSubset_5() const { return ___internalDtdSubset_5; }
+	inline String_t** get_address_of_internalDtdSubset_5() { return &___internalDtdSubset_5; }
+	inline void set_internalDtdSubset_5(String_t* value)
 	{
-		___compositor_11 = value;
+		___internalDtdSubset_5 = value;
+		Il2CppCodeGenWriteBarrier((&___internalDtdSubset_5), value);
+	}
+
+	inline static int32_t get_offset_of_hasNonCDataAttributes_6() { return static_cast<int32_t>(offsetof(SchemaInfo_t3347508623, ___hasNonCDataAttributes_6)); }
+	inline bool get_hasNonCDataAttributes_6() const { return ___hasNonCDataAttributes_6; }
+	inline bool* get_address_of_hasNonCDataAttributes_6() { return &___hasNonCDataAttributes_6; }
+	inline void set_hasNonCDataAttributes_6(bool value)
+	{
+		___hasNonCDataAttributes_6 = value;
+	}
+
+	inline static int32_t get_offset_of_hasDefaultAttributes_7() { return static_cast<int32_t>(offsetof(SchemaInfo_t3347508623, ___hasDefaultAttributes_7)); }
+	inline bool get_hasDefaultAttributes_7() const { return ___hasDefaultAttributes_7; }
+	inline bool* get_address_of_hasDefaultAttributes_7() { return &___hasDefaultAttributes_7; }
+	inline void set_hasDefaultAttributes_7(bool value)
+	{
+		___hasDefaultAttributes_7 = value;
+	}
+
+	inline static int32_t get_offset_of_targetNamespaces_8() { return static_cast<int32_t>(offsetof(SchemaInfo_t3347508623, ___targetNamespaces_8)); }
+	inline Dictionary_2_t4177511560 * get_targetNamespaces_8() const { return ___targetNamespaces_8; }
+	inline Dictionary_2_t4177511560 ** get_address_of_targetNamespaces_8() { return &___targetNamespaces_8; }
+	inline void set_targetNamespaces_8(Dictionary_2_t4177511560 * value)
+	{
+		___targetNamespaces_8 = value;
+		Il2CppCodeGenWriteBarrier((&___targetNamespaces_8), value);
+	}
+
+	inline static int32_t get_offset_of_attributeDecls_9() { return static_cast<int32_t>(offsetof(SchemaInfo_t3347508623, ___attributeDecls_9)); }
+	inline Dictionary_2_t2404538479 * get_attributeDecls_9() const { return ___attributeDecls_9; }
+	inline Dictionary_2_t2404538479 ** get_address_of_attributeDecls_9() { return &___attributeDecls_9; }
+	inline void set_attributeDecls_9(Dictionary_2_t2404538479 * value)
+	{
+		___attributeDecls_9 = value;
+		Il2CppCodeGenWriteBarrier((&___attributeDecls_9), value);
+	}
+
+	inline static int32_t get_offset_of_errorCount_10() { return static_cast<int32_t>(offsetof(SchemaInfo_t3347508623, ___errorCount_10)); }
+	inline int32_t get_errorCount_10() const { return ___errorCount_10; }
+	inline int32_t* get_address_of_errorCount_10() { return &___errorCount_10; }
+	inline void set_errorCount_10(int32_t value)
+	{
+		___errorCount_10 = value;
+	}
+
+	inline static int32_t get_offset_of_schemaType_11() { return static_cast<int32_t>(offsetof(SchemaInfo_t3347508623, ___schemaType_11)); }
+	inline int32_t get_schemaType_11() const { return ___schemaType_11; }
+	inline int32_t* get_address_of_schemaType_11() { return &___schemaType_11; }
+	inline void set_schemaType_11(int32_t value)
+	{
+		___schemaType_11 = value;
+	}
+
+	inline static int32_t get_offset_of_elementDeclsByType_12() { return static_cast<int32_t>(offsetof(SchemaInfo_t3347508623, ___elementDeclsByType_12)); }
+	inline Dictionary_2_t2242461324 * get_elementDeclsByType_12() const { return ___elementDeclsByType_12; }
+	inline Dictionary_2_t2242461324 ** get_address_of_elementDeclsByType_12() { return &___elementDeclsByType_12; }
+	inline void set_elementDeclsByType_12(Dictionary_2_t2242461324 * value)
+	{
+		___elementDeclsByType_12 = value;
+		Il2CppCodeGenWriteBarrier((&___elementDeclsByType_12), value);
+	}
+
+	inline static int32_t get_offset_of_notations_13() { return static_cast<int32_t>(offsetof(SchemaInfo_t3347508623, ___notations_13)); }
+	inline Dictionary_2_t1732933766 * get_notations_13() const { return ___notations_13; }
+	inline Dictionary_2_t1732933766 ** get_address_of_notations_13() { return &___notations_13; }
+	inline void set_notations_13(Dictionary_2_t1732933766 * value)
+	{
+		___notations_13 = value;
+		Il2CppCodeGenWriteBarrier((&___notations_13), value);
 	}
 };
 
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // XMLSCHEMAEXTERNAL_T3074890143_H
-#ifndef COMPILEDIDENTITYCONSTRAINT_T1335094965_H
-#define COMPILEDIDENTITYCONSTRAINT_T1335094965_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.CompiledIdentityConstraint
-struct  CompiledIdentityConstraint_t1335094965  : public RuntimeObject
-{
-public:
-	// System.Xml.XmlQualifiedName System.Xml.Schema.CompiledIdentityConstraint::name
-	XmlQualifiedName_t2760654312 * ___name_0;
-	// System.Xml.Schema.CompiledIdentityConstraint/ConstraintRole System.Xml.Schema.CompiledIdentityConstraint::role
-	int32_t ___role_1;
-	// System.Xml.Schema.Asttree System.Xml.Schema.CompiledIdentityConstraint::selector
-	Asttree_t1394951200 * ___selector_2;
-	// System.Xml.Schema.Asttree[] System.Xml.Schema.CompiledIdentityConstraint::fields
-	AsttreeU5BU5D_t3174926177* ___fields_3;
-	// System.Xml.XmlQualifiedName System.Xml.Schema.CompiledIdentityConstraint::refer
-	XmlQualifiedName_t2760654312 * ___refer_4;
-
-public:
-	inline static int32_t get_offset_of_name_0() { return static_cast<int32_t>(offsetof(CompiledIdentityConstraint_t1335094965, ___name_0)); }
-	inline XmlQualifiedName_t2760654312 * get_name_0() const { return ___name_0; }
-	inline XmlQualifiedName_t2760654312 ** get_address_of_name_0() { return &___name_0; }
-	inline void set_name_0(XmlQualifiedName_t2760654312 * value)
-	{
-		___name_0 = value;
-		Il2CppCodeGenWriteBarrier((&___name_0), value);
-	}
-
-	inline static int32_t get_offset_of_role_1() { return static_cast<int32_t>(offsetof(CompiledIdentityConstraint_t1335094965, ___role_1)); }
-	inline int32_t get_role_1() const { return ___role_1; }
-	inline int32_t* get_address_of_role_1() { return &___role_1; }
-	inline void set_role_1(int32_t value)
-	{
-		___role_1 = value;
-	}
-
-	inline static int32_t get_offset_of_selector_2() { return static_cast<int32_t>(offsetof(CompiledIdentityConstraint_t1335094965, ___selector_2)); }
-	inline Asttree_t1394951200 * get_selector_2() const { return ___selector_2; }
-	inline Asttree_t1394951200 ** get_address_of_selector_2() { return &___selector_2; }
-	inline void set_selector_2(Asttree_t1394951200 * value)
-	{
-		___selector_2 = value;
-		Il2CppCodeGenWriteBarrier((&___selector_2), value);
-	}
-
-	inline static int32_t get_offset_of_fields_3() { return static_cast<int32_t>(offsetof(CompiledIdentityConstraint_t1335094965, ___fields_3)); }
-	inline AsttreeU5BU5D_t3174926177* get_fields_3() const { return ___fields_3; }
-	inline AsttreeU5BU5D_t3174926177** get_address_of_fields_3() { return &___fields_3; }
-	inline void set_fields_3(AsttreeU5BU5D_t3174926177* value)
-	{
-		___fields_3 = value;
-		Il2CppCodeGenWriteBarrier((&___fields_3), value);
-	}
-
-	inline static int32_t get_offset_of_refer_4() { return static_cast<int32_t>(offsetof(CompiledIdentityConstraint_t1335094965, ___refer_4)); }
-	inline XmlQualifiedName_t2760654312 * get_refer_4() const { return ___refer_4; }
-	inline XmlQualifiedName_t2760654312 ** get_address_of_refer_4() { return &___refer_4; }
-	inline void set_refer_4(XmlQualifiedName_t2760654312 * value)
-	{
-		___refer_4 = value;
-		Il2CppCodeGenWriteBarrier((&___refer_4), value);
-	}
-};
-
-struct CompiledIdentityConstraint_t1335094965_StaticFields
-{
-public:
-	// System.Xml.Schema.CompiledIdentityConstraint System.Xml.Schema.CompiledIdentityConstraint::Empty
-	CompiledIdentityConstraint_t1335094965 * ___Empty_5;
-
-public:
-	inline static int32_t get_offset_of_Empty_5() { return static_cast<int32_t>(offsetof(CompiledIdentityConstraint_t1335094965_StaticFields, ___Empty_5)); }
-	inline CompiledIdentityConstraint_t1335094965 * get_Empty_5() const { return ___Empty_5; }
-	inline CompiledIdentityConstraint_t1335094965 ** get_address_of_Empty_5() { return &___Empty_5; }
-	inline void set_Empty_5(CompiledIdentityConstraint_t1335094965 * value)
-	{
-		___Empty_5 = value;
-		Il2CppCodeGenWriteBarrier((&___Empty_5), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // COMPILEDIDENTITYCONSTRAINT_T1335094965_H
-#ifndef XMLATTRIBUTECOLLECTION_T2316283784_H
-#define XMLATTRIBUTECOLLECTION_T2316283784_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.XmlAttributeCollection
-struct  XmlAttributeCollection_t2316283784  : public XmlNamedNodeMap_t2821286253
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // XMLATTRIBUTECOLLECTION_T2316283784_H
-#ifndef XMLSCHEMAATTRIBUTE_T2797257020_H
-#define XMLSCHEMAATTRIBUTE_T2797257020_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.XmlSchemaAttribute
-struct  XmlSchemaAttribute_t2797257020  : public XmlSchemaAnnotated_t2603549639
-{
-public:
-	// System.String System.Xml.Schema.XmlSchemaAttribute::defaultValue
-	String_t* ___defaultValue_9;
-	// System.String System.Xml.Schema.XmlSchemaAttribute::fixedValue
-	String_t* ___fixedValue_10;
-	// System.String System.Xml.Schema.XmlSchemaAttribute::name
-	String_t* ___name_11;
-	// System.Xml.Schema.XmlSchemaForm System.Xml.Schema.XmlSchemaAttribute::form
-	int32_t ___form_12;
-	// System.Xml.Schema.XmlSchemaUse System.Xml.Schema.XmlSchemaAttribute::use
-	int32_t ___use_13;
-	// System.Xml.XmlQualifiedName System.Xml.Schema.XmlSchemaAttribute::refName
-	XmlQualifiedName_t2760654312 * ___refName_14;
-	// System.Xml.XmlQualifiedName System.Xml.Schema.XmlSchemaAttribute::typeName
-	XmlQualifiedName_t2760654312 * ___typeName_15;
-	// System.Xml.XmlQualifiedName System.Xml.Schema.XmlSchemaAttribute::qualifiedName
-	XmlQualifiedName_t2760654312 * ___qualifiedName_16;
-	// System.Xml.Schema.XmlSchemaSimpleType System.Xml.Schema.XmlSchemaAttribute::type
-	XmlSchemaSimpleType_t2678868104 * ___type_17;
-	// System.Xml.Schema.XmlSchemaSimpleType System.Xml.Schema.XmlSchemaAttribute::attributeType
-	XmlSchemaSimpleType_t2678868104 * ___attributeType_18;
-	// System.Xml.Schema.SchemaAttDef System.Xml.Schema.XmlSchemaAttribute::attDef
-	SchemaAttDef_t2429541159 * ___attDef_19;
-
-public:
-	inline static int32_t get_offset_of_defaultValue_9() { return static_cast<int32_t>(offsetof(XmlSchemaAttribute_t2797257020, ___defaultValue_9)); }
-	inline String_t* get_defaultValue_9() const { return ___defaultValue_9; }
-	inline String_t** get_address_of_defaultValue_9() { return &___defaultValue_9; }
-	inline void set_defaultValue_9(String_t* value)
-	{
-		___defaultValue_9 = value;
-		Il2CppCodeGenWriteBarrier((&___defaultValue_9), value);
-	}
-
-	inline static int32_t get_offset_of_fixedValue_10() { return static_cast<int32_t>(offsetof(XmlSchemaAttribute_t2797257020, ___fixedValue_10)); }
-	inline String_t* get_fixedValue_10() const { return ___fixedValue_10; }
-	inline String_t** get_address_of_fixedValue_10() { return &___fixedValue_10; }
-	inline void set_fixedValue_10(String_t* value)
-	{
-		___fixedValue_10 = value;
-		Il2CppCodeGenWriteBarrier((&___fixedValue_10), value);
-	}
-
-	inline static int32_t get_offset_of_name_11() { return static_cast<int32_t>(offsetof(XmlSchemaAttribute_t2797257020, ___name_11)); }
-	inline String_t* get_name_11() const { return ___name_11; }
-	inline String_t** get_address_of_name_11() { return &___name_11; }
-	inline void set_name_11(String_t* value)
-	{
-		___name_11 = value;
-		Il2CppCodeGenWriteBarrier((&___name_11), value);
-	}
-
-	inline static int32_t get_offset_of_form_12() { return static_cast<int32_t>(offsetof(XmlSchemaAttribute_t2797257020, ___form_12)); }
-	inline int32_t get_form_12() const { return ___form_12; }
-	inline int32_t* get_address_of_form_12() { return &___form_12; }
-	inline void set_form_12(int32_t value)
-	{
-		___form_12 = value;
-	}
-
-	inline static int32_t get_offset_of_use_13() { return static_cast<int32_t>(offsetof(XmlSchemaAttribute_t2797257020, ___use_13)); }
-	inline int32_t get_use_13() const { return ___use_13; }
-	inline int32_t* get_address_of_use_13() { return &___use_13; }
-	inline void set_use_13(int32_t value)
-	{
-		___use_13 = value;
-	}
-
-	inline static int32_t get_offset_of_refName_14() { return static_cast<int32_t>(offsetof(XmlSchemaAttribute_t2797257020, ___refName_14)); }
-	inline XmlQualifiedName_t2760654312 * get_refName_14() const { return ___refName_14; }
-	inline XmlQualifiedName_t2760654312 ** get_address_of_refName_14() { return &___refName_14; }
-	inline void set_refName_14(XmlQualifiedName_t2760654312 * value)
-	{
-		___refName_14 = value;
-		Il2CppCodeGenWriteBarrier((&___refName_14), value);
-	}
-
-	inline static int32_t get_offset_of_typeName_15() { return static_cast<int32_t>(offsetof(XmlSchemaAttribute_t2797257020, ___typeName_15)); }
-	inline XmlQualifiedName_t2760654312 * get_typeName_15() const { return ___typeName_15; }
-	inline XmlQualifiedName_t2760654312 ** get_address_of_typeName_15() { return &___typeName_15; }
-	inline void set_typeName_15(XmlQualifiedName_t2760654312 * value)
-	{
-		___typeName_15 = value;
-		Il2CppCodeGenWriteBarrier((&___typeName_15), value);
-	}
-
-	inline static int32_t get_offset_of_qualifiedName_16() { return static_cast<int32_t>(offsetof(XmlSchemaAttribute_t2797257020, ___qualifiedName_16)); }
-	inline XmlQualifiedName_t2760654312 * get_qualifiedName_16() const { return ___qualifiedName_16; }
-	inline XmlQualifiedName_t2760654312 ** get_address_of_qualifiedName_16() { return &___qualifiedName_16; }
-	inline void set_qualifiedName_16(XmlQualifiedName_t2760654312 * value)
-	{
-		___qualifiedName_16 = value;
-		Il2CppCodeGenWriteBarrier((&___qualifiedName_16), value);
-	}
-
-	inline static int32_t get_offset_of_type_17() { return static_cast<int32_t>(offsetof(XmlSchemaAttribute_t2797257020, ___type_17)); }
-	inline XmlSchemaSimpleType_t2678868104 * get_type_17() const { return ___type_17; }
-	inline XmlSchemaSimpleType_t2678868104 ** get_address_of_type_17() { return &___type_17; }
-	inline void set_type_17(XmlSchemaSimpleType_t2678868104 * value)
-	{
-		___type_17 = value;
-		Il2CppCodeGenWriteBarrier((&___type_17), value);
-	}
-
-	inline static int32_t get_offset_of_attributeType_18() { return static_cast<int32_t>(offsetof(XmlSchemaAttribute_t2797257020, ___attributeType_18)); }
-	inline XmlSchemaSimpleType_t2678868104 * get_attributeType_18() const { return ___attributeType_18; }
-	inline XmlSchemaSimpleType_t2678868104 ** get_address_of_attributeType_18() { return &___attributeType_18; }
-	inline void set_attributeType_18(XmlSchemaSimpleType_t2678868104 * value)
-	{
-		___attributeType_18 = value;
-		Il2CppCodeGenWriteBarrier((&___attributeType_18), value);
-	}
-
-	inline static int32_t get_offset_of_attDef_19() { return static_cast<int32_t>(offsetof(XmlSchemaAttribute_t2797257020, ___attDef_19)); }
-	inline SchemaAttDef_t2429541159 * get_attDef_19() const { return ___attDef_19; }
-	inline SchemaAttDef_t2429541159 ** get_address_of_attDef_19() { return &___attDef_19; }
-	inline void set_attDef_19(SchemaAttDef_t2429541159 * value)
-	{
-		___attDef_19 = value;
-		Il2CppCodeGenWriteBarrier((&___attDef_19), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // XMLSCHEMAATTRIBUTE_T2797257020_H
-#ifndef TYPE_T_H
-#define TYPE_T_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Type
-struct  Type_t  : public MemberInfo_t
-{
-public:
-	// System.RuntimeTypeHandle System.Type::_impl
-	RuntimeTypeHandle_t3027515415  ____impl_0;
-
-public:
-	inline static int32_t get_offset_of__impl_0() { return static_cast<int32_t>(offsetof(Type_t, ____impl_0)); }
-	inline RuntimeTypeHandle_t3027515415  get__impl_0() const { return ____impl_0; }
-	inline RuntimeTypeHandle_t3027515415 * get_address_of__impl_0() { return &____impl_0; }
-	inline void set__impl_0(RuntimeTypeHandle_t3027515415  value)
-	{
-		____impl_0 = value;
-	}
-};
-
-struct Type_t_StaticFields
-{
-public:
-	// System.Reflection.MemberFilter System.Type::FilterAttribute
-	MemberFilter_t426314064 * ___FilterAttribute_1;
-	// System.Reflection.MemberFilter System.Type::FilterName
-	MemberFilter_t426314064 * ___FilterName_2;
-	// System.Reflection.MemberFilter System.Type::FilterNameIgnoreCase
-	MemberFilter_t426314064 * ___FilterNameIgnoreCase_3;
-	// System.Object System.Type::Missing
-	RuntimeObject * ___Missing_4;
-	// System.Char System.Type::Delimiter
-	Il2CppChar ___Delimiter_5;
-	// System.Type[] System.Type::EmptyTypes
-	TypeU5BU5D_t3940880105* ___EmptyTypes_6;
-	// System.Reflection.Binder System.Type::defaultBinder
-	Binder_t2999457153 * ___defaultBinder_7;
-
-public:
-	inline static int32_t get_offset_of_FilterAttribute_1() { return static_cast<int32_t>(offsetof(Type_t_StaticFields, ___FilterAttribute_1)); }
-	inline MemberFilter_t426314064 * get_FilterAttribute_1() const { return ___FilterAttribute_1; }
-	inline MemberFilter_t426314064 ** get_address_of_FilterAttribute_1() { return &___FilterAttribute_1; }
-	inline void set_FilterAttribute_1(MemberFilter_t426314064 * value)
-	{
-		___FilterAttribute_1 = value;
-		Il2CppCodeGenWriteBarrier((&___FilterAttribute_1), value);
-	}
-
-	inline static int32_t get_offset_of_FilterName_2() { return static_cast<int32_t>(offsetof(Type_t_StaticFields, ___FilterName_2)); }
-	inline MemberFilter_t426314064 * get_FilterName_2() const { return ___FilterName_2; }
-	inline MemberFilter_t426314064 ** get_address_of_FilterName_2() { return &___FilterName_2; }
-	inline void set_FilterName_2(MemberFilter_t426314064 * value)
-	{
-		___FilterName_2 = value;
-		Il2CppCodeGenWriteBarrier((&___FilterName_2), value);
-	}
-
-	inline static int32_t get_offset_of_FilterNameIgnoreCase_3() { return static_cast<int32_t>(offsetof(Type_t_StaticFields, ___FilterNameIgnoreCase_3)); }
-	inline MemberFilter_t426314064 * get_FilterNameIgnoreCase_3() const { return ___FilterNameIgnoreCase_3; }
-	inline MemberFilter_t426314064 ** get_address_of_FilterNameIgnoreCase_3() { return &___FilterNameIgnoreCase_3; }
-	inline void set_FilterNameIgnoreCase_3(MemberFilter_t426314064 * value)
-	{
-		___FilterNameIgnoreCase_3 = value;
-		Il2CppCodeGenWriteBarrier((&___FilterNameIgnoreCase_3), value);
-	}
-
-	inline static int32_t get_offset_of_Missing_4() { return static_cast<int32_t>(offsetof(Type_t_StaticFields, ___Missing_4)); }
-	inline RuntimeObject * get_Missing_4() const { return ___Missing_4; }
-	inline RuntimeObject ** get_address_of_Missing_4() { return &___Missing_4; }
-	inline void set_Missing_4(RuntimeObject * value)
-	{
-		___Missing_4 = value;
-		Il2CppCodeGenWriteBarrier((&___Missing_4), value);
-	}
-
-	inline static int32_t get_offset_of_Delimiter_5() { return static_cast<int32_t>(offsetof(Type_t_StaticFields, ___Delimiter_5)); }
-	inline Il2CppChar get_Delimiter_5() const { return ___Delimiter_5; }
-	inline Il2CppChar* get_address_of_Delimiter_5() { return &___Delimiter_5; }
-	inline void set_Delimiter_5(Il2CppChar value)
-	{
-		___Delimiter_5 = value;
-	}
-
-	inline static int32_t get_offset_of_EmptyTypes_6() { return static_cast<int32_t>(offsetof(Type_t_StaticFields, ___EmptyTypes_6)); }
-	inline TypeU5BU5D_t3940880105* get_EmptyTypes_6() const { return ___EmptyTypes_6; }
-	inline TypeU5BU5D_t3940880105** get_address_of_EmptyTypes_6() { return &___EmptyTypes_6; }
-	inline void set_EmptyTypes_6(TypeU5BU5D_t3940880105* value)
-	{
-		___EmptyTypes_6 = value;
-		Il2CppCodeGenWriteBarrier((&___EmptyTypes_6), value);
-	}
-
-	inline static int32_t get_offset_of_defaultBinder_7() { return static_cast<int32_t>(offsetof(Type_t_StaticFields, ___defaultBinder_7)); }
-	inline Binder_t2999457153 * get_defaultBinder_7() const { return ___defaultBinder_7; }
-	inline Binder_t2999457153 ** get_address_of_defaultBinder_7() { return &___defaultBinder_7; }
-	inline void set_defaultBinder_7(Binder_t2999457153 * value)
-	{
-		___defaultBinder_7 = value;
-		Il2CppCodeGenWriteBarrier((&___defaultBinder_7), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // TYPE_T_H
-#ifndef XMLSCHEMACOMPLEXCONTENT_T3528540772_H
-#define XMLSCHEMACOMPLEXCONTENT_T3528540772_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.XmlSchemaComplexContent
-struct  XmlSchemaComplexContent_t3528540772  : public XmlSchemaContentModel_t602185179
-{
-public:
-	// System.Xml.Schema.XmlSchemaContent System.Xml.Schema.XmlSchemaComplexContent::content
-	XmlSchemaContent_t1040349258 * ___content_9;
-	// System.Boolean System.Xml.Schema.XmlSchemaComplexContent::isMixed
-	bool ___isMixed_10;
-	// System.Boolean System.Xml.Schema.XmlSchemaComplexContent::hasMixedAttribute
-	bool ___hasMixedAttribute_11;
-
-public:
-	inline static int32_t get_offset_of_content_9() { return static_cast<int32_t>(offsetof(XmlSchemaComplexContent_t3528540772, ___content_9)); }
-	inline XmlSchemaContent_t1040349258 * get_content_9() const { return ___content_9; }
-	inline XmlSchemaContent_t1040349258 ** get_address_of_content_9() { return &___content_9; }
-	inline void set_content_9(XmlSchemaContent_t1040349258 * value)
-	{
-		___content_9 = value;
-		Il2CppCodeGenWriteBarrier((&___content_9), value);
-	}
-
-	inline static int32_t get_offset_of_isMixed_10() { return static_cast<int32_t>(offsetof(XmlSchemaComplexContent_t3528540772, ___isMixed_10)); }
-	inline bool get_isMixed_10() const { return ___isMixed_10; }
-	inline bool* get_address_of_isMixed_10() { return &___isMixed_10; }
-	inline void set_isMixed_10(bool value)
-	{
-		___isMixed_10 = value;
-	}
-
-	inline static int32_t get_offset_of_hasMixedAttribute_11() { return static_cast<int32_t>(offsetof(XmlSchemaComplexContent_t3528540772, ___hasMixedAttribute_11)); }
-	inline bool get_hasMixedAttribute_11() const { return ___hasMixedAttribute_11; }
-	inline bool* get_address_of_hasMixedAttribute_11() { return &___hasMixedAttribute_11; }
-	inline void set_hasMixedAttribute_11(bool value)
-	{
-		___hasMixedAttribute_11 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // XMLSCHEMACOMPLEXCONTENT_T3528540772_H
-#ifndef XMLSCHEMASIMPLECONTENTEXTENSION_T1269327470_H
-#define XMLSCHEMASIMPLECONTENTEXTENSION_T1269327470_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.XmlSchemaSimpleContentExtension
-struct  XmlSchemaSimpleContentExtension_t1269327470  : public XmlSchemaContent_t1040349258
-{
-public:
-	// System.Xml.Schema.XmlSchemaObjectCollection System.Xml.Schema.XmlSchemaSimpleContentExtension::attributes
-	XmlSchemaObjectCollection_t1064819932 * ___attributes_9;
-	// System.Xml.Schema.XmlSchemaAnyAttribute System.Xml.Schema.XmlSchemaSimpleContentExtension::anyAttribute
-	XmlSchemaAnyAttribute_t963227996 * ___anyAttribute_10;
-	// System.Xml.XmlQualifiedName System.Xml.Schema.XmlSchemaSimpleContentExtension::baseTypeName
-	XmlQualifiedName_t2760654312 * ___baseTypeName_11;
-
-public:
-	inline static int32_t get_offset_of_attributes_9() { return static_cast<int32_t>(offsetof(XmlSchemaSimpleContentExtension_t1269327470, ___attributes_9)); }
-	inline XmlSchemaObjectCollection_t1064819932 * get_attributes_9() const { return ___attributes_9; }
-	inline XmlSchemaObjectCollection_t1064819932 ** get_address_of_attributes_9() { return &___attributes_9; }
-	inline void set_attributes_9(XmlSchemaObjectCollection_t1064819932 * value)
-	{
-		___attributes_9 = value;
-		Il2CppCodeGenWriteBarrier((&___attributes_9), value);
-	}
-
-	inline static int32_t get_offset_of_anyAttribute_10() { return static_cast<int32_t>(offsetof(XmlSchemaSimpleContentExtension_t1269327470, ___anyAttribute_10)); }
-	inline XmlSchemaAnyAttribute_t963227996 * get_anyAttribute_10() const { return ___anyAttribute_10; }
-	inline XmlSchemaAnyAttribute_t963227996 ** get_address_of_anyAttribute_10() { return &___anyAttribute_10; }
-	inline void set_anyAttribute_10(XmlSchemaAnyAttribute_t963227996 * value)
-	{
-		___anyAttribute_10 = value;
-		Il2CppCodeGenWriteBarrier((&___anyAttribute_10), value);
-	}
-
-	inline static int32_t get_offset_of_baseTypeName_11() { return static_cast<int32_t>(offsetof(XmlSchemaSimpleContentExtension_t1269327470, ___baseTypeName_11)); }
-	inline XmlQualifiedName_t2760654312 * get_baseTypeName_11() const { return ___baseTypeName_11; }
-	inline XmlQualifiedName_t2760654312 ** get_address_of_baseTypeName_11() { return &___baseTypeName_11; }
-	inline void set_baseTypeName_11(XmlQualifiedName_t2760654312 * value)
-	{
-		___baseTypeName_11 = value;
-		Il2CppCodeGenWriteBarrier((&___baseTypeName_11), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // XMLSCHEMASIMPLECONTENTEXTENSION_T1269327470_H
-#ifndef XMLSCHEMAANYATTRIBUTE_T963227996_H
-#define XMLSCHEMAANYATTRIBUTE_T963227996_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.XmlSchemaAnyAttribute
-struct  XmlSchemaAnyAttribute_t963227996  : public XmlSchemaAnnotated_t2603549639
-{
-public:
-	// System.String System.Xml.Schema.XmlSchemaAnyAttribute::ns
-	String_t* ___ns_9;
-	// System.Xml.Schema.XmlSchemaContentProcessing System.Xml.Schema.XmlSchemaAnyAttribute::processContents
-	int32_t ___processContents_10;
-	// System.Xml.Schema.NamespaceList System.Xml.Schema.XmlSchemaAnyAttribute::namespaceList
-	NamespaceList_t60893868 * ___namespaceList_11;
-
-public:
-	inline static int32_t get_offset_of_ns_9() { return static_cast<int32_t>(offsetof(XmlSchemaAnyAttribute_t963227996, ___ns_9)); }
-	inline String_t* get_ns_9() const { return ___ns_9; }
-	inline String_t** get_address_of_ns_9() { return &___ns_9; }
-	inline void set_ns_9(String_t* value)
-	{
-		___ns_9 = value;
-		Il2CppCodeGenWriteBarrier((&___ns_9), value);
-	}
-
-	inline static int32_t get_offset_of_processContents_10() { return static_cast<int32_t>(offsetof(XmlSchemaAnyAttribute_t963227996, ___processContents_10)); }
-	inline int32_t get_processContents_10() const { return ___processContents_10; }
-	inline int32_t* get_address_of_processContents_10() { return &___processContents_10; }
-	inline void set_processContents_10(int32_t value)
-	{
-		___processContents_10 = value;
-	}
-
-	inline static int32_t get_offset_of_namespaceList_11() { return static_cast<int32_t>(offsetof(XmlSchemaAnyAttribute_t963227996, ___namespaceList_11)); }
-	inline NamespaceList_t60893868 * get_namespaceList_11() const { return ___namespaceList_11; }
-	inline NamespaceList_t60893868 ** get_address_of_namespaceList_11() { return &___namespaceList_11; }
-	inline void set_namespaceList_11(NamespaceList_t60893868 * value)
-	{
-		___namespaceList_11 = value;
-		Il2CppCodeGenWriteBarrier((&___namespaceList_11), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // XMLSCHEMAANYATTRIBUTE_T963227996_H
-#ifndef XMLSCHEMASIMPLECONTENT_T4264369274_H
-#define XMLSCHEMASIMPLECONTENT_T4264369274_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.XmlSchemaSimpleContent
-struct  XmlSchemaSimpleContent_t4264369274  : public XmlSchemaContentModel_t602185179
-{
-public:
-	// System.Xml.Schema.XmlSchemaContent System.Xml.Schema.XmlSchemaSimpleContent::content
-	XmlSchemaContent_t1040349258 * ___content_9;
-
-public:
-	inline static int32_t get_offset_of_content_9() { return static_cast<int32_t>(offsetof(XmlSchemaSimpleContent_t4264369274, ___content_9)); }
-	inline XmlSchemaContent_t1040349258 * get_content_9() const { return ___content_9; }
-	inline XmlSchemaContent_t1040349258 ** get_address_of_content_9() { return &___content_9; }
-	inline void set_content_9(XmlSchemaContent_t1040349258 * value)
-	{
-		___content_9 = value;
-		Il2CppCodeGenWriteBarrier((&___content_9), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // XMLSCHEMASIMPLECONTENT_T4264369274_H
-#ifndef XMLATOMICVALUE_T3775050121_H
-#define XMLATOMICVALUE_T3775050121_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.XmlAtomicValue
-struct  XmlAtomicValue_t3775050121  : public XPathItem_t4250588140
-{
-public:
-	// System.Xml.Schema.XmlSchemaType System.Xml.Schema.XmlAtomicValue::xmlType
-	XmlSchemaType_t2033747345 * ___xmlType_0;
-	// System.Object System.Xml.Schema.XmlAtomicValue::objVal
-	RuntimeObject * ___objVal_1;
-	// System.TypeCode System.Xml.Schema.XmlAtomicValue::clrType
-	int32_t ___clrType_2;
-	// System.Xml.Schema.XmlAtomicValue/Union System.Xml.Schema.XmlAtomicValue::unionVal
-	Union_t2178763312  ___unionVal_3;
-	// System.Xml.Schema.XmlAtomicValue/NamespacePrefixForQName System.Xml.Schema.XmlAtomicValue::nsPrefix
-	NamespacePrefixForQName_t198417103 * ___nsPrefix_4;
-
-public:
-	inline static int32_t get_offset_of_xmlType_0() { return static_cast<int32_t>(offsetof(XmlAtomicValue_t3775050121, ___xmlType_0)); }
-	inline XmlSchemaType_t2033747345 * get_xmlType_0() const { return ___xmlType_0; }
-	inline XmlSchemaType_t2033747345 ** get_address_of_xmlType_0() { return &___xmlType_0; }
-	inline void set_xmlType_0(XmlSchemaType_t2033747345 * value)
-	{
-		___xmlType_0 = value;
-		Il2CppCodeGenWriteBarrier((&___xmlType_0), value);
-	}
-
-	inline static int32_t get_offset_of_objVal_1() { return static_cast<int32_t>(offsetof(XmlAtomicValue_t3775050121, ___objVal_1)); }
-	inline RuntimeObject * get_objVal_1() const { return ___objVal_1; }
-	inline RuntimeObject ** get_address_of_objVal_1() { return &___objVal_1; }
-	inline void set_objVal_1(RuntimeObject * value)
-	{
-		___objVal_1 = value;
-		Il2CppCodeGenWriteBarrier((&___objVal_1), value);
-	}
-
-	inline static int32_t get_offset_of_clrType_2() { return static_cast<int32_t>(offsetof(XmlAtomicValue_t3775050121, ___clrType_2)); }
-	inline int32_t get_clrType_2() const { return ___clrType_2; }
-	inline int32_t* get_address_of_clrType_2() { return &___clrType_2; }
-	inline void set_clrType_2(int32_t value)
-	{
-		___clrType_2 = value;
-	}
-
-	inline static int32_t get_offset_of_unionVal_3() { return static_cast<int32_t>(offsetof(XmlAtomicValue_t3775050121, ___unionVal_3)); }
-	inline Union_t2178763312  get_unionVal_3() const { return ___unionVal_3; }
-	inline Union_t2178763312 * get_address_of_unionVal_3() { return &___unionVal_3; }
-	inline void set_unionVal_3(Union_t2178763312  value)
-	{
-		___unionVal_3 = value;
-	}
-
-	inline static int32_t get_offset_of_nsPrefix_4() { return static_cast<int32_t>(offsetof(XmlAtomicValue_t3775050121, ___nsPrefix_4)); }
-	inline NamespacePrefixForQName_t198417103 * get_nsPrefix_4() const { return ___nsPrefix_4; }
-	inline NamespacePrefixForQName_t198417103 ** get_address_of_nsPrefix_4() { return &___nsPrefix_4; }
-	inline void set_nsPrefix_4(NamespacePrefixForQName_t198417103 * value)
-	{
-		___nsPrefix_4 = value;
-		Il2CppCodeGenWriteBarrier((&___nsPrefix_4), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // XMLATOMICVALUE_T3775050121_H
-#ifndef XMLVALIDATINGREADERIMPL_T1817762384_H
-#define XMLVALIDATINGREADERIMPL_T1817762384_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.XmlValidatingReaderImpl
-struct  XmlValidatingReaderImpl_t1817762384  : public XmlReader_t3121518892
-{
-public:
-	// System.Xml.XmlReader System.Xml.XmlValidatingReaderImpl::coreReader
-	XmlReader_t3121518892 * ___coreReader_3;
-	// System.Xml.XmlTextReaderImpl System.Xml.XmlValidatingReaderImpl::coreReaderImpl
-	XmlTextReaderImpl_t178060594 * ___coreReaderImpl_4;
-	// System.Xml.IXmlNamespaceResolver System.Xml.XmlValidatingReaderImpl::coreReaderNSResolver
-	RuntimeObject* ___coreReaderNSResolver_5;
-	// System.Xml.ValidationType System.Xml.XmlValidatingReaderImpl::validationType
-	int32_t ___validationType_6;
-	// System.Xml.Schema.BaseValidator System.Xml.XmlValidatingReaderImpl::validator
-	BaseValidator_t868759770 * ___validator_7;
-	// System.Xml.Schema.XmlSchemaCollection System.Xml.XmlValidatingReaderImpl::schemaCollection
-	XmlSchemaCollection_t3610399789 * ___schemaCollection_8;
-	// System.Boolean System.Xml.XmlValidatingReaderImpl::processIdentityConstraints
-	bool ___processIdentityConstraints_9;
-	// System.Xml.XmlValidatingReaderImpl/ParsingFunction System.Xml.XmlValidatingReaderImpl::parsingFunction
-	int32_t ___parsingFunction_10;
-	// System.Xml.XmlValidatingReaderImpl/ValidationEventHandling System.Xml.XmlValidatingReaderImpl::eventHandling
-	ValidationEventHandling_t3812646699 * ___eventHandling_11;
-	// System.Xml.XmlParserContext System.Xml.XmlValidatingReaderImpl::parserContext
-	XmlParserContext_t2544895291 * ___parserContext_12;
-	// System.Xml.ReadContentAsBinaryHelper System.Xml.XmlValidatingReaderImpl::readBinaryHelper
-	ReadContentAsBinaryHelper_t3017207972 * ___readBinaryHelper_13;
-	// System.Xml.XmlReader System.Xml.XmlValidatingReaderImpl::outerReader
-	XmlReader_t3121518892 * ___outerReader_14;
-
-public:
-	inline static int32_t get_offset_of_coreReader_3() { return static_cast<int32_t>(offsetof(XmlValidatingReaderImpl_t1817762384, ___coreReader_3)); }
-	inline XmlReader_t3121518892 * get_coreReader_3() const { return ___coreReader_3; }
-	inline XmlReader_t3121518892 ** get_address_of_coreReader_3() { return &___coreReader_3; }
-	inline void set_coreReader_3(XmlReader_t3121518892 * value)
-	{
-		___coreReader_3 = value;
-		Il2CppCodeGenWriteBarrier((&___coreReader_3), value);
-	}
-
-	inline static int32_t get_offset_of_coreReaderImpl_4() { return static_cast<int32_t>(offsetof(XmlValidatingReaderImpl_t1817762384, ___coreReaderImpl_4)); }
-	inline XmlTextReaderImpl_t178060594 * get_coreReaderImpl_4() const { return ___coreReaderImpl_4; }
-	inline XmlTextReaderImpl_t178060594 ** get_address_of_coreReaderImpl_4() { return &___coreReaderImpl_4; }
-	inline void set_coreReaderImpl_4(XmlTextReaderImpl_t178060594 * value)
-	{
-		___coreReaderImpl_4 = value;
-		Il2CppCodeGenWriteBarrier((&___coreReaderImpl_4), value);
-	}
-
-	inline static int32_t get_offset_of_coreReaderNSResolver_5() { return static_cast<int32_t>(offsetof(XmlValidatingReaderImpl_t1817762384, ___coreReaderNSResolver_5)); }
-	inline RuntimeObject* get_coreReaderNSResolver_5() const { return ___coreReaderNSResolver_5; }
-	inline RuntimeObject** get_address_of_coreReaderNSResolver_5() { return &___coreReaderNSResolver_5; }
-	inline void set_coreReaderNSResolver_5(RuntimeObject* value)
-	{
-		___coreReaderNSResolver_5 = value;
-		Il2CppCodeGenWriteBarrier((&___coreReaderNSResolver_5), value);
-	}
-
-	inline static int32_t get_offset_of_validationType_6() { return static_cast<int32_t>(offsetof(XmlValidatingReaderImpl_t1817762384, ___validationType_6)); }
-	inline int32_t get_validationType_6() const { return ___validationType_6; }
-	inline int32_t* get_address_of_validationType_6() { return &___validationType_6; }
-	inline void set_validationType_6(int32_t value)
-	{
-		___validationType_6 = value;
-	}
-
-	inline static int32_t get_offset_of_validator_7() { return static_cast<int32_t>(offsetof(XmlValidatingReaderImpl_t1817762384, ___validator_7)); }
-	inline BaseValidator_t868759770 * get_validator_7() const { return ___validator_7; }
-	inline BaseValidator_t868759770 ** get_address_of_validator_7() { return &___validator_7; }
-	inline void set_validator_7(BaseValidator_t868759770 * value)
-	{
-		___validator_7 = value;
-		Il2CppCodeGenWriteBarrier((&___validator_7), value);
-	}
-
-	inline static int32_t get_offset_of_schemaCollection_8() { return static_cast<int32_t>(offsetof(XmlValidatingReaderImpl_t1817762384, ___schemaCollection_8)); }
-	inline XmlSchemaCollection_t3610399789 * get_schemaCollection_8() const { return ___schemaCollection_8; }
-	inline XmlSchemaCollection_t3610399789 ** get_address_of_schemaCollection_8() { return &___schemaCollection_8; }
-	inline void set_schemaCollection_8(XmlSchemaCollection_t3610399789 * value)
-	{
-		___schemaCollection_8 = value;
-		Il2CppCodeGenWriteBarrier((&___schemaCollection_8), value);
-	}
-
-	inline static int32_t get_offset_of_processIdentityConstraints_9() { return static_cast<int32_t>(offsetof(XmlValidatingReaderImpl_t1817762384, ___processIdentityConstraints_9)); }
-	inline bool get_processIdentityConstraints_9() const { return ___processIdentityConstraints_9; }
-	inline bool* get_address_of_processIdentityConstraints_9() { return &___processIdentityConstraints_9; }
-	inline void set_processIdentityConstraints_9(bool value)
-	{
-		___processIdentityConstraints_9 = value;
-	}
-
-	inline static int32_t get_offset_of_parsingFunction_10() { return static_cast<int32_t>(offsetof(XmlValidatingReaderImpl_t1817762384, ___parsingFunction_10)); }
-	inline int32_t get_parsingFunction_10() const { return ___parsingFunction_10; }
-	inline int32_t* get_address_of_parsingFunction_10() { return &___parsingFunction_10; }
-	inline void set_parsingFunction_10(int32_t value)
-	{
-		___parsingFunction_10 = value;
-	}
-
-	inline static int32_t get_offset_of_eventHandling_11() { return static_cast<int32_t>(offsetof(XmlValidatingReaderImpl_t1817762384, ___eventHandling_11)); }
-	inline ValidationEventHandling_t3812646699 * get_eventHandling_11() const { return ___eventHandling_11; }
-	inline ValidationEventHandling_t3812646699 ** get_address_of_eventHandling_11() { return &___eventHandling_11; }
-	inline void set_eventHandling_11(ValidationEventHandling_t3812646699 * value)
-	{
-		___eventHandling_11 = value;
-		Il2CppCodeGenWriteBarrier((&___eventHandling_11), value);
-	}
-
-	inline static int32_t get_offset_of_parserContext_12() { return static_cast<int32_t>(offsetof(XmlValidatingReaderImpl_t1817762384, ___parserContext_12)); }
-	inline XmlParserContext_t2544895291 * get_parserContext_12() const { return ___parserContext_12; }
-	inline XmlParserContext_t2544895291 ** get_address_of_parserContext_12() { return &___parserContext_12; }
-	inline void set_parserContext_12(XmlParserContext_t2544895291 * value)
-	{
-		___parserContext_12 = value;
-		Il2CppCodeGenWriteBarrier((&___parserContext_12), value);
-	}
-
-	inline static int32_t get_offset_of_readBinaryHelper_13() { return static_cast<int32_t>(offsetof(XmlValidatingReaderImpl_t1817762384, ___readBinaryHelper_13)); }
-	inline ReadContentAsBinaryHelper_t3017207972 * get_readBinaryHelper_13() const { return ___readBinaryHelper_13; }
-	inline ReadContentAsBinaryHelper_t3017207972 ** get_address_of_readBinaryHelper_13() { return &___readBinaryHelper_13; }
-	inline void set_readBinaryHelper_13(ReadContentAsBinaryHelper_t3017207972 * value)
-	{
-		___readBinaryHelper_13 = value;
-		Il2CppCodeGenWriteBarrier((&___readBinaryHelper_13), value);
-	}
-
-	inline static int32_t get_offset_of_outerReader_14() { return static_cast<int32_t>(offsetof(XmlValidatingReaderImpl_t1817762384, ___outerReader_14)); }
-	inline XmlReader_t3121518892 * get_outerReader_14() const { return ___outerReader_14; }
-	inline XmlReader_t3121518892 ** get_address_of_outerReader_14() { return &___outerReader_14; }
-	inline void set_outerReader_14(XmlReader_t3121518892 * value)
-	{
-		___outerReader_14 = value;
-		Il2CppCodeGenWriteBarrier((&___outerReader_14), value);
-	}
-};
-
-struct XmlValidatingReaderImpl_t1817762384_StaticFields
-{
-public:
-	// System.Xml.XmlResolver System.Xml.XmlValidatingReaderImpl::s_tempResolver
-	XmlResolver_t626023767 * ___s_tempResolver_15;
-
-public:
-	inline static int32_t get_offset_of_s_tempResolver_15() { return static_cast<int32_t>(offsetof(XmlValidatingReaderImpl_t1817762384_StaticFields, ___s_tempResolver_15)); }
-	inline XmlResolver_t626023767 * get_s_tempResolver_15() const { return ___s_tempResolver_15; }
-	inline XmlResolver_t626023767 ** get_address_of_s_tempResolver_15() { return &___s_tempResolver_15; }
-	inline void set_s_tempResolver_15(XmlResolver_t626023767 * value)
-	{
-		___s_tempResolver_15 = value;
-		Il2CppCodeGenWriteBarrier((&___s_tempResolver_15), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // XMLVALIDATINGREADERIMPL_T1817762384_H
-#ifndef AXIS_T4207104559_H
-#define AXIS_T4207104559_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// MS.Internal.Xml.XPath.Axis
-struct  Axis_t4207104559  : public AstNode_t2514041814
-{
-public:
-	// MS.Internal.Xml.XPath.Axis/AxisType MS.Internal.Xml.XPath.Axis::axisType
-	int32_t ___axisType_0;
-	// MS.Internal.Xml.XPath.AstNode MS.Internal.Xml.XPath.Axis::input
-	AstNode_t2514041814 * ___input_1;
-	// System.String MS.Internal.Xml.XPath.Axis::prefix
-	String_t* ___prefix_2;
-	// System.String MS.Internal.Xml.XPath.Axis::name
-	String_t* ___name_3;
-	// System.Xml.XPath.XPathNodeType MS.Internal.Xml.XPath.Axis::nodeType
-	int32_t ___nodeType_4;
-	// System.Boolean MS.Internal.Xml.XPath.Axis::abbrAxis
-	bool ___abbrAxis_5;
-	// System.String MS.Internal.Xml.XPath.Axis::urn
-	String_t* ___urn_6;
-
-public:
-	inline static int32_t get_offset_of_axisType_0() { return static_cast<int32_t>(offsetof(Axis_t4207104559, ___axisType_0)); }
-	inline int32_t get_axisType_0() const { return ___axisType_0; }
-	inline int32_t* get_address_of_axisType_0() { return &___axisType_0; }
-	inline void set_axisType_0(int32_t value)
-	{
-		___axisType_0 = value;
-	}
-
-	inline static int32_t get_offset_of_input_1() { return static_cast<int32_t>(offsetof(Axis_t4207104559, ___input_1)); }
-	inline AstNode_t2514041814 * get_input_1() const { return ___input_1; }
-	inline AstNode_t2514041814 ** get_address_of_input_1() { return &___input_1; }
-	inline void set_input_1(AstNode_t2514041814 * value)
-	{
-		___input_1 = value;
-		Il2CppCodeGenWriteBarrier((&___input_1), value);
-	}
-
-	inline static int32_t get_offset_of_prefix_2() { return static_cast<int32_t>(offsetof(Axis_t4207104559, ___prefix_2)); }
-	inline String_t* get_prefix_2() const { return ___prefix_2; }
-	inline String_t** get_address_of_prefix_2() { return &___prefix_2; }
-	inline void set_prefix_2(String_t* value)
-	{
-		___prefix_2 = value;
-		Il2CppCodeGenWriteBarrier((&___prefix_2), value);
-	}
-
-	inline static int32_t get_offset_of_name_3() { return static_cast<int32_t>(offsetof(Axis_t4207104559, ___name_3)); }
-	inline String_t* get_name_3() const { return ___name_3; }
-	inline String_t** get_address_of_name_3() { return &___name_3; }
-	inline void set_name_3(String_t* value)
-	{
-		___name_3 = value;
-		Il2CppCodeGenWriteBarrier((&___name_3), value);
-	}
-
-	inline static int32_t get_offset_of_nodeType_4() { return static_cast<int32_t>(offsetof(Axis_t4207104559, ___nodeType_4)); }
-	inline int32_t get_nodeType_4() const { return ___nodeType_4; }
-	inline int32_t* get_address_of_nodeType_4() { return &___nodeType_4; }
-	inline void set_nodeType_4(int32_t value)
-	{
-		___nodeType_4 = value;
-	}
-
-	inline static int32_t get_offset_of_abbrAxis_5() { return static_cast<int32_t>(offsetof(Axis_t4207104559, ___abbrAxis_5)); }
-	inline bool get_abbrAxis_5() const { return ___abbrAxis_5; }
-	inline bool* get_address_of_abbrAxis_5() { return &___abbrAxis_5; }
-	inline void set_abbrAxis_5(bool value)
-	{
-		___abbrAxis_5 = value;
-	}
-
-	inline static int32_t get_offset_of_urn_6() { return static_cast<int32_t>(offsetof(Axis_t4207104559, ___urn_6)); }
-	inline String_t* get_urn_6() const { return ___urn_6; }
-	inline String_t** get_address_of_urn_6() { return &___urn_6; }
-	inline void set_urn_6(String_t* value)
-	{
-		___urn_6 = value;
-		Il2CppCodeGenWriteBarrier((&___urn_6), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // AXIS_T4207104559_H
-#ifndef XMLSCHEMASIMPLETYPELIST_T472803608_H
-#define XMLSCHEMASIMPLETYPELIST_T472803608_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.XmlSchemaSimpleTypeList
-struct  XmlSchemaSimpleTypeList_t472803608  : public XmlSchemaSimpleTypeContent_t599285223
-{
-public:
-	// System.Xml.XmlQualifiedName System.Xml.Schema.XmlSchemaSimpleTypeList::itemTypeName
-	XmlQualifiedName_t2760654312 * ___itemTypeName_9;
-	// System.Xml.Schema.XmlSchemaSimpleType System.Xml.Schema.XmlSchemaSimpleTypeList::itemType
-	XmlSchemaSimpleType_t2678868104 * ___itemType_10;
-	// System.Xml.Schema.XmlSchemaSimpleType System.Xml.Schema.XmlSchemaSimpleTypeList::baseItemType
-	XmlSchemaSimpleType_t2678868104 * ___baseItemType_11;
-
-public:
-	inline static int32_t get_offset_of_itemTypeName_9() { return static_cast<int32_t>(offsetof(XmlSchemaSimpleTypeList_t472803608, ___itemTypeName_9)); }
-	inline XmlQualifiedName_t2760654312 * get_itemTypeName_9() const { return ___itemTypeName_9; }
-	inline XmlQualifiedName_t2760654312 ** get_address_of_itemTypeName_9() { return &___itemTypeName_9; }
-	inline void set_itemTypeName_9(XmlQualifiedName_t2760654312 * value)
-	{
-		___itemTypeName_9 = value;
-		Il2CppCodeGenWriteBarrier((&___itemTypeName_9), value);
-	}
-
-	inline static int32_t get_offset_of_itemType_10() { return static_cast<int32_t>(offsetof(XmlSchemaSimpleTypeList_t472803608, ___itemType_10)); }
-	inline XmlSchemaSimpleType_t2678868104 * get_itemType_10() const { return ___itemType_10; }
-	inline XmlSchemaSimpleType_t2678868104 ** get_address_of_itemType_10() { return &___itemType_10; }
-	inline void set_itemType_10(XmlSchemaSimpleType_t2678868104 * value)
-	{
-		___itemType_10 = value;
-		Il2CppCodeGenWriteBarrier((&___itemType_10), value);
-	}
-
-	inline static int32_t get_offset_of_baseItemType_11() { return static_cast<int32_t>(offsetof(XmlSchemaSimpleTypeList_t472803608, ___baseItemType_11)); }
-	inline XmlSchemaSimpleType_t2678868104 * get_baseItemType_11() const { return ___baseItemType_11; }
-	inline XmlSchemaSimpleType_t2678868104 ** get_address_of_baseItemType_11() { return &___baseItemType_11; }
-	inline void set_baseItemType_11(XmlSchemaSimpleType_t2678868104 * value)
-	{
-		___baseItemType_11 = value;
-		Il2CppCodeGenWriteBarrier((&___baseItemType_11), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // XMLSCHEMASIMPLETYPELIST_T472803608_H
+#endif // SCHEMAINFO_T3347508623_H
 #ifndef XMLSCHEMAFACET_T1906017689_H
 #define XMLSCHEMAFACET_T1906017689_H
 #ifdef __clang__
@@ -18959,58 +18606,6 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // REGEX_T3657309853_H
-#ifndef XMLSCHEMASIMPLETYPERESTRICTION_T3925451115_H
-#define XMLSCHEMASIMPLETYPERESTRICTION_T3925451115_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.XmlSchemaSimpleTypeRestriction
-struct  XmlSchemaSimpleTypeRestriction_t3925451115  : public XmlSchemaSimpleTypeContent_t599285223
-{
-public:
-	// System.Xml.XmlQualifiedName System.Xml.Schema.XmlSchemaSimpleTypeRestriction::baseTypeName
-	XmlQualifiedName_t2760654312 * ___baseTypeName_9;
-	// System.Xml.Schema.XmlSchemaSimpleType System.Xml.Schema.XmlSchemaSimpleTypeRestriction::baseType
-	XmlSchemaSimpleType_t2678868104 * ___baseType_10;
-	// System.Xml.Schema.XmlSchemaObjectCollection System.Xml.Schema.XmlSchemaSimpleTypeRestriction::facets
-	XmlSchemaObjectCollection_t1064819932 * ___facets_11;
-
-public:
-	inline static int32_t get_offset_of_baseTypeName_9() { return static_cast<int32_t>(offsetof(XmlSchemaSimpleTypeRestriction_t3925451115, ___baseTypeName_9)); }
-	inline XmlQualifiedName_t2760654312 * get_baseTypeName_9() const { return ___baseTypeName_9; }
-	inline XmlQualifiedName_t2760654312 ** get_address_of_baseTypeName_9() { return &___baseTypeName_9; }
-	inline void set_baseTypeName_9(XmlQualifiedName_t2760654312 * value)
-	{
-		___baseTypeName_9 = value;
-		Il2CppCodeGenWriteBarrier((&___baseTypeName_9), value);
-	}
-
-	inline static int32_t get_offset_of_baseType_10() { return static_cast<int32_t>(offsetof(XmlSchemaSimpleTypeRestriction_t3925451115, ___baseType_10)); }
-	inline XmlSchemaSimpleType_t2678868104 * get_baseType_10() const { return ___baseType_10; }
-	inline XmlSchemaSimpleType_t2678868104 ** get_address_of_baseType_10() { return &___baseType_10; }
-	inline void set_baseType_10(XmlSchemaSimpleType_t2678868104 * value)
-	{
-		___baseType_10 = value;
-		Il2CppCodeGenWriteBarrier((&___baseType_10), value);
-	}
-
-	inline static int32_t get_offset_of_facets_11() { return static_cast<int32_t>(offsetof(XmlSchemaSimpleTypeRestriction_t3925451115, ___facets_11)); }
-	inline XmlSchemaObjectCollection_t1064819932 * get_facets_11() const { return ___facets_11; }
-	inline XmlSchemaObjectCollection_t1064819932 ** get_address_of_facets_11() { return &___facets_11; }
-	inline void set_facets_11(XmlSchemaObjectCollection_t1064819932 * value)
-	{
-		___facets_11 = value;
-		Il2CppCodeGenWriteBarrier((&___facets_11), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // XMLSCHEMASIMPLETYPERESTRICTION_T3925451115_H
 #ifndef SCHEMADECLBASE_T3500554832_H
 #define SCHEMADECLBASE_T3500554832_H
 #ifdef __clang__
@@ -19147,26 +18742,472 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // SCHEMADECLBASE_T3500554832_H
-#ifndef ARGUMENTNULLEXCEPTION_T1615371798_H
-#define ARGUMENTNULLEXCEPTION_T1615371798_H
+#ifndef XMLSCHEMASIMPLETYPERESTRICTION_T3925451115_H
+#define XMLSCHEMASIMPLETYPERESTRICTION_T3925451115_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// System.ArgumentNullException
-struct  ArgumentNullException_t1615371798  : public ArgumentException_t132251570
+// System.Xml.Schema.XmlSchemaSimpleTypeRestriction
+struct  XmlSchemaSimpleTypeRestriction_t3925451115  : public XmlSchemaSimpleTypeContent_t599285223
 {
 public:
+	// System.Xml.XmlQualifiedName System.Xml.Schema.XmlSchemaSimpleTypeRestriction::baseTypeName
+	XmlQualifiedName_t2760654312 * ___baseTypeName_9;
+	// System.Xml.Schema.XmlSchemaSimpleType System.Xml.Schema.XmlSchemaSimpleTypeRestriction::baseType
+	XmlSchemaSimpleType_t2678868104 * ___baseType_10;
+	// System.Xml.Schema.XmlSchemaObjectCollection System.Xml.Schema.XmlSchemaSimpleTypeRestriction::facets
+	XmlSchemaObjectCollection_t1064819932 * ___facets_11;
 
 public:
+	inline static int32_t get_offset_of_baseTypeName_9() { return static_cast<int32_t>(offsetof(XmlSchemaSimpleTypeRestriction_t3925451115, ___baseTypeName_9)); }
+	inline XmlQualifiedName_t2760654312 * get_baseTypeName_9() const { return ___baseTypeName_9; }
+	inline XmlQualifiedName_t2760654312 ** get_address_of_baseTypeName_9() { return &___baseTypeName_9; }
+	inline void set_baseTypeName_9(XmlQualifiedName_t2760654312 * value)
+	{
+		___baseTypeName_9 = value;
+		Il2CppCodeGenWriteBarrier((&___baseTypeName_9), value);
+	}
+
+	inline static int32_t get_offset_of_baseType_10() { return static_cast<int32_t>(offsetof(XmlSchemaSimpleTypeRestriction_t3925451115, ___baseType_10)); }
+	inline XmlSchemaSimpleType_t2678868104 * get_baseType_10() const { return ___baseType_10; }
+	inline XmlSchemaSimpleType_t2678868104 ** get_address_of_baseType_10() { return &___baseType_10; }
+	inline void set_baseType_10(XmlSchemaSimpleType_t2678868104 * value)
+	{
+		___baseType_10 = value;
+		Il2CppCodeGenWriteBarrier((&___baseType_10), value);
+	}
+
+	inline static int32_t get_offset_of_facets_11() { return static_cast<int32_t>(offsetof(XmlSchemaSimpleTypeRestriction_t3925451115, ___facets_11)); }
+	inline XmlSchemaObjectCollection_t1064819932 * get_facets_11() const { return ___facets_11; }
+	inline XmlSchemaObjectCollection_t1064819932 ** get_address_of_facets_11() { return &___facets_11; }
+	inline void set_facets_11(XmlSchemaObjectCollection_t1064819932 * value)
+	{
+		___facets_11 = value;
+		Il2CppCodeGenWriteBarrier((&___facets_11), value);
+	}
 };
 
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // ARGUMENTNULLEXCEPTION_T1615371798_H
+#endif // XMLSCHEMASIMPLETYPERESTRICTION_T3925451115_H
+#ifndef AXIS_T4207104559_H
+#define AXIS_T4207104559_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// MS.Internal.Xml.XPath.Axis
+struct  Axis_t4207104559  : public AstNode_t2514041814
+{
+public:
+	// MS.Internal.Xml.XPath.Axis/AxisType MS.Internal.Xml.XPath.Axis::axisType
+	int32_t ___axisType_0;
+	// MS.Internal.Xml.XPath.AstNode MS.Internal.Xml.XPath.Axis::input
+	AstNode_t2514041814 * ___input_1;
+	// System.String MS.Internal.Xml.XPath.Axis::prefix
+	String_t* ___prefix_2;
+	// System.String MS.Internal.Xml.XPath.Axis::name
+	String_t* ___name_3;
+	// System.Xml.XPath.XPathNodeType MS.Internal.Xml.XPath.Axis::nodeType
+	int32_t ___nodeType_4;
+	// System.Boolean MS.Internal.Xml.XPath.Axis::abbrAxis
+	bool ___abbrAxis_5;
+	// System.String MS.Internal.Xml.XPath.Axis::urn
+	String_t* ___urn_6;
+
+public:
+	inline static int32_t get_offset_of_axisType_0() { return static_cast<int32_t>(offsetof(Axis_t4207104559, ___axisType_0)); }
+	inline int32_t get_axisType_0() const { return ___axisType_0; }
+	inline int32_t* get_address_of_axisType_0() { return &___axisType_0; }
+	inline void set_axisType_0(int32_t value)
+	{
+		___axisType_0 = value;
+	}
+
+	inline static int32_t get_offset_of_input_1() { return static_cast<int32_t>(offsetof(Axis_t4207104559, ___input_1)); }
+	inline AstNode_t2514041814 * get_input_1() const { return ___input_1; }
+	inline AstNode_t2514041814 ** get_address_of_input_1() { return &___input_1; }
+	inline void set_input_1(AstNode_t2514041814 * value)
+	{
+		___input_1 = value;
+		Il2CppCodeGenWriteBarrier((&___input_1), value);
+	}
+
+	inline static int32_t get_offset_of_prefix_2() { return static_cast<int32_t>(offsetof(Axis_t4207104559, ___prefix_2)); }
+	inline String_t* get_prefix_2() const { return ___prefix_2; }
+	inline String_t** get_address_of_prefix_2() { return &___prefix_2; }
+	inline void set_prefix_2(String_t* value)
+	{
+		___prefix_2 = value;
+		Il2CppCodeGenWriteBarrier((&___prefix_2), value);
+	}
+
+	inline static int32_t get_offset_of_name_3() { return static_cast<int32_t>(offsetof(Axis_t4207104559, ___name_3)); }
+	inline String_t* get_name_3() const { return ___name_3; }
+	inline String_t** get_address_of_name_3() { return &___name_3; }
+	inline void set_name_3(String_t* value)
+	{
+		___name_3 = value;
+		Il2CppCodeGenWriteBarrier((&___name_3), value);
+	}
+
+	inline static int32_t get_offset_of_nodeType_4() { return static_cast<int32_t>(offsetof(Axis_t4207104559, ___nodeType_4)); }
+	inline int32_t get_nodeType_4() const { return ___nodeType_4; }
+	inline int32_t* get_address_of_nodeType_4() { return &___nodeType_4; }
+	inline void set_nodeType_4(int32_t value)
+	{
+		___nodeType_4 = value;
+	}
+
+	inline static int32_t get_offset_of_abbrAxis_5() { return static_cast<int32_t>(offsetof(Axis_t4207104559, ___abbrAxis_5)); }
+	inline bool get_abbrAxis_5() const { return ___abbrAxis_5; }
+	inline bool* get_address_of_abbrAxis_5() { return &___abbrAxis_5; }
+	inline void set_abbrAxis_5(bool value)
+	{
+		___abbrAxis_5 = value;
+	}
+
+	inline static int32_t get_offset_of_urn_6() { return static_cast<int32_t>(offsetof(Axis_t4207104559, ___urn_6)); }
+	inline String_t* get_urn_6() const { return ___urn_6; }
+	inline String_t** get_address_of_urn_6() { return &___urn_6; }
+	inline void set_urn_6(String_t* value)
+	{
+		___urn_6 = value;
+		Il2CppCodeGenWriteBarrier((&___urn_6), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // AXIS_T4207104559_H
+#ifndef CONTENTVALIDATOR_T2085579204_H
+#define CONTENTVALIDATOR_T2085579204_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.ContentValidator
+struct  ContentValidator_t2085579204  : public RuntimeObject
+{
+public:
+	// System.Xml.Schema.XmlSchemaContentType System.Xml.Schema.ContentValidator::contentType
+	int32_t ___contentType_0;
+	// System.Boolean System.Xml.Schema.ContentValidator::isOpen
+	bool ___isOpen_1;
+	// System.Boolean System.Xml.Schema.ContentValidator::isEmptiable
+	bool ___isEmptiable_2;
+
+public:
+	inline static int32_t get_offset_of_contentType_0() { return static_cast<int32_t>(offsetof(ContentValidator_t2085579204, ___contentType_0)); }
+	inline int32_t get_contentType_0() const { return ___contentType_0; }
+	inline int32_t* get_address_of_contentType_0() { return &___contentType_0; }
+	inline void set_contentType_0(int32_t value)
+	{
+		___contentType_0 = value;
+	}
+
+	inline static int32_t get_offset_of_isOpen_1() { return static_cast<int32_t>(offsetof(ContentValidator_t2085579204, ___isOpen_1)); }
+	inline bool get_isOpen_1() const { return ___isOpen_1; }
+	inline bool* get_address_of_isOpen_1() { return &___isOpen_1; }
+	inline void set_isOpen_1(bool value)
+	{
+		___isOpen_1 = value;
+	}
+
+	inline static int32_t get_offset_of_isEmptiable_2() { return static_cast<int32_t>(offsetof(ContentValidator_t2085579204, ___isEmptiable_2)); }
+	inline bool get_isEmptiable_2() const { return ___isEmptiable_2; }
+	inline bool* get_address_of_isEmptiable_2() { return &___isEmptiable_2; }
+	inline void set_isEmptiable_2(bool value)
+	{
+		___isEmptiable_2 = value;
+	}
+};
+
+struct ContentValidator_t2085579204_StaticFields
+{
+public:
+	// System.Xml.Schema.ContentValidator System.Xml.Schema.ContentValidator::Empty
+	ContentValidator_t2085579204 * ___Empty_3;
+	// System.Xml.Schema.ContentValidator System.Xml.Schema.ContentValidator::TextOnly
+	ContentValidator_t2085579204 * ___TextOnly_4;
+	// System.Xml.Schema.ContentValidator System.Xml.Schema.ContentValidator::Mixed
+	ContentValidator_t2085579204 * ___Mixed_5;
+	// System.Xml.Schema.ContentValidator System.Xml.Schema.ContentValidator::Any
+	ContentValidator_t2085579204 * ___Any_6;
+
+public:
+	inline static int32_t get_offset_of_Empty_3() { return static_cast<int32_t>(offsetof(ContentValidator_t2085579204_StaticFields, ___Empty_3)); }
+	inline ContentValidator_t2085579204 * get_Empty_3() const { return ___Empty_3; }
+	inline ContentValidator_t2085579204 ** get_address_of_Empty_3() { return &___Empty_3; }
+	inline void set_Empty_3(ContentValidator_t2085579204 * value)
+	{
+		___Empty_3 = value;
+		Il2CppCodeGenWriteBarrier((&___Empty_3), value);
+	}
+
+	inline static int32_t get_offset_of_TextOnly_4() { return static_cast<int32_t>(offsetof(ContentValidator_t2085579204_StaticFields, ___TextOnly_4)); }
+	inline ContentValidator_t2085579204 * get_TextOnly_4() const { return ___TextOnly_4; }
+	inline ContentValidator_t2085579204 ** get_address_of_TextOnly_4() { return &___TextOnly_4; }
+	inline void set_TextOnly_4(ContentValidator_t2085579204 * value)
+	{
+		___TextOnly_4 = value;
+		Il2CppCodeGenWriteBarrier((&___TextOnly_4), value);
+	}
+
+	inline static int32_t get_offset_of_Mixed_5() { return static_cast<int32_t>(offsetof(ContentValidator_t2085579204_StaticFields, ___Mixed_5)); }
+	inline ContentValidator_t2085579204 * get_Mixed_5() const { return ___Mixed_5; }
+	inline ContentValidator_t2085579204 ** get_address_of_Mixed_5() { return &___Mixed_5; }
+	inline void set_Mixed_5(ContentValidator_t2085579204 * value)
+	{
+		___Mixed_5 = value;
+		Il2CppCodeGenWriteBarrier((&___Mixed_5), value);
+	}
+
+	inline static int32_t get_offset_of_Any_6() { return static_cast<int32_t>(offsetof(ContentValidator_t2085579204_StaticFields, ___Any_6)); }
+	inline ContentValidator_t2085579204 * get_Any_6() const { return ___Any_6; }
+	inline ContentValidator_t2085579204 ** get_address_of_Any_6() { return &___Any_6; }
+	inline void set_Any_6(ContentValidator_t2085579204 * value)
+	{
+		___Any_6 = value;
+		Il2CppCodeGenWriteBarrier((&___Any_6), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // CONTENTVALIDATOR_T2085579204_H
+#ifndef VALIDATIONSTATE_T603008718_H
+#define VALIDATIONSTATE_T603008718_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.ValidationState
+struct  ValidationState_t603008718  : public RuntimeObject
+{
+public:
+	// System.Boolean System.Xml.Schema.ValidationState::IsNill
+	bool ___IsNill_0;
+	// System.Boolean System.Xml.Schema.ValidationState::NeedValidateChildren
+	bool ___NeedValidateChildren_1;
+	// System.Xml.Schema.XmlSchemaContentProcessing System.Xml.Schema.ValidationState::ProcessContents
+	int32_t ___ProcessContents_2;
+	// System.Xml.Schema.SchemaElementDecl System.Xml.Schema.ValidationState::ElementDecl
+	SchemaElementDecl_t2267464004 * ___ElementDecl_3;
+	// System.String System.Xml.Schema.ValidationState::LocalName
+	String_t* ___LocalName_4;
+	// System.String System.Xml.Schema.ValidationState::Namespace
+	String_t* ___Namespace_5;
+	// System.Xml.Schema.ConstraintStruct[] System.Xml.Schema.ValidationState::Constr
+	ConstraintStructU5BU5D_t3023613795* ___Constr_6;
+	// System.Xml.Schema.StateUnion System.Xml.Schema.ValidationState::CurrentState
+	StateUnion_t2516366335  ___CurrentState_7;
+	// System.Boolean System.Xml.Schema.ValidationState::HasMatched
+	bool ___HasMatched_8;
+	// System.Xml.Schema.BitSet[] System.Xml.Schema.ValidationState::CurPos
+	BitSetU5BU5D_t1465593420* ___CurPos_9;
+	// System.Xml.Schema.BitSet System.Xml.Schema.ValidationState::AllElementsSet
+	BitSet_t1154229585 * ___AllElementsSet_10;
+	// System.Collections.Generic.List`1<System.Xml.Schema.RangePositionInfo> System.Xml.Schema.ValidationState::RunningPositions
+	List_1_t2062043678 * ___RunningPositions_11;
+	// System.Boolean System.Xml.Schema.ValidationState::TooComplex
+	bool ___TooComplex_12;
+
+public:
+	inline static int32_t get_offset_of_IsNill_0() { return static_cast<int32_t>(offsetof(ValidationState_t603008718, ___IsNill_0)); }
+	inline bool get_IsNill_0() const { return ___IsNill_0; }
+	inline bool* get_address_of_IsNill_0() { return &___IsNill_0; }
+	inline void set_IsNill_0(bool value)
+	{
+		___IsNill_0 = value;
+	}
+
+	inline static int32_t get_offset_of_NeedValidateChildren_1() { return static_cast<int32_t>(offsetof(ValidationState_t603008718, ___NeedValidateChildren_1)); }
+	inline bool get_NeedValidateChildren_1() const { return ___NeedValidateChildren_1; }
+	inline bool* get_address_of_NeedValidateChildren_1() { return &___NeedValidateChildren_1; }
+	inline void set_NeedValidateChildren_1(bool value)
+	{
+		___NeedValidateChildren_1 = value;
+	}
+
+	inline static int32_t get_offset_of_ProcessContents_2() { return static_cast<int32_t>(offsetof(ValidationState_t603008718, ___ProcessContents_2)); }
+	inline int32_t get_ProcessContents_2() const { return ___ProcessContents_2; }
+	inline int32_t* get_address_of_ProcessContents_2() { return &___ProcessContents_2; }
+	inline void set_ProcessContents_2(int32_t value)
+	{
+		___ProcessContents_2 = value;
+	}
+
+	inline static int32_t get_offset_of_ElementDecl_3() { return static_cast<int32_t>(offsetof(ValidationState_t603008718, ___ElementDecl_3)); }
+	inline SchemaElementDecl_t2267464004 * get_ElementDecl_3() const { return ___ElementDecl_3; }
+	inline SchemaElementDecl_t2267464004 ** get_address_of_ElementDecl_3() { return &___ElementDecl_3; }
+	inline void set_ElementDecl_3(SchemaElementDecl_t2267464004 * value)
+	{
+		___ElementDecl_3 = value;
+		Il2CppCodeGenWriteBarrier((&___ElementDecl_3), value);
+	}
+
+	inline static int32_t get_offset_of_LocalName_4() { return static_cast<int32_t>(offsetof(ValidationState_t603008718, ___LocalName_4)); }
+	inline String_t* get_LocalName_4() const { return ___LocalName_4; }
+	inline String_t** get_address_of_LocalName_4() { return &___LocalName_4; }
+	inline void set_LocalName_4(String_t* value)
+	{
+		___LocalName_4 = value;
+		Il2CppCodeGenWriteBarrier((&___LocalName_4), value);
+	}
+
+	inline static int32_t get_offset_of_Namespace_5() { return static_cast<int32_t>(offsetof(ValidationState_t603008718, ___Namespace_5)); }
+	inline String_t* get_Namespace_5() const { return ___Namespace_5; }
+	inline String_t** get_address_of_Namespace_5() { return &___Namespace_5; }
+	inline void set_Namespace_5(String_t* value)
+	{
+		___Namespace_5 = value;
+		Il2CppCodeGenWriteBarrier((&___Namespace_5), value);
+	}
+
+	inline static int32_t get_offset_of_Constr_6() { return static_cast<int32_t>(offsetof(ValidationState_t603008718, ___Constr_6)); }
+	inline ConstraintStructU5BU5D_t3023613795* get_Constr_6() const { return ___Constr_6; }
+	inline ConstraintStructU5BU5D_t3023613795** get_address_of_Constr_6() { return &___Constr_6; }
+	inline void set_Constr_6(ConstraintStructU5BU5D_t3023613795* value)
+	{
+		___Constr_6 = value;
+		Il2CppCodeGenWriteBarrier((&___Constr_6), value);
+	}
+
+	inline static int32_t get_offset_of_CurrentState_7() { return static_cast<int32_t>(offsetof(ValidationState_t603008718, ___CurrentState_7)); }
+	inline StateUnion_t2516366335  get_CurrentState_7() const { return ___CurrentState_7; }
+	inline StateUnion_t2516366335 * get_address_of_CurrentState_7() { return &___CurrentState_7; }
+	inline void set_CurrentState_7(StateUnion_t2516366335  value)
+	{
+		___CurrentState_7 = value;
+	}
+
+	inline static int32_t get_offset_of_HasMatched_8() { return static_cast<int32_t>(offsetof(ValidationState_t603008718, ___HasMatched_8)); }
+	inline bool get_HasMatched_8() const { return ___HasMatched_8; }
+	inline bool* get_address_of_HasMatched_8() { return &___HasMatched_8; }
+	inline void set_HasMatched_8(bool value)
+	{
+		___HasMatched_8 = value;
+	}
+
+	inline static int32_t get_offset_of_CurPos_9() { return static_cast<int32_t>(offsetof(ValidationState_t603008718, ___CurPos_9)); }
+	inline BitSetU5BU5D_t1465593420* get_CurPos_9() const { return ___CurPos_9; }
+	inline BitSetU5BU5D_t1465593420** get_address_of_CurPos_9() { return &___CurPos_9; }
+	inline void set_CurPos_9(BitSetU5BU5D_t1465593420* value)
+	{
+		___CurPos_9 = value;
+		Il2CppCodeGenWriteBarrier((&___CurPos_9), value);
+	}
+
+	inline static int32_t get_offset_of_AllElementsSet_10() { return static_cast<int32_t>(offsetof(ValidationState_t603008718, ___AllElementsSet_10)); }
+	inline BitSet_t1154229585 * get_AllElementsSet_10() const { return ___AllElementsSet_10; }
+	inline BitSet_t1154229585 ** get_address_of_AllElementsSet_10() { return &___AllElementsSet_10; }
+	inline void set_AllElementsSet_10(BitSet_t1154229585 * value)
+	{
+		___AllElementsSet_10 = value;
+		Il2CppCodeGenWriteBarrier((&___AllElementsSet_10), value);
+	}
+
+	inline static int32_t get_offset_of_RunningPositions_11() { return static_cast<int32_t>(offsetof(ValidationState_t603008718, ___RunningPositions_11)); }
+	inline List_1_t2062043678 * get_RunningPositions_11() const { return ___RunningPositions_11; }
+	inline List_1_t2062043678 ** get_address_of_RunningPositions_11() { return &___RunningPositions_11; }
+	inline void set_RunningPositions_11(List_1_t2062043678 * value)
+	{
+		___RunningPositions_11 = value;
+		Il2CppCodeGenWriteBarrier((&___RunningPositions_11), value);
+	}
+
+	inline static int32_t get_offset_of_TooComplex_12() { return static_cast<int32_t>(offsetof(ValidationState_t603008718, ___TooComplex_12)); }
+	inline bool get_TooComplex_12() const { return ___TooComplex_12; }
+	inline bool* get_address_of_TooComplex_12() { return &___TooComplex_12; }
+	inline void set_TooComplex_12(bool value)
+	{
+		___TooComplex_12 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // VALIDATIONSTATE_T603008718_H
+#ifndef XMLSCHEMAPARTICLE_T3828501457_H
+#define XMLSCHEMAPARTICLE_T3828501457_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.XmlSchemaParticle
+struct  XmlSchemaParticle_t3828501457  : public XmlSchemaAnnotated_t2603549639
+{
+public:
+	// System.Decimal System.Xml.Schema.XmlSchemaParticle::minOccurs
+	Decimal_t2948259380  ___minOccurs_9;
+	// System.Decimal System.Xml.Schema.XmlSchemaParticle::maxOccurs
+	Decimal_t2948259380  ___maxOccurs_10;
+	// System.Xml.Schema.XmlSchemaParticle/Occurs System.Xml.Schema.XmlSchemaParticle::flags
+	int32_t ___flags_11;
+
+public:
+	inline static int32_t get_offset_of_minOccurs_9() { return static_cast<int32_t>(offsetof(XmlSchemaParticle_t3828501457, ___minOccurs_9)); }
+	inline Decimal_t2948259380  get_minOccurs_9() const { return ___minOccurs_9; }
+	inline Decimal_t2948259380 * get_address_of_minOccurs_9() { return &___minOccurs_9; }
+	inline void set_minOccurs_9(Decimal_t2948259380  value)
+	{
+		___minOccurs_9 = value;
+	}
+
+	inline static int32_t get_offset_of_maxOccurs_10() { return static_cast<int32_t>(offsetof(XmlSchemaParticle_t3828501457, ___maxOccurs_10)); }
+	inline Decimal_t2948259380  get_maxOccurs_10() const { return ___maxOccurs_10; }
+	inline Decimal_t2948259380 * get_address_of_maxOccurs_10() { return &___maxOccurs_10; }
+	inline void set_maxOccurs_10(Decimal_t2948259380  value)
+	{
+		___maxOccurs_10 = value;
+	}
+
+	inline static int32_t get_offset_of_flags_11() { return static_cast<int32_t>(offsetof(XmlSchemaParticle_t3828501457, ___flags_11)); }
+	inline int32_t get_flags_11() const { return ___flags_11; }
+	inline int32_t* get_address_of_flags_11() { return &___flags_11; }
+	inline void set_flags_11(int32_t value)
+	{
+		___flags_11 = value;
+	}
+};
+
+struct XmlSchemaParticle_t3828501457_StaticFields
+{
+public:
+	// System.Xml.Schema.XmlSchemaParticle System.Xml.Schema.XmlSchemaParticle::Empty
+	XmlSchemaParticle_t3828501457 * ___Empty_12;
+
+public:
+	inline static int32_t get_offset_of_Empty_12() { return static_cast<int32_t>(offsetof(XmlSchemaParticle_t3828501457_StaticFields, ___Empty_12)); }
+	inline XmlSchemaParticle_t3828501457 * get_Empty_12() const { return ___Empty_12; }
+	inline XmlSchemaParticle_t3828501457 ** get_address_of_Empty_12() { return &___Empty_12; }
+	inline void set_Empty_12(XmlSchemaParticle_t3828501457 * value)
+	{
+		___Empty_12 = value;
+		Il2CppCodeGenWriteBarrier((&___Empty_12), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // XMLSCHEMAPARTICLE_T3828501457_H
 #ifndef RESTRICTIONFACETS_T1638599442_H
 #define RESTRICTIONFACETS_T1638599442_H
 #ifdef __clang__
@@ -19332,327 +19373,150 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // RESTRICTIONFACETS_T1638599442_H
-#ifndef XMLSCHEMAPARTICLE_T3828501457_H
-#define XMLSCHEMAPARTICLE_T3828501457_H
+#ifndef XMLSCHEMASIMPLETYPELIST_T472803608_H
+#define XMLSCHEMASIMPLETYPELIST_T472803608_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// System.Xml.Schema.XmlSchemaParticle
-struct  XmlSchemaParticle_t3828501457  : public XmlSchemaAnnotated_t2603549639
+// System.Xml.Schema.XmlSchemaSimpleTypeList
+struct  XmlSchemaSimpleTypeList_t472803608  : public XmlSchemaSimpleTypeContent_t599285223
 {
 public:
-	// System.Decimal System.Xml.Schema.XmlSchemaParticle::minOccurs
-	Decimal_t2948259380  ___minOccurs_9;
-	// System.Decimal System.Xml.Schema.XmlSchemaParticle::maxOccurs
-	Decimal_t2948259380  ___maxOccurs_10;
-	// System.Xml.Schema.XmlSchemaParticle/Occurs System.Xml.Schema.XmlSchemaParticle::flags
-	int32_t ___flags_11;
+	// System.Xml.XmlQualifiedName System.Xml.Schema.XmlSchemaSimpleTypeList::itemTypeName
+	XmlQualifiedName_t2760654312 * ___itemTypeName_9;
+	// System.Xml.Schema.XmlSchemaSimpleType System.Xml.Schema.XmlSchemaSimpleTypeList::itemType
+	XmlSchemaSimpleType_t2678868104 * ___itemType_10;
+	// System.Xml.Schema.XmlSchemaSimpleType System.Xml.Schema.XmlSchemaSimpleTypeList::baseItemType
+	XmlSchemaSimpleType_t2678868104 * ___baseItemType_11;
 
 public:
-	inline static int32_t get_offset_of_minOccurs_9() { return static_cast<int32_t>(offsetof(XmlSchemaParticle_t3828501457, ___minOccurs_9)); }
-	inline Decimal_t2948259380  get_minOccurs_9() const { return ___minOccurs_9; }
-	inline Decimal_t2948259380 * get_address_of_minOccurs_9() { return &___minOccurs_9; }
-	inline void set_minOccurs_9(Decimal_t2948259380  value)
+	inline static int32_t get_offset_of_itemTypeName_9() { return static_cast<int32_t>(offsetof(XmlSchemaSimpleTypeList_t472803608, ___itemTypeName_9)); }
+	inline XmlQualifiedName_t2760654312 * get_itemTypeName_9() const { return ___itemTypeName_9; }
+	inline XmlQualifiedName_t2760654312 ** get_address_of_itemTypeName_9() { return &___itemTypeName_9; }
+	inline void set_itemTypeName_9(XmlQualifiedName_t2760654312 * value)
 	{
-		___minOccurs_9 = value;
+		___itemTypeName_9 = value;
+		Il2CppCodeGenWriteBarrier((&___itemTypeName_9), value);
 	}
 
-	inline static int32_t get_offset_of_maxOccurs_10() { return static_cast<int32_t>(offsetof(XmlSchemaParticle_t3828501457, ___maxOccurs_10)); }
-	inline Decimal_t2948259380  get_maxOccurs_10() const { return ___maxOccurs_10; }
-	inline Decimal_t2948259380 * get_address_of_maxOccurs_10() { return &___maxOccurs_10; }
-	inline void set_maxOccurs_10(Decimal_t2948259380  value)
+	inline static int32_t get_offset_of_itemType_10() { return static_cast<int32_t>(offsetof(XmlSchemaSimpleTypeList_t472803608, ___itemType_10)); }
+	inline XmlSchemaSimpleType_t2678868104 * get_itemType_10() const { return ___itemType_10; }
+	inline XmlSchemaSimpleType_t2678868104 ** get_address_of_itemType_10() { return &___itemType_10; }
+	inline void set_itemType_10(XmlSchemaSimpleType_t2678868104 * value)
 	{
-		___maxOccurs_10 = value;
+		___itemType_10 = value;
+		Il2CppCodeGenWriteBarrier((&___itemType_10), value);
 	}
 
-	inline static int32_t get_offset_of_flags_11() { return static_cast<int32_t>(offsetof(XmlSchemaParticle_t3828501457, ___flags_11)); }
-	inline int32_t get_flags_11() const { return ___flags_11; }
-	inline int32_t* get_address_of_flags_11() { return &___flags_11; }
-	inline void set_flags_11(int32_t value)
+	inline static int32_t get_offset_of_baseItemType_11() { return static_cast<int32_t>(offsetof(XmlSchemaSimpleTypeList_t472803608, ___baseItemType_11)); }
+	inline XmlSchemaSimpleType_t2678868104 * get_baseItemType_11() const { return ___baseItemType_11; }
+	inline XmlSchemaSimpleType_t2678868104 ** get_address_of_baseItemType_11() { return &___baseItemType_11; }
+	inline void set_baseItemType_11(XmlSchemaSimpleType_t2678868104 * value)
 	{
-		___flags_11 = value;
-	}
-};
-
-struct XmlSchemaParticle_t3828501457_StaticFields
-{
-public:
-	// System.Xml.Schema.XmlSchemaParticle System.Xml.Schema.XmlSchemaParticle::Empty
-	XmlSchemaParticle_t3828501457 * ___Empty_12;
-
-public:
-	inline static int32_t get_offset_of_Empty_12() { return static_cast<int32_t>(offsetof(XmlSchemaParticle_t3828501457_StaticFields, ___Empty_12)); }
-	inline XmlSchemaParticle_t3828501457 * get_Empty_12() const { return ___Empty_12; }
-	inline XmlSchemaParticle_t3828501457 ** get_address_of_Empty_12() { return &___Empty_12; }
-	inline void set_Empty_12(XmlSchemaParticle_t3828501457 * value)
-	{
-		___Empty_12 = value;
-		Il2CppCodeGenWriteBarrier((&___Empty_12), value);
+		___baseItemType_11 = value;
+		Il2CppCodeGenWriteBarrier((&___baseItemType_11), value);
 	}
 };
 
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // XMLSCHEMAPARTICLE_T3828501457_H
-#ifndef VALIDATIONSTATE_T603008718_H
-#define VALIDATIONSTATE_T603008718_H
+#endif // XMLSCHEMASIMPLETYPELIST_T472803608_H
+#ifndef XMLATOMICVALUE_T3775050121_H
+#define XMLATOMICVALUE_T3775050121_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// System.Xml.Schema.ValidationState
-struct  ValidationState_t603008718  : public RuntimeObject
+// System.Xml.Schema.XmlAtomicValue
+struct  XmlAtomicValue_t3775050121  : public XPathItem_t4250588140
 {
 public:
-	// System.Boolean System.Xml.Schema.ValidationState::IsNill
-	bool ___IsNill_0;
-	// System.Boolean System.Xml.Schema.ValidationState::NeedValidateChildren
-	bool ___NeedValidateChildren_1;
-	// System.Xml.Schema.XmlSchemaContentProcessing System.Xml.Schema.ValidationState::ProcessContents
-	int32_t ___ProcessContents_2;
-	// System.Xml.Schema.SchemaElementDecl System.Xml.Schema.ValidationState::ElementDecl
-	SchemaElementDecl_t2267464004 * ___ElementDecl_3;
-	// System.String System.Xml.Schema.ValidationState::LocalName
-	String_t* ___LocalName_4;
-	// System.String System.Xml.Schema.ValidationState::Namespace
-	String_t* ___Namespace_5;
-	// System.Xml.Schema.ConstraintStruct[] System.Xml.Schema.ValidationState::Constr
-	ConstraintStructU5BU5D_t3023613795* ___Constr_6;
-	// System.Xml.Schema.StateUnion System.Xml.Schema.ValidationState::CurrentState
-	StateUnion_t2516366335  ___CurrentState_7;
-	// System.Boolean System.Xml.Schema.ValidationState::HasMatched
-	bool ___HasMatched_8;
-	// System.Xml.Schema.BitSet[] System.Xml.Schema.ValidationState::CurPos
-	BitSetU5BU5D_t1465593420* ___CurPos_9;
-	// System.Xml.Schema.BitSet System.Xml.Schema.ValidationState::AllElementsSet
-	BitSet_t1154229585 * ___AllElementsSet_10;
-	// System.Collections.Generic.List`1<System.Xml.Schema.RangePositionInfo> System.Xml.Schema.ValidationState::RunningPositions
-	List_1_t2062043678 * ___RunningPositions_11;
-	// System.Boolean System.Xml.Schema.ValidationState::TooComplex
-	bool ___TooComplex_12;
+	// System.Xml.Schema.XmlSchemaType System.Xml.Schema.XmlAtomicValue::xmlType
+	XmlSchemaType_t2033747345 * ___xmlType_0;
+	// System.Object System.Xml.Schema.XmlAtomicValue::objVal
+	RuntimeObject * ___objVal_1;
+	// System.TypeCode System.Xml.Schema.XmlAtomicValue::clrType
+	int32_t ___clrType_2;
+	// System.Xml.Schema.XmlAtomicValue/Union System.Xml.Schema.XmlAtomicValue::unionVal
+	Union_t2178763312  ___unionVal_3;
+	// System.Xml.Schema.XmlAtomicValue/NamespacePrefixForQName System.Xml.Schema.XmlAtomicValue::nsPrefix
+	NamespacePrefixForQName_t198417103 * ___nsPrefix_4;
 
 public:
-	inline static int32_t get_offset_of_IsNill_0() { return static_cast<int32_t>(offsetof(ValidationState_t603008718, ___IsNill_0)); }
-	inline bool get_IsNill_0() const { return ___IsNill_0; }
-	inline bool* get_address_of_IsNill_0() { return &___IsNill_0; }
-	inline void set_IsNill_0(bool value)
+	inline static int32_t get_offset_of_xmlType_0() { return static_cast<int32_t>(offsetof(XmlAtomicValue_t3775050121, ___xmlType_0)); }
+	inline XmlSchemaType_t2033747345 * get_xmlType_0() const { return ___xmlType_0; }
+	inline XmlSchemaType_t2033747345 ** get_address_of_xmlType_0() { return &___xmlType_0; }
+	inline void set_xmlType_0(XmlSchemaType_t2033747345 * value)
 	{
-		___IsNill_0 = value;
+		___xmlType_0 = value;
+		Il2CppCodeGenWriteBarrier((&___xmlType_0), value);
 	}
 
-	inline static int32_t get_offset_of_NeedValidateChildren_1() { return static_cast<int32_t>(offsetof(ValidationState_t603008718, ___NeedValidateChildren_1)); }
-	inline bool get_NeedValidateChildren_1() const { return ___NeedValidateChildren_1; }
-	inline bool* get_address_of_NeedValidateChildren_1() { return &___NeedValidateChildren_1; }
-	inline void set_NeedValidateChildren_1(bool value)
+	inline static int32_t get_offset_of_objVal_1() { return static_cast<int32_t>(offsetof(XmlAtomicValue_t3775050121, ___objVal_1)); }
+	inline RuntimeObject * get_objVal_1() const { return ___objVal_1; }
+	inline RuntimeObject ** get_address_of_objVal_1() { return &___objVal_1; }
+	inline void set_objVal_1(RuntimeObject * value)
 	{
-		___NeedValidateChildren_1 = value;
+		___objVal_1 = value;
+		Il2CppCodeGenWriteBarrier((&___objVal_1), value);
 	}
 
-	inline static int32_t get_offset_of_ProcessContents_2() { return static_cast<int32_t>(offsetof(ValidationState_t603008718, ___ProcessContents_2)); }
-	inline int32_t get_ProcessContents_2() const { return ___ProcessContents_2; }
-	inline int32_t* get_address_of_ProcessContents_2() { return &___ProcessContents_2; }
-	inline void set_ProcessContents_2(int32_t value)
+	inline static int32_t get_offset_of_clrType_2() { return static_cast<int32_t>(offsetof(XmlAtomicValue_t3775050121, ___clrType_2)); }
+	inline int32_t get_clrType_2() const { return ___clrType_2; }
+	inline int32_t* get_address_of_clrType_2() { return &___clrType_2; }
+	inline void set_clrType_2(int32_t value)
 	{
-		___ProcessContents_2 = value;
+		___clrType_2 = value;
 	}
 
-	inline static int32_t get_offset_of_ElementDecl_3() { return static_cast<int32_t>(offsetof(ValidationState_t603008718, ___ElementDecl_3)); }
-	inline SchemaElementDecl_t2267464004 * get_ElementDecl_3() const { return ___ElementDecl_3; }
-	inline SchemaElementDecl_t2267464004 ** get_address_of_ElementDecl_3() { return &___ElementDecl_3; }
-	inline void set_ElementDecl_3(SchemaElementDecl_t2267464004 * value)
+	inline static int32_t get_offset_of_unionVal_3() { return static_cast<int32_t>(offsetof(XmlAtomicValue_t3775050121, ___unionVal_3)); }
+	inline Union_t2178763312  get_unionVal_3() const { return ___unionVal_3; }
+	inline Union_t2178763312 * get_address_of_unionVal_3() { return &___unionVal_3; }
+	inline void set_unionVal_3(Union_t2178763312  value)
 	{
-		___ElementDecl_3 = value;
-		Il2CppCodeGenWriteBarrier((&___ElementDecl_3), value);
+		___unionVal_3 = value;
 	}
 
-	inline static int32_t get_offset_of_LocalName_4() { return static_cast<int32_t>(offsetof(ValidationState_t603008718, ___LocalName_4)); }
-	inline String_t* get_LocalName_4() const { return ___LocalName_4; }
-	inline String_t** get_address_of_LocalName_4() { return &___LocalName_4; }
-	inline void set_LocalName_4(String_t* value)
+	inline static int32_t get_offset_of_nsPrefix_4() { return static_cast<int32_t>(offsetof(XmlAtomicValue_t3775050121, ___nsPrefix_4)); }
+	inline NamespacePrefixForQName_t198417103 * get_nsPrefix_4() const { return ___nsPrefix_4; }
+	inline NamespacePrefixForQName_t198417103 ** get_address_of_nsPrefix_4() { return &___nsPrefix_4; }
+	inline void set_nsPrefix_4(NamespacePrefixForQName_t198417103 * value)
 	{
-		___LocalName_4 = value;
-		Il2CppCodeGenWriteBarrier((&___LocalName_4), value);
-	}
-
-	inline static int32_t get_offset_of_Namespace_5() { return static_cast<int32_t>(offsetof(ValidationState_t603008718, ___Namespace_5)); }
-	inline String_t* get_Namespace_5() const { return ___Namespace_5; }
-	inline String_t** get_address_of_Namespace_5() { return &___Namespace_5; }
-	inline void set_Namespace_5(String_t* value)
-	{
-		___Namespace_5 = value;
-		Il2CppCodeGenWriteBarrier((&___Namespace_5), value);
-	}
-
-	inline static int32_t get_offset_of_Constr_6() { return static_cast<int32_t>(offsetof(ValidationState_t603008718, ___Constr_6)); }
-	inline ConstraintStructU5BU5D_t3023613795* get_Constr_6() const { return ___Constr_6; }
-	inline ConstraintStructU5BU5D_t3023613795** get_address_of_Constr_6() { return &___Constr_6; }
-	inline void set_Constr_6(ConstraintStructU5BU5D_t3023613795* value)
-	{
-		___Constr_6 = value;
-		Il2CppCodeGenWriteBarrier((&___Constr_6), value);
-	}
-
-	inline static int32_t get_offset_of_CurrentState_7() { return static_cast<int32_t>(offsetof(ValidationState_t603008718, ___CurrentState_7)); }
-	inline StateUnion_t2516366335  get_CurrentState_7() const { return ___CurrentState_7; }
-	inline StateUnion_t2516366335 * get_address_of_CurrentState_7() { return &___CurrentState_7; }
-	inline void set_CurrentState_7(StateUnion_t2516366335  value)
-	{
-		___CurrentState_7 = value;
-	}
-
-	inline static int32_t get_offset_of_HasMatched_8() { return static_cast<int32_t>(offsetof(ValidationState_t603008718, ___HasMatched_8)); }
-	inline bool get_HasMatched_8() const { return ___HasMatched_8; }
-	inline bool* get_address_of_HasMatched_8() { return &___HasMatched_8; }
-	inline void set_HasMatched_8(bool value)
-	{
-		___HasMatched_8 = value;
-	}
-
-	inline static int32_t get_offset_of_CurPos_9() { return static_cast<int32_t>(offsetof(ValidationState_t603008718, ___CurPos_9)); }
-	inline BitSetU5BU5D_t1465593420* get_CurPos_9() const { return ___CurPos_9; }
-	inline BitSetU5BU5D_t1465593420** get_address_of_CurPos_9() { return &___CurPos_9; }
-	inline void set_CurPos_9(BitSetU5BU5D_t1465593420* value)
-	{
-		___CurPos_9 = value;
-		Il2CppCodeGenWriteBarrier((&___CurPos_9), value);
-	}
-
-	inline static int32_t get_offset_of_AllElementsSet_10() { return static_cast<int32_t>(offsetof(ValidationState_t603008718, ___AllElementsSet_10)); }
-	inline BitSet_t1154229585 * get_AllElementsSet_10() const { return ___AllElementsSet_10; }
-	inline BitSet_t1154229585 ** get_address_of_AllElementsSet_10() { return &___AllElementsSet_10; }
-	inline void set_AllElementsSet_10(BitSet_t1154229585 * value)
-	{
-		___AllElementsSet_10 = value;
-		Il2CppCodeGenWriteBarrier((&___AllElementsSet_10), value);
-	}
-
-	inline static int32_t get_offset_of_RunningPositions_11() { return static_cast<int32_t>(offsetof(ValidationState_t603008718, ___RunningPositions_11)); }
-	inline List_1_t2062043678 * get_RunningPositions_11() const { return ___RunningPositions_11; }
-	inline List_1_t2062043678 ** get_address_of_RunningPositions_11() { return &___RunningPositions_11; }
-	inline void set_RunningPositions_11(List_1_t2062043678 * value)
-	{
-		___RunningPositions_11 = value;
-		Il2CppCodeGenWriteBarrier((&___RunningPositions_11), value);
-	}
-
-	inline static int32_t get_offset_of_TooComplex_12() { return static_cast<int32_t>(offsetof(ValidationState_t603008718, ___TooComplex_12)); }
-	inline bool get_TooComplex_12() const { return ___TooComplex_12; }
-	inline bool* get_address_of_TooComplex_12() { return &___TooComplex_12; }
-	inline void set_TooComplex_12(bool value)
-	{
-		___TooComplex_12 = value;
+		___nsPrefix_4 = value;
+		Il2CppCodeGenWriteBarrier((&___nsPrefix_4), value);
 	}
 };
 
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // VALIDATIONSTATE_T603008718_H
-#ifndef CONTENTVALIDATOR_T2085579204_H
-#define CONTENTVALIDATOR_T2085579204_H
+#endif // XMLATOMICVALUE_T3775050121_H
+#ifndef ARGUMENTNULLEXCEPTION_T1615371798_H
+#define ARGUMENTNULLEXCEPTION_T1615371798_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// System.Xml.Schema.ContentValidator
-struct  ContentValidator_t2085579204  : public RuntimeObject
+// System.ArgumentNullException
+struct  ArgumentNullException_t1615371798  : public ArgumentException_t132251570
 {
 public:
-	// System.Xml.Schema.XmlSchemaContentType System.Xml.Schema.ContentValidator::contentType
-	int32_t ___contentType_0;
-	// System.Boolean System.Xml.Schema.ContentValidator::isOpen
-	bool ___isOpen_1;
-	// System.Boolean System.Xml.Schema.ContentValidator::isEmptiable
-	bool ___isEmptiable_2;
 
 public:
-	inline static int32_t get_offset_of_contentType_0() { return static_cast<int32_t>(offsetof(ContentValidator_t2085579204, ___contentType_0)); }
-	inline int32_t get_contentType_0() const { return ___contentType_0; }
-	inline int32_t* get_address_of_contentType_0() { return &___contentType_0; }
-	inline void set_contentType_0(int32_t value)
-	{
-		___contentType_0 = value;
-	}
-
-	inline static int32_t get_offset_of_isOpen_1() { return static_cast<int32_t>(offsetof(ContentValidator_t2085579204, ___isOpen_1)); }
-	inline bool get_isOpen_1() const { return ___isOpen_1; }
-	inline bool* get_address_of_isOpen_1() { return &___isOpen_1; }
-	inline void set_isOpen_1(bool value)
-	{
-		___isOpen_1 = value;
-	}
-
-	inline static int32_t get_offset_of_isEmptiable_2() { return static_cast<int32_t>(offsetof(ContentValidator_t2085579204, ___isEmptiable_2)); }
-	inline bool get_isEmptiable_2() const { return ___isEmptiable_2; }
-	inline bool* get_address_of_isEmptiable_2() { return &___isEmptiable_2; }
-	inline void set_isEmptiable_2(bool value)
-	{
-		___isEmptiable_2 = value;
-	}
-};
-
-struct ContentValidator_t2085579204_StaticFields
-{
-public:
-	// System.Xml.Schema.ContentValidator System.Xml.Schema.ContentValidator::Empty
-	ContentValidator_t2085579204 * ___Empty_3;
-	// System.Xml.Schema.ContentValidator System.Xml.Schema.ContentValidator::TextOnly
-	ContentValidator_t2085579204 * ___TextOnly_4;
-	// System.Xml.Schema.ContentValidator System.Xml.Schema.ContentValidator::Mixed
-	ContentValidator_t2085579204 * ___Mixed_5;
-	// System.Xml.Schema.ContentValidator System.Xml.Schema.ContentValidator::Any
-	ContentValidator_t2085579204 * ___Any_6;
-
-public:
-	inline static int32_t get_offset_of_Empty_3() { return static_cast<int32_t>(offsetof(ContentValidator_t2085579204_StaticFields, ___Empty_3)); }
-	inline ContentValidator_t2085579204 * get_Empty_3() const { return ___Empty_3; }
-	inline ContentValidator_t2085579204 ** get_address_of_Empty_3() { return &___Empty_3; }
-	inline void set_Empty_3(ContentValidator_t2085579204 * value)
-	{
-		___Empty_3 = value;
-		Il2CppCodeGenWriteBarrier((&___Empty_3), value);
-	}
-
-	inline static int32_t get_offset_of_TextOnly_4() { return static_cast<int32_t>(offsetof(ContentValidator_t2085579204_StaticFields, ___TextOnly_4)); }
-	inline ContentValidator_t2085579204 * get_TextOnly_4() const { return ___TextOnly_4; }
-	inline ContentValidator_t2085579204 ** get_address_of_TextOnly_4() { return &___TextOnly_4; }
-	inline void set_TextOnly_4(ContentValidator_t2085579204 * value)
-	{
-		___TextOnly_4 = value;
-		Il2CppCodeGenWriteBarrier((&___TextOnly_4), value);
-	}
-
-	inline static int32_t get_offset_of_Mixed_5() { return static_cast<int32_t>(offsetof(ContentValidator_t2085579204_StaticFields, ___Mixed_5)); }
-	inline ContentValidator_t2085579204 * get_Mixed_5() const { return ___Mixed_5; }
-	inline ContentValidator_t2085579204 ** get_address_of_Mixed_5() { return &___Mixed_5; }
-	inline void set_Mixed_5(ContentValidator_t2085579204 * value)
-	{
-		___Mixed_5 = value;
-		Il2CppCodeGenWriteBarrier((&___Mixed_5), value);
-	}
-
-	inline static int32_t get_offset_of_Any_6() { return static_cast<int32_t>(offsetof(ContentValidator_t2085579204_StaticFields, ___Any_6)); }
-	inline ContentValidator_t2085579204 * get_Any_6() const { return ___Any_6; }
-	inline ContentValidator_t2085579204 ** get_address_of_Any_6() { return &___Any_6; }
-	inline void set_Any_6(ContentValidator_t2085579204 * value)
-	{
-		___Any_6 = value;
-		Il2CppCodeGenWriteBarrier((&___Any_6), value);
-	}
 };
 
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // CONTENTVALIDATOR_T2085579204_H
+#endif // ARGUMENTNULLEXCEPTION_T1615371798_H
 #ifndef PARSER_T3220530449_H
 #define PARSER_T3220530449_H
 #ifdef __clang__
@@ -19937,26 +19801,6 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // NAMESPACELIST_T60893868_H
-#ifndef OVERFLOWEXCEPTION_T2020128637_H
-#define OVERFLOWEXCEPTION_T2020128637_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.OverflowException
-struct  OverflowException_t2020128637  : public ArithmeticException_t4283546778
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // OVERFLOWEXCEPTION_T2020128637_H
 #ifndef URI_T100236324_H
 #define URI_T100236324_H
 #ifdef __clang__
@@ -19970,80 +19814,80 @@ struct  Uri_t100236324  : public RuntimeObject
 {
 public:
 	// System.String System.Uri::m_String
-	String_t* ___m_String_13;
+	String_t* ___m_String_16;
 	// System.String System.Uri::m_originalUnicodeString
-	String_t* ___m_originalUnicodeString_14;
+	String_t* ___m_originalUnicodeString_17;
 	// System.UriParser System.Uri::m_Syntax
-	UriParser_t3890150400 * ___m_Syntax_15;
+	UriParser_t3890150400 * ___m_Syntax_18;
 	// System.String System.Uri::m_DnsSafeHost
-	String_t* ___m_DnsSafeHost_16;
+	String_t* ___m_DnsSafeHost_19;
 	// System.Uri/Flags System.Uri::m_Flags
-	uint64_t ___m_Flags_17;
+	uint64_t ___m_Flags_20;
 	// System.Uri/UriInfo System.Uri::m_Info
-	UriInfo_t1092684687 * ___m_Info_18;
+	UriInfo_t1092684687 * ___m_Info_21;
 	// System.Boolean System.Uri::m_iriParsing
-	bool ___m_iriParsing_19;
+	bool ___m_iriParsing_22;
 
 public:
-	inline static int32_t get_offset_of_m_String_13() { return static_cast<int32_t>(offsetof(Uri_t100236324, ___m_String_13)); }
-	inline String_t* get_m_String_13() const { return ___m_String_13; }
-	inline String_t** get_address_of_m_String_13() { return &___m_String_13; }
-	inline void set_m_String_13(String_t* value)
+	inline static int32_t get_offset_of_m_String_16() { return static_cast<int32_t>(offsetof(Uri_t100236324, ___m_String_16)); }
+	inline String_t* get_m_String_16() const { return ___m_String_16; }
+	inline String_t** get_address_of_m_String_16() { return &___m_String_16; }
+	inline void set_m_String_16(String_t* value)
 	{
-		___m_String_13 = value;
-		Il2CppCodeGenWriteBarrier((&___m_String_13), value);
+		___m_String_16 = value;
+		Il2CppCodeGenWriteBarrier((&___m_String_16), value);
 	}
 
-	inline static int32_t get_offset_of_m_originalUnicodeString_14() { return static_cast<int32_t>(offsetof(Uri_t100236324, ___m_originalUnicodeString_14)); }
-	inline String_t* get_m_originalUnicodeString_14() const { return ___m_originalUnicodeString_14; }
-	inline String_t** get_address_of_m_originalUnicodeString_14() { return &___m_originalUnicodeString_14; }
-	inline void set_m_originalUnicodeString_14(String_t* value)
+	inline static int32_t get_offset_of_m_originalUnicodeString_17() { return static_cast<int32_t>(offsetof(Uri_t100236324, ___m_originalUnicodeString_17)); }
+	inline String_t* get_m_originalUnicodeString_17() const { return ___m_originalUnicodeString_17; }
+	inline String_t** get_address_of_m_originalUnicodeString_17() { return &___m_originalUnicodeString_17; }
+	inline void set_m_originalUnicodeString_17(String_t* value)
 	{
-		___m_originalUnicodeString_14 = value;
-		Il2CppCodeGenWriteBarrier((&___m_originalUnicodeString_14), value);
+		___m_originalUnicodeString_17 = value;
+		Il2CppCodeGenWriteBarrier((&___m_originalUnicodeString_17), value);
 	}
 
-	inline static int32_t get_offset_of_m_Syntax_15() { return static_cast<int32_t>(offsetof(Uri_t100236324, ___m_Syntax_15)); }
-	inline UriParser_t3890150400 * get_m_Syntax_15() const { return ___m_Syntax_15; }
-	inline UriParser_t3890150400 ** get_address_of_m_Syntax_15() { return &___m_Syntax_15; }
-	inline void set_m_Syntax_15(UriParser_t3890150400 * value)
+	inline static int32_t get_offset_of_m_Syntax_18() { return static_cast<int32_t>(offsetof(Uri_t100236324, ___m_Syntax_18)); }
+	inline UriParser_t3890150400 * get_m_Syntax_18() const { return ___m_Syntax_18; }
+	inline UriParser_t3890150400 ** get_address_of_m_Syntax_18() { return &___m_Syntax_18; }
+	inline void set_m_Syntax_18(UriParser_t3890150400 * value)
 	{
-		___m_Syntax_15 = value;
-		Il2CppCodeGenWriteBarrier((&___m_Syntax_15), value);
+		___m_Syntax_18 = value;
+		Il2CppCodeGenWriteBarrier((&___m_Syntax_18), value);
 	}
 
-	inline static int32_t get_offset_of_m_DnsSafeHost_16() { return static_cast<int32_t>(offsetof(Uri_t100236324, ___m_DnsSafeHost_16)); }
-	inline String_t* get_m_DnsSafeHost_16() const { return ___m_DnsSafeHost_16; }
-	inline String_t** get_address_of_m_DnsSafeHost_16() { return &___m_DnsSafeHost_16; }
-	inline void set_m_DnsSafeHost_16(String_t* value)
+	inline static int32_t get_offset_of_m_DnsSafeHost_19() { return static_cast<int32_t>(offsetof(Uri_t100236324, ___m_DnsSafeHost_19)); }
+	inline String_t* get_m_DnsSafeHost_19() const { return ___m_DnsSafeHost_19; }
+	inline String_t** get_address_of_m_DnsSafeHost_19() { return &___m_DnsSafeHost_19; }
+	inline void set_m_DnsSafeHost_19(String_t* value)
 	{
-		___m_DnsSafeHost_16 = value;
-		Il2CppCodeGenWriteBarrier((&___m_DnsSafeHost_16), value);
+		___m_DnsSafeHost_19 = value;
+		Il2CppCodeGenWriteBarrier((&___m_DnsSafeHost_19), value);
 	}
 
-	inline static int32_t get_offset_of_m_Flags_17() { return static_cast<int32_t>(offsetof(Uri_t100236324, ___m_Flags_17)); }
-	inline uint64_t get_m_Flags_17() const { return ___m_Flags_17; }
-	inline uint64_t* get_address_of_m_Flags_17() { return &___m_Flags_17; }
-	inline void set_m_Flags_17(uint64_t value)
+	inline static int32_t get_offset_of_m_Flags_20() { return static_cast<int32_t>(offsetof(Uri_t100236324, ___m_Flags_20)); }
+	inline uint64_t get_m_Flags_20() const { return ___m_Flags_20; }
+	inline uint64_t* get_address_of_m_Flags_20() { return &___m_Flags_20; }
+	inline void set_m_Flags_20(uint64_t value)
 	{
-		___m_Flags_17 = value;
+		___m_Flags_20 = value;
 	}
 
-	inline static int32_t get_offset_of_m_Info_18() { return static_cast<int32_t>(offsetof(Uri_t100236324, ___m_Info_18)); }
-	inline UriInfo_t1092684687 * get_m_Info_18() const { return ___m_Info_18; }
-	inline UriInfo_t1092684687 ** get_address_of_m_Info_18() { return &___m_Info_18; }
-	inline void set_m_Info_18(UriInfo_t1092684687 * value)
+	inline static int32_t get_offset_of_m_Info_21() { return static_cast<int32_t>(offsetof(Uri_t100236324, ___m_Info_21)); }
+	inline UriInfo_t1092684687 * get_m_Info_21() const { return ___m_Info_21; }
+	inline UriInfo_t1092684687 ** get_address_of_m_Info_21() { return &___m_Info_21; }
+	inline void set_m_Info_21(UriInfo_t1092684687 * value)
 	{
-		___m_Info_18 = value;
-		Il2CppCodeGenWriteBarrier((&___m_Info_18), value);
+		___m_Info_21 = value;
+		Il2CppCodeGenWriteBarrier((&___m_Info_21), value);
 	}
 
-	inline static int32_t get_offset_of_m_iriParsing_19() { return static_cast<int32_t>(offsetof(Uri_t100236324, ___m_iriParsing_19)); }
-	inline bool get_m_iriParsing_19() const { return ___m_iriParsing_19; }
-	inline bool* get_address_of_m_iriParsing_19() { return &___m_iriParsing_19; }
-	inline void set_m_iriParsing_19(bool value)
+	inline static int32_t get_offset_of_m_iriParsing_22() { return static_cast<int32_t>(offsetof(Uri_t100236324, ___m_iriParsing_22)); }
+	inline bool get_m_iriParsing_22() const { return ___m_iriParsing_22; }
+	inline bool* get_address_of_m_iriParsing_22() { return &___m_iriParsing_22; }
+	inline void set_m_iriParsing_22(bool value)
 	{
-		___m_iriParsing_19 = value;
+		___m_iriParsing_22 = value;
 	}
 };
 
@@ -20077,23 +19921,23 @@ public:
 	// System.String System.Uri::SchemeDelimiter
 	String_t* ___SchemeDelimiter_12;
 	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.Uri::s_ConfigInitialized
-	bool ___s_ConfigInitialized_20;
+	bool ___s_ConfigInitialized_23;
 	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.Uri::s_ConfigInitializing
-	bool ___s_ConfigInitializing_21;
+	bool ___s_ConfigInitializing_24;
 	// System.UriIdnScope modreq(System.Runtime.CompilerServices.IsVolatile) System.Uri::s_IdnScope
-	int32_t ___s_IdnScope_22;
+	int32_t ___s_IdnScope_25;
 	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.Uri::s_IriParsing
-	bool ___s_IriParsing_23;
+	bool ___s_IriParsing_26;
 	// System.Boolean System.Uri::useDotNetRelativeOrAbsolute
-	bool ___useDotNetRelativeOrAbsolute_24;
+	bool ___useDotNetRelativeOrAbsolute_27;
 	// System.Boolean System.Uri::IsWindowsFileSystem
-	bool ___IsWindowsFileSystem_25;
+	bool ___IsWindowsFileSystem_29;
 	// System.Object System.Uri::s_initLock
-	RuntimeObject * ___s_initLock_26;
+	RuntimeObject * ___s_initLock_30;
 	// System.Char[] System.Uri::HexLowerChars
-	CharU5BU5D_t3528271667* ___HexLowerChars_27;
+	CharU5BU5D_t3528271667* ___HexLowerChars_34;
 	// System.Char[] System.Uri::_WSchars
-	CharU5BU5D_t3528271667* ____WSchars_28;
+	CharU5BU5D_t3528271667* ____WSchars_35;
 
 public:
 	inline static int32_t get_offset_of_UriSchemeFile_0() { return static_cast<int32_t>(offsetof(Uri_t100236324_StaticFields, ___UriSchemeFile_0)); }
@@ -20213,79 +20057,79 @@ public:
 		Il2CppCodeGenWriteBarrier((&___SchemeDelimiter_12), value);
 	}
 
-	inline static int32_t get_offset_of_s_ConfigInitialized_20() { return static_cast<int32_t>(offsetof(Uri_t100236324_StaticFields, ___s_ConfigInitialized_20)); }
-	inline bool get_s_ConfigInitialized_20() const { return ___s_ConfigInitialized_20; }
-	inline bool* get_address_of_s_ConfigInitialized_20() { return &___s_ConfigInitialized_20; }
-	inline void set_s_ConfigInitialized_20(bool value)
+	inline static int32_t get_offset_of_s_ConfigInitialized_23() { return static_cast<int32_t>(offsetof(Uri_t100236324_StaticFields, ___s_ConfigInitialized_23)); }
+	inline bool get_s_ConfigInitialized_23() const { return ___s_ConfigInitialized_23; }
+	inline bool* get_address_of_s_ConfigInitialized_23() { return &___s_ConfigInitialized_23; }
+	inline void set_s_ConfigInitialized_23(bool value)
 	{
-		___s_ConfigInitialized_20 = value;
+		___s_ConfigInitialized_23 = value;
 	}
 
-	inline static int32_t get_offset_of_s_ConfigInitializing_21() { return static_cast<int32_t>(offsetof(Uri_t100236324_StaticFields, ___s_ConfigInitializing_21)); }
-	inline bool get_s_ConfigInitializing_21() const { return ___s_ConfigInitializing_21; }
-	inline bool* get_address_of_s_ConfigInitializing_21() { return &___s_ConfigInitializing_21; }
-	inline void set_s_ConfigInitializing_21(bool value)
+	inline static int32_t get_offset_of_s_ConfigInitializing_24() { return static_cast<int32_t>(offsetof(Uri_t100236324_StaticFields, ___s_ConfigInitializing_24)); }
+	inline bool get_s_ConfigInitializing_24() const { return ___s_ConfigInitializing_24; }
+	inline bool* get_address_of_s_ConfigInitializing_24() { return &___s_ConfigInitializing_24; }
+	inline void set_s_ConfigInitializing_24(bool value)
 	{
-		___s_ConfigInitializing_21 = value;
+		___s_ConfigInitializing_24 = value;
 	}
 
-	inline static int32_t get_offset_of_s_IdnScope_22() { return static_cast<int32_t>(offsetof(Uri_t100236324_StaticFields, ___s_IdnScope_22)); }
-	inline int32_t get_s_IdnScope_22() const { return ___s_IdnScope_22; }
-	inline int32_t* get_address_of_s_IdnScope_22() { return &___s_IdnScope_22; }
-	inline void set_s_IdnScope_22(int32_t value)
+	inline static int32_t get_offset_of_s_IdnScope_25() { return static_cast<int32_t>(offsetof(Uri_t100236324_StaticFields, ___s_IdnScope_25)); }
+	inline int32_t get_s_IdnScope_25() const { return ___s_IdnScope_25; }
+	inline int32_t* get_address_of_s_IdnScope_25() { return &___s_IdnScope_25; }
+	inline void set_s_IdnScope_25(int32_t value)
 	{
-		___s_IdnScope_22 = value;
+		___s_IdnScope_25 = value;
 	}
 
-	inline static int32_t get_offset_of_s_IriParsing_23() { return static_cast<int32_t>(offsetof(Uri_t100236324_StaticFields, ___s_IriParsing_23)); }
-	inline bool get_s_IriParsing_23() const { return ___s_IriParsing_23; }
-	inline bool* get_address_of_s_IriParsing_23() { return &___s_IriParsing_23; }
-	inline void set_s_IriParsing_23(bool value)
+	inline static int32_t get_offset_of_s_IriParsing_26() { return static_cast<int32_t>(offsetof(Uri_t100236324_StaticFields, ___s_IriParsing_26)); }
+	inline bool get_s_IriParsing_26() const { return ___s_IriParsing_26; }
+	inline bool* get_address_of_s_IriParsing_26() { return &___s_IriParsing_26; }
+	inline void set_s_IriParsing_26(bool value)
 	{
-		___s_IriParsing_23 = value;
+		___s_IriParsing_26 = value;
 	}
 
-	inline static int32_t get_offset_of_useDotNetRelativeOrAbsolute_24() { return static_cast<int32_t>(offsetof(Uri_t100236324_StaticFields, ___useDotNetRelativeOrAbsolute_24)); }
-	inline bool get_useDotNetRelativeOrAbsolute_24() const { return ___useDotNetRelativeOrAbsolute_24; }
-	inline bool* get_address_of_useDotNetRelativeOrAbsolute_24() { return &___useDotNetRelativeOrAbsolute_24; }
-	inline void set_useDotNetRelativeOrAbsolute_24(bool value)
+	inline static int32_t get_offset_of_useDotNetRelativeOrAbsolute_27() { return static_cast<int32_t>(offsetof(Uri_t100236324_StaticFields, ___useDotNetRelativeOrAbsolute_27)); }
+	inline bool get_useDotNetRelativeOrAbsolute_27() const { return ___useDotNetRelativeOrAbsolute_27; }
+	inline bool* get_address_of_useDotNetRelativeOrAbsolute_27() { return &___useDotNetRelativeOrAbsolute_27; }
+	inline void set_useDotNetRelativeOrAbsolute_27(bool value)
 	{
-		___useDotNetRelativeOrAbsolute_24 = value;
+		___useDotNetRelativeOrAbsolute_27 = value;
 	}
 
-	inline static int32_t get_offset_of_IsWindowsFileSystem_25() { return static_cast<int32_t>(offsetof(Uri_t100236324_StaticFields, ___IsWindowsFileSystem_25)); }
-	inline bool get_IsWindowsFileSystem_25() const { return ___IsWindowsFileSystem_25; }
-	inline bool* get_address_of_IsWindowsFileSystem_25() { return &___IsWindowsFileSystem_25; }
-	inline void set_IsWindowsFileSystem_25(bool value)
+	inline static int32_t get_offset_of_IsWindowsFileSystem_29() { return static_cast<int32_t>(offsetof(Uri_t100236324_StaticFields, ___IsWindowsFileSystem_29)); }
+	inline bool get_IsWindowsFileSystem_29() const { return ___IsWindowsFileSystem_29; }
+	inline bool* get_address_of_IsWindowsFileSystem_29() { return &___IsWindowsFileSystem_29; }
+	inline void set_IsWindowsFileSystem_29(bool value)
 	{
-		___IsWindowsFileSystem_25 = value;
+		___IsWindowsFileSystem_29 = value;
 	}
 
-	inline static int32_t get_offset_of_s_initLock_26() { return static_cast<int32_t>(offsetof(Uri_t100236324_StaticFields, ___s_initLock_26)); }
-	inline RuntimeObject * get_s_initLock_26() const { return ___s_initLock_26; }
-	inline RuntimeObject ** get_address_of_s_initLock_26() { return &___s_initLock_26; }
-	inline void set_s_initLock_26(RuntimeObject * value)
+	inline static int32_t get_offset_of_s_initLock_30() { return static_cast<int32_t>(offsetof(Uri_t100236324_StaticFields, ___s_initLock_30)); }
+	inline RuntimeObject * get_s_initLock_30() const { return ___s_initLock_30; }
+	inline RuntimeObject ** get_address_of_s_initLock_30() { return &___s_initLock_30; }
+	inline void set_s_initLock_30(RuntimeObject * value)
 	{
-		___s_initLock_26 = value;
-		Il2CppCodeGenWriteBarrier((&___s_initLock_26), value);
+		___s_initLock_30 = value;
+		Il2CppCodeGenWriteBarrier((&___s_initLock_30), value);
 	}
 
-	inline static int32_t get_offset_of_HexLowerChars_27() { return static_cast<int32_t>(offsetof(Uri_t100236324_StaticFields, ___HexLowerChars_27)); }
-	inline CharU5BU5D_t3528271667* get_HexLowerChars_27() const { return ___HexLowerChars_27; }
-	inline CharU5BU5D_t3528271667** get_address_of_HexLowerChars_27() { return &___HexLowerChars_27; }
-	inline void set_HexLowerChars_27(CharU5BU5D_t3528271667* value)
+	inline static int32_t get_offset_of_HexLowerChars_34() { return static_cast<int32_t>(offsetof(Uri_t100236324_StaticFields, ___HexLowerChars_34)); }
+	inline CharU5BU5D_t3528271667* get_HexLowerChars_34() const { return ___HexLowerChars_34; }
+	inline CharU5BU5D_t3528271667** get_address_of_HexLowerChars_34() { return &___HexLowerChars_34; }
+	inline void set_HexLowerChars_34(CharU5BU5D_t3528271667* value)
 	{
-		___HexLowerChars_27 = value;
-		Il2CppCodeGenWriteBarrier((&___HexLowerChars_27), value);
+		___HexLowerChars_34 = value;
+		Il2CppCodeGenWriteBarrier((&___HexLowerChars_34), value);
 	}
 
-	inline static int32_t get_offset_of__WSchars_28() { return static_cast<int32_t>(offsetof(Uri_t100236324_StaticFields, ____WSchars_28)); }
-	inline CharU5BU5D_t3528271667* get__WSchars_28() const { return ____WSchars_28; }
-	inline CharU5BU5D_t3528271667** get_address_of__WSchars_28() { return &____WSchars_28; }
-	inline void set__WSchars_28(CharU5BU5D_t3528271667* value)
+	inline static int32_t get_offset_of__WSchars_35() { return static_cast<int32_t>(offsetof(Uri_t100236324_StaticFields, ____WSchars_35)); }
+	inline CharU5BU5D_t3528271667* get__WSchars_35() const { return ____WSchars_35; }
+	inline CharU5BU5D_t3528271667** get_address_of__WSchars_35() { return &____WSchars_35; }
+	inline void set__WSchars_35(CharU5BU5D_t3528271667* value)
 	{
-		____WSchars_28 = value;
-		Il2CppCodeGenWriteBarrier((&____WSchars_28), value);
+		____WSchars_35 = value;
+		Il2CppCodeGenWriteBarrier((&____WSchars_35), value);
 	}
 };
 
@@ -20293,16 +20137,16 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // URI_T100236324_H
-#ifndef VALIDATIONEVENTHANDLER_T791314227_H
-#define VALIDATIONEVENTHANDLER_T791314227_H
+#ifndef OVERFLOWEXCEPTION_T2020128637_H
+#define OVERFLOWEXCEPTION_T2020128637_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// System.Xml.Schema.ValidationEventHandler
-struct  ValidationEventHandler_t791314227  : public MulticastDelegate_t157516450
+// System.OverflowException
+struct  OverflowException_t2020128637  : public ArithmeticException_t4283546778
 {
 public:
 
@@ -20312,135 +20156,245 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // VALIDATIONEVENTHANDLER_T791314227_H
-#ifndef NAMESPACELISTV1COMPAT_T1490102757_H
-#define NAMESPACELISTV1COMPAT_T1490102757_H
+#endif // OVERFLOWEXCEPTION_T2020128637_H
+#ifndef XMLVALIDATINGREADERIMPL_T1817762384_H
+#define XMLVALIDATINGREADERIMPL_T1817762384_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// System.Xml.Schema.NamespaceListV1Compat
-struct  NamespaceListV1Compat_t1490102757  : public NamespaceList_t60893868
+// System.Xml.XmlValidatingReaderImpl
+struct  XmlValidatingReaderImpl_t1817762384  : public XmlReader_t3121518892
 {
 public:
+	// System.Xml.XmlReader System.Xml.XmlValidatingReaderImpl::coreReader
+	XmlReader_t3121518892 * ___coreReader_3;
+	// System.Xml.XmlTextReaderImpl System.Xml.XmlValidatingReaderImpl::coreReaderImpl
+	XmlTextReaderImpl_t178060594 * ___coreReaderImpl_4;
+	// System.Xml.IXmlNamespaceResolver System.Xml.XmlValidatingReaderImpl::coreReaderNSResolver
+	RuntimeObject* ___coreReaderNSResolver_5;
+	// System.Xml.ValidationType System.Xml.XmlValidatingReaderImpl::validationType
+	int32_t ___validationType_6;
+	// System.Xml.Schema.BaseValidator System.Xml.XmlValidatingReaderImpl::validator
+	BaseValidator_t868759770 * ___validator_7;
+	// System.Xml.Schema.XmlSchemaCollection System.Xml.XmlValidatingReaderImpl::schemaCollection
+	XmlSchemaCollection_t3610399789 * ___schemaCollection_8;
+	// System.Boolean System.Xml.XmlValidatingReaderImpl::processIdentityConstraints
+	bool ___processIdentityConstraints_9;
+	// System.Xml.XmlValidatingReaderImpl/ParsingFunction System.Xml.XmlValidatingReaderImpl::parsingFunction
+	int32_t ___parsingFunction_10;
+	// System.Xml.XmlValidatingReaderImpl/ValidationEventHandling System.Xml.XmlValidatingReaderImpl::eventHandling
+	ValidationEventHandling_t3812646699 * ___eventHandling_11;
+	// System.Xml.XmlParserContext System.Xml.XmlValidatingReaderImpl::parserContext
+	XmlParserContext_t2544895291 * ___parserContext_12;
+	// System.Xml.ReadContentAsBinaryHelper System.Xml.XmlValidatingReaderImpl::readBinaryHelper
+	ReadContentAsBinaryHelper_t3017207972 * ___readBinaryHelper_13;
+	// System.Xml.XmlReader System.Xml.XmlValidatingReaderImpl::outerReader
+	XmlReader_t3121518892 * ___outerReader_14;
 
 public:
+	inline static int32_t get_offset_of_coreReader_3() { return static_cast<int32_t>(offsetof(XmlValidatingReaderImpl_t1817762384, ___coreReader_3)); }
+	inline XmlReader_t3121518892 * get_coreReader_3() const { return ___coreReader_3; }
+	inline XmlReader_t3121518892 ** get_address_of_coreReader_3() { return &___coreReader_3; }
+	inline void set_coreReader_3(XmlReader_t3121518892 * value)
+	{
+		___coreReader_3 = value;
+		Il2CppCodeGenWriteBarrier((&___coreReader_3), value);
+	}
+
+	inline static int32_t get_offset_of_coreReaderImpl_4() { return static_cast<int32_t>(offsetof(XmlValidatingReaderImpl_t1817762384, ___coreReaderImpl_4)); }
+	inline XmlTextReaderImpl_t178060594 * get_coreReaderImpl_4() const { return ___coreReaderImpl_4; }
+	inline XmlTextReaderImpl_t178060594 ** get_address_of_coreReaderImpl_4() { return &___coreReaderImpl_4; }
+	inline void set_coreReaderImpl_4(XmlTextReaderImpl_t178060594 * value)
+	{
+		___coreReaderImpl_4 = value;
+		Il2CppCodeGenWriteBarrier((&___coreReaderImpl_4), value);
+	}
+
+	inline static int32_t get_offset_of_coreReaderNSResolver_5() { return static_cast<int32_t>(offsetof(XmlValidatingReaderImpl_t1817762384, ___coreReaderNSResolver_5)); }
+	inline RuntimeObject* get_coreReaderNSResolver_5() const { return ___coreReaderNSResolver_5; }
+	inline RuntimeObject** get_address_of_coreReaderNSResolver_5() { return &___coreReaderNSResolver_5; }
+	inline void set_coreReaderNSResolver_5(RuntimeObject* value)
+	{
+		___coreReaderNSResolver_5 = value;
+		Il2CppCodeGenWriteBarrier((&___coreReaderNSResolver_5), value);
+	}
+
+	inline static int32_t get_offset_of_validationType_6() { return static_cast<int32_t>(offsetof(XmlValidatingReaderImpl_t1817762384, ___validationType_6)); }
+	inline int32_t get_validationType_6() const { return ___validationType_6; }
+	inline int32_t* get_address_of_validationType_6() { return &___validationType_6; }
+	inline void set_validationType_6(int32_t value)
+	{
+		___validationType_6 = value;
+	}
+
+	inline static int32_t get_offset_of_validator_7() { return static_cast<int32_t>(offsetof(XmlValidatingReaderImpl_t1817762384, ___validator_7)); }
+	inline BaseValidator_t868759770 * get_validator_7() const { return ___validator_7; }
+	inline BaseValidator_t868759770 ** get_address_of_validator_7() { return &___validator_7; }
+	inline void set_validator_7(BaseValidator_t868759770 * value)
+	{
+		___validator_7 = value;
+		Il2CppCodeGenWriteBarrier((&___validator_7), value);
+	}
+
+	inline static int32_t get_offset_of_schemaCollection_8() { return static_cast<int32_t>(offsetof(XmlValidatingReaderImpl_t1817762384, ___schemaCollection_8)); }
+	inline XmlSchemaCollection_t3610399789 * get_schemaCollection_8() const { return ___schemaCollection_8; }
+	inline XmlSchemaCollection_t3610399789 ** get_address_of_schemaCollection_8() { return &___schemaCollection_8; }
+	inline void set_schemaCollection_8(XmlSchemaCollection_t3610399789 * value)
+	{
+		___schemaCollection_8 = value;
+		Il2CppCodeGenWriteBarrier((&___schemaCollection_8), value);
+	}
+
+	inline static int32_t get_offset_of_processIdentityConstraints_9() { return static_cast<int32_t>(offsetof(XmlValidatingReaderImpl_t1817762384, ___processIdentityConstraints_9)); }
+	inline bool get_processIdentityConstraints_9() const { return ___processIdentityConstraints_9; }
+	inline bool* get_address_of_processIdentityConstraints_9() { return &___processIdentityConstraints_9; }
+	inline void set_processIdentityConstraints_9(bool value)
+	{
+		___processIdentityConstraints_9 = value;
+	}
+
+	inline static int32_t get_offset_of_parsingFunction_10() { return static_cast<int32_t>(offsetof(XmlValidatingReaderImpl_t1817762384, ___parsingFunction_10)); }
+	inline int32_t get_parsingFunction_10() const { return ___parsingFunction_10; }
+	inline int32_t* get_address_of_parsingFunction_10() { return &___parsingFunction_10; }
+	inline void set_parsingFunction_10(int32_t value)
+	{
+		___parsingFunction_10 = value;
+	}
+
+	inline static int32_t get_offset_of_eventHandling_11() { return static_cast<int32_t>(offsetof(XmlValidatingReaderImpl_t1817762384, ___eventHandling_11)); }
+	inline ValidationEventHandling_t3812646699 * get_eventHandling_11() const { return ___eventHandling_11; }
+	inline ValidationEventHandling_t3812646699 ** get_address_of_eventHandling_11() { return &___eventHandling_11; }
+	inline void set_eventHandling_11(ValidationEventHandling_t3812646699 * value)
+	{
+		___eventHandling_11 = value;
+		Il2CppCodeGenWriteBarrier((&___eventHandling_11), value);
+	}
+
+	inline static int32_t get_offset_of_parserContext_12() { return static_cast<int32_t>(offsetof(XmlValidatingReaderImpl_t1817762384, ___parserContext_12)); }
+	inline XmlParserContext_t2544895291 * get_parserContext_12() const { return ___parserContext_12; }
+	inline XmlParserContext_t2544895291 ** get_address_of_parserContext_12() { return &___parserContext_12; }
+	inline void set_parserContext_12(XmlParserContext_t2544895291 * value)
+	{
+		___parserContext_12 = value;
+		Il2CppCodeGenWriteBarrier((&___parserContext_12), value);
+	}
+
+	inline static int32_t get_offset_of_readBinaryHelper_13() { return static_cast<int32_t>(offsetof(XmlValidatingReaderImpl_t1817762384, ___readBinaryHelper_13)); }
+	inline ReadContentAsBinaryHelper_t3017207972 * get_readBinaryHelper_13() const { return ___readBinaryHelper_13; }
+	inline ReadContentAsBinaryHelper_t3017207972 ** get_address_of_readBinaryHelper_13() { return &___readBinaryHelper_13; }
+	inline void set_readBinaryHelper_13(ReadContentAsBinaryHelper_t3017207972 * value)
+	{
+		___readBinaryHelper_13 = value;
+		Il2CppCodeGenWriteBarrier((&___readBinaryHelper_13), value);
+	}
+
+	inline static int32_t get_offset_of_outerReader_14() { return static_cast<int32_t>(offsetof(XmlValidatingReaderImpl_t1817762384, ___outerReader_14)); }
+	inline XmlReader_t3121518892 * get_outerReader_14() const { return ___outerReader_14; }
+	inline XmlReader_t3121518892 ** get_address_of_outerReader_14() { return &___outerReader_14; }
+	inline void set_outerReader_14(XmlReader_t3121518892 * value)
+	{
+		___outerReader_14 = value;
+		Il2CppCodeGenWriteBarrier((&___outerReader_14), value);
+	}
+};
+
+struct XmlValidatingReaderImpl_t1817762384_StaticFields
+{
+public:
+	// System.Xml.XmlResolver System.Xml.XmlValidatingReaderImpl::s_tempResolver
+	XmlResolver_t626023767 * ___s_tempResolver_15;
+
+public:
+	inline static int32_t get_offset_of_s_tempResolver_15() { return static_cast<int32_t>(offsetof(XmlValidatingReaderImpl_t1817762384_StaticFields, ___s_tempResolver_15)); }
+	inline XmlResolver_t626023767 * get_s_tempResolver_15() const { return ___s_tempResolver_15; }
+	inline XmlResolver_t626023767 ** get_address_of_s_tempResolver_15() { return &___s_tempResolver_15; }
+	inline void set_s_tempResolver_15(XmlResolver_t626023767 * value)
+	{
+		___s_tempResolver_15 = value;
+		Il2CppCodeGenWriteBarrier((&___s_tempResolver_15), value);
+	}
 };
 
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // NAMESPACELISTV1COMPAT_T1490102757_H
-#ifndef SCHEMAATTDEF_T2429541159_H
-#define SCHEMAATTDEF_T2429541159_H
+#endif // XMLVALIDATINGREADERIMPL_T1817762384_H
+#ifndef NFACONTENTVALIDATOR_T2411849615_H
+#define NFACONTENTVALIDATOR_T2411849615_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// System.Xml.Schema.SchemaAttDef
-struct  SchemaAttDef_t2429541159  : public SchemaDeclBase_t3500554832
+// System.Xml.Schema.NfaContentValidator
+struct  NfaContentValidator_t2411849615  : public ContentValidator_t2085579204
 {
 public:
-	// System.String System.Xml.Schema.SchemaAttDef::defExpanded
-	String_t* ___defExpanded_11;
-	// System.Int32 System.Xml.Schema.SchemaAttDef::lineNum
-	int32_t ___lineNum_12;
-	// System.Int32 System.Xml.Schema.SchemaAttDef::linePos
-	int32_t ___linePos_13;
-	// System.Int32 System.Xml.Schema.SchemaAttDef::valueLineNum
-	int32_t ___valueLineNum_14;
-	// System.Int32 System.Xml.Schema.SchemaAttDef::valueLinePos
-	int32_t ___valueLinePos_15;
-	// System.Xml.Schema.SchemaAttDef/Reserve System.Xml.Schema.SchemaAttDef::reserved
-	int32_t ___reserved_16;
-	// System.Xml.Schema.XmlSchemaAttribute System.Xml.Schema.SchemaAttDef::schemaAttribute
-	XmlSchemaAttribute_t2797257020 * ___schemaAttribute_17;
+	// System.Xml.Schema.BitSet System.Xml.Schema.NfaContentValidator::firstpos
+	BitSet_t1154229585 * ___firstpos_7;
+	// System.Xml.Schema.BitSet[] System.Xml.Schema.NfaContentValidator::followpos
+	BitSetU5BU5D_t1465593420* ___followpos_8;
+	// System.Xml.Schema.SymbolsDictionary System.Xml.Schema.NfaContentValidator::symbols
+	SymbolsDictionary_t1055001383 * ___symbols_9;
+	// System.Xml.Schema.Positions System.Xml.Schema.NfaContentValidator::positions
+	Positions_t4234826187 * ___positions_10;
+	// System.Int32 System.Xml.Schema.NfaContentValidator::endMarkerPos
+	int32_t ___endMarkerPos_11;
 
 public:
-	inline static int32_t get_offset_of_defExpanded_11() { return static_cast<int32_t>(offsetof(SchemaAttDef_t2429541159, ___defExpanded_11)); }
-	inline String_t* get_defExpanded_11() const { return ___defExpanded_11; }
-	inline String_t** get_address_of_defExpanded_11() { return &___defExpanded_11; }
-	inline void set_defExpanded_11(String_t* value)
+	inline static int32_t get_offset_of_firstpos_7() { return static_cast<int32_t>(offsetof(NfaContentValidator_t2411849615, ___firstpos_7)); }
+	inline BitSet_t1154229585 * get_firstpos_7() const { return ___firstpos_7; }
+	inline BitSet_t1154229585 ** get_address_of_firstpos_7() { return &___firstpos_7; }
+	inline void set_firstpos_7(BitSet_t1154229585 * value)
 	{
-		___defExpanded_11 = value;
-		Il2CppCodeGenWriteBarrier((&___defExpanded_11), value);
+		___firstpos_7 = value;
+		Il2CppCodeGenWriteBarrier((&___firstpos_7), value);
 	}
 
-	inline static int32_t get_offset_of_lineNum_12() { return static_cast<int32_t>(offsetof(SchemaAttDef_t2429541159, ___lineNum_12)); }
-	inline int32_t get_lineNum_12() const { return ___lineNum_12; }
-	inline int32_t* get_address_of_lineNum_12() { return &___lineNum_12; }
-	inline void set_lineNum_12(int32_t value)
+	inline static int32_t get_offset_of_followpos_8() { return static_cast<int32_t>(offsetof(NfaContentValidator_t2411849615, ___followpos_8)); }
+	inline BitSetU5BU5D_t1465593420* get_followpos_8() const { return ___followpos_8; }
+	inline BitSetU5BU5D_t1465593420** get_address_of_followpos_8() { return &___followpos_8; }
+	inline void set_followpos_8(BitSetU5BU5D_t1465593420* value)
 	{
-		___lineNum_12 = value;
+		___followpos_8 = value;
+		Il2CppCodeGenWriteBarrier((&___followpos_8), value);
 	}
 
-	inline static int32_t get_offset_of_linePos_13() { return static_cast<int32_t>(offsetof(SchemaAttDef_t2429541159, ___linePos_13)); }
-	inline int32_t get_linePos_13() const { return ___linePos_13; }
-	inline int32_t* get_address_of_linePos_13() { return &___linePos_13; }
-	inline void set_linePos_13(int32_t value)
+	inline static int32_t get_offset_of_symbols_9() { return static_cast<int32_t>(offsetof(NfaContentValidator_t2411849615, ___symbols_9)); }
+	inline SymbolsDictionary_t1055001383 * get_symbols_9() const { return ___symbols_9; }
+	inline SymbolsDictionary_t1055001383 ** get_address_of_symbols_9() { return &___symbols_9; }
+	inline void set_symbols_9(SymbolsDictionary_t1055001383 * value)
 	{
-		___linePos_13 = value;
+		___symbols_9 = value;
+		Il2CppCodeGenWriteBarrier((&___symbols_9), value);
 	}
 
-	inline static int32_t get_offset_of_valueLineNum_14() { return static_cast<int32_t>(offsetof(SchemaAttDef_t2429541159, ___valueLineNum_14)); }
-	inline int32_t get_valueLineNum_14() const { return ___valueLineNum_14; }
-	inline int32_t* get_address_of_valueLineNum_14() { return &___valueLineNum_14; }
-	inline void set_valueLineNum_14(int32_t value)
+	inline static int32_t get_offset_of_positions_10() { return static_cast<int32_t>(offsetof(NfaContentValidator_t2411849615, ___positions_10)); }
+	inline Positions_t4234826187 * get_positions_10() const { return ___positions_10; }
+	inline Positions_t4234826187 ** get_address_of_positions_10() { return &___positions_10; }
+	inline void set_positions_10(Positions_t4234826187 * value)
 	{
-		___valueLineNum_14 = value;
+		___positions_10 = value;
+		Il2CppCodeGenWriteBarrier((&___positions_10), value);
 	}
 
-	inline static int32_t get_offset_of_valueLinePos_15() { return static_cast<int32_t>(offsetof(SchemaAttDef_t2429541159, ___valueLinePos_15)); }
-	inline int32_t get_valueLinePos_15() const { return ___valueLinePos_15; }
-	inline int32_t* get_address_of_valueLinePos_15() { return &___valueLinePos_15; }
-	inline void set_valueLinePos_15(int32_t value)
+	inline static int32_t get_offset_of_endMarkerPos_11() { return static_cast<int32_t>(offsetof(NfaContentValidator_t2411849615, ___endMarkerPos_11)); }
+	inline int32_t get_endMarkerPos_11() const { return ___endMarkerPos_11; }
+	inline int32_t* get_address_of_endMarkerPos_11() { return &___endMarkerPos_11; }
+	inline void set_endMarkerPos_11(int32_t value)
 	{
-		___valueLinePos_15 = value;
-	}
-
-	inline static int32_t get_offset_of_reserved_16() { return static_cast<int32_t>(offsetof(SchemaAttDef_t2429541159, ___reserved_16)); }
-	inline int32_t get_reserved_16() const { return ___reserved_16; }
-	inline int32_t* get_address_of_reserved_16() { return &___reserved_16; }
-	inline void set_reserved_16(int32_t value)
-	{
-		___reserved_16 = value;
-	}
-
-	inline static int32_t get_offset_of_schemaAttribute_17() { return static_cast<int32_t>(offsetof(SchemaAttDef_t2429541159, ___schemaAttribute_17)); }
-	inline XmlSchemaAttribute_t2797257020 * get_schemaAttribute_17() const { return ___schemaAttribute_17; }
-	inline XmlSchemaAttribute_t2797257020 ** get_address_of_schemaAttribute_17() { return &___schemaAttribute_17; }
-	inline void set_schemaAttribute_17(XmlSchemaAttribute_t2797257020 * value)
-	{
-		___schemaAttribute_17 = value;
-		Il2CppCodeGenWriteBarrier((&___schemaAttribute_17), value);
-	}
-};
-
-struct SchemaAttDef_t2429541159_StaticFields
-{
-public:
-	// System.Xml.Schema.SchemaAttDef System.Xml.Schema.SchemaAttDef::Empty
-	SchemaAttDef_t2429541159 * ___Empty_18;
-
-public:
-	inline static int32_t get_offset_of_Empty_18() { return static_cast<int32_t>(offsetof(SchemaAttDef_t2429541159_StaticFields, ___Empty_18)); }
-	inline SchemaAttDef_t2429541159 * get_Empty_18() const { return ___Empty_18; }
-	inline SchemaAttDef_t2429541159 ** get_address_of_Empty_18() { return &___Empty_18; }
-	inline void set_Empty_18(SchemaAttDef_t2429541159 * value)
-	{
-		___Empty_18 = value;
-		Il2CppCodeGenWriteBarrier((&___Empty_18), value);
+		___endMarkerPos_11 = value;
 	}
 };
 
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // SCHEMAATTDEF_T2429541159_H
+#endif // NFACONTENTVALIDATOR_T2411849615_H
 #ifndef XMLSCHEMAELEMENT_T427880856_H
 #define XMLSCHEMAELEMENT_T427880856_H
 #ifdef __clang__
@@ -20681,6 +20635,198 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // XMLSCHEMAELEMENT_T427880856_H
+#ifndef XMLSCHEMAPATTERNFACET_T3316004401_H
+#define XMLSCHEMAPATTERNFACET_T3316004401_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.XmlSchemaPatternFacet
+struct  XmlSchemaPatternFacet_t3316004401  : public XmlSchemaFacet_t1906017689
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // XMLSCHEMAPATTERNFACET_T3316004401_H
+#ifndef DFACONTENTVALIDATOR_T888301625_H
+#define DFACONTENTVALIDATOR_T888301625_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.DfaContentValidator
+struct  DfaContentValidator_t888301625  : public ContentValidator_t2085579204
+{
+public:
+	// System.Int32[][] System.Xml.Schema.DfaContentValidator::transitionTable
+	Int32U5BU5DU5BU5D_t3365920845* ___transitionTable_7;
+	// System.Xml.Schema.SymbolsDictionary System.Xml.Schema.DfaContentValidator::symbols
+	SymbolsDictionary_t1055001383 * ___symbols_8;
+
+public:
+	inline static int32_t get_offset_of_transitionTable_7() { return static_cast<int32_t>(offsetof(DfaContentValidator_t888301625, ___transitionTable_7)); }
+	inline Int32U5BU5DU5BU5D_t3365920845* get_transitionTable_7() const { return ___transitionTable_7; }
+	inline Int32U5BU5DU5BU5D_t3365920845** get_address_of_transitionTable_7() { return &___transitionTable_7; }
+	inline void set_transitionTable_7(Int32U5BU5DU5BU5D_t3365920845* value)
+	{
+		___transitionTable_7 = value;
+		Il2CppCodeGenWriteBarrier((&___transitionTable_7), value);
+	}
+
+	inline static int32_t get_offset_of_symbols_8() { return static_cast<int32_t>(offsetof(DfaContentValidator_t888301625, ___symbols_8)); }
+	inline SymbolsDictionary_t1055001383 * get_symbols_8() const { return ___symbols_8; }
+	inline SymbolsDictionary_t1055001383 ** get_address_of_symbols_8() { return &___symbols_8; }
+	inline void set_symbols_8(SymbolsDictionary_t1055001383 * value)
+	{
+		___symbols_8 = value;
+		Il2CppCodeGenWriteBarrier((&___symbols_8), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // DFACONTENTVALIDATOR_T888301625_H
+#ifndef XMLSCHEMAANY_T1119175207_H
+#define XMLSCHEMAANY_T1119175207_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.XmlSchemaAny
+struct  XmlSchemaAny_t1119175207  : public XmlSchemaParticle_t3828501457
+{
+public:
+	// System.String System.Xml.Schema.XmlSchemaAny::ns
+	String_t* ___ns_13;
+	// System.Xml.Schema.XmlSchemaContentProcessing System.Xml.Schema.XmlSchemaAny::processContents
+	int32_t ___processContents_14;
+	// System.Xml.Schema.NamespaceList System.Xml.Schema.XmlSchemaAny::namespaceList
+	NamespaceList_t60893868 * ___namespaceList_15;
+
+public:
+	inline static int32_t get_offset_of_ns_13() { return static_cast<int32_t>(offsetof(XmlSchemaAny_t1119175207, ___ns_13)); }
+	inline String_t* get_ns_13() const { return ___ns_13; }
+	inline String_t** get_address_of_ns_13() { return &___ns_13; }
+	inline void set_ns_13(String_t* value)
+	{
+		___ns_13 = value;
+		Il2CppCodeGenWriteBarrier((&___ns_13), value);
+	}
+
+	inline static int32_t get_offset_of_processContents_14() { return static_cast<int32_t>(offsetof(XmlSchemaAny_t1119175207, ___processContents_14)); }
+	inline int32_t get_processContents_14() const { return ___processContents_14; }
+	inline int32_t* get_address_of_processContents_14() { return &___processContents_14; }
+	inline void set_processContents_14(int32_t value)
+	{
+		___processContents_14 = value;
+	}
+
+	inline static int32_t get_offset_of_namespaceList_15() { return static_cast<int32_t>(offsetof(XmlSchemaAny_t1119175207, ___namespaceList_15)); }
+	inline NamespaceList_t60893868 * get_namespaceList_15() const { return ___namespaceList_15; }
+	inline NamespaceList_t60893868 ** get_address_of_namespaceList_15() { return &___namespaceList_15; }
+	inline void set_namespaceList_15(NamespaceList_t60893868 * value)
+	{
+		___namespaceList_15 = value;
+		Il2CppCodeGenWriteBarrier((&___namespaceList_15), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // XMLSCHEMAANY_T1119175207_H
+#ifndef XMLSCHEMASIMPLETYPE_T2678868104_H
+#define XMLSCHEMASIMPLETYPE_T2678868104_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.XmlSchemaSimpleType
+struct  XmlSchemaSimpleType_t2678868104  : public XmlSchemaType_t2033747345
+{
+public:
+	// System.Xml.Schema.XmlSchemaSimpleTypeContent System.Xml.Schema.XmlSchemaSimpleType::content
+	XmlSchemaSimpleTypeContent_t599285223 * ___content_19;
+
+public:
+	inline static int32_t get_offset_of_content_19() { return static_cast<int32_t>(offsetof(XmlSchemaSimpleType_t2678868104, ___content_19)); }
+	inline XmlSchemaSimpleTypeContent_t599285223 * get_content_19() const { return ___content_19; }
+	inline XmlSchemaSimpleTypeContent_t599285223 ** get_address_of_content_19() { return &___content_19; }
+	inline void set_content_19(XmlSchemaSimpleTypeContent_t599285223 * value)
+	{
+		___content_19 = value;
+		Il2CppCodeGenWriteBarrier((&___content_19), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // XMLSCHEMASIMPLETYPE_T2678868104_H
+#ifndef XMLSCHEMAGROUPBASE_T3631079376_H
+#define XMLSCHEMAGROUPBASE_T3631079376_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.XmlSchemaGroupBase
+struct  XmlSchemaGroupBase_t3631079376  : public XmlSchemaParticle_t3828501457
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // XMLSCHEMAGROUPBASE_T3631079376_H
+#ifndef DOUBLELINKAXIS_T1975471428_H
+#define DOUBLELINKAXIS_T1975471428_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.DoubleLinkAxis
+struct  DoubleLinkAxis_t1975471428  : public Axis_t4207104559
+{
+public:
+	// MS.Internal.Xml.XPath.Axis System.Xml.Schema.DoubleLinkAxis::next
+	Axis_t4207104559 * ___next_7;
+
+public:
+	inline static int32_t get_offset_of_next_7() { return static_cast<int32_t>(offsetof(DoubleLinkAxis_t1975471428, ___next_7)); }
+	inline Axis_t4207104559 * get_next_7() const { return ___next_7; }
+	inline Axis_t4207104559 ** get_address_of_next_7() { return &___next_7; }
+	inline void set_next_7(Axis_t4207104559 * value)
+	{
+		___next_7 = value;
+		Il2CppCodeGenWriteBarrier((&___next_7), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // DOUBLELINKAXIS_T1975471428_H
 #ifndef DATATYPE_ANYSIMPLETYPE_T2047875136_H
 #define DATATYPE_ANYSIMPLETYPE_T2047875136_H
 #ifdef __clang__
@@ -20729,6 +20875,69 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // DATATYPE_ANYSIMPLETYPE_T2047875136_H
+#ifndef XMLSCHEMAREDEFINE_T4020109446_H
+#define XMLSCHEMAREDEFINE_T4020109446_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.XmlSchemaRedefine
+struct  XmlSchemaRedefine_t4020109446  : public XmlSchemaExternal_t3074890143
+{
+public:
+	// System.Xml.Schema.XmlSchemaObjectCollection System.Xml.Schema.XmlSchemaRedefine::items
+	XmlSchemaObjectCollection_t1064819932 * ___items_12;
+	// System.Xml.Schema.XmlSchemaObjectTable System.Xml.Schema.XmlSchemaRedefine::attributeGroups
+	XmlSchemaObjectTable_t2546974348 * ___attributeGroups_13;
+	// System.Xml.Schema.XmlSchemaObjectTable System.Xml.Schema.XmlSchemaRedefine::types
+	XmlSchemaObjectTable_t2546974348 * ___types_14;
+	// System.Xml.Schema.XmlSchemaObjectTable System.Xml.Schema.XmlSchemaRedefine::groups
+	XmlSchemaObjectTable_t2546974348 * ___groups_15;
+
+public:
+	inline static int32_t get_offset_of_items_12() { return static_cast<int32_t>(offsetof(XmlSchemaRedefine_t4020109446, ___items_12)); }
+	inline XmlSchemaObjectCollection_t1064819932 * get_items_12() const { return ___items_12; }
+	inline XmlSchemaObjectCollection_t1064819932 ** get_address_of_items_12() { return &___items_12; }
+	inline void set_items_12(XmlSchemaObjectCollection_t1064819932 * value)
+	{
+		___items_12 = value;
+		Il2CppCodeGenWriteBarrier((&___items_12), value);
+	}
+
+	inline static int32_t get_offset_of_attributeGroups_13() { return static_cast<int32_t>(offsetof(XmlSchemaRedefine_t4020109446, ___attributeGroups_13)); }
+	inline XmlSchemaObjectTable_t2546974348 * get_attributeGroups_13() const { return ___attributeGroups_13; }
+	inline XmlSchemaObjectTable_t2546974348 ** get_address_of_attributeGroups_13() { return &___attributeGroups_13; }
+	inline void set_attributeGroups_13(XmlSchemaObjectTable_t2546974348 * value)
+	{
+		___attributeGroups_13 = value;
+		Il2CppCodeGenWriteBarrier((&___attributeGroups_13), value);
+	}
+
+	inline static int32_t get_offset_of_types_14() { return static_cast<int32_t>(offsetof(XmlSchemaRedefine_t4020109446, ___types_14)); }
+	inline XmlSchemaObjectTable_t2546974348 * get_types_14() const { return ___types_14; }
+	inline XmlSchemaObjectTable_t2546974348 ** get_address_of_types_14() { return &___types_14; }
+	inline void set_types_14(XmlSchemaObjectTable_t2546974348 * value)
+	{
+		___types_14 = value;
+		Il2CppCodeGenWriteBarrier((&___types_14), value);
+	}
+
+	inline static int32_t get_offset_of_groups_15() { return static_cast<int32_t>(offsetof(XmlSchemaRedefine_t4020109446, ___groups_15)); }
+	inline XmlSchemaObjectTable_t2546974348 * get_groups_15() const { return ___groups_15; }
+	inline XmlSchemaObjectTable_t2546974348 ** get_address_of_groups_15() { return &___groups_15; }
+	inline void set_groups_15(XmlSchemaObjectTable_t2546974348 * value)
+	{
+		___groups_15 = value;
+		Il2CppCodeGenWriteBarrier((&___groups_15), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // XMLSCHEMAREDEFINE_T4020109446_H
 #ifndef XMLSCHEMACOMPLEXTYPE_T3740801802_H
 #define XMLSCHEMACOMPLEXTYPE_T3740801802_H
 #ifdef __clang__
@@ -20905,175 +21114,193 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // XMLSCHEMACOMPLEXTYPE_T3740801802_H
-#ifndef XMLSCHEMASIMPLETYPE_T2678868104_H
-#define XMLSCHEMASIMPLETYPE_T2678868104_H
+#ifndef SCHEMAATTDEF_T2429541159_H
+#define SCHEMAATTDEF_T2429541159_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// System.Xml.Schema.XmlSchemaSimpleType
-struct  XmlSchemaSimpleType_t2678868104  : public XmlSchemaType_t2033747345
+// System.Xml.Schema.SchemaAttDef
+struct  SchemaAttDef_t2429541159  : public SchemaDeclBase_t3500554832
 {
 public:
-	// System.Xml.Schema.XmlSchemaSimpleTypeContent System.Xml.Schema.XmlSchemaSimpleType::content
-	XmlSchemaSimpleTypeContent_t599285223 * ___content_19;
+	// System.String System.Xml.Schema.SchemaAttDef::defExpanded
+	String_t* ___defExpanded_11;
+	// System.Int32 System.Xml.Schema.SchemaAttDef::lineNum
+	int32_t ___lineNum_12;
+	// System.Int32 System.Xml.Schema.SchemaAttDef::linePos
+	int32_t ___linePos_13;
+	// System.Int32 System.Xml.Schema.SchemaAttDef::valueLineNum
+	int32_t ___valueLineNum_14;
+	// System.Int32 System.Xml.Schema.SchemaAttDef::valueLinePos
+	int32_t ___valueLinePos_15;
+	// System.Xml.Schema.SchemaAttDef/Reserve System.Xml.Schema.SchemaAttDef::reserved
+	int32_t ___reserved_16;
+	// System.Xml.Schema.XmlSchemaAttribute System.Xml.Schema.SchemaAttDef::schemaAttribute
+	XmlSchemaAttribute_t2797257020 * ___schemaAttribute_17;
 
 public:
-	inline static int32_t get_offset_of_content_19() { return static_cast<int32_t>(offsetof(XmlSchemaSimpleType_t2678868104, ___content_19)); }
-	inline XmlSchemaSimpleTypeContent_t599285223 * get_content_19() const { return ___content_19; }
-	inline XmlSchemaSimpleTypeContent_t599285223 ** get_address_of_content_19() { return &___content_19; }
-	inline void set_content_19(XmlSchemaSimpleTypeContent_t599285223 * value)
+	inline static int32_t get_offset_of_defExpanded_11() { return static_cast<int32_t>(offsetof(SchemaAttDef_t2429541159, ___defExpanded_11)); }
+	inline String_t* get_defExpanded_11() const { return ___defExpanded_11; }
+	inline String_t** get_address_of_defExpanded_11() { return &___defExpanded_11; }
+	inline void set_defExpanded_11(String_t* value)
 	{
-		___content_19 = value;
-		Il2CppCodeGenWriteBarrier((&___content_19), value);
+		___defExpanded_11 = value;
+		Il2CppCodeGenWriteBarrier((&___defExpanded_11), value);
+	}
+
+	inline static int32_t get_offset_of_lineNum_12() { return static_cast<int32_t>(offsetof(SchemaAttDef_t2429541159, ___lineNum_12)); }
+	inline int32_t get_lineNum_12() const { return ___lineNum_12; }
+	inline int32_t* get_address_of_lineNum_12() { return &___lineNum_12; }
+	inline void set_lineNum_12(int32_t value)
+	{
+		___lineNum_12 = value;
+	}
+
+	inline static int32_t get_offset_of_linePos_13() { return static_cast<int32_t>(offsetof(SchemaAttDef_t2429541159, ___linePos_13)); }
+	inline int32_t get_linePos_13() const { return ___linePos_13; }
+	inline int32_t* get_address_of_linePos_13() { return &___linePos_13; }
+	inline void set_linePos_13(int32_t value)
+	{
+		___linePos_13 = value;
+	}
+
+	inline static int32_t get_offset_of_valueLineNum_14() { return static_cast<int32_t>(offsetof(SchemaAttDef_t2429541159, ___valueLineNum_14)); }
+	inline int32_t get_valueLineNum_14() const { return ___valueLineNum_14; }
+	inline int32_t* get_address_of_valueLineNum_14() { return &___valueLineNum_14; }
+	inline void set_valueLineNum_14(int32_t value)
+	{
+		___valueLineNum_14 = value;
+	}
+
+	inline static int32_t get_offset_of_valueLinePos_15() { return static_cast<int32_t>(offsetof(SchemaAttDef_t2429541159, ___valueLinePos_15)); }
+	inline int32_t get_valueLinePos_15() const { return ___valueLinePos_15; }
+	inline int32_t* get_address_of_valueLinePos_15() { return &___valueLinePos_15; }
+	inline void set_valueLinePos_15(int32_t value)
+	{
+		___valueLinePos_15 = value;
+	}
+
+	inline static int32_t get_offset_of_reserved_16() { return static_cast<int32_t>(offsetof(SchemaAttDef_t2429541159, ___reserved_16)); }
+	inline int32_t get_reserved_16() const { return ___reserved_16; }
+	inline int32_t* get_address_of_reserved_16() { return &___reserved_16; }
+	inline void set_reserved_16(int32_t value)
+	{
+		___reserved_16 = value;
+	}
+
+	inline static int32_t get_offset_of_schemaAttribute_17() { return static_cast<int32_t>(offsetof(SchemaAttDef_t2429541159, ___schemaAttribute_17)); }
+	inline XmlSchemaAttribute_t2797257020 * get_schemaAttribute_17() const { return ___schemaAttribute_17; }
+	inline XmlSchemaAttribute_t2797257020 ** get_address_of_schemaAttribute_17() { return &___schemaAttribute_17; }
+	inline void set_schemaAttribute_17(XmlSchemaAttribute_t2797257020 * value)
+	{
+		___schemaAttribute_17 = value;
+		Il2CppCodeGenWriteBarrier((&___schemaAttribute_17), value);
+	}
+};
+
+struct SchemaAttDef_t2429541159_StaticFields
+{
+public:
+	// System.Xml.Schema.SchemaAttDef System.Xml.Schema.SchemaAttDef::Empty
+	SchemaAttDef_t2429541159 * ___Empty_18;
+
+public:
+	inline static int32_t get_offset_of_Empty_18() { return static_cast<int32_t>(offsetof(SchemaAttDef_t2429541159_StaticFields, ___Empty_18)); }
+	inline SchemaAttDef_t2429541159 * get_Empty_18() const { return ___Empty_18; }
+	inline SchemaAttDef_t2429541159 ** get_address_of_Empty_18() { return &___Empty_18; }
+	inline void set_Empty_18(SchemaAttDef_t2429541159 * value)
+	{
+		___Empty_18 = value;
+		Il2CppCodeGenWriteBarrier((&___Empty_18), value);
 	}
 };
 
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // XMLSCHEMASIMPLETYPE_T2678868104_H
-#ifndef XMLSCHEMAREDEFINE_T4020109446_H
-#define XMLSCHEMAREDEFINE_T4020109446_H
+#endif // SCHEMAATTDEF_T2429541159_H
+#ifndef VALIDATIONEVENTHANDLER_T791314227_H
+#define VALIDATIONEVENTHANDLER_T791314227_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// System.Xml.Schema.XmlSchemaRedefine
-struct  XmlSchemaRedefine_t4020109446  : public XmlSchemaExternal_t3074890143
+// System.Xml.Schema.ValidationEventHandler
+struct  ValidationEventHandler_t791314227  : public MulticastDelegate_t157516450
 {
 public:
-	// System.Xml.Schema.XmlSchemaObjectCollection System.Xml.Schema.XmlSchemaRedefine::items
-	XmlSchemaObjectCollection_t1064819932 * ___items_12;
-	// System.Xml.Schema.XmlSchemaObjectTable System.Xml.Schema.XmlSchemaRedefine::attributeGroups
-	XmlSchemaObjectTable_t2546974348 * ___attributeGroups_13;
-	// System.Xml.Schema.XmlSchemaObjectTable System.Xml.Schema.XmlSchemaRedefine::types
-	XmlSchemaObjectTable_t2546974348 * ___types_14;
-	// System.Xml.Schema.XmlSchemaObjectTable System.Xml.Schema.XmlSchemaRedefine::groups
-	XmlSchemaObjectTable_t2546974348 * ___groups_15;
 
 public:
-	inline static int32_t get_offset_of_items_12() { return static_cast<int32_t>(offsetof(XmlSchemaRedefine_t4020109446, ___items_12)); }
-	inline XmlSchemaObjectCollection_t1064819932 * get_items_12() const { return ___items_12; }
-	inline XmlSchemaObjectCollection_t1064819932 ** get_address_of_items_12() { return &___items_12; }
-	inline void set_items_12(XmlSchemaObjectCollection_t1064819932 * value)
-	{
-		___items_12 = value;
-		Il2CppCodeGenWriteBarrier((&___items_12), value);
-	}
+};
 
-	inline static int32_t get_offset_of_attributeGroups_13() { return static_cast<int32_t>(offsetof(XmlSchemaRedefine_t4020109446, ___attributeGroups_13)); }
-	inline XmlSchemaObjectTable_t2546974348 * get_attributeGroups_13() const { return ___attributeGroups_13; }
-	inline XmlSchemaObjectTable_t2546974348 ** get_address_of_attributeGroups_13() { return &___attributeGroups_13; }
-	inline void set_attributeGroups_13(XmlSchemaObjectTable_t2546974348 * value)
-	{
-		___attributeGroups_13 = value;
-		Il2CppCodeGenWriteBarrier((&___attributeGroups_13), value);
-	}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // VALIDATIONEVENTHANDLER_T791314227_H
+#ifndef XMLLISTCONVERTER_T3889069996_H
+#define XMLLISTCONVERTER_T3889069996_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 
-	inline static int32_t get_offset_of_types_14() { return static_cast<int32_t>(offsetof(XmlSchemaRedefine_t4020109446, ___types_14)); }
-	inline XmlSchemaObjectTable_t2546974348 * get_types_14() const { return ___types_14; }
-	inline XmlSchemaObjectTable_t2546974348 ** get_address_of_types_14() { return &___types_14; }
-	inline void set_types_14(XmlSchemaObjectTable_t2546974348 * value)
-	{
-		___types_14 = value;
-		Il2CppCodeGenWriteBarrier((&___types_14), value);
-	}
+// System.Xml.Schema.XmlListConverter
+struct  XmlListConverter_t3889069996  : public XmlBaseConverter_t885945787
+{
+public:
+	// System.Xml.Schema.XmlValueConverter System.Xml.Schema.XmlListConverter::atomicConverter
+	XmlValueConverter_t585560190 * ___atomicConverter_32;
 
-	inline static int32_t get_offset_of_groups_15() { return static_cast<int32_t>(offsetof(XmlSchemaRedefine_t4020109446, ___groups_15)); }
-	inline XmlSchemaObjectTable_t2546974348 * get_groups_15() const { return ___groups_15; }
-	inline XmlSchemaObjectTable_t2546974348 ** get_address_of_groups_15() { return &___groups_15; }
-	inline void set_groups_15(XmlSchemaObjectTable_t2546974348 * value)
+public:
+	inline static int32_t get_offset_of_atomicConverter_32() { return static_cast<int32_t>(offsetof(XmlListConverter_t3889069996, ___atomicConverter_32)); }
+	inline XmlValueConverter_t585560190 * get_atomicConverter_32() const { return ___atomicConverter_32; }
+	inline XmlValueConverter_t585560190 ** get_address_of_atomicConverter_32() { return &___atomicConverter_32; }
+	inline void set_atomicConverter_32(XmlValueConverter_t585560190 * value)
 	{
-		___groups_15 = value;
-		Il2CppCodeGenWriteBarrier((&___groups_15), value);
+		___atomicConverter_32 = value;
+		Il2CppCodeGenWriteBarrier((&___atomicConverter_32), value);
 	}
 };
 
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // XMLSCHEMAREDEFINE_T4020109446_H
-#ifndef XMLSCHEMAANY_T1119175207_H
-#define XMLSCHEMAANY_T1119175207_H
+#endif // XMLLISTCONVERTER_T3889069996_H
+#ifndef RANGECONTENTVALIDATOR_T1461085642_H
+#define RANGECONTENTVALIDATOR_T1461085642_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// System.Xml.Schema.XmlSchemaAny
-struct  XmlSchemaAny_t1119175207  : public XmlSchemaParticle_t3828501457
+// System.Xml.Schema.RangeContentValidator
+struct  RangeContentValidator_t1461085642  : public ContentValidator_t2085579204
 {
 public:
-	// System.String System.Xml.Schema.XmlSchemaAny::ns
-	String_t* ___ns_13;
-	// System.Xml.Schema.XmlSchemaContentProcessing System.Xml.Schema.XmlSchemaAny::processContents
-	int32_t ___processContents_14;
-	// System.Xml.Schema.NamespaceList System.Xml.Schema.XmlSchemaAny::namespaceList
-	NamespaceList_t60893868 * ___namespaceList_15;
-
-public:
-	inline static int32_t get_offset_of_ns_13() { return static_cast<int32_t>(offsetof(XmlSchemaAny_t1119175207, ___ns_13)); }
-	inline String_t* get_ns_13() const { return ___ns_13; }
-	inline String_t** get_address_of_ns_13() { return &___ns_13; }
-	inline void set_ns_13(String_t* value)
-	{
-		___ns_13 = value;
-		Il2CppCodeGenWriteBarrier((&___ns_13), value);
-	}
-
-	inline static int32_t get_offset_of_processContents_14() { return static_cast<int32_t>(offsetof(XmlSchemaAny_t1119175207, ___processContents_14)); }
-	inline int32_t get_processContents_14() const { return ___processContents_14; }
-	inline int32_t* get_address_of_processContents_14() { return &___processContents_14; }
-	inline void set_processContents_14(int32_t value)
-	{
-		___processContents_14 = value;
-	}
-
-	inline static int32_t get_offset_of_namespaceList_15() { return static_cast<int32_t>(offsetof(XmlSchemaAny_t1119175207, ___namespaceList_15)); }
-	inline NamespaceList_t60893868 * get_namespaceList_15() const { return ___namespaceList_15; }
-	inline NamespaceList_t60893868 ** get_address_of_namespaceList_15() { return &___namespaceList_15; }
-	inline void set_namespaceList_15(NamespaceList_t60893868 * value)
-	{
-		___namespaceList_15 = value;
-		Il2CppCodeGenWriteBarrier((&___namespaceList_15), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // XMLSCHEMAANY_T1119175207_H
-#ifndef NFACONTENTVALIDATOR_T2411849615_H
-#define NFACONTENTVALIDATOR_T2411849615_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.NfaContentValidator
-struct  NfaContentValidator_t2411849615  : public ContentValidator_t2085579204
-{
-public:
-	// System.Xml.Schema.BitSet System.Xml.Schema.NfaContentValidator::firstpos
+	// System.Xml.Schema.BitSet System.Xml.Schema.RangeContentValidator::firstpos
 	BitSet_t1154229585 * ___firstpos_7;
-	// System.Xml.Schema.BitSet[] System.Xml.Schema.NfaContentValidator::followpos
+	// System.Xml.Schema.BitSet[] System.Xml.Schema.RangeContentValidator::followpos
 	BitSetU5BU5D_t1465593420* ___followpos_8;
-	// System.Xml.Schema.SymbolsDictionary System.Xml.Schema.NfaContentValidator::symbols
-	SymbolsDictionary_t1055001383 * ___symbols_9;
-	// System.Xml.Schema.Positions System.Xml.Schema.NfaContentValidator::positions
-	Positions_t4234826187 * ___positions_10;
-	// System.Int32 System.Xml.Schema.NfaContentValidator::endMarkerPos
-	int32_t ___endMarkerPos_11;
+	// System.Xml.Schema.BitSet System.Xml.Schema.RangeContentValidator::positionsWithRangeTerminals
+	BitSet_t1154229585 * ___positionsWithRangeTerminals_9;
+	// System.Xml.Schema.SymbolsDictionary System.Xml.Schema.RangeContentValidator::symbols
+	SymbolsDictionary_t1055001383 * ___symbols_10;
+	// System.Xml.Schema.Positions System.Xml.Schema.RangeContentValidator::positions
+	Positions_t4234826187 * ___positions_11;
+	// System.Int32 System.Xml.Schema.RangeContentValidator::minMaxNodesCount
+	int32_t ___minMaxNodesCount_12;
+	// System.Int32 System.Xml.Schema.RangeContentValidator::endMarkerPos
+	int32_t ___endMarkerPos_13;
 
 public:
-	inline static int32_t get_offset_of_firstpos_7() { return static_cast<int32_t>(offsetof(NfaContentValidator_t2411849615, ___firstpos_7)); }
+	inline static int32_t get_offset_of_firstpos_7() { return static_cast<int32_t>(offsetof(RangeContentValidator_t1461085642, ___firstpos_7)); }
 	inline BitSet_t1154229585 * get_firstpos_7() const { return ___firstpos_7; }
 	inline BitSet_t1154229585 ** get_address_of_firstpos_7() { return &___firstpos_7; }
 	inline void set_firstpos_7(BitSet_t1154229585 * value)
@@ -21082,7 +21309,7 @@ public:
 		Il2CppCodeGenWriteBarrier((&___firstpos_7), value);
 	}
 
-	inline static int32_t get_offset_of_followpos_8() { return static_cast<int32_t>(offsetof(NfaContentValidator_t2411849615, ___followpos_8)); }
+	inline static int32_t get_offset_of_followpos_8() { return static_cast<int32_t>(offsetof(RangeContentValidator_t1461085642, ___followpos_8)); }
 	inline BitSetU5BU5D_t1465593420* get_followpos_8() const { return ___followpos_8; }
 	inline BitSetU5BU5D_t1465593420** get_address_of_followpos_8() { return &___followpos_8; }
 	inline void set_followpos_8(BitSetU5BU5D_t1465593420* value)
@@ -21091,212 +21318,54 @@ public:
 		Il2CppCodeGenWriteBarrier((&___followpos_8), value);
 	}
 
-	inline static int32_t get_offset_of_symbols_9() { return static_cast<int32_t>(offsetof(NfaContentValidator_t2411849615, ___symbols_9)); }
-	inline SymbolsDictionary_t1055001383 * get_symbols_9() const { return ___symbols_9; }
-	inline SymbolsDictionary_t1055001383 ** get_address_of_symbols_9() { return &___symbols_9; }
-	inline void set_symbols_9(SymbolsDictionary_t1055001383 * value)
+	inline static int32_t get_offset_of_positionsWithRangeTerminals_9() { return static_cast<int32_t>(offsetof(RangeContentValidator_t1461085642, ___positionsWithRangeTerminals_9)); }
+	inline BitSet_t1154229585 * get_positionsWithRangeTerminals_9() const { return ___positionsWithRangeTerminals_9; }
+	inline BitSet_t1154229585 ** get_address_of_positionsWithRangeTerminals_9() { return &___positionsWithRangeTerminals_9; }
+	inline void set_positionsWithRangeTerminals_9(BitSet_t1154229585 * value)
 	{
-		___symbols_9 = value;
-		Il2CppCodeGenWriteBarrier((&___symbols_9), value);
+		___positionsWithRangeTerminals_9 = value;
+		Il2CppCodeGenWriteBarrier((&___positionsWithRangeTerminals_9), value);
 	}
 
-	inline static int32_t get_offset_of_positions_10() { return static_cast<int32_t>(offsetof(NfaContentValidator_t2411849615, ___positions_10)); }
-	inline Positions_t4234826187 * get_positions_10() const { return ___positions_10; }
-	inline Positions_t4234826187 ** get_address_of_positions_10() { return &___positions_10; }
-	inline void set_positions_10(Positions_t4234826187 * value)
+	inline static int32_t get_offset_of_symbols_10() { return static_cast<int32_t>(offsetof(RangeContentValidator_t1461085642, ___symbols_10)); }
+	inline SymbolsDictionary_t1055001383 * get_symbols_10() const { return ___symbols_10; }
+	inline SymbolsDictionary_t1055001383 ** get_address_of_symbols_10() { return &___symbols_10; }
+	inline void set_symbols_10(SymbolsDictionary_t1055001383 * value)
 	{
-		___positions_10 = value;
-		Il2CppCodeGenWriteBarrier((&___positions_10), value);
+		___symbols_10 = value;
+		Il2CppCodeGenWriteBarrier((&___symbols_10), value);
 	}
 
-	inline static int32_t get_offset_of_endMarkerPos_11() { return static_cast<int32_t>(offsetof(NfaContentValidator_t2411849615, ___endMarkerPos_11)); }
-	inline int32_t get_endMarkerPos_11() const { return ___endMarkerPos_11; }
-	inline int32_t* get_address_of_endMarkerPos_11() { return &___endMarkerPos_11; }
-	inline void set_endMarkerPos_11(int32_t value)
+	inline static int32_t get_offset_of_positions_11() { return static_cast<int32_t>(offsetof(RangeContentValidator_t1461085642, ___positions_11)); }
+	inline Positions_t4234826187 * get_positions_11() const { return ___positions_11; }
+	inline Positions_t4234826187 ** get_address_of_positions_11() { return &___positions_11; }
+	inline void set_positions_11(Positions_t4234826187 * value)
 	{
-		___endMarkerPos_11 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // NFACONTENTVALIDATOR_T2411849615_H
-#ifndef DFACONTENTVALIDATOR_T888301625_H
-#define DFACONTENTVALIDATOR_T888301625_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.DfaContentValidator
-struct  DfaContentValidator_t888301625  : public ContentValidator_t2085579204
-{
-public:
-	// System.Int32[][] System.Xml.Schema.DfaContentValidator::transitionTable
-	Int32U5BU5DU5BU5D_t3365920845* ___transitionTable_7;
-	// System.Xml.Schema.SymbolsDictionary System.Xml.Schema.DfaContentValidator::symbols
-	SymbolsDictionary_t1055001383 * ___symbols_8;
-
-public:
-	inline static int32_t get_offset_of_transitionTable_7() { return static_cast<int32_t>(offsetof(DfaContentValidator_t888301625, ___transitionTable_7)); }
-	inline Int32U5BU5DU5BU5D_t3365920845* get_transitionTable_7() const { return ___transitionTable_7; }
-	inline Int32U5BU5DU5BU5D_t3365920845** get_address_of_transitionTable_7() { return &___transitionTable_7; }
-	inline void set_transitionTable_7(Int32U5BU5DU5BU5D_t3365920845* value)
-	{
-		___transitionTable_7 = value;
-		Il2CppCodeGenWriteBarrier((&___transitionTable_7), value);
+		___positions_11 = value;
+		Il2CppCodeGenWriteBarrier((&___positions_11), value);
 	}
 
-	inline static int32_t get_offset_of_symbols_8() { return static_cast<int32_t>(offsetof(DfaContentValidator_t888301625, ___symbols_8)); }
-	inline SymbolsDictionary_t1055001383 * get_symbols_8() const { return ___symbols_8; }
-	inline SymbolsDictionary_t1055001383 ** get_address_of_symbols_8() { return &___symbols_8; }
-	inline void set_symbols_8(SymbolsDictionary_t1055001383 * value)
+	inline static int32_t get_offset_of_minMaxNodesCount_12() { return static_cast<int32_t>(offsetof(RangeContentValidator_t1461085642, ___minMaxNodesCount_12)); }
+	inline int32_t get_minMaxNodesCount_12() const { return ___minMaxNodesCount_12; }
+	inline int32_t* get_address_of_minMaxNodesCount_12() { return &___minMaxNodesCount_12; }
+	inline void set_minMaxNodesCount_12(int32_t value)
 	{
-		___symbols_8 = value;
-		Il2CppCodeGenWriteBarrier((&___symbols_8), value);
+		___minMaxNodesCount_12 = value;
+	}
+
+	inline static int32_t get_offset_of_endMarkerPos_13() { return static_cast<int32_t>(offsetof(RangeContentValidator_t1461085642, ___endMarkerPos_13)); }
+	inline int32_t get_endMarkerPos_13() const { return ___endMarkerPos_13; }
+	inline int32_t* get_address_of_endMarkerPos_13() { return &___endMarkerPos_13; }
+	inline void set_endMarkerPos_13(int32_t value)
+	{
+		___endMarkerPos_13 = value;
 	}
 };
 
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // DFACONTENTVALIDATOR_T888301625_H
-#ifndef XMLSCHEMAGROUPBASE_T3631079376_H
-#define XMLSCHEMAGROUPBASE_T3631079376_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.XmlSchemaGroupBase
-struct  XmlSchemaGroupBase_t3631079376  : public XmlSchemaParticle_t3828501457
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // XMLSCHEMAGROUPBASE_T3631079376_H
-#ifndef XMLSCHEMAGROUPREF_T1314446647_H
-#define XMLSCHEMAGROUPREF_T1314446647_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.XmlSchemaGroupRef
-struct  XmlSchemaGroupRef_t1314446647  : public XmlSchemaParticle_t3828501457
-{
-public:
-	// System.Xml.XmlQualifiedName System.Xml.Schema.XmlSchemaGroupRef::refName
-	XmlQualifiedName_t2760654312 * ___refName_13;
-	// System.Xml.Schema.XmlSchemaGroupBase System.Xml.Schema.XmlSchemaGroupRef::particle
-	XmlSchemaGroupBase_t3631079376 * ___particle_14;
-	// System.Xml.Schema.XmlSchemaGroup System.Xml.Schema.XmlSchemaGroupRef::refined
-	XmlSchemaGroup_t1441741786 * ___refined_15;
-
-public:
-	inline static int32_t get_offset_of_refName_13() { return static_cast<int32_t>(offsetof(XmlSchemaGroupRef_t1314446647, ___refName_13)); }
-	inline XmlQualifiedName_t2760654312 * get_refName_13() const { return ___refName_13; }
-	inline XmlQualifiedName_t2760654312 ** get_address_of_refName_13() { return &___refName_13; }
-	inline void set_refName_13(XmlQualifiedName_t2760654312 * value)
-	{
-		___refName_13 = value;
-		Il2CppCodeGenWriteBarrier((&___refName_13), value);
-	}
-
-	inline static int32_t get_offset_of_particle_14() { return static_cast<int32_t>(offsetof(XmlSchemaGroupRef_t1314446647, ___particle_14)); }
-	inline XmlSchemaGroupBase_t3631079376 * get_particle_14() const { return ___particle_14; }
-	inline XmlSchemaGroupBase_t3631079376 ** get_address_of_particle_14() { return &___particle_14; }
-	inline void set_particle_14(XmlSchemaGroupBase_t3631079376 * value)
-	{
-		___particle_14 = value;
-		Il2CppCodeGenWriteBarrier((&___particle_14), value);
-	}
-
-	inline static int32_t get_offset_of_refined_15() { return static_cast<int32_t>(offsetof(XmlSchemaGroupRef_t1314446647, ___refined_15)); }
-	inline XmlSchemaGroup_t1441741786 * get_refined_15() const { return ___refined_15; }
-	inline XmlSchemaGroup_t1441741786 ** get_address_of_refined_15() { return &___refined_15; }
-	inline void set_refined_15(XmlSchemaGroup_t1441741786 * value)
-	{
-		___refined_15 = value;
-		Il2CppCodeGenWriteBarrier((&___refined_15), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // XMLSCHEMAGROUPREF_T1314446647_H
-#ifndef ALLELEMENTSCONTENTVALIDATOR_T4162406109_H
-#define ALLELEMENTSCONTENTVALIDATOR_T4162406109_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.AllElementsContentValidator
-struct  AllElementsContentValidator_t4162406109  : public ContentValidator_t2085579204
-{
-public:
-	// System.Collections.Hashtable System.Xml.Schema.AllElementsContentValidator::elements
-	Hashtable_t1853889766 * ___elements_7;
-	// System.Object[] System.Xml.Schema.AllElementsContentValidator::particles
-	ObjectU5BU5D_t2843939325* ___particles_8;
-	// System.Xml.Schema.BitSet System.Xml.Schema.AllElementsContentValidator::isRequired
-	BitSet_t1154229585 * ___isRequired_9;
-	// System.Int32 System.Xml.Schema.AllElementsContentValidator::countRequired
-	int32_t ___countRequired_10;
-
-public:
-	inline static int32_t get_offset_of_elements_7() { return static_cast<int32_t>(offsetof(AllElementsContentValidator_t4162406109, ___elements_7)); }
-	inline Hashtable_t1853889766 * get_elements_7() const { return ___elements_7; }
-	inline Hashtable_t1853889766 ** get_address_of_elements_7() { return &___elements_7; }
-	inline void set_elements_7(Hashtable_t1853889766 * value)
-	{
-		___elements_7 = value;
-		Il2CppCodeGenWriteBarrier((&___elements_7), value);
-	}
-
-	inline static int32_t get_offset_of_particles_8() { return static_cast<int32_t>(offsetof(AllElementsContentValidator_t4162406109, ___particles_8)); }
-	inline ObjectU5BU5D_t2843939325* get_particles_8() const { return ___particles_8; }
-	inline ObjectU5BU5D_t2843939325** get_address_of_particles_8() { return &___particles_8; }
-	inline void set_particles_8(ObjectU5BU5D_t2843939325* value)
-	{
-		___particles_8 = value;
-		Il2CppCodeGenWriteBarrier((&___particles_8), value);
-	}
-
-	inline static int32_t get_offset_of_isRequired_9() { return static_cast<int32_t>(offsetof(AllElementsContentValidator_t4162406109, ___isRequired_9)); }
-	inline BitSet_t1154229585 * get_isRequired_9() const { return ___isRequired_9; }
-	inline BitSet_t1154229585 ** get_address_of_isRequired_9() { return &___isRequired_9; }
-	inline void set_isRequired_9(BitSet_t1154229585 * value)
-	{
-		___isRequired_9 = value;
-		Il2CppCodeGenWriteBarrier((&___isRequired_9), value);
-	}
-
-	inline static int32_t get_offset_of_countRequired_10() { return static_cast<int32_t>(offsetof(AllElementsContentValidator_t4162406109, ___countRequired_10)); }
-	inline int32_t get_countRequired_10() const { return ___countRequired_10; }
-	inline int32_t* get_address_of_countRequired_10() { return &___countRequired_10; }
-	inline void set_countRequired_10(int32_t value)
-	{
-		___countRequired_10 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // ALLELEMENTSCONTENTVALIDATOR_T4162406109_H
+#endif // RANGECONTENTVALIDATOR_T1461085642_H
 #ifndef SCHEMAELEMENTDECL_T2267464004_H
 #define SCHEMAELEMENTDECL_T2267464004_H
 #ifdef __clang__
@@ -21480,56 +21549,6 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // SCHEMAELEMENTDECL_T2267464004_H
-#ifndef DOUBLELINKAXIS_T1975471428_H
-#define DOUBLELINKAXIS_T1975471428_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.DoubleLinkAxis
-struct  DoubleLinkAxis_t1975471428  : public Axis_t4207104559
-{
-public:
-	// MS.Internal.Xml.XPath.Axis System.Xml.Schema.DoubleLinkAxis::next
-	Axis_t4207104559 * ___next_7;
-
-public:
-	inline static int32_t get_offset_of_next_7() { return static_cast<int32_t>(offsetof(DoubleLinkAxis_t1975471428, ___next_7)); }
-	inline Axis_t4207104559 * get_next_7() const { return ___next_7; }
-	inline Axis_t4207104559 ** get_address_of_next_7() { return &___next_7; }
-	inline void set_next_7(Axis_t4207104559 * value)
-	{
-		___next_7 = value;
-		Il2CppCodeGenWriteBarrier((&___next_7), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // DOUBLELINKAXIS_T1975471428_H
-#ifndef XMLSCHEMAENUMERATIONFACET_T2156689038_H
-#define XMLSCHEMAENUMERATIONFACET_T2156689038_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.XmlSchemaEnumerationFacet
-struct  XmlSchemaEnumerationFacet_t2156689038  : public XmlSchemaFacet_t1906017689
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // XMLSCHEMAENUMERATIONFACET_T2156689038_H
 #ifndef PARTICLECONTENTVALIDATOR_T2931748829_H
 #define PARTICLECONTENTVALIDATOR_T2931748829_H
 #ifdef __clang__
@@ -21623,176 +21642,195 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // PARTICLECONTENTVALIDATOR_T2931748829_H
-#ifndef RANGECONTENTVALIDATOR_T1461085642_H
-#define RANGECONTENTVALIDATOR_T1461085642_H
+#ifndef ALLELEMENTSCONTENTVALIDATOR_T4162406109_H
+#define ALLELEMENTSCONTENTVALIDATOR_T4162406109_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// System.Xml.Schema.RangeContentValidator
-struct  RangeContentValidator_t1461085642  : public ContentValidator_t2085579204
+// System.Xml.Schema.AllElementsContentValidator
+struct  AllElementsContentValidator_t4162406109  : public ContentValidator_t2085579204
 {
 public:
-	// System.Xml.Schema.BitSet System.Xml.Schema.RangeContentValidator::firstpos
-	BitSet_t1154229585 * ___firstpos_7;
-	// System.Xml.Schema.BitSet[] System.Xml.Schema.RangeContentValidator::followpos
-	BitSetU5BU5D_t1465593420* ___followpos_8;
-	// System.Xml.Schema.BitSet System.Xml.Schema.RangeContentValidator::positionsWithRangeTerminals
-	BitSet_t1154229585 * ___positionsWithRangeTerminals_9;
-	// System.Xml.Schema.SymbolsDictionary System.Xml.Schema.RangeContentValidator::symbols
-	SymbolsDictionary_t1055001383 * ___symbols_10;
-	// System.Xml.Schema.Positions System.Xml.Schema.RangeContentValidator::positions
-	Positions_t4234826187 * ___positions_11;
-	// System.Int32 System.Xml.Schema.RangeContentValidator::minMaxNodesCount
-	int32_t ___minMaxNodesCount_12;
-	// System.Int32 System.Xml.Schema.RangeContentValidator::endMarkerPos
-	int32_t ___endMarkerPos_13;
+	// System.Collections.Hashtable System.Xml.Schema.AllElementsContentValidator::elements
+	Hashtable_t1853889766 * ___elements_7;
+	// System.Object[] System.Xml.Schema.AllElementsContentValidator::particles
+	ObjectU5BU5D_t2843939325* ___particles_8;
+	// System.Xml.Schema.BitSet System.Xml.Schema.AllElementsContentValidator::isRequired
+	BitSet_t1154229585 * ___isRequired_9;
+	// System.Int32 System.Xml.Schema.AllElementsContentValidator::countRequired
+	int32_t ___countRequired_10;
 
 public:
-	inline static int32_t get_offset_of_firstpos_7() { return static_cast<int32_t>(offsetof(RangeContentValidator_t1461085642, ___firstpos_7)); }
-	inline BitSet_t1154229585 * get_firstpos_7() const { return ___firstpos_7; }
-	inline BitSet_t1154229585 ** get_address_of_firstpos_7() { return &___firstpos_7; }
-	inline void set_firstpos_7(BitSet_t1154229585 * value)
+	inline static int32_t get_offset_of_elements_7() { return static_cast<int32_t>(offsetof(AllElementsContentValidator_t4162406109, ___elements_7)); }
+	inline Hashtable_t1853889766 * get_elements_7() const { return ___elements_7; }
+	inline Hashtable_t1853889766 ** get_address_of_elements_7() { return &___elements_7; }
+	inline void set_elements_7(Hashtable_t1853889766 * value)
 	{
-		___firstpos_7 = value;
-		Il2CppCodeGenWriteBarrier((&___firstpos_7), value);
+		___elements_7 = value;
+		Il2CppCodeGenWriteBarrier((&___elements_7), value);
 	}
 
-	inline static int32_t get_offset_of_followpos_8() { return static_cast<int32_t>(offsetof(RangeContentValidator_t1461085642, ___followpos_8)); }
-	inline BitSetU5BU5D_t1465593420* get_followpos_8() const { return ___followpos_8; }
-	inline BitSetU5BU5D_t1465593420** get_address_of_followpos_8() { return &___followpos_8; }
-	inline void set_followpos_8(BitSetU5BU5D_t1465593420* value)
+	inline static int32_t get_offset_of_particles_8() { return static_cast<int32_t>(offsetof(AllElementsContentValidator_t4162406109, ___particles_8)); }
+	inline ObjectU5BU5D_t2843939325* get_particles_8() const { return ___particles_8; }
+	inline ObjectU5BU5D_t2843939325** get_address_of_particles_8() { return &___particles_8; }
+	inline void set_particles_8(ObjectU5BU5D_t2843939325* value)
 	{
-		___followpos_8 = value;
-		Il2CppCodeGenWriteBarrier((&___followpos_8), value);
+		___particles_8 = value;
+		Il2CppCodeGenWriteBarrier((&___particles_8), value);
 	}
 
-	inline static int32_t get_offset_of_positionsWithRangeTerminals_9() { return static_cast<int32_t>(offsetof(RangeContentValidator_t1461085642, ___positionsWithRangeTerminals_9)); }
-	inline BitSet_t1154229585 * get_positionsWithRangeTerminals_9() const { return ___positionsWithRangeTerminals_9; }
-	inline BitSet_t1154229585 ** get_address_of_positionsWithRangeTerminals_9() { return &___positionsWithRangeTerminals_9; }
-	inline void set_positionsWithRangeTerminals_9(BitSet_t1154229585 * value)
+	inline static int32_t get_offset_of_isRequired_9() { return static_cast<int32_t>(offsetof(AllElementsContentValidator_t4162406109, ___isRequired_9)); }
+	inline BitSet_t1154229585 * get_isRequired_9() const { return ___isRequired_9; }
+	inline BitSet_t1154229585 ** get_address_of_isRequired_9() { return &___isRequired_9; }
+	inline void set_isRequired_9(BitSet_t1154229585 * value)
 	{
-		___positionsWithRangeTerminals_9 = value;
-		Il2CppCodeGenWriteBarrier((&___positionsWithRangeTerminals_9), value);
+		___isRequired_9 = value;
+		Il2CppCodeGenWriteBarrier((&___isRequired_9), value);
 	}
 
-	inline static int32_t get_offset_of_symbols_10() { return static_cast<int32_t>(offsetof(RangeContentValidator_t1461085642, ___symbols_10)); }
-	inline SymbolsDictionary_t1055001383 * get_symbols_10() const { return ___symbols_10; }
-	inline SymbolsDictionary_t1055001383 ** get_address_of_symbols_10() { return &___symbols_10; }
-	inline void set_symbols_10(SymbolsDictionary_t1055001383 * value)
+	inline static int32_t get_offset_of_countRequired_10() { return static_cast<int32_t>(offsetof(AllElementsContentValidator_t4162406109, ___countRequired_10)); }
+	inline int32_t get_countRequired_10() const { return ___countRequired_10; }
+	inline int32_t* get_address_of_countRequired_10() { return &___countRequired_10; }
+	inline void set_countRequired_10(int32_t value)
 	{
-		___symbols_10 = value;
-		Il2CppCodeGenWriteBarrier((&___symbols_10), value);
-	}
-
-	inline static int32_t get_offset_of_positions_11() { return static_cast<int32_t>(offsetof(RangeContentValidator_t1461085642, ___positions_11)); }
-	inline Positions_t4234826187 * get_positions_11() const { return ___positions_11; }
-	inline Positions_t4234826187 ** get_address_of_positions_11() { return &___positions_11; }
-	inline void set_positions_11(Positions_t4234826187 * value)
-	{
-		___positions_11 = value;
-		Il2CppCodeGenWriteBarrier((&___positions_11), value);
-	}
-
-	inline static int32_t get_offset_of_minMaxNodesCount_12() { return static_cast<int32_t>(offsetof(RangeContentValidator_t1461085642, ___minMaxNodesCount_12)); }
-	inline int32_t get_minMaxNodesCount_12() const { return ___minMaxNodesCount_12; }
-	inline int32_t* get_address_of_minMaxNodesCount_12() { return &___minMaxNodesCount_12; }
-	inline void set_minMaxNodesCount_12(int32_t value)
-	{
-		___minMaxNodesCount_12 = value;
-	}
-
-	inline static int32_t get_offset_of_endMarkerPos_13() { return static_cast<int32_t>(offsetof(RangeContentValidator_t1461085642, ___endMarkerPos_13)); }
-	inline int32_t get_endMarkerPos_13() const { return ___endMarkerPos_13; }
-	inline int32_t* get_address_of_endMarkerPos_13() { return &___endMarkerPos_13; }
-	inline void set_endMarkerPos_13(int32_t value)
-	{
-		___endMarkerPos_13 = value;
+		___countRequired_10 = value;
 	}
 };
 
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // RANGECONTENTVALIDATOR_T1461085642_H
-#ifndef XMLSCHEMAPATTERNFACET_T3316004401_H
-#define XMLSCHEMAPATTERNFACET_T3316004401_H
+#endif // ALLELEMENTSCONTENTVALIDATOR_T4162406109_H
+#ifndef XMLSCHEMAGROUPREF_T1314446647_H
+#define XMLSCHEMAGROUPREF_T1314446647_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// System.Xml.Schema.XmlSchemaPatternFacet
-struct  XmlSchemaPatternFacet_t3316004401  : public XmlSchemaFacet_t1906017689
+// System.Xml.Schema.XmlSchemaGroupRef
+struct  XmlSchemaGroupRef_t1314446647  : public XmlSchemaParticle_t3828501457
 {
 public:
+	// System.Xml.XmlQualifiedName System.Xml.Schema.XmlSchemaGroupRef::refName
+	XmlQualifiedName_t2760654312 * ___refName_13;
+	// System.Xml.Schema.XmlSchemaGroupBase System.Xml.Schema.XmlSchemaGroupRef::particle
+	XmlSchemaGroupBase_t3631079376 * ___particle_14;
+	// System.Xml.Schema.XmlSchemaGroup System.Xml.Schema.XmlSchemaGroupRef::refined
+	XmlSchemaGroup_t1441741786 * ___refined_15;
 
 public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // XMLSCHEMAPATTERNFACET_T3316004401_H
-#ifndef XMLLISTCONVERTER_T3889069996_H
-#define XMLLISTCONVERTER_T3889069996_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.XmlListConverter
-struct  XmlListConverter_t3889069996  : public XmlBaseConverter_t885945787
-{
-public:
-	// System.Xml.Schema.XmlValueConverter System.Xml.Schema.XmlListConverter::atomicConverter
-	XmlValueConverter_t585560190 * ___atomicConverter_32;
-
-public:
-	inline static int32_t get_offset_of_atomicConverter_32() { return static_cast<int32_t>(offsetof(XmlListConverter_t3889069996, ___atomicConverter_32)); }
-	inline XmlValueConverter_t585560190 * get_atomicConverter_32() const { return ___atomicConverter_32; }
-	inline XmlValueConverter_t585560190 ** get_address_of_atomicConverter_32() { return &___atomicConverter_32; }
-	inline void set_atomicConverter_32(XmlValueConverter_t585560190 * value)
+	inline static int32_t get_offset_of_refName_13() { return static_cast<int32_t>(offsetof(XmlSchemaGroupRef_t1314446647, ___refName_13)); }
+	inline XmlQualifiedName_t2760654312 * get_refName_13() const { return ___refName_13; }
+	inline XmlQualifiedName_t2760654312 ** get_address_of_refName_13() { return &___refName_13; }
+	inline void set_refName_13(XmlQualifiedName_t2760654312 * value)
 	{
-		___atomicConverter_32 = value;
-		Il2CppCodeGenWriteBarrier((&___atomicConverter_32), value);
+		___refName_13 = value;
+		Il2CppCodeGenWriteBarrier((&___refName_13), value);
+	}
+
+	inline static int32_t get_offset_of_particle_14() { return static_cast<int32_t>(offsetof(XmlSchemaGroupRef_t1314446647, ___particle_14)); }
+	inline XmlSchemaGroupBase_t3631079376 * get_particle_14() const { return ___particle_14; }
+	inline XmlSchemaGroupBase_t3631079376 ** get_address_of_particle_14() { return &___particle_14; }
+	inline void set_particle_14(XmlSchemaGroupBase_t3631079376 * value)
+	{
+		___particle_14 = value;
+		Il2CppCodeGenWriteBarrier((&___particle_14), value);
+	}
+
+	inline static int32_t get_offset_of_refined_15() { return static_cast<int32_t>(offsetof(XmlSchemaGroupRef_t1314446647, ___refined_15)); }
+	inline XmlSchemaGroup_t1441741786 * get_refined_15() const { return ___refined_15; }
+	inline XmlSchemaGroup_t1441741786 ** get_address_of_refined_15() { return &___refined_15; }
+	inline void set_refined_15(XmlSchemaGroup_t1441741786 * value)
+	{
+		___refined_15 = value;
+		Il2CppCodeGenWriteBarrier((&___refined_15), value);
 	}
 };
 
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // XMLLISTCONVERTER_T3889069996_H
-#ifndef DATATYPE_NOTATION_T4293272563_H
-#define DATATYPE_NOTATION_T4293272563_H
+#endif // XMLSCHEMAGROUPREF_T1314446647_H
+#ifndef XMLSCHEMAENUMERATIONFACET_T2156689038_H
+#define XMLSCHEMAENUMERATIONFACET_T2156689038_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// System.Xml.Schema.Datatype_NOTATION
-struct  Datatype_NOTATION_t4293272563  : public Datatype_anySimpleType_t2047875136
+// System.Xml.Schema.XmlSchemaEnumerationFacet
+struct  XmlSchemaEnumerationFacet_t2156689038  : public XmlSchemaFacet_t1906017689
 {
 public:
 
 public:
 };
 
-struct Datatype_NOTATION_t4293272563_StaticFields
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // XMLSCHEMAENUMERATIONFACET_T2156689038_H
+#ifndef NAMESPACELISTV1COMPAT_T1490102757_H
+#define NAMESPACELISTV1COMPAT_T1490102757_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.NamespaceListV1Compat
+struct  NamespaceListV1Compat_t1490102757  : public NamespaceList_t60893868
 {
 public:
-	// System.Type System.Xml.Schema.Datatype_NOTATION::atomicValueType
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // NAMESPACELISTV1COMPAT_T1490102757_H
+#ifndef DATATYPE_DATETIMEBASE_T894797718_H
+#define DATATYPE_DATETIMEBASE_T894797718_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.Datatype_dateTimeBase
+struct  Datatype_dateTimeBase_t894797718  : public Datatype_anySimpleType_t2047875136
+{
+public:
+	// System.Xml.Schema.XsdDateTimeFlags System.Xml.Schema.Datatype_dateTimeBase::dateTimeFlags
+	int32_t ___dateTimeFlags_95;
+
+public:
+	inline static int32_t get_offset_of_dateTimeFlags_95() { return static_cast<int32_t>(offsetof(Datatype_dateTimeBase_t894797718, ___dateTimeFlags_95)); }
+	inline int32_t get_dateTimeFlags_95() const { return ___dateTimeFlags_95; }
+	inline int32_t* get_address_of_dateTimeFlags_95() { return &___dateTimeFlags_95; }
+	inline void set_dateTimeFlags_95(int32_t value)
+	{
+		___dateTimeFlags_95 = value;
+	}
+};
+
+struct Datatype_dateTimeBase_t894797718_StaticFields
+{
+public:
+	// System.Type System.Xml.Schema.Datatype_dateTimeBase::atomicValueType
 	Type_t * ___atomicValueType_93;
-	// System.Type System.Xml.Schema.Datatype_NOTATION::listValueType
+	// System.Type System.Xml.Schema.Datatype_dateTimeBase::listValueType
 	Type_t * ___listValueType_94;
 
 public:
-	inline static int32_t get_offset_of_atomicValueType_93() { return static_cast<int32_t>(offsetof(Datatype_NOTATION_t4293272563_StaticFields, ___atomicValueType_93)); }
+	inline static int32_t get_offset_of_atomicValueType_93() { return static_cast<int32_t>(offsetof(Datatype_dateTimeBase_t894797718_StaticFields, ___atomicValueType_93)); }
 	inline Type_t * get_atomicValueType_93() const { return ___atomicValueType_93; }
 	inline Type_t ** get_address_of_atomicValueType_93() { return &___atomicValueType_93; }
 	inline void set_atomicValueType_93(Type_t * value)
@@ -21801,7 +21839,7 @@ public:
 		Il2CppCodeGenWriteBarrier((&___atomicValueType_93), value);
 	}
 
-	inline static int32_t get_offset_of_listValueType_94() { return static_cast<int32_t>(offsetof(Datatype_NOTATION_t4293272563_StaticFields, ___listValueType_94)); }
+	inline static int32_t get_offset_of_listValueType_94() { return static_cast<int32_t>(offsetof(Datatype_dateTimeBase_t894797718_StaticFields, ___listValueType_94)); }
 	inline Type_t * get_listValueType_94() const { return ___listValueType_94; }
 	inline Type_t ** get_address_of_listValueType_94() { return &___listValueType_94; }
 	inline void set_listValueType_94(Type_t * value)
@@ -21814,7 +21852,55 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // DATATYPE_NOTATION_T4293272563_H
+#endif // DATATYPE_DATETIMEBASE_T894797718_H
+#ifndef DATATYPE_QNAMEXDR_T212135083_H
+#define DATATYPE_QNAMEXDR_T212135083_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.Datatype_QNameXdr
+struct  Datatype_QNameXdr_t212135083  : public Datatype_anySimpleType_t2047875136
+{
+public:
+
+public:
+};
+
+struct Datatype_QNameXdr_t212135083_StaticFields
+{
+public:
+	// System.Type System.Xml.Schema.Datatype_QNameXdr::atomicValueType
+	Type_t * ___atomicValueType_93;
+	// System.Type System.Xml.Schema.Datatype_QNameXdr::listValueType
+	Type_t * ___listValueType_94;
+
+public:
+	inline static int32_t get_offset_of_atomicValueType_93() { return static_cast<int32_t>(offsetof(Datatype_QNameXdr_t212135083_StaticFields, ___atomicValueType_93)); }
+	inline Type_t * get_atomicValueType_93() const { return ___atomicValueType_93; }
+	inline Type_t ** get_address_of_atomicValueType_93() { return &___atomicValueType_93; }
+	inline void set_atomicValueType_93(Type_t * value)
+	{
+		___atomicValueType_93 = value;
+		Il2CppCodeGenWriteBarrier((&___atomicValueType_93), value);
+	}
+
+	inline static int32_t get_offset_of_listValueType_94() { return static_cast<int32_t>(offsetof(Datatype_QNameXdr_t212135083_StaticFields, ___listValueType_94)); }
+	inline Type_t * get_listValueType_94() const { return ___listValueType_94; }
+	inline Type_t ** get_address_of_listValueType_94() { return &___listValueType_94; }
+	inline void set_listValueType_94(Type_t * value)
+	{
+		___listValueType_94 = value;
+		Il2CppCodeGenWriteBarrier((&___listValueType_94), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // DATATYPE_QNAMEXDR_T212135083_H
 #ifndef DATATYPE_CHAR_T3203819924_H
 #define DATATYPE_CHAR_T3203819924_H
 #ifdef __clang__
@@ -21863,502 +21949,6 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // DATATYPE_CHAR_T3203819924_H
-#ifndef DATATYPE_QNAME_T1237340231_H
-#define DATATYPE_QNAME_T1237340231_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.Datatype_QName
-struct  Datatype_QName_t1237340231  : public Datatype_anySimpleType_t2047875136
-{
-public:
-
-public:
-};
-
-struct Datatype_QName_t1237340231_StaticFields
-{
-public:
-	// System.Type System.Xml.Schema.Datatype_QName::atomicValueType
-	Type_t * ___atomicValueType_93;
-	// System.Type System.Xml.Schema.Datatype_QName::listValueType
-	Type_t * ___listValueType_94;
-
-public:
-	inline static int32_t get_offset_of_atomicValueType_93() { return static_cast<int32_t>(offsetof(Datatype_QName_t1237340231_StaticFields, ___atomicValueType_93)); }
-	inline Type_t * get_atomicValueType_93() const { return ___atomicValueType_93; }
-	inline Type_t ** get_address_of_atomicValueType_93() { return &___atomicValueType_93; }
-	inline void set_atomicValueType_93(Type_t * value)
-	{
-		___atomicValueType_93 = value;
-		Il2CppCodeGenWriteBarrier((&___atomicValueType_93), value);
-	}
-
-	inline static int32_t get_offset_of_listValueType_94() { return static_cast<int32_t>(offsetof(Datatype_QName_t1237340231_StaticFields, ___listValueType_94)); }
-	inline Type_t * get_listValueType_94() const { return ___listValueType_94; }
-	inline Type_t ** get_address_of_listValueType_94() { return &___listValueType_94; }
-	inline void set_listValueType_94(Type_t * value)
-	{
-		___listValueType_94 = value;
-		Il2CppCodeGenWriteBarrier((&___listValueType_94), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // DATATYPE_QNAME_T1237340231_H
-#ifndef DATATYPE_DECIMAL_T1359240665_H
-#define DATATYPE_DECIMAL_T1359240665_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.Datatype_decimal
-struct  Datatype_decimal_t1359240665  : public Datatype_anySimpleType_t2047875136
-{
-public:
-
-public:
-};
-
-struct Datatype_decimal_t1359240665_StaticFields
-{
-public:
-	// System.Type System.Xml.Schema.Datatype_decimal::atomicValueType
-	Type_t * ___atomicValueType_93;
-	// System.Type System.Xml.Schema.Datatype_decimal::listValueType
-	Type_t * ___listValueType_94;
-	// System.Xml.Schema.FacetsChecker System.Xml.Schema.Datatype_decimal::numeric10FacetsChecker
-	FacetsChecker_t3316496195 * ___numeric10FacetsChecker_95;
-
-public:
-	inline static int32_t get_offset_of_atomicValueType_93() { return static_cast<int32_t>(offsetof(Datatype_decimal_t1359240665_StaticFields, ___atomicValueType_93)); }
-	inline Type_t * get_atomicValueType_93() const { return ___atomicValueType_93; }
-	inline Type_t ** get_address_of_atomicValueType_93() { return &___atomicValueType_93; }
-	inline void set_atomicValueType_93(Type_t * value)
-	{
-		___atomicValueType_93 = value;
-		Il2CppCodeGenWriteBarrier((&___atomicValueType_93), value);
-	}
-
-	inline static int32_t get_offset_of_listValueType_94() { return static_cast<int32_t>(offsetof(Datatype_decimal_t1359240665_StaticFields, ___listValueType_94)); }
-	inline Type_t * get_listValueType_94() const { return ___listValueType_94; }
-	inline Type_t ** get_address_of_listValueType_94() { return &___listValueType_94; }
-	inline void set_listValueType_94(Type_t * value)
-	{
-		___listValueType_94 = value;
-		Il2CppCodeGenWriteBarrier((&___listValueType_94), value);
-	}
-
-	inline static int32_t get_offset_of_numeric10FacetsChecker_95() { return static_cast<int32_t>(offsetof(Datatype_decimal_t1359240665_StaticFields, ___numeric10FacetsChecker_95)); }
-	inline FacetsChecker_t3316496195 * get_numeric10FacetsChecker_95() const { return ___numeric10FacetsChecker_95; }
-	inline FacetsChecker_t3316496195 ** get_address_of_numeric10FacetsChecker_95() { return &___numeric10FacetsChecker_95; }
-	inline void set_numeric10FacetsChecker_95(FacetsChecker_t3316496195 * value)
-	{
-		___numeric10FacetsChecker_95 = value;
-		Il2CppCodeGenWriteBarrier((&___numeric10FacetsChecker_95), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // DATATYPE_DECIMAL_T1359240665_H
-#ifndef DATATYPE_STRING_T1920293864_H
-#define DATATYPE_STRING_T1920293864_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.Datatype_string
-struct  Datatype_string_t1920293864  : public Datatype_anySimpleType_t2047875136
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // DATATYPE_STRING_T1920293864_H
-#ifndef DATATYPE_UUID_T4274665131_H
-#define DATATYPE_UUID_T4274665131_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.Datatype_uuid
-struct  Datatype_uuid_t4274665131  : public Datatype_anySimpleType_t2047875136
-{
-public:
-
-public:
-};
-
-struct Datatype_uuid_t4274665131_StaticFields
-{
-public:
-	// System.Type System.Xml.Schema.Datatype_uuid::atomicValueType
-	Type_t * ___atomicValueType_93;
-	// System.Type System.Xml.Schema.Datatype_uuid::listValueType
-	Type_t * ___listValueType_94;
-
-public:
-	inline static int32_t get_offset_of_atomicValueType_93() { return static_cast<int32_t>(offsetof(Datatype_uuid_t4274665131_StaticFields, ___atomicValueType_93)); }
-	inline Type_t * get_atomicValueType_93() const { return ___atomicValueType_93; }
-	inline Type_t ** get_address_of_atomicValueType_93() { return &___atomicValueType_93; }
-	inline void set_atomicValueType_93(Type_t * value)
-	{
-		___atomicValueType_93 = value;
-		Il2CppCodeGenWriteBarrier((&___atomicValueType_93), value);
-	}
-
-	inline static int32_t get_offset_of_listValueType_94() { return static_cast<int32_t>(offsetof(Datatype_uuid_t4274665131_StaticFields, ___listValueType_94)); }
-	inline Type_t * get_listValueType_94() const { return ___listValueType_94; }
-	inline Type_t ** get_address_of_listValueType_94() { return &___listValueType_94; }
-	inline void set_listValueType_94(Type_t * value)
-	{
-		___listValueType_94 = value;
-		Il2CppCodeGenWriteBarrier((&___listValueType_94), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // DATATYPE_UUID_T4274665131_H
-#ifndef DATATYPE_HEXBINARY_T832080184_H
-#define DATATYPE_HEXBINARY_T832080184_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.Datatype_hexBinary
-struct  Datatype_hexBinary_t832080184  : public Datatype_anySimpleType_t2047875136
-{
-public:
-
-public:
-};
-
-struct Datatype_hexBinary_t832080184_StaticFields
-{
-public:
-	// System.Type System.Xml.Schema.Datatype_hexBinary::atomicValueType
-	Type_t * ___atomicValueType_93;
-	// System.Type System.Xml.Schema.Datatype_hexBinary::listValueType
-	Type_t * ___listValueType_94;
-
-public:
-	inline static int32_t get_offset_of_atomicValueType_93() { return static_cast<int32_t>(offsetof(Datatype_hexBinary_t832080184_StaticFields, ___atomicValueType_93)); }
-	inline Type_t * get_atomicValueType_93() const { return ___atomicValueType_93; }
-	inline Type_t ** get_address_of_atomicValueType_93() { return &___atomicValueType_93; }
-	inline void set_atomicValueType_93(Type_t * value)
-	{
-		___atomicValueType_93 = value;
-		Il2CppCodeGenWriteBarrier((&___atomicValueType_93), value);
-	}
-
-	inline static int32_t get_offset_of_listValueType_94() { return static_cast<int32_t>(offsetof(Datatype_hexBinary_t832080184_StaticFields, ___listValueType_94)); }
-	inline Type_t * get_listValueType_94() const { return ___listValueType_94; }
-	inline Type_t ** get_address_of_listValueType_94() { return &___listValueType_94; }
-	inline void set_listValueType_94(Type_t * value)
-	{
-		___listValueType_94 = value;
-		Il2CppCodeGenWriteBarrier((&___listValueType_94), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // DATATYPE_HEXBINARY_T832080184_H
-#ifndef XMLSCHEMAALL_T1118454309_H
-#define XMLSCHEMAALL_T1118454309_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.XmlSchemaAll
-struct  XmlSchemaAll_t1118454309  : public XmlSchemaGroupBase_t3631079376
-{
-public:
-	// System.Xml.Schema.XmlSchemaObjectCollection System.Xml.Schema.XmlSchemaAll::items
-	XmlSchemaObjectCollection_t1064819932 * ___items_13;
-
-public:
-	inline static int32_t get_offset_of_items_13() { return static_cast<int32_t>(offsetof(XmlSchemaAll_t1118454309, ___items_13)); }
-	inline XmlSchemaObjectCollection_t1064819932 * get_items_13() const { return ___items_13; }
-	inline XmlSchemaObjectCollection_t1064819932 ** get_address_of_items_13() { return &___items_13; }
-	inline void set_items_13(XmlSchemaObjectCollection_t1064819932 * value)
-	{
-		___items_13 = value;
-		Il2CppCodeGenWriteBarrier((&___items_13), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // XMLSCHEMAALL_T1118454309_H
-#ifndef XMLSCHEMASEQUENCE_T2018345177_H
-#define XMLSCHEMASEQUENCE_T2018345177_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.XmlSchemaSequence
-struct  XmlSchemaSequence_t2018345177  : public XmlSchemaGroupBase_t3631079376
-{
-public:
-	// System.Xml.Schema.XmlSchemaObjectCollection System.Xml.Schema.XmlSchemaSequence::items
-	XmlSchemaObjectCollection_t1064819932 * ___items_13;
-
-public:
-	inline static int32_t get_offset_of_items_13() { return static_cast<int32_t>(offsetof(XmlSchemaSequence_t2018345177, ___items_13)); }
-	inline XmlSchemaObjectCollection_t1064819932 * get_items_13() const { return ___items_13; }
-	inline XmlSchemaObjectCollection_t1064819932 ** get_address_of_items_13() { return &___items_13; }
-	inline void set_items_13(XmlSchemaObjectCollection_t1064819932 * value)
-	{
-		___items_13 = value;
-		Il2CppCodeGenWriteBarrier((&___items_13), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // XMLSCHEMASEQUENCE_T2018345177_H
-#ifndef XMLSCHEMACHOICE_T959520675_H
-#define XMLSCHEMACHOICE_T959520675_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.XmlSchemaChoice
-struct  XmlSchemaChoice_t959520675  : public XmlSchemaGroupBase_t3631079376
-{
-public:
-	// System.Xml.Schema.XmlSchemaObjectCollection System.Xml.Schema.XmlSchemaChoice::items
-	XmlSchemaObjectCollection_t1064819932 * ___items_13;
-
-public:
-	inline static int32_t get_offset_of_items_13() { return static_cast<int32_t>(offsetof(XmlSchemaChoice_t959520675, ___items_13)); }
-	inline XmlSchemaObjectCollection_t1064819932 * get_items_13() const { return ___items_13; }
-	inline XmlSchemaObjectCollection_t1064819932 ** get_address_of_items_13() { return &___items_13; }
-	inline void set_items_13(XmlSchemaObjectCollection_t1064819932 * value)
-	{
-		___items_13 = value;
-		Il2CppCodeGenWriteBarrier((&___items_13), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // XMLSCHEMACHOICE_T959520675_H
-#ifndef DATATYPE_DOUBLE_T3326302950_H
-#define DATATYPE_DOUBLE_T3326302950_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.Datatype_double
-struct  Datatype_double_t3326302950  : public Datatype_anySimpleType_t2047875136
-{
-public:
-
-public:
-};
-
-struct Datatype_double_t3326302950_StaticFields
-{
-public:
-	// System.Type System.Xml.Schema.Datatype_double::atomicValueType
-	Type_t * ___atomicValueType_93;
-	// System.Type System.Xml.Schema.Datatype_double::listValueType
-	Type_t * ___listValueType_94;
-
-public:
-	inline static int32_t get_offset_of_atomicValueType_93() { return static_cast<int32_t>(offsetof(Datatype_double_t3326302950_StaticFields, ___atomicValueType_93)); }
-	inline Type_t * get_atomicValueType_93() const { return ___atomicValueType_93; }
-	inline Type_t ** get_address_of_atomicValueType_93() { return &___atomicValueType_93; }
-	inline void set_atomicValueType_93(Type_t * value)
-	{
-		___atomicValueType_93 = value;
-		Il2CppCodeGenWriteBarrier((&___atomicValueType_93), value);
-	}
-
-	inline static int32_t get_offset_of_listValueType_94() { return static_cast<int32_t>(offsetof(Datatype_double_t3326302950_StaticFields, ___listValueType_94)); }
-	inline Type_t * get_listValueType_94() const { return ___listValueType_94; }
-	inline Type_t ** get_address_of_listValueType_94() { return &___listValueType_94; }
-	inline void set_listValueType_94(Type_t * value)
-	{
-		___listValueType_94 = value;
-		Il2CppCodeGenWriteBarrier((&___listValueType_94), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // DATATYPE_DOUBLE_T3326302950_H
-#ifndef DATATYPE_ANYATOMICTYPE_T2850754587_H
-#define DATATYPE_ANYATOMICTYPE_T2850754587_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.Datatype_anyAtomicType
-struct  Datatype_anyAtomicType_t2850754587  : public Datatype_anySimpleType_t2047875136
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // DATATYPE_ANYATOMICTYPE_T2850754587_H
-#ifndef XMLUNTYPEDCONVERTER_T295075985_H
-#define XMLUNTYPEDCONVERTER_T295075985_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.XmlUntypedConverter
-struct  XmlUntypedConverter_t295075985  : public XmlListConverter_t3889069996
-{
-public:
-	// System.Boolean System.Xml.Schema.XmlUntypedConverter::allowListToList
-	bool ___allowListToList_33;
-
-public:
-	inline static int32_t get_offset_of_allowListToList_33() { return static_cast<int32_t>(offsetof(XmlUntypedConverter_t295075985, ___allowListToList_33)); }
-	inline bool get_allowListToList_33() const { return ___allowListToList_33; }
-	inline bool* get_address_of_allowListToList_33() { return &___allowListToList_33; }
-	inline void set_allowListToList_33(bool value)
-	{
-		___allowListToList_33 = value;
-	}
-};
-
-struct XmlUntypedConverter_t295075985_StaticFields
-{
-public:
-	// System.Xml.Schema.XmlValueConverter System.Xml.Schema.XmlUntypedConverter::Untyped
-	XmlValueConverter_t585560190 * ___Untyped_34;
-	// System.Xml.Schema.XmlValueConverter System.Xml.Schema.XmlUntypedConverter::UntypedList
-	XmlValueConverter_t585560190 * ___UntypedList_35;
-
-public:
-	inline static int32_t get_offset_of_Untyped_34() { return static_cast<int32_t>(offsetof(XmlUntypedConverter_t295075985_StaticFields, ___Untyped_34)); }
-	inline XmlValueConverter_t585560190 * get_Untyped_34() const { return ___Untyped_34; }
-	inline XmlValueConverter_t585560190 ** get_address_of_Untyped_34() { return &___Untyped_34; }
-	inline void set_Untyped_34(XmlValueConverter_t585560190 * value)
-	{
-		___Untyped_34 = value;
-		Il2CppCodeGenWriteBarrier((&___Untyped_34), value);
-	}
-
-	inline static int32_t get_offset_of_UntypedList_35() { return static_cast<int32_t>(offsetof(XmlUntypedConverter_t295075985_StaticFields, ___UntypedList_35)); }
-	inline XmlValueConverter_t585560190 * get_UntypedList_35() const { return ___UntypedList_35; }
-	inline XmlValueConverter_t585560190 ** get_address_of_UntypedList_35() { return &___UntypedList_35; }
-	inline void set_UntypedList_35(XmlValueConverter_t585560190 * value)
-	{
-		___UntypedList_35 = value;
-		Il2CppCodeGenWriteBarrier((&___UntypedList_35), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // XMLUNTYPEDCONVERTER_T295075985_H
-#ifndef DATATYPE_UNION_T2755946225_H
-#define DATATYPE_UNION_T2755946225_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.Datatype_union
-struct  Datatype_union_t2755946225  : public Datatype_anySimpleType_t2047875136
-{
-public:
-	// System.Xml.Schema.XmlSchemaSimpleType[] System.Xml.Schema.Datatype_union::types
-	XmlSchemaSimpleTypeU5BU5D_t1394089049* ___types_95;
-
-public:
-	inline static int32_t get_offset_of_types_95() { return static_cast<int32_t>(offsetof(Datatype_union_t2755946225, ___types_95)); }
-	inline XmlSchemaSimpleTypeU5BU5D_t1394089049* get_types_95() const { return ___types_95; }
-	inline XmlSchemaSimpleTypeU5BU5D_t1394089049** get_address_of_types_95() { return &___types_95; }
-	inline void set_types_95(XmlSchemaSimpleTypeU5BU5D_t1394089049* value)
-	{
-		___types_95 = value;
-		Il2CppCodeGenWriteBarrier((&___types_95), value);
-	}
-};
-
-struct Datatype_union_t2755946225_StaticFields
-{
-public:
-	// System.Type System.Xml.Schema.Datatype_union::atomicValueType
-	Type_t * ___atomicValueType_93;
-	// System.Type System.Xml.Schema.Datatype_union::listValueType
-	Type_t * ___listValueType_94;
-
-public:
-	inline static int32_t get_offset_of_atomicValueType_93() { return static_cast<int32_t>(offsetof(Datatype_union_t2755946225_StaticFields, ___atomicValueType_93)); }
-	inline Type_t * get_atomicValueType_93() const { return ___atomicValueType_93; }
-	inline Type_t ** get_address_of_atomicValueType_93() { return &___atomicValueType_93; }
-	inline void set_atomicValueType_93(Type_t * value)
-	{
-		___atomicValueType_93 = value;
-		Il2CppCodeGenWriteBarrier((&___atomicValueType_93), value);
-	}
-
-	inline static int32_t get_offset_of_listValueType_94() { return static_cast<int32_t>(offsetof(Datatype_union_t2755946225_StaticFields, ___listValueType_94)); }
-	inline Type_t * get_listValueType_94() const { return ___listValueType_94; }
-	inline Type_t ** get_address_of_listValueType_94() { return &___listValueType_94; }
-	inline void set_listValueType_94(Type_t * value)
-	{
-		___listValueType_94 = value;
-		Il2CppCodeGenWriteBarrier((&___listValueType_94), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // DATATYPE_UNION_T2755946225_H
 #ifndef DATATYPE_ANYURI_T226280296_H
 #define DATATYPE_ANYURI_T226280296_H
 #ifdef __clang__
@@ -22455,142 +22045,6 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // DATATYPE_BASE64BINARY_T1981627472_H
-#ifndef DATATYPE_DURATION_T3364634137_H
-#define DATATYPE_DURATION_T3364634137_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.Datatype_duration
-struct  Datatype_duration_t3364634137  : public Datatype_anySimpleType_t2047875136
-{
-public:
-
-public:
-};
-
-struct Datatype_duration_t3364634137_StaticFields
-{
-public:
-	// System.Type System.Xml.Schema.Datatype_duration::atomicValueType
-	Type_t * ___atomicValueType_93;
-	// System.Type System.Xml.Schema.Datatype_duration::listValueType
-	Type_t * ___listValueType_94;
-
-public:
-	inline static int32_t get_offset_of_atomicValueType_93() { return static_cast<int32_t>(offsetof(Datatype_duration_t3364634137_StaticFields, ___atomicValueType_93)); }
-	inline Type_t * get_atomicValueType_93() const { return ___atomicValueType_93; }
-	inline Type_t ** get_address_of_atomicValueType_93() { return &___atomicValueType_93; }
-	inline void set_atomicValueType_93(Type_t * value)
-	{
-		___atomicValueType_93 = value;
-		Il2CppCodeGenWriteBarrier((&___atomicValueType_93), value);
-	}
-
-	inline static int32_t get_offset_of_listValueType_94() { return static_cast<int32_t>(offsetof(Datatype_duration_t3364634137_StaticFields, ___listValueType_94)); }
-	inline Type_t * get_listValueType_94() const { return ___listValueType_94; }
-	inline Type_t ** get_address_of_listValueType_94() { return &___listValueType_94; }
-	inline void set_listValueType_94(Type_t * value)
-	{
-		___listValueType_94 = value;
-		Il2CppCodeGenWriteBarrier((&___listValueType_94), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // DATATYPE_DURATION_T3364634137_H
-#ifndef DATATYPE_QNAMEXDR_T212135083_H
-#define DATATYPE_QNAMEXDR_T212135083_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.Datatype_QNameXdr
-struct  Datatype_QNameXdr_t212135083  : public Datatype_anySimpleType_t2047875136
-{
-public:
-
-public:
-};
-
-struct Datatype_QNameXdr_t212135083_StaticFields
-{
-public:
-	// System.Type System.Xml.Schema.Datatype_QNameXdr::atomicValueType
-	Type_t * ___atomicValueType_93;
-	// System.Type System.Xml.Schema.Datatype_QNameXdr::listValueType
-	Type_t * ___listValueType_94;
-
-public:
-	inline static int32_t get_offset_of_atomicValueType_93() { return static_cast<int32_t>(offsetof(Datatype_QNameXdr_t212135083_StaticFields, ___atomicValueType_93)); }
-	inline Type_t * get_atomicValueType_93() const { return ___atomicValueType_93; }
-	inline Type_t ** get_address_of_atomicValueType_93() { return &___atomicValueType_93; }
-	inline void set_atomicValueType_93(Type_t * value)
-	{
-		___atomicValueType_93 = value;
-		Il2CppCodeGenWriteBarrier((&___atomicValueType_93), value);
-	}
-
-	inline static int32_t get_offset_of_listValueType_94() { return static_cast<int32_t>(offsetof(Datatype_QNameXdr_t212135083_StaticFields, ___listValueType_94)); }
-	inline Type_t * get_listValueType_94() const { return ___listValueType_94; }
-	inline Type_t ** get_address_of_listValueType_94() { return &___listValueType_94; }
-	inline void set_listValueType_94(Type_t * value)
-	{
-		___listValueType_94 = value;
-		Il2CppCodeGenWriteBarrier((&___listValueType_94), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // DATATYPE_QNAMEXDR_T212135083_H
-#ifndef DATATYPE_LIST_T1895727199_H
-#define DATATYPE_LIST_T1895727199_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.Datatype_List
-struct  Datatype_List_t1895727199  : public Datatype_anySimpleType_t2047875136
-{
-public:
-	// System.Xml.Schema.DatatypeImplementation System.Xml.Schema.Datatype_List::itemType
-	DatatypeImplementation_t3722098011 * ___itemType_93;
-	// System.Int32 System.Xml.Schema.Datatype_List::minListSize
-	int32_t ___minListSize_94;
-
-public:
-	inline static int32_t get_offset_of_itemType_93() { return static_cast<int32_t>(offsetof(Datatype_List_t1895727199, ___itemType_93)); }
-	inline DatatypeImplementation_t3722098011 * get_itemType_93() const { return ___itemType_93; }
-	inline DatatypeImplementation_t3722098011 ** get_address_of_itemType_93() { return &___itemType_93; }
-	inline void set_itemType_93(DatatypeImplementation_t3722098011 * value)
-	{
-		___itemType_93 = value;
-		Il2CppCodeGenWriteBarrier((&___itemType_93), value);
-	}
-
-	inline static int32_t get_offset_of_minListSize_94() { return static_cast<int32_t>(offsetof(Datatype_List_t1895727199, ___minListSize_94)); }
-	inline int32_t get_minListSize_94() const { return ___minListSize_94; }
-	inline int32_t* get_address_of_minListSize_94() { return &___minListSize_94; }
-	inline void set_minListSize_94(int32_t value)
-	{
-		___minListSize_94 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // DATATYPE_LIST_T1895727199_H
 #ifndef DATATYPE_BOOLEAN_T2359498380_H
 #define DATATYPE_BOOLEAN_T2359498380_H
 #ifdef __clang__
@@ -22639,41 +22093,32 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // DATATYPE_BOOLEAN_T2359498380_H
-#ifndef DATATYPE_DATETIMEBASE_T894797718_H
-#define DATATYPE_DATETIMEBASE_T894797718_H
+#ifndef DATATYPE_NOTATION_T4293272563_H
+#define DATATYPE_NOTATION_T4293272563_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// System.Xml.Schema.Datatype_dateTimeBase
-struct  Datatype_dateTimeBase_t894797718  : public Datatype_anySimpleType_t2047875136
+// System.Xml.Schema.Datatype_NOTATION
+struct  Datatype_NOTATION_t4293272563  : public Datatype_anySimpleType_t2047875136
 {
 public:
-	// System.Xml.Schema.XsdDateTimeFlags System.Xml.Schema.Datatype_dateTimeBase::dateTimeFlags
-	int32_t ___dateTimeFlags_95;
 
 public:
-	inline static int32_t get_offset_of_dateTimeFlags_95() { return static_cast<int32_t>(offsetof(Datatype_dateTimeBase_t894797718, ___dateTimeFlags_95)); }
-	inline int32_t get_dateTimeFlags_95() const { return ___dateTimeFlags_95; }
-	inline int32_t* get_address_of_dateTimeFlags_95() { return &___dateTimeFlags_95; }
-	inline void set_dateTimeFlags_95(int32_t value)
-	{
-		___dateTimeFlags_95 = value;
-	}
 };
 
-struct Datatype_dateTimeBase_t894797718_StaticFields
+struct Datatype_NOTATION_t4293272563_StaticFields
 {
 public:
-	// System.Type System.Xml.Schema.Datatype_dateTimeBase::atomicValueType
+	// System.Type System.Xml.Schema.Datatype_NOTATION::atomicValueType
 	Type_t * ___atomicValueType_93;
-	// System.Type System.Xml.Schema.Datatype_dateTimeBase::listValueType
+	// System.Type System.Xml.Schema.Datatype_NOTATION::listValueType
 	Type_t * ___listValueType_94;
 
 public:
-	inline static int32_t get_offset_of_atomicValueType_93() { return static_cast<int32_t>(offsetof(Datatype_dateTimeBase_t894797718_StaticFields, ___atomicValueType_93)); }
+	inline static int32_t get_offset_of_atomicValueType_93() { return static_cast<int32_t>(offsetof(Datatype_NOTATION_t4293272563_StaticFields, ___atomicValueType_93)); }
 	inline Type_t * get_atomicValueType_93() const { return ___atomicValueType_93; }
 	inline Type_t ** get_address_of_atomicValueType_93() { return &___atomicValueType_93; }
 	inline void set_atomicValueType_93(Type_t * value)
@@ -22682,7 +22127,7 @@ public:
 		Il2CppCodeGenWriteBarrier((&___atomicValueType_93), value);
 	}
 
-	inline static int32_t get_offset_of_listValueType_94() { return static_cast<int32_t>(offsetof(Datatype_dateTimeBase_t894797718_StaticFields, ___listValueType_94)); }
+	inline static int32_t get_offset_of_listValueType_94() { return static_cast<int32_t>(offsetof(Datatype_NOTATION_t4293272563_StaticFields, ___listValueType_94)); }
 	inline Type_t * get_listValueType_94() const { return ___listValueType_94; }
 	inline Type_t ** get_address_of_listValueType_94() { return &___listValueType_94; }
 	inline void set_listValueType_94(Type_t * value)
@@ -22695,7 +22140,447 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // DATATYPE_DATETIMEBASE_T894797718_H
+#endif // DATATYPE_NOTATION_T4293272563_H
+#ifndef DATATYPE_UUID_T4274665131_H
+#define DATATYPE_UUID_T4274665131_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.Datatype_uuid
+struct  Datatype_uuid_t4274665131  : public Datatype_anySimpleType_t2047875136
+{
+public:
+
+public:
+};
+
+struct Datatype_uuid_t4274665131_StaticFields
+{
+public:
+	// System.Type System.Xml.Schema.Datatype_uuid::atomicValueType
+	Type_t * ___atomicValueType_93;
+	// System.Type System.Xml.Schema.Datatype_uuid::listValueType
+	Type_t * ___listValueType_94;
+
+public:
+	inline static int32_t get_offset_of_atomicValueType_93() { return static_cast<int32_t>(offsetof(Datatype_uuid_t4274665131_StaticFields, ___atomicValueType_93)); }
+	inline Type_t * get_atomicValueType_93() const { return ___atomicValueType_93; }
+	inline Type_t ** get_address_of_atomicValueType_93() { return &___atomicValueType_93; }
+	inline void set_atomicValueType_93(Type_t * value)
+	{
+		___atomicValueType_93 = value;
+		Il2CppCodeGenWriteBarrier((&___atomicValueType_93), value);
+	}
+
+	inline static int32_t get_offset_of_listValueType_94() { return static_cast<int32_t>(offsetof(Datatype_uuid_t4274665131_StaticFields, ___listValueType_94)); }
+	inline Type_t * get_listValueType_94() const { return ___listValueType_94; }
+	inline Type_t ** get_address_of_listValueType_94() { return &___listValueType_94; }
+	inline void set_listValueType_94(Type_t * value)
+	{
+		___listValueType_94 = value;
+		Il2CppCodeGenWriteBarrier((&___listValueType_94), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // DATATYPE_UUID_T4274665131_H
+#ifndef XMLSCHEMAALL_T1118454309_H
+#define XMLSCHEMAALL_T1118454309_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.XmlSchemaAll
+struct  XmlSchemaAll_t1118454309  : public XmlSchemaGroupBase_t3631079376
+{
+public:
+	// System.Xml.Schema.XmlSchemaObjectCollection System.Xml.Schema.XmlSchemaAll::items
+	XmlSchemaObjectCollection_t1064819932 * ___items_13;
+
+public:
+	inline static int32_t get_offset_of_items_13() { return static_cast<int32_t>(offsetof(XmlSchemaAll_t1118454309, ___items_13)); }
+	inline XmlSchemaObjectCollection_t1064819932 * get_items_13() const { return ___items_13; }
+	inline XmlSchemaObjectCollection_t1064819932 ** get_address_of_items_13() { return &___items_13; }
+	inline void set_items_13(XmlSchemaObjectCollection_t1064819932 * value)
+	{
+		___items_13 = value;
+		Il2CppCodeGenWriteBarrier((&___items_13), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // XMLSCHEMAALL_T1118454309_H
+#ifndef XMLSCHEMASEQUENCE_T2018345177_H
+#define XMLSCHEMASEQUENCE_T2018345177_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.XmlSchemaSequence
+struct  XmlSchemaSequence_t2018345177  : public XmlSchemaGroupBase_t3631079376
+{
+public:
+	// System.Xml.Schema.XmlSchemaObjectCollection System.Xml.Schema.XmlSchemaSequence::items
+	XmlSchemaObjectCollection_t1064819932 * ___items_13;
+
+public:
+	inline static int32_t get_offset_of_items_13() { return static_cast<int32_t>(offsetof(XmlSchemaSequence_t2018345177, ___items_13)); }
+	inline XmlSchemaObjectCollection_t1064819932 * get_items_13() const { return ___items_13; }
+	inline XmlSchemaObjectCollection_t1064819932 ** get_address_of_items_13() { return &___items_13; }
+	inline void set_items_13(XmlSchemaObjectCollection_t1064819932 * value)
+	{
+		___items_13 = value;
+		Il2CppCodeGenWriteBarrier((&___items_13), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // XMLSCHEMASEQUENCE_T2018345177_H
+#ifndef DATATYPE_UNION_T2755946225_H
+#define DATATYPE_UNION_T2755946225_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.Datatype_union
+struct  Datatype_union_t2755946225  : public Datatype_anySimpleType_t2047875136
+{
+public:
+	// System.Xml.Schema.XmlSchemaSimpleType[] System.Xml.Schema.Datatype_union::types
+	XmlSchemaSimpleTypeU5BU5D_t1394089049* ___types_95;
+
+public:
+	inline static int32_t get_offset_of_types_95() { return static_cast<int32_t>(offsetof(Datatype_union_t2755946225, ___types_95)); }
+	inline XmlSchemaSimpleTypeU5BU5D_t1394089049* get_types_95() const { return ___types_95; }
+	inline XmlSchemaSimpleTypeU5BU5D_t1394089049** get_address_of_types_95() { return &___types_95; }
+	inline void set_types_95(XmlSchemaSimpleTypeU5BU5D_t1394089049* value)
+	{
+		___types_95 = value;
+		Il2CppCodeGenWriteBarrier((&___types_95), value);
+	}
+};
+
+struct Datatype_union_t2755946225_StaticFields
+{
+public:
+	// System.Type System.Xml.Schema.Datatype_union::atomicValueType
+	Type_t * ___atomicValueType_93;
+	// System.Type System.Xml.Schema.Datatype_union::listValueType
+	Type_t * ___listValueType_94;
+
+public:
+	inline static int32_t get_offset_of_atomicValueType_93() { return static_cast<int32_t>(offsetof(Datatype_union_t2755946225_StaticFields, ___atomicValueType_93)); }
+	inline Type_t * get_atomicValueType_93() const { return ___atomicValueType_93; }
+	inline Type_t ** get_address_of_atomicValueType_93() { return &___atomicValueType_93; }
+	inline void set_atomicValueType_93(Type_t * value)
+	{
+		___atomicValueType_93 = value;
+		Il2CppCodeGenWriteBarrier((&___atomicValueType_93), value);
+	}
+
+	inline static int32_t get_offset_of_listValueType_94() { return static_cast<int32_t>(offsetof(Datatype_union_t2755946225_StaticFields, ___listValueType_94)); }
+	inline Type_t * get_listValueType_94() const { return ___listValueType_94; }
+	inline Type_t ** get_address_of_listValueType_94() { return &___listValueType_94; }
+	inline void set_listValueType_94(Type_t * value)
+	{
+		___listValueType_94 = value;
+		Il2CppCodeGenWriteBarrier((&___listValueType_94), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // DATATYPE_UNION_T2755946225_H
+#ifndef DATATYPE_QNAME_T1237340231_H
+#define DATATYPE_QNAME_T1237340231_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.Datatype_QName
+struct  Datatype_QName_t1237340231  : public Datatype_anySimpleType_t2047875136
+{
+public:
+
+public:
+};
+
+struct Datatype_QName_t1237340231_StaticFields
+{
+public:
+	// System.Type System.Xml.Schema.Datatype_QName::atomicValueType
+	Type_t * ___atomicValueType_93;
+	// System.Type System.Xml.Schema.Datatype_QName::listValueType
+	Type_t * ___listValueType_94;
+
+public:
+	inline static int32_t get_offset_of_atomicValueType_93() { return static_cast<int32_t>(offsetof(Datatype_QName_t1237340231_StaticFields, ___atomicValueType_93)); }
+	inline Type_t * get_atomicValueType_93() const { return ___atomicValueType_93; }
+	inline Type_t ** get_address_of_atomicValueType_93() { return &___atomicValueType_93; }
+	inline void set_atomicValueType_93(Type_t * value)
+	{
+		___atomicValueType_93 = value;
+		Il2CppCodeGenWriteBarrier((&___atomicValueType_93), value);
+	}
+
+	inline static int32_t get_offset_of_listValueType_94() { return static_cast<int32_t>(offsetof(Datatype_QName_t1237340231_StaticFields, ___listValueType_94)); }
+	inline Type_t * get_listValueType_94() const { return ___listValueType_94; }
+	inline Type_t ** get_address_of_listValueType_94() { return &___listValueType_94; }
+	inline void set_listValueType_94(Type_t * value)
+	{
+		___listValueType_94 = value;
+		Il2CppCodeGenWriteBarrier((&___listValueType_94), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // DATATYPE_QNAME_T1237340231_H
+#ifndef XMLSCHEMACHOICE_T959520675_H
+#define XMLSCHEMACHOICE_T959520675_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.XmlSchemaChoice
+struct  XmlSchemaChoice_t959520675  : public XmlSchemaGroupBase_t3631079376
+{
+public:
+	// System.Xml.Schema.XmlSchemaObjectCollection System.Xml.Schema.XmlSchemaChoice::items
+	XmlSchemaObjectCollection_t1064819932 * ___items_13;
+
+public:
+	inline static int32_t get_offset_of_items_13() { return static_cast<int32_t>(offsetof(XmlSchemaChoice_t959520675, ___items_13)); }
+	inline XmlSchemaObjectCollection_t1064819932 * get_items_13() const { return ___items_13; }
+	inline XmlSchemaObjectCollection_t1064819932 ** get_address_of_items_13() { return &___items_13; }
+	inline void set_items_13(XmlSchemaObjectCollection_t1064819932 * value)
+	{
+		___items_13 = value;
+		Il2CppCodeGenWriteBarrier((&___items_13), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // XMLSCHEMACHOICE_T959520675_H
+#ifndef DATATYPE_ANYATOMICTYPE_T2850754587_H
+#define DATATYPE_ANYATOMICTYPE_T2850754587_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.Datatype_anyAtomicType
+struct  Datatype_anyAtomicType_t2850754587  : public Datatype_anySimpleType_t2047875136
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // DATATYPE_ANYATOMICTYPE_T2850754587_H
+#ifndef XMLUNTYPEDCONVERTER_T295075985_H
+#define XMLUNTYPEDCONVERTER_T295075985_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.XmlUntypedConverter
+struct  XmlUntypedConverter_t295075985  : public XmlListConverter_t3889069996
+{
+public:
+	// System.Boolean System.Xml.Schema.XmlUntypedConverter::allowListToList
+	bool ___allowListToList_33;
+
+public:
+	inline static int32_t get_offset_of_allowListToList_33() { return static_cast<int32_t>(offsetof(XmlUntypedConverter_t295075985, ___allowListToList_33)); }
+	inline bool get_allowListToList_33() const { return ___allowListToList_33; }
+	inline bool* get_address_of_allowListToList_33() { return &___allowListToList_33; }
+	inline void set_allowListToList_33(bool value)
+	{
+		___allowListToList_33 = value;
+	}
+};
+
+struct XmlUntypedConverter_t295075985_StaticFields
+{
+public:
+	// System.Xml.Schema.XmlValueConverter System.Xml.Schema.XmlUntypedConverter::Untyped
+	XmlValueConverter_t585560190 * ___Untyped_34;
+	// System.Xml.Schema.XmlValueConverter System.Xml.Schema.XmlUntypedConverter::UntypedList
+	XmlValueConverter_t585560190 * ___UntypedList_35;
+
+public:
+	inline static int32_t get_offset_of_Untyped_34() { return static_cast<int32_t>(offsetof(XmlUntypedConverter_t295075985_StaticFields, ___Untyped_34)); }
+	inline XmlValueConverter_t585560190 * get_Untyped_34() const { return ___Untyped_34; }
+	inline XmlValueConverter_t585560190 ** get_address_of_Untyped_34() { return &___Untyped_34; }
+	inline void set_Untyped_34(XmlValueConverter_t585560190 * value)
+	{
+		___Untyped_34 = value;
+		Il2CppCodeGenWriteBarrier((&___Untyped_34), value);
+	}
+
+	inline static int32_t get_offset_of_UntypedList_35() { return static_cast<int32_t>(offsetof(XmlUntypedConverter_t295075985_StaticFields, ___UntypedList_35)); }
+	inline XmlValueConverter_t585560190 * get_UntypedList_35() const { return ___UntypedList_35; }
+	inline XmlValueConverter_t585560190 ** get_address_of_UntypedList_35() { return &___UntypedList_35; }
+	inline void set_UntypedList_35(XmlValueConverter_t585560190 * value)
+	{
+		___UntypedList_35 = value;
+		Il2CppCodeGenWriteBarrier((&___UntypedList_35), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // XMLUNTYPEDCONVERTER_T295075985_H
+#ifndef DATATYPE_STRING_T1920293864_H
+#define DATATYPE_STRING_T1920293864_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.Datatype_string
+struct  Datatype_string_t1920293864  : public Datatype_anySimpleType_t2047875136
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // DATATYPE_STRING_T1920293864_H
+#ifndef DATATYPE_LIST_T1895727199_H
+#define DATATYPE_LIST_T1895727199_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.Datatype_List
+struct  Datatype_List_t1895727199  : public Datatype_anySimpleType_t2047875136
+{
+public:
+	// System.Xml.Schema.DatatypeImplementation System.Xml.Schema.Datatype_List::itemType
+	DatatypeImplementation_t3722098011 * ___itemType_93;
+	// System.Int32 System.Xml.Schema.Datatype_List::minListSize
+	int32_t ___minListSize_94;
+
+public:
+	inline static int32_t get_offset_of_itemType_93() { return static_cast<int32_t>(offsetof(Datatype_List_t1895727199, ___itemType_93)); }
+	inline DatatypeImplementation_t3722098011 * get_itemType_93() const { return ___itemType_93; }
+	inline DatatypeImplementation_t3722098011 ** get_address_of_itemType_93() { return &___itemType_93; }
+	inline void set_itemType_93(DatatypeImplementation_t3722098011 * value)
+	{
+		___itemType_93 = value;
+		Il2CppCodeGenWriteBarrier((&___itemType_93), value);
+	}
+
+	inline static int32_t get_offset_of_minListSize_94() { return static_cast<int32_t>(offsetof(Datatype_List_t1895727199, ___minListSize_94)); }
+	inline int32_t get_minListSize_94() const { return ___minListSize_94; }
+	inline int32_t* get_address_of_minListSize_94() { return &___minListSize_94; }
+	inline void set_minListSize_94(int32_t value)
+	{
+		___minListSize_94 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // DATATYPE_LIST_T1895727199_H
+#ifndef DATATYPE_DECIMAL_T1359240665_H
+#define DATATYPE_DECIMAL_T1359240665_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.Datatype_decimal
+struct  Datatype_decimal_t1359240665  : public Datatype_anySimpleType_t2047875136
+{
+public:
+
+public:
+};
+
+struct Datatype_decimal_t1359240665_StaticFields
+{
+public:
+	// System.Type System.Xml.Schema.Datatype_decimal::atomicValueType
+	Type_t * ___atomicValueType_93;
+	// System.Type System.Xml.Schema.Datatype_decimal::listValueType
+	Type_t * ___listValueType_94;
+	// System.Xml.Schema.FacetsChecker System.Xml.Schema.Datatype_decimal::numeric10FacetsChecker
+	FacetsChecker_t3316496195 * ___numeric10FacetsChecker_95;
+
+public:
+	inline static int32_t get_offset_of_atomicValueType_93() { return static_cast<int32_t>(offsetof(Datatype_decimal_t1359240665_StaticFields, ___atomicValueType_93)); }
+	inline Type_t * get_atomicValueType_93() const { return ___atomicValueType_93; }
+	inline Type_t ** get_address_of_atomicValueType_93() { return &___atomicValueType_93; }
+	inline void set_atomicValueType_93(Type_t * value)
+	{
+		___atomicValueType_93 = value;
+		Il2CppCodeGenWriteBarrier((&___atomicValueType_93), value);
+	}
+
+	inline static int32_t get_offset_of_listValueType_94() { return static_cast<int32_t>(offsetof(Datatype_decimal_t1359240665_StaticFields, ___listValueType_94)); }
+	inline Type_t * get_listValueType_94() const { return ___listValueType_94; }
+	inline Type_t ** get_address_of_listValueType_94() { return &___listValueType_94; }
+	inline void set_listValueType_94(Type_t * value)
+	{
+		___listValueType_94 = value;
+		Il2CppCodeGenWriteBarrier((&___listValueType_94), value);
+	}
+
+	inline static int32_t get_offset_of_numeric10FacetsChecker_95() { return static_cast<int32_t>(offsetof(Datatype_decimal_t1359240665_StaticFields, ___numeric10FacetsChecker_95)); }
+	inline FacetsChecker_t3316496195 * get_numeric10FacetsChecker_95() const { return ___numeric10FacetsChecker_95; }
+	inline FacetsChecker_t3316496195 ** get_address_of_numeric10FacetsChecker_95() { return &___numeric10FacetsChecker_95; }
+	inline void set_numeric10FacetsChecker_95(FacetsChecker_t3316496195 * value)
+	{
+		___numeric10FacetsChecker_95 = value;
+		Il2CppCodeGenWriteBarrier((&___numeric10FacetsChecker_95), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // DATATYPE_DECIMAL_T1359240665_H
 #ifndef DATATYPE_FLOAT_T3587079609_H
 #define DATATYPE_FLOAT_T3587079609_H
 #ifdef __clang__
@@ -22744,46 +22629,150 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // DATATYPE_FLOAT_T3587079609_H
-#ifndef DATATYPE_YEARMONTH_T2619692512_H
-#define DATATYPE_YEARMONTH_T2619692512_H
+#ifndef DATATYPE_DURATION_T3364634137_H
+#define DATATYPE_DURATION_T3364634137_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// System.Xml.Schema.Datatype_yearMonth
-struct  Datatype_yearMonth_t2619692512  : public Datatype_dateTimeBase_t894797718
+// System.Xml.Schema.Datatype_duration
+struct  Datatype_duration_t3364634137  : public Datatype_anySimpleType_t2047875136
 {
 public:
 
 public:
 };
 
+struct Datatype_duration_t3364634137_StaticFields
+{
+public:
+	// System.Type System.Xml.Schema.Datatype_duration::atomicValueType
+	Type_t * ___atomicValueType_93;
+	// System.Type System.Xml.Schema.Datatype_duration::listValueType
+	Type_t * ___listValueType_94;
+
+public:
+	inline static int32_t get_offset_of_atomicValueType_93() { return static_cast<int32_t>(offsetof(Datatype_duration_t3364634137_StaticFields, ___atomicValueType_93)); }
+	inline Type_t * get_atomicValueType_93() const { return ___atomicValueType_93; }
+	inline Type_t ** get_address_of_atomicValueType_93() { return &___atomicValueType_93; }
+	inline void set_atomicValueType_93(Type_t * value)
+	{
+		___atomicValueType_93 = value;
+		Il2CppCodeGenWriteBarrier((&___atomicValueType_93), value);
+	}
+
+	inline static int32_t get_offset_of_listValueType_94() { return static_cast<int32_t>(offsetof(Datatype_duration_t3364634137_StaticFields, ___listValueType_94)); }
+	inline Type_t * get_listValueType_94() const { return ___listValueType_94; }
+	inline Type_t ** get_address_of_listValueType_94() { return &___listValueType_94; }
+	inline void set_listValueType_94(Type_t * value)
+	{
+		___listValueType_94 = value;
+		Il2CppCodeGenWriteBarrier((&___listValueType_94), value);
+	}
+};
+
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // DATATYPE_YEARMONTH_T2619692512_H
-#ifndef DATATYPE_YEAR_T247753121_H
-#define DATATYPE_YEAR_T247753121_H
+#endif // DATATYPE_DURATION_T3364634137_H
+#ifndef DATATYPE_DOUBLE_T3326302950_H
+#define DATATYPE_DOUBLE_T3326302950_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// System.Xml.Schema.Datatype_year
-struct  Datatype_year_t247753121  : public Datatype_dateTimeBase_t894797718
+// System.Xml.Schema.Datatype_double
+struct  Datatype_double_t3326302950  : public Datatype_anySimpleType_t2047875136
 {
 public:
 
 public:
 };
 
+struct Datatype_double_t3326302950_StaticFields
+{
+public:
+	// System.Type System.Xml.Schema.Datatype_double::atomicValueType
+	Type_t * ___atomicValueType_93;
+	// System.Type System.Xml.Schema.Datatype_double::listValueType
+	Type_t * ___listValueType_94;
+
+public:
+	inline static int32_t get_offset_of_atomicValueType_93() { return static_cast<int32_t>(offsetof(Datatype_double_t3326302950_StaticFields, ___atomicValueType_93)); }
+	inline Type_t * get_atomicValueType_93() const { return ___atomicValueType_93; }
+	inline Type_t ** get_address_of_atomicValueType_93() { return &___atomicValueType_93; }
+	inline void set_atomicValueType_93(Type_t * value)
+	{
+		___atomicValueType_93 = value;
+		Il2CppCodeGenWriteBarrier((&___atomicValueType_93), value);
+	}
+
+	inline static int32_t get_offset_of_listValueType_94() { return static_cast<int32_t>(offsetof(Datatype_double_t3326302950_StaticFields, ___listValueType_94)); }
+	inline Type_t * get_listValueType_94() const { return ___listValueType_94; }
+	inline Type_t ** get_address_of_listValueType_94() { return &___listValueType_94; }
+	inline void set_listValueType_94(Type_t * value)
+	{
+		___listValueType_94 = value;
+		Il2CppCodeGenWriteBarrier((&___listValueType_94), value);
+	}
+};
+
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // DATATYPE_YEAR_T247753121_H
+#endif // DATATYPE_DOUBLE_T3326302950_H
+#ifndef DATATYPE_HEXBINARY_T832080184_H
+#define DATATYPE_HEXBINARY_T832080184_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.Datatype_hexBinary
+struct  Datatype_hexBinary_t832080184  : public Datatype_anySimpleType_t2047875136
+{
+public:
+
+public:
+};
+
+struct Datatype_hexBinary_t832080184_StaticFields
+{
+public:
+	// System.Type System.Xml.Schema.Datatype_hexBinary::atomicValueType
+	Type_t * ___atomicValueType_93;
+	// System.Type System.Xml.Schema.Datatype_hexBinary::listValueType
+	Type_t * ___listValueType_94;
+
+public:
+	inline static int32_t get_offset_of_atomicValueType_93() { return static_cast<int32_t>(offsetof(Datatype_hexBinary_t832080184_StaticFields, ___atomicValueType_93)); }
+	inline Type_t * get_atomicValueType_93() const { return ___atomicValueType_93; }
+	inline Type_t ** get_address_of_atomicValueType_93() { return &___atomicValueType_93; }
+	inline void set_atomicValueType_93(Type_t * value)
+	{
+		___atomicValueType_93 = value;
+		Il2CppCodeGenWriteBarrier((&___atomicValueType_93), value);
+	}
+
+	inline static int32_t get_offset_of_listValueType_94() { return static_cast<int32_t>(offsetof(Datatype_hexBinary_t832080184_StaticFields, ___listValueType_94)); }
+	inline Type_t * get_listValueType_94() const { return ___listValueType_94; }
+	inline Type_t ** get_address_of_listValueType_94() { return &___listValueType_94; }
+	inline void set_listValueType_94(Type_t * value)
+	{
+		___listValueType_94 = value;
+		Il2CppCodeGenWriteBarrier((&___listValueType_94), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // DATATYPE_HEXBINARY_T832080184_H
 #ifndef DATATYPE_TIME_T2842733386_H
 #define DATATYPE_TIME_T2842733386_H
 #ifdef __clang__
@@ -22804,86 +22793,6 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // DATATYPE_TIME_T2842733386_H
-#ifndef DATATYPE_UNTYPEDATOMICTYPE_T3800711885_H
-#define DATATYPE_UNTYPEDATOMICTYPE_T3800711885_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.Datatype_untypedAtomicType
-struct  Datatype_untypedAtomicType_t3800711885  : public Datatype_anyAtomicType_t2850754587
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // DATATYPE_UNTYPEDATOMICTYPE_T3800711885_H
-#ifndef DATATYPE_DATETIME_T43631080_H
-#define DATATYPE_DATETIME_T43631080_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.Datatype_dateTime
-struct  Datatype_dateTime_t43631080  : public Datatype_dateTimeBase_t894797718
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // DATATYPE_DATETIME_T43631080_H
-#ifndef DATATYPE_DATE_T698985298_H
-#define DATATYPE_DATE_T698985298_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.Datatype_date
-struct  Datatype_date_t698985298  : public Datatype_dateTimeBase_t894797718
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // DATATYPE_DATE_T698985298_H
-#ifndef DATATYPE_YEARMONTHDURATION_T4143275826_H
-#define DATATYPE_YEARMONTHDURATION_T4143275826_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.Datatype_yearMonthDuration
-struct  Datatype_yearMonthDuration_t4143275826  : public Datatype_duration_t3364634137
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // DATATYPE_YEARMONTHDURATION_T4143275826_H
 #ifndef DATATYPE_TIMENOTIMEZONE_T754936586_H
 #define DATATYPE_TIMENOTIMEZONE_T754936586_H
 #ifdef __clang__
@@ -22904,6 +22813,166 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // DATATYPE_TIMENOTIMEZONE_T754936586_H
+#ifndef DATATYPE_FIXED_T23833418_H
+#define DATATYPE_FIXED_T23833418_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.Datatype_fixed
+struct  Datatype_fixed_t23833418  : public Datatype_decimal_t1359240665
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // DATATYPE_FIXED_T23833418_H
+#ifndef DATATYPE_NORMALIZEDSTRING_T1516036709_H
+#define DATATYPE_NORMALIZEDSTRING_T1516036709_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.Datatype_normalizedString
+struct  Datatype_normalizedString_t1516036709  : public Datatype_string_t1920293864
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // DATATYPE_NORMALIZEDSTRING_T1516036709_H
+#ifndef DATATYPE_FLOATXDR_T452511709_H
+#define DATATYPE_FLOATXDR_T452511709_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.Datatype_floatXdr
+struct  Datatype_floatXdr_t452511709  : public Datatype_float_t3587079609
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // DATATYPE_FLOATXDR_T452511709_H
+#ifndef DATATYPE_DATETIME_T43631080_H
+#define DATATYPE_DATETIME_T43631080_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.Datatype_dateTime
+struct  Datatype_dateTime_t43631080  : public Datatype_dateTimeBase_t894797718
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // DATATYPE_DATETIME_T43631080_H
+#ifndef DATATYPE_YEAR_T247753121_H
+#define DATATYPE_YEAR_T247753121_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.Datatype_year
+struct  Datatype_year_t247753121  : public Datatype_dateTimeBase_t894797718
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // DATATYPE_YEAR_T247753121_H
+#ifndef DATATYPE_DOUBLEXDR_T1639101184_H
+#define DATATYPE_DOUBLEXDR_T1639101184_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.Datatype_doubleXdr
+struct  Datatype_doubleXdr_t1639101184  : public Datatype_double_t3326302950
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // DATATYPE_DOUBLEXDR_T1639101184_H
+#ifndef DATATYPE_DATE_T698985298_H
+#define DATATYPE_DATE_T698985298_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.Datatype_date
+struct  Datatype_date_t698985298  : public Datatype_dateTimeBase_t894797718
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // DATATYPE_DATE_T698985298_H
+#ifndef DATATYPE_YEARMONTH_T2619692512_H
+#define DATATYPE_YEARMONTH_T2619692512_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.Datatype_yearMonth
+struct  Datatype_yearMonth_t2619692512  : public Datatype_dateTimeBase_t894797718
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // DATATYPE_YEARMONTH_T2619692512_H
 #ifndef DATATYPE_TIMETIMEZONE_T860425332_H
 #define DATATYPE_TIMETIMEZONE_T860425332_H
 #ifdef __clang__
@@ -22924,6 +22993,66 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // DATATYPE_TIMETIMEZONE_T860425332_H
+#ifndef DATATYPE_UNTYPEDATOMICTYPE_T3800711885_H
+#define DATATYPE_UNTYPEDATOMICTYPE_T3800711885_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.Datatype_untypedAtomicType
+struct  Datatype_untypedAtomicType_t3800711885  : public Datatype_anyAtomicType_t2850754587
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // DATATYPE_UNTYPEDATOMICTYPE_T3800711885_H
+#ifndef DATATYPE_YEARMONTHDURATION_T4143275826_H
+#define DATATYPE_YEARMONTHDURATION_T4143275826_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.Datatype_yearMonthDuration
+struct  Datatype_yearMonthDuration_t4143275826  : public Datatype_duration_t3364634137
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // DATATYPE_YEARMONTHDURATION_T4143275826_H
+#ifndef DATATYPE_DAYTIMEDURATION_T3431722653_H
+#define DATATYPE_DAYTIMEDURATION_T3431722653_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.Datatype_dayTimeDuration
+struct  Datatype_dayTimeDuration_t3431722653  : public Datatype_duration_t3364634137
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // DATATYPE_DAYTIMEDURATION_T3431722653_H
 #ifndef DATATYPE_INTEGER_T3081037420_H
 #define DATATYPE_INTEGER_T3081037420_H
 #ifdef __clang__
@@ -22944,6 +23073,86 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // DATATYPE_INTEGER_T3081037420_H
+#ifndef DATATYPE_DATETIMETIMEZONE_T1783870026_H
+#define DATATYPE_DATETIMETIMEZONE_T1783870026_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.Datatype_dateTimeTimeZone
+struct  Datatype_dateTimeTimeZone_t1783870026  : public Datatype_dateTimeBase_t894797718
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // DATATYPE_DATETIMETIMEZONE_T1783870026_H
+#ifndef DATATYPE_MONTHDAY_T1270122073_H
+#define DATATYPE_MONTHDAY_T1270122073_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.Datatype_monthDay
+struct  Datatype_monthDay_t1270122073  : public Datatype_dateTimeBase_t894797718
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // DATATYPE_MONTHDAY_T1270122073_H
+#ifndef DATATYPE_MONTH_T2717417573_H
+#define DATATYPE_MONTH_T2717417573_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.Datatype_month
+struct  Datatype_month_t2717417573  : public Datatype_dateTimeBase_t894797718
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // DATATYPE_MONTH_T2717417573_H
+#ifndef DATATYPE_NORMALIZEDSTRINGV1COMPAT_T3388692121_H
+#define DATATYPE_NORMALIZEDSTRINGV1COMPAT_T3388692121_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.Datatype_normalizedStringV1Compat
+struct  Datatype_normalizedStringV1Compat_t3388692121  : public Datatype_string_t1920293864
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // DATATYPE_NORMALIZEDSTRINGV1COMPAT_T3388692121_H
 #ifndef DATATYPE_DAY_T2842289531_H
 #define DATATYPE_DAY_T2842289531_H
 #ifdef __clang__
@@ -22984,206 +23193,6 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // DATATYPE_DATETIMENOTIMEZONE_T2375174474_H
-#ifndef DATATYPE_DAYTIMEDURATION_T3431722653_H
-#define DATATYPE_DAYTIMEDURATION_T3431722653_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.Datatype_dayTimeDuration
-struct  Datatype_dayTimeDuration_t3431722653  : public Datatype_duration_t3364634137
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // DATATYPE_DAYTIMEDURATION_T3431722653_H
-#ifndef DATATYPE_MONTH_T2717417573_H
-#define DATATYPE_MONTH_T2717417573_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.Datatype_month
-struct  Datatype_month_t2717417573  : public Datatype_dateTimeBase_t894797718
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // DATATYPE_MONTH_T2717417573_H
-#ifndef DATATYPE_MONTHDAY_T1270122073_H
-#define DATATYPE_MONTHDAY_T1270122073_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.Datatype_monthDay
-struct  Datatype_monthDay_t1270122073  : public Datatype_dateTimeBase_t894797718
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // DATATYPE_MONTHDAY_T1270122073_H
-#ifndef DATATYPE_FLOATXDR_T452511709_H
-#define DATATYPE_FLOATXDR_T452511709_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.Datatype_floatXdr
-struct  Datatype_floatXdr_t452511709  : public Datatype_float_t3587079609
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // DATATYPE_FLOATXDR_T452511709_H
-#ifndef DATATYPE_FIXED_T23833418_H
-#define DATATYPE_FIXED_T23833418_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.Datatype_fixed
-struct  Datatype_fixed_t23833418  : public Datatype_decimal_t1359240665
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // DATATYPE_FIXED_T23833418_H
-#ifndef DATATYPE_DATETIMETIMEZONE_T1783870026_H
-#define DATATYPE_DATETIMETIMEZONE_T1783870026_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.Datatype_dateTimeTimeZone
-struct  Datatype_dateTimeTimeZone_t1783870026  : public Datatype_dateTimeBase_t894797718
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // DATATYPE_DATETIMETIMEZONE_T1783870026_H
-#ifndef DATATYPE_DOUBLEXDR_T1639101184_H
-#define DATATYPE_DOUBLEXDR_T1639101184_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.Datatype_doubleXdr
-struct  Datatype_doubleXdr_t1639101184  : public Datatype_double_t3326302950
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // DATATYPE_DOUBLEXDR_T1639101184_H
-#ifndef DATATYPE_NORMALIZEDSTRING_T1516036709_H
-#define DATATYPE_NORMALIZEDSTRING_T1516036709_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.Datatype_normalizedString
-struct  Datatype_normalizedString_t1516036709  : public Datatype_string_t1920293864
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // DATATYPE_NORMALIZEDSTRING_T1516036709_H
-#ifndef DATATYPE_NORMALIZEDSTRINGV1COMPAT_T3388692121_H
-#define DATATYPE_NORMALIZEDSTRINGV1COMPAT_T3388692121_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.Datatype_normalizedStringV1Compat
-struct  Datatype_normalizedStringV1Compat_t3388692121  : public Datatype_string_t1920293864
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // DATATYPE_NORMALIZEDSTRINGV1COMPAT_T3388692121_H
-#ifndef DATATYPE_TOKENV1COMPAT_T1894073828_H
-#define DATATYPE_TOKENV1COMPAT_T1894073828_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.Datatype_tokenV1Compat
-struct  Datatype_tokenV1Compat_t1894073828  : public Datatype_normalizedStringV1Compat_t3388692121
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // DATATYPE_TOKENV1COMPAT_T1894073828_H
 #ifndef DATATYPE_TOKEN_T3046419280_H
 #define DATATYPE_TOKEN_T3046419280_H
 #ifdef __clang__
@@ -23241,6 +23250,63 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // DATATYPE_NONNEGATIVEINTEGER_T176994707_H
+#ifndef DATATYPE_NONPOSITIVEINTEGER_T2802591516_H
+#define DATATYPE_NONPOSITIVEINTEGER_T2802591516_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.Datatype_nonPositiveInteger
+struct  Datatype_nonPositiveInteger_t2802591516  : public Datatype_integer_t3081037420
+{
+public:
+
+public:
+};
+
+struct Datatype_nonPositiveInteger_t2802591516_StaticFields
+{
+public:
+	// System.Xml.Schema.FacetsChecker System.Xml.Schema.Datatype_nonPositiveInteger::numeric10FacetsChecker
+	FacetsChecker_t3316496195 * ___numeric10FacetsChecker_96;
+
+public:
+	inline static int32_t get_offset_of_numeric10FacetsChecker_96() { return static_cast<int32_t>(offsetof(Datatype_nonPositiveInteger_t2802591516_StaticFields, ___numeric10FacetsChecker_96)); }
+	inline FacetsChecker_t3316496195 * get_numeric10FacetsChecker_96() const { return ___numeric10FacetsChecker_96; }
+	inline FacetsChecker_t3316496195 ** get_address_of_numeric10FacetsChecker_96() { return &___numeric10FacetsChecker_96; }
+	inline void set_numeric10FacetsChecker_96(FacetsChecker_t3316496195 * value)
+	{
+		___numeric10FacetsChecker_96 = value;
+		Il2CppCodeGenWriteBarrier((&___numeric10FacetsChecker_96), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // DATATYPE_NONPOSITIVEINTEGER_T2802591516_H
+#ifndef DATATYPE_TOKENV1COMPAT_T1894073828_H
+#define DATATYPE_TOKENV1COMPAT_T1894073828_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.Datatype_tokenV1Compat
+struct  Datatype_tokenV1Compat_t1894073828  : public Datatype_normalizedStringV1Compat_t3388692121
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // DATATYPE_TOKENV1COMPAT_T1894073828_H
 #ifndef DATATYPE_LONG_T2761736730_H
 #define DATATYPE_LONG_T2761736730_H
 #ifdef __clang__
@@ -23300,43 +23366,6 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // DATATYPE_LONG_T2761736730_H
-#ifndef DATATYPE_NONPOSITIVEINTEGER_T2802591516_H
-#define DATATYPE_NONPOSITIVEINTEGER_T2802591516_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.Datatype_nonPositiveInteger
-struct  Datatype_nonPositiveInteger_t2802591516  : public Datatype_integer_t3081037420
-{
-public:
-
-public:
-};
-
-struct Datatype_nonPositiveInteger_t2802591516_StaticFields
-{
-public:
-	// System.Xml.Schema.FacetsChecker System.Xml.Schema.Datatype_nonPositiveInteger::numeric10FacetsChecker
-	FacetsChecker_t3316496195 * ___numeric10FacetsChecker_96;
-
-public:
-	inline static int32_t get_offset_of_numeric10FacetsChecker_96() { return static_cast<int32_t>(offsetof(Datatype_nonPositiveInteger_t2802591516_StaticFields, ___numeric10FacetsChecker_96)); }
-	inline FacetsChecker_t3316496195 * get_numeric10FacetsChecker_96() const { return ___numeric10FacetsChecker_96; }
-	inline FacetsChecker_t3316496195 ** get_address_of_numeric10FacetsChecker_96() { return &___numeric10FacetsChecker_96; }
-	inline void set_numeric10FacetsChecker_96(FacetsChecker_t3316496195 * value)
-	{
-		___numeric10FacetsChecker_96 = value;
-		Il2CppCodeGenWriteBarrier((&___numeric10FacetsChecker_96), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // DATATYPE_NONPOSITIVEINTEGER_T2802591516_H
 #ifndef DATATYPE_UNSIGNEDLONG_T2935370556_H
 #define DATATYPE_UNSIGNEDLONG_T2935370556_H
 #ifdef __clang__
@@ -23396,16 +23425,16 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // DATATYPE_UNSIGNEDLONG_T2935370556_H
-#ifndef DATATYPE_LANGUAGE_T3744995565_H
-#define DATATYPE_LANGUAGE_T3744995565_H
+#ifndef DATATYPE_NAME_T3646073682_H
+#define DATATYPE_NAME_T3646073682_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// System.Xml.Schema.Datatype_language
-struct  Datatype_language_t3744995565  : public Datatype_token_t3046419280
+// System.Xml.Schema.Datatype_Name
+struct  Datatype_Name_t3646073682  : public Datatype_token_t3046419280
 {
 public:
 
@@ -23415,7 +23444,64 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // DATATYPE_LANGUAGE_T3744995565_H
+#endif // DATATYPE_NAME_T3646073682_H
+#ifndef DATATYPE_NEGATIVEINTEGER_T3449831544_H
+#define DATATYPE_NEGATIVEINTEGER_T3449831544_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.Datatype_negativeInteger
+struct  Datatype_negativeInteger_t3449831544  : public Datatype_nonPositiveInteger_t2802591516
+{
+public:
+
+public:
+};
+
+struct Datatype_negativeInteger_t3449831544_StaticFields
+{
+public:
+	// System.Xml.Schema.FacetsChecker System.Xml.Schema.Datatype_negativeInteger::numeric10FacetsChecker
+	FacetsChecker_t3316496195 * ___numeric10FacetsChecker_97;
+
+public:
+	inline static int32_t get_offset_of_numeric10FacetsChecker_97() { return static_cast<int32_t>(offsetof(Datatype_negativeInteger_t3449831544_StaticFields, ___numeric10FacetsChecker_97)); }
+	inline FacetsChecker_t3316496195 * get_numeric10FacetsChecker_97() const { return ___numeric10FacetsChecker_97; }
+	inline FacetsChecker_t3316496195 ** get_address_of_numeric10FacetsChecker_97() { return &___numeric10FacetsChecker_97; }
+	inline void set_numeric10FacetsChecker_97(FacetsChecker_t3316496195 * value)
+	{
+		___numeric10FacetsChecker_97 = value;
+		Il2CppCodeGenWriteBarrier((&___numeric10FacetsChecker_97), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // DATATYPE_NEGATIVEINTEGER_T3449831544_H
+#ifndef DATATYPE_NMTOKEN_T1058486603_H
+#define DATATYPE_NMTOKEN_T1058486603_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.Datatype_NMTOKEN
+struct  Datatype_NMTOKEN_t1058486603  : public Datatype_token_t3046419280
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // DATATYPE_NMTOKEN_T1058486603_H
 #ifndef DATATYPE_INT_T3179799928_H
 #define DATATYPE_INT_T3179799928_H
 #ifdef __clang__
@@ -23475,16 +23561,16 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // DATATYPE_INT_T3179799928_H
-#ifndef DATATYPE_NAME_T3646073682_H
-#define DATATYPE_NAME_T3646073682_H
+#ifndef DATATYPE_LANGUAGE_T3744995565_H
+#define DATATYPE_LANGUAGE_T3744995565_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// System.Xml.Schema.Datatype_Name
-struct  Datatype_Name_t3646073682  : public Datatype_token_t3046419280
+// System.Xml.Schema.Datatype_language
+struct  Datatype_language_t3744995565  : public Datatype_token_t3046419280
 {
 public:
 
@@ -23494,44 +23580,7 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // DATATYPE_NAME_T3646073682_H
-#ifndef DATATYPE_NEGATIVEINTEGER_T3449831544_H
-#define DATATYPE_NEGATIVEINTEGER_T3449831544_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.Datatype_negativeInteger
-struct  Datatype_negativeInteger_t3449831544  : public Datatype_nonPositiveInteger_t2802591516
-{
-public:
-
-public:
-};
-
-struct Datatype_negativeInteger_t3449831544_StaticFields
-{
-public:
-	// System.Xml.Schema.FacetsChecker System.Xml.Schema.Datatype_negativeInteger::numeric10FacetsChecker
-	FacetsChecker_t3316496195 * ___numeric10FacetsChecker_97;
-
-public:
-	inline static int32_t get_offset_of_numeric10FacetsChecker_97() { return static_cast<int32_t>(offsetof(Datatype_negativeInteger_t3449831544_StaticFields, ___numeric10FacetsChecker_97)); }
-	inline FacetsChecker_t3316496195 * get_numeric10FacetsChecker_97() const { return ___numeric10FacetsChecker_97; }
-	inline FacetsChecker_t3316496195 ** get_address_of_numeric10FacetsChecker_97() { return &___numeric10FacetsChecker_97; }
-	inline void set_numeric10FacetsChecker_97(FacetsChecker_t3316496195 * value)
-	{
-		___numeric10FacetsChecker_97 = value;
-		Il2CppCodeGenWriteBarrier((&___numeric10FacetsChecker_97), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // DATATYPE_NEGATIVEINTEGER_T3449831544_H
+#endif // DATATYPE_LANGUAGE_T3744995565_H
 #ifndef DATATYPE_POSITIVEINTEGER_T1742605520_H
 #define DATATYPE_POSITIVEINTEGER_T1742605520_H
 #ifdef __clang__
@@ -23569,46 +23618,6 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // DATATYPE_POSITIVEINTEGER_T1742605520_H
-#ifndef DATATYPE_NMTOKEN_T1058486603_H
-#define DATATYPE_NMTOKEN_T1058486603_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.Datatype_NMTOKEN
-struct  Datatype_NMTOKEN_t1058486603  : public Datatype_token_t3046419280
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // DATATYPE_NMTOKEN_T1058486603_H
-#ifndef DATATYPE_NCNAME_T1492892963_H
-#define DATATYPE_NCNAME_T1492892963_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.Datatype_NCName
-struct  Datatype_NCName_t1492892963  : public Datatype_Name_t3646073682
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // DATATYPE_NCNAME_T1492892963_H
 #ifndef DATATYPE_UNSIGNEDINT_T3360771685_H
 #define DATATYPE_UNSIGNEDINT_T3360771685_H
 #ifdef __clang__
@@ -23668,6 +23677,46 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // DATATYPE_UNSIGNEDINT_T3360771685_H
+#ifndef DATATYPE_NCNAME_T1492892963_H
+#define DATATYPE_NCNAME_T1492892963_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.Datatype_NCName
+struct  Datatype_NCName_t1492892963  : public Datatype_Name_t3646073682
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // DATATYPE_NCNAME_T1492892963_H
+#ifndef DATATYPE_ENUMERATION_T381889926_H
+#define DATATYPE_ENUMERATION_T381889926_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Xml.Schema.Datatype_ENUMERATION
+struct  Datatype_ENUMERATION_t381889926  : public Datatype_NMTOKEN_t1058486603
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // DATATYPE_ENUMERATION_T381889926_H
 #ifndef DATATYPE_SHORT_T223373716_H
 #define DATATYPE_SHORT_T223373716_H
 #ifdef __clang__
@@ -23727,16 +23776,16 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // DATATYPE_SHORT_T223373716_H
-#ifndef DATATYPE_ENUMERATION_T381889926_H
-#define DATATYPE_ENUMERATION_T381889926_H
+#ifndef DATATYPE_IDREF_T3633135317_H
+#define DATATYPE_IDREF_T3633135317_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// System.Xml.Schema.Datatype_ENUMERATION
-struct  Datatype_ENUMERATION_t381889926  : public Datatype_NMTOKEN_t1058486603
+// System.Xml.Schema.Datatype_IDREF
+struct  Datatype_IDREF_t3633135317  : public Datatype_NCName_t1492892963
 {
 public:
 
@@ -23746,7 +23795,7 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // DATATYPE_ENUMERATION_T381889926_H
+#endif // DATATYPE_IDREF_T3633135317_H
 #ifndef DATATYPE_UNSIGNEDSHORT_T2654615006_H
 #define DATATYPE_UNSIGNEDSHORT_T2654615006_H
 #ifdef __clang__
@@ -23806,16 +23855,16 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // DATATYPE_UNSIGNEDSHORT_T2654615006_H
-#ifndef DATATYPE_IDREF_T3633135317_H
-#define DATATYPE_IDREF_T3633135317_H
+#ifndef DATATYPE_ID_T1360258462_H
+#define DATATYPE_ID_T1360258462_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// System.Xml.Schema.Datatype_IDREF
-struct  Datatype_IDREF_t3633135317  : public Datatype_NCName_t1492892963
+// System.Xml.Schema.Datatype_ID
+struct  Datatype_ID_t1360258462  : public Datatype_NCName_t1492892963
 {
 public:
 
@@ -23825,7 +23874,7 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // DATATYPE_IDREF_T3633135317_H
+#endif // DATATYPE_ID_T1360258462_H
 #ifndef DATATYPE_ENTITY_T1727132940_H
 #define DATATYPE_ENTITY_T1727132940_H
 #ifdef __clang__
@@ -23905,26 +23954,6 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // DATATYPE_BYTE_T4190612282_H
-#ifndef DATATYPE_ID_T1360258462_H
-#define DATATYPE_ID_T1360258462_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Xml.Schema.Datatype_ID
-struct  Datatype_ID_t1360258462  : public Datatype_NCName_t1492892963
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // DATATYPE_ID_T1360258462_H
 #ifndef DATATYPE_UNSIGNEDBYTE_T3646638576_H
 #define DATATYPE_UNSIGNEDBYTE_T3646638576_H
 #ifdef __clang__

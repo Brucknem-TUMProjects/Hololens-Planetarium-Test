@@ -64,8 +64,8 @@ extern const uint32_t NativeUpdateCallback_BeginInvoke_m1903744170_MetadataUsage
 struct DelegateU5BU5D_t1703627840;
 
 
-#ifndef U3CMODULEU3E_T692745541_H
-#define U3CMODULEU3E_T692745541_H
+#ifndef U3CMODULEU3E_T692745543_H
+#define U3CMODULEU3E_T692745543_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -73,7 +73,7 @@ struct DelegateU5BU5D_t1703627840;
 #endif
 
 // <Module>
-struct  U3CModuleU3E_t692745541 
+struct  U3CModuleU3E_t692745543 
 {
 public:
 
@@ -83,7 +83,7 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // U3CMODULEU3E_T692745541_H
+#endif // U3CMODULEU3E_T692745543_H
 #ifndef RUNTIMEOBJECT_H
 #define RUNTIMEOBJECT_H
 #ifdef __clang__

@@ -9,6 +9,16 @@
 <type fullname="RotateAsteroids" preserve="all"/>
 <type fullname="SunScript" preserve="all"/>
 <type fullname="SpaceCollectionManager" preserve="all"/>
+<type fullname="CircumSphereTest" preserve="all"/>
+<type fullname="HaloScript" preserve="all"/>
+<type fullname="MonoCircumSphere" preserve="all"/>
+<type fullname="MonoMeasurement3D" preserve="all"/>
+<type fullname="MonoTetrahedron" preserve="all"/>
+<type fullname="Spin" preserve="all"/>
+<type fullname="Synchronizer" preserve="all"/>
+<type fullname="DelaunayTriangulatorTest" preserve="all"/>
+<type fullname="DelaunayTriangulator" preserve="all"/>
+<type fullname="ScaleSphere" preserve="all"/>
 <type fullname="Academy.HoloToolkit.Unity.BasicCursor" preserve="all"/>
 <type fullname="Academy.HoloToolkit.Unity.GazeManager" preserve="all"/>
 <type fullname="Academy.HoloToolkit.Unity.GestureManager" preserve="all"/>
@@ -24,5 +34,21 @@
 </assembly>
 <assembly fullname="UnityEngine.Analytics">
 <type fullname="UnityEngine.Analytics.AnalyticsTracker" preserve="all"/>
+</assembly>
+<assembly fullname="UnityEngine.Networking">
+<type fullname="UnityEngine.Networking.NetworkAnimator" preserve="all"/>
+<type fullname="UnityEngine.Networking.NetworkBehaviour" preserve="all"/>
+<type fullname="UnityEngine.Networking.NetworkDiscovery" preserve="all"/>
+<type fullname="UnityEngine.Networking.NetworkIdentity" preserve="all"/>
+<type fullname="UnityEngine.Networking.NetworkLobbyManager" preserve="all"/>
+<type fullname="UnityEngine.Networking.NetworkLobbyPlayer" preserve="all"/>
+<type fullname="UnityEngine.Networking.NetworkManager" preserve="all"/>
+<type fullname="UnityEngine.Networking.NetworkManagerHUD" preserve="all"/>
+<type fullname="UnityEngine.Networking.NetworkMigrationManager" preserve="all"/>
+<type fullname="UnityEngine.Networking.NetworkProximityChecker" preserve="all"/>
+<type fullname="UnityEngine.Networking.NetworkStartPosition" preserve="all"/>
+<type fullname="UnityEngine.Networking.NetworkTransformChild" preserve="all"/>
+<type fullname="UnityEngine.Networking.NetworkTransform" preserve="all"/>
+<type fullname="UnityEngine.Networking.NetworkTransformVisualizer" preserve="all"/>
 </assembly>
 </linker>

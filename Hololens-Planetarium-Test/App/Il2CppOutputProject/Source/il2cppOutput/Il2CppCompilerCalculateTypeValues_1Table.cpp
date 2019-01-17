@@ -1632,15 +1632,15 @@ struct Double_t594665363_StaticFields
 {
 public:
 	// System.Double System.Double::NegativeZero
-	double ___NegativeZero_1;
+	double ___NegativeZero_7;
 
 public:
-	inline static int32_t get_offset_of_NegativeZero_1() { return static_cast<int32_t>(offsetof(Double_t594665363_StaticFields, ___NegativeZero_1)); }
-	inline double get_NegativeZero_1() const { return ___NegativeZero_1; }
-	inline double* get_address_of_NegativeZero_1() { return &___NegativeZero_1; }
-	inline void set_NegativeZero_1(double value)
+	inline static int32_t get_offset_of_NegativeZero_7() { return static_cast<int32_t>(offsetof(Double_t594665363_StaticFields, ___NegativeZero_7)); }
+	inline double get_NegativeZero_7() const { return ___NegativeZero_7; }
+	inline double* get_address_of_NegativeZero_7() { return &___NegativeZero_7; }
+	inline void set_NegativeZero_7(double value)
 	{
-		___NegativeZero_1 = value;
+		___NegativeZero_7 = value;
 	}
 };
 
@@ -5147,10 +5147,16 @@ extern const int32_t g_FieldOffsetTable185[1] =
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize186 = { sizeof (DivideByZeroException_t1856388118), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize187 = { sizeof (DllNotFoundException_t2721418633), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize188 = { sizeof (Double_t594665363)+ sizeof (RuntimeObject), sizeof(double), sizeof(Double_t594665363_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable188[2] = 
+extern const int32_t g_FieldOffsetTable188[8] = 
 {
 	Double_t594665363::get_offset_of_m_value_0() + static_cast<int32_t>(sizeof(RuntimeObject)),
-	Double_t594665363_StaticFields::get_offset_of_NegativeZero_1(),
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	Double_t594665363_StaticFields::get_offset_of_NegativeZero_7(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize189 = { sizeof (Empty_t4129602447), -1, sizeof(Empty_t4129602447_StaticFields), 0 };
 extern const int32_t g_FieldOffsetTable189[1] = 
