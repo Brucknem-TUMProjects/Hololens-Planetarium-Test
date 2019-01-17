@@ -4543,6 +4543,7 @@ const RuntimeMethod* GameObject_GetComponent_TisBoxCollider_t1640800422_m3684288
 const RuntimeMethod* Singleton_1_get_Instance_m2756163245_RuntimeMethod_var;
 const RuntimeMethod* Singleton_1_get_Instance_m326874703_RuntimeMethod_var;
 const RuntimeMethod* PlaySpaceManager_SurfaceMeshesToPlanes_MakePlanesComplete_m2157667331_RuntimeMethod_var;
+const RuntimeMethod* Singleton_1_get_Instance_m2992904100_RuntimeMethod_var;
 const RuntimeMethod* Singleton_1_get_Instance_m1213117786_RuntimeMethod_var;
 const RuntimeMethod* Singleton_1__ctor_m3523159683_RuntimeMethod_var;
 const RuntimeMethod* GameObject_GetComponent_TisPlaceable_t3832491248_m1456197239_RuntimeMethod_var;
@@ -13522,7 +13523,7 @@ Il2CppCodeGenString* _stringLiteral153292483;
 Il2CppCodeGenString* _stringLiteral3179058573;
 Il2CppCodeGenString* _stringLiteral4055290125;
 Il2CppCodeGenString* _stringLiteral1864861238;
-extern void** const g_MetadataUsages[13505] = 
+extern void** const g_MetadataUsages[13506] = 
 {
 	(void**)(&KeyHandler_t326058990_0_0_0_var),
 	(void**)(&ExceptionU5BU5D_t2535001212_0_0_0_var),
@@ -18050,6 +18051,7 @@ extern void** const g_MetadataUsages[13505] =
 	(void**)(&Singleton_1_get_Instance_m2756163245_RuntimeMethod_var),
 	(void**)(&Singleton_1_get_Instance_m326874703_RuntimeMethod_var),
 	(void**)(&PlaySpaceManager_SurfaceMeshesToPlanes_MakePlanesComplete_m2157667331_RuntimeMethod_var),
+	(void**)(&Singleton_1_get_Instance_m2992904100_RuntimeMethod_var),
 	(void**)(&Singleton_1_get_Instance_m1213117786_RuntimeMethod_var),
 	(void**)(&Singleton_1__ctor_m3523159683_RuntimeMethod_var),
 	(void**)(&GameObject_GetComponent_TisPlaceable_t3832491248_m1456197239_RuntimeMethod_var),

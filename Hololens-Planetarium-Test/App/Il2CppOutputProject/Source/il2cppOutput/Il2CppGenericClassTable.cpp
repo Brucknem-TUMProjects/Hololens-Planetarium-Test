@@ -5005,6 +5005,7 @@ extern Il2CppGenericClass Singleton_1_t1981749587_GenericClass;
 extern Il2CppGenericClass Singleton_1_t519971157_GenericClass;
 extern Il2CppGenericClass Singleton_1_t1285849372_GenericClass;
 extern Il2CppGenericClass Singleton_1_t553500764_GenericClass;
+extern Il2CppGenericClass Singleton_1_t3950512390_GenericClass;
 extern Il2CppGenericClass Singleton_1_t2133741618_GenericClass;
 extern Il2CppGenericClass Singleton_1_t2107270930_GenericClass;
 extern Il2CppGenericClass Dictionary_2_t1612343321_GenericClass;
@@ -5065,7 +5066,6 @@ extern Il2CppGenericClass IEnumerable_1_t2989868377_GenericClass;
 extern Il2CppGenericClass IReadOnlyList_1_t279471098_GenericClass;
 extern Il2CppGenericClass IReadOnlyCollection_1_t4013131425_GenericClass;
 extern Il2CppGenericClass Enumerator_t3566526096_GenericClass;
-extern Il2CppGenericClass Singleton_1_t3950512390_GenericClass;
 extern Il2CppGenericClass Singleton_1_t699597289_GenericClass;
 extern Il2CppGenericClass IEnumerator_1_t3956196130_GenericClass;
 extern Il2CppGenericClass InternalEnumerator_1_t135722483_GenericClass;
@@ -10634,6 +10634,7 @@ extern Il2CppGenericClass* const s_Il2CppGenericTypes[5622] =
 	&Singleton_1_t519971157_GenericClass,
 	&Singleton_1_t1285849372_GenericClass,
 	&Singleton_1_t553500764_GenericClass,
+	&Singleton_1_t3950512390_GenericClass,
 	&Singleton_1_t2133741618_GenericClass,
 	&Singleton_1_t2107270930_GenericClass,
 	&Dictionary_2_t1612343321_GenericClass,
@@ -10694,7 +10695,6 @@ extern Il2CppGenericClass* const s_Il2CppGenericTypes[5622] =
 	&IReadOnlyList_1_t279471098_GenericClass,
 	&IReadOnlyCollection_1_t4013131425_GenericClass,
 	&Enumerator_t3566526096_GenericClass,
-	&Singleton_1_t3950512390_GenericClass,
 	&Singleton_1_t699597289_GenericClass,
 	&IEnumerator_1_t3956196130_GenericClass,
 	&InternalEnumerator_1_t135722483_GenericClass,

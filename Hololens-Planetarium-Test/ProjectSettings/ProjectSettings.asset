@@ -552,7 +552,7 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: Hololens-Planetarium-Test
   metroPackageVersion: 1.0.0.0
-  metroCertificatePath: C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\Assets\WSATestCertificate.pfx
+  metroCertificatePath: Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
   metroCertificateSubject: DefaultCompany
   metroCertificateIssuer: DefaultCompany

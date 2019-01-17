@@ -210,14 +210,14 @@ struct PlanetOrbit_t414475461;
 struct SunScript_t2425216091;
 // PlaySpaceManager
 struct PlaySpaceManager_t1603794533;
+// SpaceCollectionManager
+struct SpaceCollectionManager_t4268457551;
 // UnityEngine.Behaviour
 struct Behaviour_t1437897464;
 // Academy.HoloToolkit.Unity.Singleton`1<PlaySpaceManager>
 struct Singleton_1_t1285849372;
 // RotateAsteroids
 struct RotateAsteroids_t3120026818;
-// SpaceCollectionManager
-struct SpaceCollectionManager_t4268457551;
 // System.Comparison`1<UnityEngine.GameObject>
 struct Comparison_1_t888567798;
 // System.Comparison`1<System.Object>
@@ -697,6 +697,7 @@ extern const uint32_t PlanetOrbit_Update_m3159768074_MetadataUsageId;
 extern const RuntimeMethod* PlaySpaceManager_SurfaceMeshesToPlanes_MakePlanesComplete_m2157667331_RuntimeMethod_var;
 extern const uint32_t PlaySpaceManager_Start_m147592077_MetadataUsageId;
 extern const uint32_t PlaySpaceManager_Update_m3010364273_MetadataUsageId;
+extern const RuntimeMethod* Singleton_1_get_Instance_m2992904100_RuntimeMethod_var;
 extern const uint32_t PlaySpaceManager_SurfaceMeshesToPlanes_MakePlanesComplete_m2157667331_MetadataUsageId;
 extern const uint32_t PlaySpaceManager_CreatePlanes_m2019505149_MetadataUsageId;
 extern const RuntimeMethod* Singleton_1_get_Instance_m1213117786_RuntimeMethod_var;
@@ -8636,6 +8637,84 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // SINGLETON_1_T1362397344_H
+#ifndef SINGLETON_1_T2133741618_H
+#define SINGLETON_1_T2133741618_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// Academy.HoloToolkit.Unity.Singleton`1<Academy.HoloToolkit.Unity.RemoveSurfaceVertices>
+struct  Singleton_1_t2133741618  : public MonoBehaviour_t3962482529
+{
+public:
+
+public:
+};
+
+struct Singleton_1_t2133741618_StaticFields
+{
+public:
+	// T Academy.HoloToolkit.Unity.Singleton`1::_Instance
+	RemoveSurfaceVertices_t2451686779 * ____Instance_2;
+
+public:
+	inline static int32_t get_offset_of__Instance_2() { return static_cast<int32_t>(offsetof(Singleton_1_t2133741618_StaticFields, ____Instance_2)); }
+	inline RemoveSurfaceVertices_t2451686779 * get__Instance_2() const { return ____Instance_2; }
+	inline RemoveSurfaceVertices_t2451686779 ** get_address_of__Instance_2() { return &____Instance_2; }
+	inline void set__Instance_2(RemoveSurfaceVertices_t2451686779 * value)
+	{
+		____Instance_2 = value;
+		Il2CppCodeGenWriteBarrier((&____Instance_2), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // SINGLETON_1_T2133741618_H
+#ifndef PLANETOCCLUSION_T3210342137_H
+#define PLANETOCCLUSION_T3210342137_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// PlanetOcclusion
+struct  PlanetOcclusion_t3210342137  : public MonoBehaviour_t3962482529
+{
+public:
+	// UnityEngine.GameObject PlanetOcclusion::occlusionObject
+	GameObject_t1113636619 * ___occlusionObject_2;
+	// UnityEngine.Vector3[] PlanetOcclusion::checkPoints
+	Vector3U5BU5D_t1718750761* ___checkPoints_3;
+
+public:
+	inline static int32_t get_offset_of_occlusionObject_2() { return static_cast<int32_t>(offsetof(PlanetOcclusion_t3210342137, ___occlusionObject_2)); }
+	inline GameObject_t1113636619 * get_occlusionObject_2() const { return ___occlusionObject_2; }
+	inline GameObject_t1113636619 ** get_address_of_occlusionObject_2() { return &___occlusionObject_2; }
+	inline void set_occlusionObject_2(GameObject_t1113636619 * value)
+	{
+		___occlusionObject_2 = value;
+		Il2CppCodeGenWriteBarrier((&___occlusionObject_2), value);
+	}
+
+	inline static int32_t get_offset_of_checkPoints_3() { return static_cast<int32_t>(offsetof(PlanetOcclusion_t3210342137, ___checkPoints_3)); }
+	inline Vector3U5BU5D_t1718750761* get_checkPoints_3() const { return ___checkPoints_3; }
+	inline Vector3U5BU5D_t1718750761** get_address_of_checkPoints_3() { return &___checkPoints_3; }
+	inline void set_checkPoints_3(Vector3U5BU5D_t1718750761* value)
+	{
+		___checkPoints_3 = value;
+		Il2CppCodeGenWriteBarrier((&___checkPoints_3), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // PLANETOCCLUSION_T3210342137_H
 #ifndef PLANETORBIT_T414475461_H
 #define PLANETORBIT_T414475461_H
 #ifdef __clang__
@@ -8696,84 +8775,6 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // PLANETORBIT_T414475461_H
-#ifndef PLANETOCCLUSION_T3210342137_H
-#define PLANETOCCLUSION_T3210342137_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// PlanetOcclusion
-struct  PlanetOcclusion_t3210342137  : public MonoBehaviour_t3962482529
-{
-public:
-	// UnityEngine.GameObject PlanetOcclusion::occlusionObject
-	GameObject_t1113636619 * ___occlusionObject_2;
-	// UnityEngine.Vector3[] PlanetOcclusion::checkPoints
-	Vector3U5BU5D_t1718750761* ___checkPoints_3;
-
-public:
-	inline static int32_t get_offset_of_occlusionObject_2() { return static_cast<int32_t>(offsetof(PlanetOcclusion_t3210342137, ___occlusionObject_2)); }
-	inline GameObject_t1113636619 * get_occlusionObject_2() const { return ___occlusionObject_2; }
-	inline GameObject_t1113636619 ** get_address_of_occlusionObject_2() { return &___occlusionObject_2; }
-	inline void set_occlusionObject_2(GameObject_t1113636619 * value)
-	{
-		___occlusionObject_2 = value;
-		Il2CppCodeGenWriteBarrier((&___occlusionObject_2), value);
-	}
-
-	inline static int32_t get_offset_of_checkPoints_3() { return static_cast<int32_t>(offsetof(PlanetOcclusion_t3210342137, ___checkPoints_3)); }
-	inline Vector3U5BU5D_t1718750761* get_checkPoints_3() const { return ___checkPoints_3; }
-	inline Vector3U5BU5D_t1718750761** get_address_of_checkPoints_3() { return &___checkPoints_3; }
-	inline void set_checkPoints_3(Vector3U5BU5D_t1718750761* value)
-	{
-		___checkPoints_3 = value;
-		Il2CppCodeGenWriteBarrier((&___checkPoints_3), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // PLANETOCCLUSION_T3210342137_H
-#ifndef SINGLETON_1_T2133741618_H
-#define SINGLETON_1_T2133741618_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// Academy.HoloToolkit.Unity.Singleton`1<Academy.HoloToolkit.Unity.RemoveSurfaceVertices>
-struct  Singleton_1_t2133741618  : public MonoBehaviour_t3962482529
-{
-public:
-
-public:
-};
-
-struct Singleton_1_t2133741618_StaticFields
-{
-public:
-	// T Academy.HoloToolkit.Unity.Singleton`1::_Instance
-	RemoveSurfaceVertices_t2451686779 * ____Instance_2;
-
-public:
-	inline static int32_t get_offset_of__Instance_2() { return static_cast<int32_t>(offsetof(Singleton_1_t2133741618_StaticFields, ____Instance_2)); }
-	inline RemoveSurfaceVertices_t2451686779 * get__Instance_2() const { return ____Instance_2; }
-	inline RemoveSurfaceVertices_t2451686779 ** get_address_of__Instance_2() { return &____Instance_2; }
-	inline void set__Instance_2(RemoveSurfaceVertices_t2451686779 * value)
-	{
-		____Instance_2 = value;
-		Il2CppCodeGenWriteBarrier((&____Instance_2), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // SINGLETON_1_T2133741618_H
 #ifndef PLACEABLE_T3832491248_H
 #define PLACEABLE_T3832491248_H
 #ifdef __clang__
@@ -9618,6 +9619,97 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // INTERACTIBLEMANAGER_T3913071345_H
+#ifndef PLAYSPACEMANAGER_T1603794533_H
+#define PLAYSPACEMANAGER_T1603794533_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// PlaySpaceManager
+struct  PlaySpaceManager_t1603794533  : public Singleton_1_t1285849372
+{
+public:
+	// System.Boolean PlaySpaceManager::limitScanningByTime
+	bool ___limitScanningByTime_3;
+	// System.Single PlaySpaceManager::scanTime
+	float ___scanTime_4;
+	// UnityEngine.Material PlaySpaceManager::defaultMaterial
+	Material_t340375123 * ___defaultMaterial_5;
+	// UnityEngine.Material PlaySpaceManager::secondaryMaterial
+	Material_t340375123 * ___secondaryMaterial_6;
+	// System.UInt32 PlaySpaceManager::minimumFloors
+	uint32_t ___minimumFloors_7;
+	// System.UInt32 PlaySpaceManager::minimumWalls
+	uint32_t ___minimumWalls_8;
+	// System.Boolean PlaySpaceManager::meshesProcessed
+	bool ___meshesProcessed_9;
+
+public:
+	inline static int32_t get_offset_of_limitScanningByTime_3() { return static_cast<int32_t>(offsetof(PlaySpaceManager_t1603794533, ___limitScanningByTime_3)); }
+	inline bool get_limitScanningByTime_3() const { return ___limitScanningByTime_3; }
+	inline bool* get_address_of_limitScanningByTime_3() { return &___limitScanningByTime_3; }
+	inline void set_limitScanningByTime_3(bool value)
+	{
+		___limitScanningByTime_3 = value;
+	}
+
+	inline static int32_t get_offset_of_scanTime_4() { return static_cast<int32_t>(offsetof(PlaySpaceManager_t1603794533, ___scanTime_4)); }
+	inline float get_scanTime_4() const { return ___scanTime_4; }
+	inline float* get_address_of_scanTime_4() { return &___scanTime_4; }
+	inline void set_scanTime_4(float value)
+	{
+		___scanTime_4 = value;
+	}
+
+	inline static int32_t get_offset_of_defaultMaterial_5() { return static_cast<int32_t>(offsetof(PlaySpaceManager_t1603794533, ___defaultMaterial_5)); }
+	inline Material_t340375123 * get_defaultMaterial_5() const { return ___defaultMaterial_5; }
+	inline Material_t340375123 ** get_address_of_defaultMaterial_5() { return &___defaultMaterial_5; }
+	inline void set_defaultMaterial_5(Material_t340375123 * value)
+	{
+		___defaultMaterial_5 = value;
+		Il2CppCodeGenWriteBarrier((&___defaultMaterial_5), value);
+	}
+
+	inline static int32_t get_offset_of_secondaryMaterial_6() { return static_cast<int32_t>(offsetof(PlaySpaceManager_t1603794533, ___secondaryMaterial_6)); }
+	inline Material_t340375123 * get_secondaryMaterial_6() const { return ___secondaryMaterial_6; }
+	inline Material_t340375123 ** get_address_of_secondaryMaterial_6() { return &___secondaryMaterial_6; }
+	inline void set_secondaryMaterial_6(Material_t340375123 * value)
+	{
+		___secondaryMaterial_6 = value;
+		Il2CppCodeGenWriteBarrier((&___secondaryMaterial_6), value);
+	}
+
+	inline static int32_t get_offset_of_minimumFloors_7() { return static_cast<int32_t>(offsetof(PlaySpaceManager_t1603794533, ___minimumFloors_7)); }
+	inline uint32_t get_minimumFloors_7() const { return ___minimumFloors_7; }
+	inline uint32_t* get_address_of_minimumFloors_7() { return &___minimumFloors_7; }
+	inline void set_minimumFloors_7(uint32_t value)
+	{
+		___minimumFloors_7 = value;
+	}
+
+	inline static int32_t get_offset_of_minimumWalls_8() { return static_cast<int32_t>(offsetof(PlaySpaceManager_t1603794533, ___minimumWalls_8)); }
+	inline uint32_t get_minimumWalls_8() const { return ___minimumWalls_8; }
+	inline uint32_t* get_address_of_minimumWalls_8() { return &___minimumWalls_8; }
+	inline void set_minimumWalls_8(uint32_t value)
+	{
+		___minimumWalls_8 = value;
+	}
+
+	inline static int32_t get_offset_of_meshesProcessed_9() { return static_cast<int32_t>(offsetof(PlaySpaceManager_t1603794533, ___meshesProcessed_9)); }
+	inline bool get_meshesProcessed_9() const { return ___meshesProcessed_9; }
+	inline bool* get_address_of_meshesProcessed_9() { return &___meshesProcessed_9; }
+	inline void set_meshesProcessed_9(bool value)
+	{
+		___meshesProcessed_9 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // PLAYSPACEMANAGER_T1603794533_H
 #ifndef SUNSCRIPT_T2425216091_H
 #define SUNSCRIPT_T2425216091_H
 #ifdef __clang__
@@ -9668,36 +9760,6 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // SUNSCRIPT_T2425216091_H
-#ifndef SPACECOLLECTIONMANAGER_T4268457551_H
-#define SPACECOLLECTIONMANAGER_T4268457551_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// SpaceCollectionManager
-struct  SpaceCollectionManager_t4268457551  : public Singleton_1_t3950512390
-{
-public:
-	// System.Collections.Generic.List`1<UnityEngine.GameObject> SpaceCollectionManager::spaceObjectPrefabs
-	List_1_t2585711361 * ___spaceObjectPrefabs_3;
-
-public:
-	inline static int32_t get_offset_of_spaceObjectPrefabs_3() { return static_cast<int32_t>(offsetof(SpaceCollectionManager_t4268457551, ___spaceObjectPrefabs_3)); }
-	inline List_1_t2585711361 * get_spaceObjectPrefabs_3() const { return ___spaceObjectPrefabs_3; }
-	inline List_1_t2585711361 ** get_address_of_spaceObjectPrefabs_3() { return &___spaceObjectPrefabs_3; }
-	inline void set_spaceObjectPrefabs_3(List_1_t2585711361 * value)
-	{
-		___spaceObjectPrefabs_3 = value;
-		Il2CppCodeGenWriteBarrier((&___spaceObjectPrefabs_3), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // SPACECOLLECTIONMANAGER_T4268457551_H
 #ifndef HANDSMANAGER_T1017542450_H
 #define HANDSMANAGER_T1017542450_H
 #ifdef __clang__
@@ -9898,97 +9960,36 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // ACTION_1_T1794482630_H
-#ifndef PLAYSPACEMANAGER_T1603794533_H
-#define PLAYSPACEMANAGER_T1603794533_H
+#ifndef SPACECOLLECTIONMANAGER_T4268457551_H
+#define SPACECOLLECTIONMANAGER_T4268457551_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// PlaySpaceManager
-struct  PlaySpaceManager_t1603794533  : public Singleton_1_t1285849372
+// SpaceCollectionManager
+struct  SpaceCollectionManager_t4268457551  : public Singleton_1_t3950512390
 {
 public:
-	// System.Boolean PlaySpaceManager::limitScanningByTime
-	bool ___limitScanningByTime_3;
-	// System.Single PlaySpaceManager::scanTime
-	float ___scanTime_4;
-	// UnityEngine.Material PlaySpaceManager::defaultMaterial
-	Material_t340375123 * ___defaultMaterial_5;
-	// UnityEngine.Material PlaySpaceManager::secondaryMaterial
-	Material_t340375123 * ___secondaryMaterial_6;
-	// System.UInt32 PlaySpaceManager::minimumFloors
-	uint32_t ___minimumFloors_7;
-	// System.UInt32 PlaySpaceManager::minimumWalls
-	uint32_t ___minimumWalls_8;
-	// System.Boolean PlaySpaceManager::meshesProcessed
-	bool ___meshesProcessed_9;
+	// System.Collections.Generic.List`1<UnityEngine.GameObject> SpaceCollectionManager::spaceObjectPrefabs
+	List_1_t2585711361 * ___spaceObjectPrefabs_3;
 
 public:
-	inline static int32_t get_offset_of_limitScanningByTime_3() { return static_cast<int32_t>(offsetof(PlaySpaceManager_t1603794533, ___limitScanningByTime_3)); }
-	inline bool get_limitScanningByTime_3() const { return ___limitScanningByTime_3; }
-	inline bool* get_address_of_limitScanningByTime_3() { return &___limitScanningByTime_3; }
-	inline void set_limitScanningByTime_3(bool value)
+	inline static int32_t get_offset_of_spaceObjectPrefabs_3() { return static_cast<int32_t>(offsetof(SpaceCollectionManager_t4268457551, ___spaceObjectPrefabs_3)); }
+	inline List_1_t2585711361 * get_spaceObjectPrefabs_3() const { return ___spaceObjectPrefabs_3; }
+	inline List_1_t2585711361 ** get_address_of_spaceObjectPrefabs_3() { return &___spaceObjectPrefabs_3; }
+	inline void set_spaceObjectPrefabs_3(List_1_t2585711361 * value)
 	{
-		___limitScanningByTime_3 = value;
-	}
-
-	inline static int32_t get_offset_of_scanTime_4() { return static_cast<int32_t>(offsetof(PlaySpaceManager_t1603794533, ___scanTime_4)); }
-	inline float get_scanTime_4() const { return ___scanTime_4; }
-	inline float* get_address_of_scanTime_4() { return &___scanTime_4; }
-	inline void set_scanTime_4(float value)
-	{
-		___scanTime_4 = value;
-	}
-
-	inline static int32_t get_offset_of_defaultMaterial_5() { return static_cast<int32_t>(offsetof(PlaySpaceManager_t1603794533, ___defaultMaterial_5)); }
-	inline Material_t340375123 * get_defaultMaterial_5() const { return ___defaultMaterial_5; }
-	inline Material_t340375123 ** get_address_of_defaultMaterial_5() { return &___defaultMaterial_5; }
-	inline void set_defaultMaterial_5(Material_t340375123 * value)
-	{
-		___defaultMaterial_5 = value;
-		Il2CppCodeGenWriteBarrier((&___defaultMaterial_5), value);
-	}
-
-	inline static int32_t get_offset_of_secondaryMaterial_6() { return static_cast<int32_t>(offsetof(PlaySpaceManager_t1603794533, ___secondaryMaterial_6)); }
-	inline Material_t340375123 * get_secondaryMaterial_6() const { return ___secondaryMaterial_6; }
-	inline Material_t340375123 ** get_address_of_secondaryMaterial_6() { return &___secondaryMaterial_6; }
-	inline void set_secondaryMaterial_6(Material_t340375123 * value)
-	{
-		___secondaryMaterial_6 = value;
-		Il2CppCodeGenWriteBarrier((&___secondaryMaterial_6), value);
-	}
-
-	inline static int32_t get_offset_of_minimumFloors_7() { return static_cast<int32_t>(offsetof(PlaySpaceManager_t1603794533, ___minimumFloors_7)); }
-	inline uint32_t get_minimumFloors_7() const { return ___minimumFloors_7; }
-	inline uint32_t* get_address_of_minimumFloors_7() { return &___minimumFloors_7; }
-	inline void set_minimumFloors_7(uint32_t value)
-	{
-		___minimumFloors_7 = value;
-	}
-
-	inline static int32_t get_offset_of_minimumWalls_8() { return static_cast<int32_t>(offsetof(PlaySpaceManager_t1603794533, ___minimumWalls_8)); }
-	inline uint32_t get_minimumWalls_8() const { return ___minimumWalls_8; }
-	inline uint32_t* get_address_of_minimumWalls_8() { return &___minimumWalls_8; }
-	inline void set_minimumWalls_8(uint32_t value)
-	{
-		___minimumWalls_8 = value;
-	}
-
-	inline static int32_t get_offset_of_meshesProcessed_9() { return static_cast<int32_t>(offsetof(PlaySpaceManager_t1603794533, ___meshesProcessed_9)); }
-	inline bool get_meshesProcessed_9() const { return ___meshesProcessed_9; }
-	inline bool* get_address_of_meshesProcessed_9() { return &___meshesProcessed_9; }
-	inline void set_meshesProcessed_9(bool value)
-	{
-		___meshesProcessed_9 = value;
+		___spaceObjectPrefabs_3 = value;
+		Il2CppCodeGenWriteBarrier((&___spaceObjectPrefabs_3), value);
 	}
 };
 
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // PLAYSPACEMANAGER_T1603794533_H
+#endif // SPACECOLLECTIONMANAGER_T4268457551_H
 // UnityEngine.MeshFilter[]
 struct MeshFilterU5BU5D_t2535675019  : public RuntimeArray
 {
@@ -11141,6 +11142,18 @@ extern "C"  void EventHandler__ctor_m3487938920 (EventHandler_t3893242707 * __th
 extern "C"  void SurfaceMeshesToPlanes_add_MakePlanesComplete_m1457138783 (SurfaceMeshesToPlanes_t871445925 * __this, EventHandler_t3893242707 * ___value0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Single Academy.HoloToolkit.Unity.SpatialMappingManager::get_StartTime()
 extern "C"  float SpatialMappingManager_get_StartTime_m56201156 (SpatialMappingManager_t2299694748 * __this, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
+// System.Void Academy.HoloToolkit.Unity.SpatialMappingManager::StopObserver()
+extern "C"  void SpatialMappingManager_StopObserver_m1137505323 (SpatialMappingManager_t2299694748 * __this, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
+// System.Void PlaySpaceManager::CreatePlanes()
+extern "C"  void PlaySpaceManager_CreatePlanes_m2019505149 (PlaySpaceManager_t1603794533 * __this, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
+// System.Collections.Generic.List`1<UnityEngine.GameObject> Academy.HoloToolkit.Unity.SurfaceMeshesToPlanes::GetActivePlanes(Academy.HoloToolkit.Unity.PlaneTypes)
+extern "C"  List_1_t2585711361 * SurfaceMeshesToPlanes_GetActivePlanes_m753546673 (SurfaceMeshesToPlanes_t871445925 * __this, int32_t ___planeTypes0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
+// System.Void PlaySpaceManager::RemoveVertices(System.Collections.Generic.IEnumerable`1<UnityEngine.GameObject>)
+extern "C"  void PlaySpaceManager_RemoveVertices_m2757663566 (PlaySpaceManager_t1603794533 * __this, RuntimeObject* ___boundingObjects0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
+// T Academy.HoloToolkit.Unity.Singleton`1<SpaceCollectionManager>::get_Instance()
+#define Singleton_1_get_Instance_m2992904100(__this /* static, unused */, method) ((  SpaceCollectionManager_t4268457551 * (*) (RuntimeObject * /* static, unused */, const RuntimeMethod*))Singleton_1_get_Instance_m1776539367_gshared)(__this /* static, unused */, method)
+// System.Void SpaceCollectionManager::GenerateItemsInWorld(System.Collections.Generic.List`1<UnityEngine.GameObject>,System.Collections.Generic.List`1<UnityEngine.GameObject>)
+extern "C"  void SpaceCollectionManager_GenerateItemsInWorld_m998830562 (SpaceCollectionManager_t4268457551 * __this, List_1_t2585711361 * ___horizontalSurfaces0, List_1_t2585711361 * ___verticalSurfaces1, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Boolean UnityEngine.Behaviour::get_enabled()
 extern "C"  bool Behaviour_get_enabled_m753527255 (Behaviour_t1437897464 * __this, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Void Academy.HoloToolkit.Unity.SurfaceMeshesToPlanes::MakePlanes()
@@ -20626,14 +20639,14 @@ extern "C"  void PlaySpaceManager_Update_m3010364273 (PlaySpaceManager_t16037945
 		bool L_0 = __this->get_meshesProcessed_9();
 		if (L_0)
 		{
-			goto IL_0030;
+			goto IL_0053;
 		}
 	}
 	{
 		bool L_1 = __this->get_limitScanningByTime_3();
 		if (!L_1)
 		{
-			goto IL_0030;
+			goto IL_0053;
 		}
 	}
 	{
@@ -20650,9 +20663,39 @@ extern "C"  void PlaySpaceManager_Update_m3010364273 (PlaySpaceManager_t16037945
 		NullCheck(L_4);
 		float L_5 = SpatialMappingManager_get_StartTime_m56201156(L_4, /*hidden argument*/NULL);
 		float L_6 = __this->get_scanTime_4();
+		if ((((float)((float)((float)L_3-(float)L_5))) < ((float)L_6)))
+		{
+			goto IL_0053;
+		}
 	}
 
 IL_0030:
+	{
+		// if (SpatialMappingManager.Instance.IsObserverRunning())
+		SpatialMappingManager_t2299694748 * L_7 = Singleton_1_get_Instance_m2062073591(NULL /*static, unused*/, /*hidden argument*/Singleton_1_get_Instance_m2062073591_RuntimeMethod_var);
+		NullCheck(L_7);
+		bool L_8 = SpatialMappingManager_IsObserverRunning_m1410482677(L_7, /*hidden argument*/NULL);
+		if (!L_8)
+		{
+			goto IL_0046;
+		}
+	}
+	{
+		// SpatialMappingManager.Instance.StopObserver();
+		SpatialMappingManager_t2299694748 * L_9 = Singleton_1_get_Instance_m2062073591(NULL /*static, unused*/, /*hidden argument*/Singleton_1_get_Instance_m2062073591_RuntimeMethod_var);
+		NullCheck(L_9);
+		SpatialMappingManager_StopObserver_m1137505323(L_9, /*hidden argument*/NULL);
+	}
+
+IL_0046:
+	{
+		// CreatePlanes();
+		PlaySpaceManager_CreatePlanes_m2019505149(__this, /*hidden argument*/NULL);
+		// meshesProcessed = true;
+		__this->set_meshesProcessed_9((bool)1);
+	}
+
+IL_0053:
 	{
 		// }
 		return;
@@ -20668,32 +20711,75 @@ extern "C"  void PlaySpaceManager_SurfaceMeshesToPlanes_MakePlanesComplete_m2157
 		s_Il2CppMethodInitialized = true;
 	}
 	List_1_t2585711361 * V_0 = NULL;
+	List_1_t2585711361 * V_1 = NULL;
 	{
 		// List<GameObject> horizontal = new List<GameObject>();
 		List_1_t2585711361 * L_0 = (List_1_t2585711361 *)il2cpp_codegen_object_new(List_1_t2585711361_il2cpp_TypeInfo_var);
 		List_1__ctor_m3526297712(L_0, /*hidden argument*/List_1__ctor_m3526297712_RuntimeMethod_var);
+		V_0 = L_0;
 		// List<GameObject> vertical = new List<GameObject>();
 		List_1_t2585711361 * L_1 = (List_1_t2585711361 *)il2cpp_codegen_object_new(List_1_t2585711361_il2cpp_TypeInfo_var);
 		List_1__ctor_m3526297712(L_1, /*hidden argument*/List_1__ctor_m3526297712_RuntimeMethod_var);
-		V_0 = L_1;
+		V_1 = L_1;
+		// horizontal = SurfaceMeshesToPlanes.Instance.GetActivePlanes(PlaneTypes.Table | PlaneTypes.Floor);
+		SurfaceMeshesToPlanes_t871445925 * L_2 = Singleton_1_get_Instance_m1616134789(NULL /*static, unused*/, /*hidden argument*/Singleton_1_get_Instance_m1616134789_RuntimeMethod_var);
+		NullCheck(L_2);
+		List_1_t2585711361 * L_3 = SurfaceMeshesToPlanes_GetActivePlanes_m753546673(L_2, ((int32_t)10), /*hidden argument*/NULL);
+		V_0 = L_3;
+		// vertical = SurfaceMeshesToPlanes.Instance.GetActivePlanes(PlaneTypes.Wall);
+		SurfaceMeshesToPlanes_t871445925 * L_4 = Singleton_1_get_Instance_m1616134789(NULL /*static, unused*/, /*hidden argument*/Singleton_1_get_Instance_m1616134789_RuntimeMethod_var);
+		NullCheck(L_4);
+		List_1_t2585711361 * L_5 = SurfaceMeshesToPlanes_GetActivePlanes_m753546673(L_4, 1, /*hidden argument*/NULL);
+		V_1 = L_5;
 		// if (horizontal.Count >= minimumFloors && vertical.Count >= minimumWalls)
-		NullCheck(L_0);
-		int32_t L_2 = List_1_get_Count_m77021858(L_0, /*hidden argument*/List_1_get_Count_m77021858_RuntimeMethod_var);
-		uint32_t L_3 = __this->get_minimumFloors_7();
-		if ((((int64_t)(((int64_t)((int64_t)L_2)))) < ((int64_t)(((int64_t)((uint64_t)L_3))))))
+		List_1_t2585711361 * L_6 = V_0;
+		NullCheck(L_6);
+		int32_t L_7 = List_1_get_Count_m77021858(L_6, /*hidden argument*/List_1_get_Count_m77021858_RuntimeMethod_var);
+		uint32_t L_8 = __this->get_minimumFloors_7();
+		if ((((int64_t)(((int64_t)((int64_t)L_7)))) < ((int64_t)(((int64_t)((uint64_t)L_8))))))
 		{
-			goto IL_002a;
+			goto IL_0072;
 		}
 	}
 	{
-		List_1_t2585711361 * L_4 = V_0;
-		NullCheck(L_4);
-		int32_t L_5 = List_1_get_Count_m77021858(L_4, /*hidden argument*/List_1_get_Count_m77021858_RuntimeMethod_var);
-		uint32_t L_6 = __this->get_minimumWalls_8();
+		List_1_t2585711361 * L_9 = V_1;
+		NullCheck(L_9);
+		int32_t L_10 = List_1_get_Count_m77021858(L_9, /*hidden argument*/List_1_get_Count_m77021858_RuntimeMethod_var);
+		uint32_t L_11 = __this->get_minimumWalls_8();
+		if ((((int64_t)(((int64_t)((int64_t)L_10)))) < ((int64_t)(((int64_t)((uint64_t)L_11))))))
+		{
+			goto IL_0072;
+		}
+	}
+	{
+		// RemoveVertices(SurfaceMeshesToPlanes.Instance.ActivePlanes);
+		SurfaceMeshesToPlanes_t871445925 * L_12 = Singleton_1_get_Instance_m1616134789(NULL /*static, unused*/, /*hidden argument*/Singleton_1_get_Instance_m1616134789_RuntimeMethod_var);
+		NullCheck(L_12);
+		List_1_t2585711361 * L_13 = L_12->get_ActivePlanes_3();
+		PlaySpaceManager_RemoveVertices_m2757663566(__this, L_13, /*hidden argument*/NULL);
+		// SpatialMappingManager.Instance.SetSurfaceMaterial(secondaryMaterial);
+		SpatialMappingManager_t2299694748 * L_14 = Singleton_1_get_Instance_m2062073591(NULL /*static, unused*/, /*hidden argument*/Singleton_1_get_Instance_m2062073591_RuntimeMethod_var);
+		Material_t340375123 * L_15 = __this->get_secondaryMaterial_6();
+		NullCheck(L_14);
+		SpatialMappingManager_SetSurfaceMaterial_m230208776(L_14, L_15, /*hidden argument*/NULL);
+		// SpaceCollectionManager.Instance.GenerateItemsInWorld(horizontal, vertical);
+		SpaceCollectionManager_t4268457551 * L_16 = Singleton_1_get_Instance_m2992904100(NULL /*static, unused*/, /*hidden argument*/Singleton_1_get_Instance_m2992904100_RuntimeMethod_var);
+		List_1_t2585711361 * L_17 = V_0;
+		List_1_t2585711361 * L_18 = V_1;
+		NullCheck(L_16);
+		SpaceCollectionManager_GenerateItemsInWorld_m998830562(L_16, L_17, L_18, /*hidden argument*/NULL);
+		// }
+		return;
 	}
 
-IL_002a:
+IL_0072:
 	{
+		// SpatialMappingManager.Instance.StartObserver();
+		SpatialMappingManager_t2299694748 * L_19 = Singleton_1_get_Instance_m2062073591(NULL /*static, unused*/, /*hidden argument*/Singleton_1_get_Instance_m2062073591_RuntimeMethod_var);
+		NullCheck(L_19);
+		SpatialMappingManager_StartObserver_m1372796914(L_19, /*hidden argument*/NULL);
+		// meshesProcessed = false;
+		__this->set_meshesProcessed_9((bool)0);
 		// }
 		return;
 	}

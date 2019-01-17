@@ -1005,6 +1005,7 @@ extern const Il2CppGenericInst GenInst_SpatialMappingManager_t2299694748_0_0_0;
 extern const Il2CppGenericInst GenInst_GestureManager_t837916318_0_0_0;
 extern const Il2CppGenericInst GenInst_PlaySpaceManager_t1603794533_0_0_0;
 extern const Il2CppGenericInst GenInst_SurfaceMeshesToPlanes_t871445925_0_0_0;
+extern const Il2CppGenericInst GenInst_SpaceCollectionManager_t4268457551_0_0_0;
 extern const Il2CppGenericInst GenInst_RemoveSurfaceVertices_t2451686779_0_0_0;
 extern const Il2CppGenericInst GenInst_SunScript_t2425216091_0_0_0;
 extern const Il2CppGenericInst GenInst_String_t_0_0_0_PlanetaryData_t1827087022_0_0_0;
@@ -1014,7 +1015,6 @@ extern const Il2CppGenericInst GenInst_PlanetaryData_t1827087022_0_0_0;
 extern const Il2CppGenericInst GenInst_Entry_t494390498_0_0_0;
 extern const Il2CppGenericInst GenInst_Entry_t3227207809_0_0_0;
 extern const Il2CppGenericInst GenInst_KeyValuePair_2_t4010015488_0_0_0;
-extern const Il2CppGenericInst GenInst_SpaceCollectionManager_t4268457551_0_0_0;
 extern const Il2CppGenericInst GenInst_HandsManager_t1017542450_0_0_0;
 extern const Il2CppGenericInst GenInst_MeshFilter_t3523625662_0_0_0;
 extern const Il2CppGenericInst GenInst_SurfaceObject_t63294545_0_0_0;
@@ -18301,6 +18301,12 @@ extern const RuntimeType SurfaceMeshesToPlanes_t871445925_0_0_0 = { (void*)3704,
 extern const RuntimeType SurfaceMeshesToPlanes_t871445925_1_0_0 = { (void*)3704, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 extern const RuntimeType SurfaceMeshesToPlanes_t871445925_0_0_6 = { (void*)3704, 6, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 
+Il2CppGenericClass Singleton_1_t3950512390_GenericClass = { 3710, { &GenInst_SpaceCollectionManager_t4268457551_0_0_0, NULL }, NULL };
+extern const RuntimeType Singleton_1_t3950512390_0_0_0 = { &Singleton_1_t3950512390_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
+
+extern const RuntimeType SpaceCollectionManager_t4268457551_0_0_0 = { (void*)3683, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const RuntimeType SpaceCollectionManager_t4268457551_1_0_0 = { (void*)3683, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+
 Il2CppGenericClass Singleton_1_t2133741618_GenericClass = { 3710, { &GenInst_RemoveSurfaceVertices_t2451686779_0_0_0, NULL }, NULL };
 extern const RuntimeType Singleton_1_t2133741618_0_0_0 = { &Singleton_1_t2133741618_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
 
@@ -18491,12 +18497,6 @@ extern const RuntimeType IReadOnlyCollection_1_t4013131425_0_0_0 = { &IReadOnlyC
 
 Il2CppGenericClass Enumerator_t3566526096_GenericClass = { 361, { &GenInst_String_t_0_0_0_PlanetaryData_t1827087022_0_0_0, NULL }, NULL };
 extern const RuntimeType Enumerator_t3566526096_0_0_0 = { &Enumerator_t3566526096_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
-
-Il2CppGenericClass Singleton_1_t3950512390_GenericClass = { 3710, { &GenInst_SpaceCollectionManager_t4268457551_0_0_0, NULL }, NULL };
-extern const RuntimeType Singleton_1_t3950512390_0_0_0 = { &Singleton_1_t3950512390_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
-
-extern const RuntimeType SpaceCollectionManager_t4268457551_0_0_0 = { (void*)3683, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
-extern const RuntimeType SpaceCollectionManager_t4268457551_1_0_0 = { (void*)3683, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 
 Il2CppGenericClass Singleton_1_t699597289_GenericClass = { 3710, { &GenInst_HandsManager_t1017542450_0_0_0, NULL }, NULL };
 extern const RuntimeType Singleton_1_t699597289_0_0_0 = { &Singleton_1_t699597289_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
@@ -39152,6 +39152,8 @@ extern const RuntimeType* const  g_Il2CppTypeTable[16908] =
 	&PlaySpaceManager_t1603794533_0_0_0,
 	&Singleton_1_t553500764_0_0_0,
 	&SurfaceMeshesToPlanes_t871445925_0_0_0,
+	&Singleton_1_t3950512390_0_0_0,
+	&SpaceCollectionManager_t4268457551_0_0_0,
 	&Singleton_1_t2133741618_0_0_0,
 	&RemoveSurfaceVertices_t2451686779_0_0_0,
 	&Singleton_1_t2107270930_0_0_0,
@@ -39215,8 +39217,6 @@ extern const RuntimeType* const  g_Il2CppTypeTable[16908] =
 	&IReadOnlyList_1_t279471098_0_0_0,
 	&IReadOnlyCollection_1_t4013131425_0_0_0,
 	&Enumerator_t3566526096_0_0_0,
-	&Singleton_1_t3950512390_0_0_0,
-	&SpaceCollectionManager_t4268457551_0_0_0,
 	&Singleton_1_t699597289_0_0_0,
 	&HandsManager_t1017542450_0_0_0,
 	&IEnumerator_1_t3956196130_0_0_0,

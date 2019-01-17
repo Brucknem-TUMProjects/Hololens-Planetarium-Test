@@ -598,6 +598,7 @@ extern const Il2CppType SpatialMappingManager_t2299694748_0_0_0;
 extern const Il2CppType GestureManager_t837916318_0_0_0;
 extern const Il2CppType PlaySpaceManager_t1603794533_0_0_0;
 extern const Il2CppType SurfaceMeshesToPlanes_t871445925_0_0_0;
+extern const Il2CppType SpaceCollectionManager_t4268457551_0_0_0;
 extern const Il2CppType RemoveSurfaceVertices_t2451686779_0_0_0;
 extern const Il2CppType SunScript_t2425216091_0_0_0;
 extern const Il2CppType PlanetaryData_t1827087022_0_0_0;
@@ -605,7 +606,6 @@ extern const Il2CppType KeyValuePair_2_t1277198177_0_0_0;
 extern const Il2CppType Entry_t494390498_0_0_0;
 extern const Il2CppType Entry_t3227207809_0_0_0;
 extern const Il2CppType KeyValuePair_2_t4010015488_0_0_0;
-extern const Il2CppType SpaceCollectionManager_t4268457551_0_0_0;
 extern const Il2CppType HandsManager_t1017542450_0_0_0;
 extern const Il2CppType MeshFilter_t3523625662_0_0_0;
 extern const Il2CppType SurfaceObject_t63294545_0_0_0;
@@ -2246,6 +2246,8 @@ static const RuntimeType* GenInst_PlaySpaceManager_t1603794533_0_0_0_Types[] = {
 extern const Il2CppGenericInst GenInst_PlaySpaceManager_t1603794533_0_0_0 = { 1, GenInst_PlaySpaceManager_t1603794533_0_0_0_Types };
 static const RuntimeType* GenInst_SurfaceMeshesToPlanes_t871445925_0_0_0_Types[] = { (&SurfaceMeshesToPlanes_t871445925_0_0_0) };
 extern const Il2CppGenericInst GenInst_SurfaceMeshesToPlanes_t871445925_0_0_0 = { 1, GenInst_SurfaceMeshesToPlanes_t871445925_0_0_0_Types };
+static const RuntimeType* GenInst_SpaceCollectionManager_t4268457551_0_0_0_Types[] = { (&SpaceCollectionManager_t4268457551_0_0_0) };
+extern const Il2CppGenericInst GenInst_SpaceCollectionManager_t4268457551_0_0_0 = { 1, GenInst_SpaceCollectionManager_t4268457551_0_0_0_Types };
 static const RuntimeType* GenInst_RemoveSurfaceVertices_t2451686779_0_0_0_Types[] = { (&RemoveSurfaceVertices_t2451686779_0_0_0) };
 extern const Il2CppGenericInst GenInst_RemoveSurfaceVertices_t2451686779_0_0_0 = { 1, GenInst_RemoveSurfaceVertices_t2451686779_0_0_0_Types };
 static const RuntimeType* GenInst_SunScript_t2425216091_0_0_0_Types[] = { (&SunScript_t2425216091_0_0_0) };
@@ -2264,8 +2266,6 @@ static const RuntimeType* GenInst_Entry_t3227207809_0_0_0_Types[] = { (&Entry_t3
 extern const Il2CppGenericInst GenInst_Entry_t3227207809_0_0_0 = { 1, GenInst_Entry_t3227207809_0_0_0_Types };
 static const RuntimeType* GenInst_KeyValuePair_2_t4010015488_0_0_0_Types[] = { (&KeyValuePair_2_t4010015488_0_0_0) };
 extern const Il2CppGenericInst GenInst_KeyValuePair_2_t4010015488_0_0_0 = { 1, GenInst_KeyValuePair_2_t4010015488_0_0_0_Types };
-static const RuntimeType* GenInst_SpaceCollectionManager_t4268457551_0_0_0_Types[] = { (&SpaceCollectionManager_t4268457551_0_0_0) };
-extern const Il2CppGenericInst GenInst_SpaceCollectionManager_t4268457551_0_0_0 = { 1, GenInst_SpaceCollectionManager_t4268457551_0_0_0_Types };
 static const RuntimeType* GenInst_HandsManager_t1017542450_0_0_0_Types[] = { (&HandsManager_t1017542450_0_0_0) };
 extern const Il2CppGenericInst GenInst_HandsManager_t1017542450_0_0_0 = { 1, GenInst_HandsManager_t1017542450_0_0_0_Types };
 static const RuntimeType* GenInst_MeshFilter_t3523625662_0_0_0_Types[] = { (&MeshFilter_t3523625662_0_0_0) };
@@ -3572,6 +3572,7 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[1000] =
 	&GenInst_GestureManager_t837916318_0_0_0,
 	&GenInst_PlaySpaceManager_t1603794533_0_0_0,
 	&GenInst_SurfaceMeshesToPlanes_t871445925_0_0_0,
+	&GenInst_SpaceCollectionManager_t4268457551_0_0_0,
 	&GenInst_RemoveSurfaceVertices_t2451686779_0_0_0,
 	&GenInst_SunScript_t2425216091_0_0_0,
 	&GenInst_String_t_0_0_0_PlanetaryData_t1827087022_0_0_0,
@@ -3581,7 +3582,6 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[1000] =
 	&GenInst_Entry_t494390498_0_0_0,
 	&GenInst_Entry_t3227207809_0_0_0,
 	&GenInst_KeyValuePair_2_t4010015488_0_0_0,
-	&GenInst_SpaceCollectionManager_t4268457551_0_0_0,
 	&GenInst_HandsManager_t1017542450_0_0_0,
 	&GenInst_MeshFilter_t3523625662_0_0_0,
 	&GenInst_SurfaceObject_t63294545_0_0_0,
