@@ -677,6 +677,7 @@ extern const RuntimeMethod* Singleton_1__ctor_m2942062663_RuntimeMethod_var;
 extern const uint32_t InteractibleManager__ctor_m1137538910_MetadataUsageId;
 extern const RuntimeMethod* GameObject_GetComponent_TisBoxCollider_t1640800422_m3684288221_RuntimeMethod_var;
 extern const uint32_t Placeable_Awake_m1086250790_MetadataUsageId;
+extern const uint32_t Placeable_Update_m1364982263_MetadataUsageId;
 extern const uint32_t Placeable_ValidatePlacement_m3920759739_MetadataUsageId;
 extern RuntimeClass* Vector3U5BU5D_t1718750761_il2cpp_TypeInfo_var;
 extern const uint32_t Placeable_GetColliderFacePoints_m4060538292_MetadataUsageId;
@@ -11078,6 +11079,22 @@ extern "C"  void InteractibleManager_ResetFocusedInteractible_m1508796293 (Inter
 #define GameObject_GetComponent_TisBoxCollider_t1640800422_m3684288221(__this, method) ((  BoxCollider_t1640800422 * (*) (GameObject_t1113636619 *, const RuntimeMethod*))GameObject_GetComponent_TisRuntimeObject_m3920941149_gshared)(__this, method)
 // System.Void UnityEngine.Collider::set_enabled(System.Boolean)
 extern "C"  void Collider_set_enabled_m1517463283 (Collider_t1773347010 * __this, bool p0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Placeable::get_IsPlacing()
+extern "C"  bool Placeable_get_IsPlacing_m3404642512 (Placeable_t3832491248 * __this, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
+// System.Void Placeable::OnPlacementStart()
+extern "C"  void Placeable_OnPlacementStart_m3325563044 (Placeable_t3832491248 * __this, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
+// System.Void Placeable::OnPlacementStop()
+extern "C"  void Placeable_OnPlacementStop_m3642547664 (Placeable_t3832491248 * __this, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
+// System.Void Placeable::Move()
+extern "C"  void Placeable_Move_m2334335003 (Placeable_t3832491248 * __this, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Placeable::ValidatePlacement(UnityEngine.Vector3&,UnityEngine.Vector3&)
+extern "C"  bool Placeable_ValidatePlacement_m3920759739 (Placeable_t3832491248 * __this, Vector3_t3722313464 * ___position0, Vector3_t3722313464 * ___surfaceNormal1, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
+// System.Void Placeable::DisplayBounds(System.Boolean)
+extern "C"  void Placeable_DisplayBounds_m2153313866 (Placeable_t3832491248 * __this, bool ___canBePlaced0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
+// System.Void Placeable::DisplayShadow(UnityEngine.Vector3,UnityEngine.Vector3,System.Boolean)
+extern "C"  void Placeable_DisplayShadow_m1960925305 (Placeable_t3832491248 * __this, Vector3_t3722313464  ___position0, Vector3_t3722313464  ___surfaceNormal1, bool ___canBePlaced2, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Vector3 UnityEngine.Vector3::Lerp(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
+extern "C"  Vector3_t3722313464  Vector3_Lerp_m407887542 (RuntimeObject * __this /* static, unused */, Vector3_t3722313464  p0, Vector3_t3722313464  p1, float p2, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Vector3 UnityEngine.Vector3::get_up()
 extern "C"  Vector3_t3722313464  Vector3_get_up_m3584168373 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Vector3[] Placeable::GetColliderFacePoints()
@@ -11098,14 +11115,10 @@ extern "C"  Vector3_t3722313464  BoxCollider_get_center_m3697516117 (BoxCollider
 extern "C"  void GestureManager_set_OverrideFocusedObject_m1623901332 (GestureManager_t837916318 * __this, GameObject_t1113636619 * ___value0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Void Placeable::set_IsPlacing(System.Boolean)
 extern "C"  void Placeable_set_IsPlacing_m2839723455 (Placeable_t3832491248 * __this, bool ___value0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
-// System.Boolean Placeable::ValidatePlacement(UnityEngine.Vector3&,UnityEngine.Vector3&)
-extern "C"  bool Placeable_ValidatePlacement_m3920759739 (Placeable_t3832491248 * __this, Vector3_t3722313464 * ___position0, Vector3_t3722313464 * ___surfaceNormal1, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Vector3 UnityEngine.Vector3::op_Multiply(System.Single,UnityEngine.Vector3)
 extern "C"  Vector3_t3722313464  Vector3_op_Multiply_m2104357790 (RuntimeObject * __this /* static, unused */, float p0, Vector3_t3722313464  p1, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Void Placeable::OrientObject(System.Boolean,UnityEngine.Vector3)
 extern "C"  void Placeable_OrientObject_m827847408 (Placeable_t3832491248 * __this, bool ___alignToVerticalSurface0, Vector3_t3722313464  ___surfaceNormal1, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
-// UnityEngine.Vector3 UnityEngine.Vector3::Lerp(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
-extern "C"  Vector3_t3722313464  Vector3_Lerp_m407887542 (RuntimeObject * __this /* static, unused */, Vector3_t3722313464  p0, Vector3_t3722313464  p1, float p2, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Quaternion UnityEngine.Transform::get_localRotation()
 extern "C"  Quaternion_t2301928331  Transform_get_localRotation_m3487911431 (Transform_t3600365921 * __this, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Quaternion UnityEngine.Quaternion::LookRotation(UnityEngine.Vector3,UnityEngine.Vector3)
@@ -19249,6 +19262,24 @@ IL_0059:
 extern "C"  void Placeable_OnSelect_m3975171889 (Placeable_t3832491248 * __this, const RuntimeMethod* method)
 {
 	{
+		// if (!IsPlacing)
+		bool L_0 = Placeable_get_IsPlacing_m3404642512(__this, /*hidden argument*/NULL);
+		if (L_0)
+		{
+			goto IL_000f;
+		}
+	}
+	{
+		// OnPlacementStart();
+		Placeable_OnPlacementStart_m3325563044(__this, /*hidden argument*/NULL);
+		// }
+		return;
+	}
+
+IL_000f:
+	{
+		// OnPlacementStop();
+		Placeable_OnPlacementStop_m3642547664(__this, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -19256,6 +19287,130 @@ extern "C"  void Placeable_OnSelect_m3975171889 (Placeable_t3832491248 * __this,
 // System.Void Placeable::Update()
 extern "C"  void Placeable_Update_m1364982263 (Placeable_t3832491248 * __this, const RuntimeMethod* method)
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Placeable_Update_m1364982263_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Vector3_t3722313464  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	Vector3_t3722313464  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	bool V_2 = false;
+	float V_3 = 0.0f;
+	Vector3_t3722313464  V_4;
+	memset(&V_4, 0, sizeof(V_4));
+	int32_t V_5 = 0;
+	{
+		// if (IsPlacing)
+		bool L_0 = Placeable_get_IsPlacing_m3404642512(__this, /*hidden argument*/NULL);
+		if (!L_0)
+		{
+			goto IL_002a;
+		}
+	}
+	{
+		// Move();
+		Placeable_Move_m2334335003(__this, /*hidden argument*/NULL);
+		// bool canBePlaced = ValidatePlacement(out targetPosition, out surfaceNormal);
+		bool L_1 = Placeable_ValidatePlacement_m3920759739(__this, (&V_0), (&V_1), /*hidden argument*/NULL);
+		V_2 = L_1;
+		// DisplayBounds(canBePlaced);
+		bool L_2 = V_2;
+		Placeable_DisplayBounds_m2153313866(__this, L_2, /*hidden argument*/NULL);
+		// DisplayShadow(targetPosition, surfaceNormal, canBePlaced);
+		Vector3_t3722313464  L_3 = V_0;
+		Vector3_t3722313464  L_4 = V_1;
+		bool L_5 = V_2;
+		Placeable_DisplayShadow_m1960925305(__this, L_3, L_4, L_5, /*hidden argument*/NULL);
+		// }
+		return;
+	}
+
+IL_002a:
+	{
+		// boundsAsset.SetActive(false);
+		GameObject_t1113636619 * L_6 = __this->get_boundsAsset_17();
+		NullCheck(L_6);
+		GameObject_SetActive_m796801857(L_6, (bool)0, /*hidden argument*/NULL);
+		// shadowAsset.SetActive(false);
+		GameObject_t1113636619 * L_7 = __this->get_shadowAsset_18();
+		NullCheck(L_7);
+		GameObject_SetActive_m796801857(L_7, (bool)0, /*hidden argument*/NULL);
+		// float dist = (gameObject.transform.position - targetPosition).magnitude;
+		GameObject_t1113636619 * L_8 = Component_get_gameObject_m442555142(__this, /*hidden argument*/NULL);
+		NullCheck(L_8);
+		Transform_t3600365921 * L_9 = GameObject_get_transform_m1369836730(L_8, /*hidden argument*/NULL);
+		NullCheck(L_9);
+		Vector3_t3722313464  L_10 = Transform_get_position_m36019626(L_9, /*hidden argument*/NULL);
+		Vector3_t3722313464  L_11 = __this->get_targetPosition_19();
+		IL2CPP_RUNTIME_CLASS_INIT(Vector3_t3722313464_il2cpp_TypeInfo_var);
+		Vector3_t3722313464  L_12 = Vector3_op_Subtraction_m3073674971(NULL /*static, unused*/, L_10, L_11, /*hidden argument*/NULL);
+		V_4 = L_12;
+		float L_13 = Vector3_get_magnitude_m27958459((&V_4), /*hidden argument*/NULL);
+		V_3 = L_13;
+		// if (dist > 0)
+		float L_14 = V_3;
+		if ((!(((float)L_14) > ((float)(0.0f)))))
+		{
+			goto IL_00a3;
+		}
+	}
+	{
+		// gameObject.transform.position = Vector3.Lerp(gameObject.transform.position, targetPosition, placementVelocity / dist);
+		GameObject_t1113636619 * L_15 = Component_get_gameObject_m442555142(__this, /*hidden argument*/NULL);
+		NullCheck(L_15);
+		Transform_t3600365921 * L_16 = GameObject_get_transform_m1369836730(L_15, /*hidden argument*/NULL);
+		GameObject_t1113636619 * L_17 = Component_get_gameObject_m442555142(__this, /*hidden argument*/NULL);
+		NullCheck(L_17);
+		Transform_t3600365921 * L_18 = GameObject_get_transform_m1369836730(L_17, /*hidden argument*/NULL);
+		NullCheck(L_18);
+		Vector3_t3722313464  L_19 = Transform_get_position_m36019626(L_18, /*hidden argument*/NULL);
+		Vector3_t3722313464  L_20 = __this->get_targetPosition_19();
+		float L_21 = __this->get_placementVelocity_14();
+		float L_22 = V_3;
+		IL2CPP_RUNTIME_CLASS_INIT(Vector3_t3722313464_il2cpp_TypeInfo_var);
+		Vector3_t3722313464  L_23 = Vector3_Lerp_m407887542(NULL /*static, unused*/, L_19, L_20, ((float)((float)L_21/(float)L_22)), /*hidden argument*/NULL);
+		NullCheck(L_16);
+		Transform_set_position_m3387557959(L_16, L_23, /*hidden argument*/NULL);
+		// }
+		return;
+	}
+
+IL_00a3:
+	{
+		// for (int i = 0; i < ChildrenToHide.Count; i++)
+		V_5 = 0;
+		goto IL_00c1;
+	}
+
+IL_00a8:
+	{
+		// ChildrenToHide[i].SetActive(true);
+		List_1_t2585711361 * L_24 = __this->get_ChildrenToHide_7();
+		int32_t L_25 = V_5;
+		NullCheck(L_24);
+		GameObject_t1113636619 * L_26 = List_1_get_Item_m2491728134(L_24, L_25, /*hidden argument*/List_1_get_Item_m2491728134_RuntimeMethod_var);
+		NullCheck(L_26);
+		GameObject_SetActive_m796801857(L_26, (bool)1, /*hidden argument*/NULL);
+		// for (int i = 0; i < ChildrenToHide.Count; i++)
+		int32_t L_27 = V_5;
+		V_5 = ((int32_t)((int32_t)L_27+(int32_t)1));
+	}
+
+IL_00c1:
+	{
+		// for (int i = 0; i < ChildrenToHide.Count; i++)
+		int32_t L_28 = V_5;
+		List_1_t2585711361 * L_29 = __this->get_ChildrenToHide_7();
+		NullCheck(L_29);
+		int32_t L_30 = List_1_get_Count_m77021858(L_29, /*hidden argument*/List_1_get_Count_m77021858_RuntimeMethod_var);
+		if ((((int32_t)L_28) < ((int32_t)L_30)))
+		{
+			goto IL_00a8;
+		}
+	}
 	{
 		// }
 		return;
