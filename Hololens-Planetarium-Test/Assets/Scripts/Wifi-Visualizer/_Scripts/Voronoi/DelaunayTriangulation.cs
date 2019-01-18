@@ -1,12 +1,18 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using System.Collections;
 
 public class DelaunayTriangulation : IDelaunayTriangulation
 {
     public DelaunayTriangulation() : base() { }
     
     public override void Add(Measurement3D measurement)
+    {
+        Add_Coroutine(measurement);
+    }
+
+    private void Add_Coroutine(Measurement3D measurement)
     {
         Measurements.Add(measurement);
         UpdateExtremes(measurement);
@@ -37,6 +43,7 @@ public class DelaunayTriangulation : IDelaunayTriangulation
                     //                     add edge to polygon
                     polygon.Add(triangle);
                 }
+                //yield return null;
             }
         }
         //   for each triangle in badTriangles do // remove them from the data structure
@@ -55,12 +62,12 @@ public class DelaunayTriangulation : IDelaunayTriangulation
                 Debug.Log("In same plane");
                 continue;
             }
-            Triangulation.Add(
-                new Tetrahedron(
+            Tetrahedron tetrahedron = new Tetrahedron(
                     measurement,
-                    triangle.Measurements[0],
-                    triangle.Measurements[1],
-                    triangle.Measurements[2]));
+                    triangle.a,
+                    triangle.b,
+                    triangle.c);
+            Triangulation.Add(tetrahedron);
         }
     }
 

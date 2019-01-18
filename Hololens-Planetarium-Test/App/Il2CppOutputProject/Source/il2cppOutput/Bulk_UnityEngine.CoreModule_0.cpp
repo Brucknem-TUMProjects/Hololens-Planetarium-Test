@@ -583,8 +583,6 @@ extern Il2CppCodeGenString* _stringLiteral604301846;
 extern const uint32_t Mesh_RecalculateBounds_m39931642_MetadataUsageId;
 extern Il2CppCodeGenString* _stringLiteral1193542476;
 extern const uint32_t Mesh_RecalculateNormals_m467587154_MetadataUsageId;
-extern Il2CppCodeGenString* _stringLiteral3809558041;
-extern const uint32_t Mesh_RecalculateTangents_m1236595664_MetadataUsageId;
 extern RuntimeClass* Exception_t1436737249_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral3595826494;
 extern const uint32_t MissingReferenceException__ctor_m2878758147_MetadataUsageId;
@@ -9218,8 +9216,6 @@ extern "C"  void Mesh_SetTrianglesImpl_m2249282887 (Mesh_t3648964284 * __this, i
 extern "C"  void Mesh_RecalculateBoundsImpl_m2362089642 (Mesh_t3648964284 * __this, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Mesh::RecalculateNormalsImpl()
 extern "C"  void Mesh_RecalculateNormalsImpl_m3102285457 (Mesh_t3648964284 * __this, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
-// System.Void UnityEngine.Mesh::RecalculateTangentsImpl()
-extern "C"  void Mesh_RecalculateTangentsImpl_m2340358000 (Mesh_t3648964284 * __this, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Exception::.ctor(System.String)
 extern "C"  void Exception__ctor_m1152696503 (Exception_t1436737249 * __this, String_t* p0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Exception::set_HResult(System.Int32)
@@ -17637,15 +17633,6 @@ extern "C"  void Mesh_RecalculateNormalsImpl_m3102285457 (Mesh_t3648964284 * __t
 	_il2cpp_icall_func = (Mesh_RecalculateNormalsImpl_m3102285457_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Mesh::RecalculateNormalsImpl()");
 	_il2cpp_icall_func(__this);
 }
-// System.Void UnityEngine.Mesh::RecalculateTangentsImpl()
-extern "C"  void Mesh_RecalculateTangentsImpl_m2340358000 (Mesh_t3648964284 * __this, const RuntimeMethod* method)
-{
-	typedef void (*Mesh_RecalculateTangentsImpl_m2340358000_ftn) (Mesh_t3648964284 *);
-	static Mesh_RecalculateTangentsImpl_m2340358000_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (Mesh_RecalculateTangentsImpl_m2340358000_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Mesh::RecalculateTangentsImpl()");
-	_il2cpp_icall_func(__this);
-}
 // System.Void UnityEngine.Mesh::PrintErrorCantAccessChannel(UnityEngine.Mesh/InternalShaderChannel)
 extern "C"  void Mesh_PrintErrorCantAccessChannel_m2109128075 (Mesh_t3648964284 * __this, int32_t ___ch0, const RuntimeMethod* method)
 {
@@ -18170,40 +18157,6 @@ IL_0017:
 	{
 		String_t* L_1 = Object_get_name_m4211327027(__this, /*hidden argument*/NULL);
 		String_t* L_2 = String_Format_m2844511972(NULL /*static, unused*/, _stringLiteral1193542476, L_1, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(Debug_t3317548046_il2cpp_TypeInfo_var);
-		Debug_LogError_m2850623458(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
-	}
-
-IL_002c:
-	{
-		return;
-	}
-}
-// System.Void UnityEngine.Mesh::RecalculateTangents()
-extern "C"  void Mesh_RecalculateTangents_m1236595664 (Mesh_t3648964284 * __this, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Mesh_RecalculateTangents_m1236595664_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		bool L_0 = Mesh_get_canAccess_m2239225054(__this, /*hidden argument*/NULL);
-		if (!L_0)
-		{
-			goto IL_0017;
-		}
-	}
-	{
-		Mesh_RecalculateTangentsImpl_m2340358000(__this, /*hidden argument*/NULL);
-		goto IL_002c;
-	}
-
-IL_0017:
-	{
-		String_t* L_1 = Object_get_name_m4211327027(__this, /*hidden argument*/NULL);
-		String_t* L_2 = String_Format_m2844511972(NULL /*static, unused*/, _stringLiteral3809558041, L_1, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t3317548046_il2cpp_TypeInfo_var);
 		Debug_LogError_m2850623458(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
 	}

@@ -82,7 +82,10 @@ public class DelaunayTriangulator : MonoBehaviour
 
     private void RenderTetrahedrons()
     {
-        for (int i = 0; i < triangulation.Tetrahedrons.Count; i++)
+        IEnumerator<Tetrahedron> toRender = triangulation.Tetrahedrons.GetEnumerator();
+
+        int i = 0;
+        while (toRender.MoveNext())
         {
             if (i >= tetrahedrons.Count)
             {
@@ -91,7 +94,8 @@ public class DelaunayTriangulator : MonoBehaviour
                 obj.SetActive(true);
                 obj.transform.parent = tetrahedronsContainer.transform;
             }
-            tetrahedrons[i].SetTetrahedron(triangulation.Tetrahedrons[i]);
+            tetrahedrons[i].SetTetrahedron(toRender.Current);
+            i++;
         }
     }
 }

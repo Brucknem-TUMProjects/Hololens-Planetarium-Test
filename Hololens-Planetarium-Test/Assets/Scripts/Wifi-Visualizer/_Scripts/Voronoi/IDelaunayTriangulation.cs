@@ -8,11 +8,11 @@ public abstract class IDelaunayTriangulation
     public List<Measurement3D> Measurements { get; protected set; }
     public float[,] Extremes { get; protected set; }
     
-    public List<Tetrahedron> Tetrahedrons
+    public IEnumerable<Tetrahedron> Tetrahedrons
     {
         get
         {
-            return Triangulation.Where(t => !t.IsArtificial).ToList();
+            return Triangulation.Where(t => !t.IsArtificial);
         }
     }
 

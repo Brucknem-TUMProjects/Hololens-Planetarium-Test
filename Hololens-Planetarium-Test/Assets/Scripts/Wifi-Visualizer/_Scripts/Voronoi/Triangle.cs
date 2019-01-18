@@ -5,33 +5,27 @@ using UnityEngine;
 
 public class Triangle
 {
-    public List<Measurement3D> Measurements{get; private set;}
+    public Measurement3D a;
+    public Measurement3D b;
+    public Measurement3D c;
 
     public Vector3 Normal
     {
         get
         {
-            return Vector3.Normalize(Vector3.Cross(Measurements[1].Position - Measurements[0], Measurements[2].Position - Measurements[0]));
+            return Vector3.Normalize(Vector3.Cross(b.Position - a, c.Position - a));
         }
     }
 
     public Triangle(Measurement3D a, Measurement3D b, Measurement3D c)
     {
-        Measurements = new List<Measurement3D>
-        {
-            a
-        };
-        if (Measurements.Contains(b))
+        if (a.Equals(b) || b.Equals(c) || c.Equals(a))
         {
             throw new ArgumentException("Two points are equal!");
         }
-        Measurements.Add(b);
-
-        if (Measurements.Contains(c))
-        {
-            throw new ArgumentException("Two points are equal!");
-        }
-        Measurements.Add(c);
+        this.a = a;
+        this.b = b;
+        this.c = c;
     }
 
     public override bool Equals(object obj)
@@ -41,16 +35,17 @@ public class Triangle
             return false;
         }
         Triangle other = (Triangle)obj;
-        return new HashSet<Measurement3D>(Measurements).SetEquals(new HashSet<Measurement3D>(other.Measurements));
-    }
-
-    public override int GetHashCode()
-    {
-        return -191684997 + EqualityComparer<HashSet<Measurement3D>>.Default.GetHashCode(new HashSet<Measurement3D>(Measurements));
+        return
+            (other.a.Equals(a) && other.b.Equals(b) && other.c.Equals(c)) ||
+            (other.a.Equals(a) && other.b.Equals(c) && other.c.Equals(b)) ||
+            (other.a.Equals(b) && other.b.Equals(a) && other.c.Equals(c)) ||
+            (other.a.Equals(b) && other.b.Equals(c) && other.c.Equals(a)) ||
+            (other.a.Equals(c) && other.b.Equals(a) && other.c.Equals(b)) ||
+            (other.a.Equals(c) && other.b.Equals(b) && other.c.Equals(a));
     }
 
     public bool InSamePlane(Measurement3D other)
     {
-        return Vector3.Dot(Normal, other.Position - Measurements[0]) == 0;
+        return Vector3.Dot(Normal, other.Position - a) == 0;
     }
 }

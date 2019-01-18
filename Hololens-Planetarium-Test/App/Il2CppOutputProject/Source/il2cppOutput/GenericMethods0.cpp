@@ -1127,7 +1127,6 @@ extern const RuntimeMethod* Enumerator_get_Current_m337713592_RuntimeMethod_var;
 extern const RuntimeMethod* Enumerator_MoveNext_m2142368520_RuntimeMethod_var;
 extern Il2CppCodeGenString* _stringLiteral3969200035;
 extern const uint32_t ResponseBase_ParseJSONList_TisRuntimeObject_m3468361004_MetadataUsageId;
-extern const uint32_t Enumerable_ToList_TisRuntimeObject_m3517240806_MetadataUsageId;
 extern const uint32_t Array_AsReadOnly_TisRuntimeObject_m822159856_MetadataUsageId;
 extern const uint32_t Array_AsReadOnly_TisCustomAttributeNamedArgument_t287865710_m1359254555_MetadataUsageId;
 extern const uint32_t Array_AsReadOnly_TisCustomAttributeTypedArgument_t2723150157_m78691718_MetadataUsageId;
@@ -52783,53 +52782,6 @@ IL_0096:
 		return L_19;
 	}
 }
-// System.Collections.Generic.List`1<TSource> System.Linq.Enumerable::ToList<System.Object>(System.Collections.Generic.IEnumerable`1<TSource>)
-extern "C"  List_1_t257213610 * Enumerable_ToList_TisRuntimeObject_m3517240806_gshared (RuntimeObject * __this /* static, unused */, RuntimeObject* ___source0, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Enumerable_ToList_TisRuntimeObject_m3517240806_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	RuntimeObject* V_0 = NULL;
-	{
-		RuntimeObject* L_0 = ___source0;
-		if (L_0)
-		{
-			goto IL_000e;
-		}
-	}
-	{
-		Exception_t1436737249 * L_1 = Error_ArgumentNull_m219206370(NULL /*static, unused*/, (String_t*)_stringLiteral4294193667, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1);
-	}
-
-IL_000e:
-	{
-		RuntimeObject* L_2 = ___source0;
-		V_0 = (RuntimeObject*)((RuntimeObject*)IsInst((RuntimeObject*)L_2, IL2CPP_RGCTX_DATA(method->rgctx_data, 0)));
-		RuntimeObject* L_3 = V_0;
-		if (L_3)
-		{
-			goto IL_001f;
-		}
-	}
-	{
-		RuntimeObject* L_4 = ___source0;
-		List_1_t257213610 * L_5 = (List_1_t257213610 *)il2cpp_codegen_object_new(IL2CPP_RGCTX_DATA(method->rgctx_data, 1));
-		((  void (*) (List_1_t257213610 *, RuntimeObject*, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 2)->methodPointer)(L_5, (RuntimeObject*)L_4, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 2));
-		return L_5;
-	}
-
-IL_001f:
-	{
-		RuntimeObject* L_6 = V_0;
-		NullCheck((RuntimeObject*)L_6);
-		List_1_t257213610 * L_7 = InterfaceFuncInvoker0< List_1_t257213610 * >::Invoke(0 /* System.Collections.Generic.List`1<TElement> System.Linq.IIListProvider`1<System.Object>::ToList() */, IL2CPP_RGCTX_DATA(method->rgctx_data, 0), (RuntimeObject*)L_6);
-		return L_7;
-	}
-}
 // System.Collections.IEnumerator UnityEngine.Networking.Match.NetworkMatch::ProcessMatchResponse<System.Object,System.Object>(UnityEngine.WWW,UnityEngine.Networking.Match.NetworkMatch/InternalResponseDelegate`2<JSONRESPONSE,USERRESPONSEDELEGATETYPE>,USERRESPONSEDELEGATETYPE)
 extern "C"  RuntimeObject* NetworkMatch_ProcessMatchResponse_TisRuntimeObject_TisRuntimeObject_m2601959291_gshared (NetworkMatch_t2930480025 * __this, WWW_t3688466362 * ___client0, InternalResponseDelegate_2_t3324166758 * ___internalCallback1, RuntimeObject * ___userCallback2, const RuntimeMethod* method)
 {
@@ -71480,7 +71432,7 @@ IL_001f:
 	{
 		RuntimeObject* L_8 = V_1;
 		NullCheck((RuntimeObject*)L_8);
-		int32_t L_9 = InterfaceFuncInvoker1< int32_t, bool >::Invoke(1 /* System.Int32 System.Linq.IIListProvider`1<System.Object>::GetCount(System.Boolean) */, IL2CPP_RGCTX_DATA(method->rgctx_data, 1), (RuntimeObject*)L_8, (bool)0);
+		int32_t L_9 = InterfaceFuncInvoker1< int32_t, bool >::Invoke(0 /* System.Int32 System.Linq.IIListProvider`1<System.Object>::GetCount(System.Boolean) */, IL2CPP_RGCTX_DATA(method->rgctx_data, 1), (RuntimeObject*)L_8, (bool)0);
 		return L_9;
 	}
 

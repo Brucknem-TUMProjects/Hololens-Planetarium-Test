@@ -6,10 +6,10 @@
 		_Falloff("Falloff", Range(0,3)) = 1
 	}
 	SubShader {
-		Tags { "Queue"="Transparent" "RenderType" = "Transparent" }
+		Tags { "Queue"="Transparent" "RenderType" = "Opaque" }
 			
 		Blend SrcAlpha OneMinusSrcAlpha
-		//ZWrite off
+		ZWrite off
 		Cull front
 
 		CGPROGRAM

@@ -20013,11 +20013,6 @@ extern "C" void MonoInternalNoteAttribute__ctor_m1356416471 ();
 extern "C" void MonoTODOAttribute__ctor_m1337412070 ();
 extern "C" void MonoTODOAttribute__ctor_m1016023335 ();
 extern "C" void SR_GetString_m4069745605 ();
-extern "C" void BitHelper__ctor_m4144361707 ();
-extern "C" void BitHelper__ctor_m803369760 ();
-extern "C" void BitHelper_MarkBit_m1489953058 ();
-extern "C" void BitHelper_IsMarked_m718240981 ();
-extern "C" void BitHelper_ToIntArrayLength_m356303542 ();
 extern "C" void Error_ArgumentNull_m219206370 ();
 extern "C" void Error_NoElements_m207875825 ();
 extern "C" void Error_NotSupported_m1072967690 ();
@@ -20383,7 +20378,6 @@ extern "C" void Mesh_get_vertexCount_m884140614 ();
 extern "C" void Mesh_get_subMeshCount_m3992802841 ();
 extern "C" void Mesh_RecalculateBoundsImpl_m2362089642 ();
 extern "C" void Mesh_RecalculateNormalsImpl_m3102285457 ();
-extern "C" void Mesh_RecalculateTangentsImpl_m2340358000 ();
 extern "C" void Mesh_PrintErrorCantAccessChannel_m2109128075 ();
 extern "C" void Mesh_DefaultDimensionForChannel_m576040980 ();
 extern "C" void Mesh_SafeLength_m4176809041 ();
@@ -20400,7 +20394,6 @@ extern "C" void Mesh_set_triangles_m255556250 ();
 extern "C" void Mesh_GetTriangles_m973693202 ();
 extern "C" void Mesh_RecalculateBounds_m39931642 ();
 extern "C" void Mesh_RecalculateNormals_m467587154 ();
-extern "C" void Mesh_RecalculateTangents_m1236595664 ();
 extern "C" void MeshFilter_get_mesh_m3346355278 ();
 extern "C" void MeshFilter_set_mesh_m1415871686 ();
 extern "C" void MeshFilter_get_sharedMesh_m1726897210 ();
@@ -24504,12 +24497,13 @@ extern "C" void CircumSphereTest_Update_m303656797 ();
 extern "C" void CircumSphereTest__ctor_m2435872283 ();
 extern "C" void DelaunayTriangulation__ctor_m1713470808 ();
 extern "C" void DelaunayTriangulation_Add_m1502842403 ();
+extern "C" void DelaunayTriangulation_Add_Coroutine_m21643331 ();
 extern "C" void DelaunayTriangulation_UpdateExtremes_m3022943299 ();
 extern "C" void DelaunayTriangulation_Generate_m993253844 ();
 extern "C" void DelaunayTriangulation_EdgeInBadTriangles_m2632976803 ();
 extern "C" void DelaunayTriangulation_AddAll_m1243550635 ();
-extern "C" void U3CU3Ec__DisplayClass1_0__ctor_m3196769865 ();
-extern "C" void U3CU3Ec__DisplayClass1_0_U3CAddU3Eb__0_m4132780162 ();
+extern "C" void U3CU3Ec__DisplayClass2_0__ctor_m284737407 ();
+extern "C" void U3CU3Ec__DisplayClass2_0_U3CAdd_CoroutineU3Eb__0_m1534135383 ();
 extern "C" void DelaunayTriangulationMock__ctor_m2654512117 ();
 extern "C" void DelaunayTriangulationMock_Add_m1275342963 ();
 extern "C" void DelaunayTriangulationMock_AddAll_m2117464913 ();
@@ -24530,18 +24524,18 @@ extern "C" void DelaunayTriangulatorTest_IterativeRandomTest_m3275725908 ();
 extern "C" void DelaunayTriangulatorTest_ManyRandomTest_m1109109228 ();
 extern "C" void DelaunayTriangulatorTest_CubeTest_m993566620 ();
 extern "C" void DelaunayTriangulatorTest__ctor_m1536197186 ();
-extern "C" void U3CCubeTestU3Ed__7__ctor_m4050665614 ();
-extern "C" void U3CCubeTestU3Ed__7_System_IDisposable_Dispose_m1425730964 ();
-extern "C" void U3CCubeTestU3Ed__7_MoveNext_m116984691 ();
-extern "C" void U3CCubeTestU3Ed__7_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m2820450537 ();
-extern "C" void U3CCubeTestU3Ed__7_System_Collections_IEnumerator_Reset_m3948583357 ();
-extern "C" void U3CCubeTestU3Ed__7_System_Collections_IEnumerator_get_Current_m1502534222 ();
-extern "C" void U3CIterativeRandomTestU3Ed__5__ctor_m459056113 ();
-extern "C" void U3CIterativeRandomTestU3Ed__5_System_IDisposable_Dispose_m255354362 ();
-extern "C" void U3CIterativeRandomTestU3Ed__5_MoveNext_m2440756360 ();
-extern "C" void U3CIterativeRandomTestU3Ed__5_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m3089355999 ();
-extern "C" void U3CIterativeRandomTestU3Ed__5_System_Collections_IEnumerator_Reset_m1517571206 ();
-extern "C" void U3CIterativeRandomTestU3Ed__5_System_Collections_IEnumerator_get_Current_m1518461567 ();
+extern "C" void U3CCubeTestU3Ed__9__ctor_m757807672 ();
+extern "C" void U3CCubeTestU3Ed__9_System_IDisposable_Dispose_m2738938133 ();
+extern "C" void U3CCubeTestU3Ed__9_MoveNext_m3996584802 ();
+extern "C" void U3CCubeTestU3Ed__9_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m999858572 ();
+extern "C" void U3CCubeTestU3Ed__9_System_Collections_IEnumerator_Reset_m1256710811 ();
+extern "C" void U3CCubeTestU3Ed__9_System_Collections_IEnumerator_get_Current_m424949648 ();
+extern "C" void U3CIterativeRandomTestU3Ed__7__ctor_m2716510280 ();
+extern "C" void U3CIterativeRandomTestU3Ed__7_System_IDisposable_Dispose_m2605619331 ();
+extern "C" void U3CIterativeRandomTestU3Ed__7_MoveNext_m2440963286 ();
+extern "C" void U3CIterativeRandomTestU3Ed__7_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m1627630518 ();
+extern "C" void U3CIterativeRandomTestU3Ed__7_System_Collections_IEnumerator_Reset_m2584877257 ();
+extern "C" void U3CIterativeRandomTestU3Ed__7_System_Collections_IEnumerator_get_Current_m3806817914 ();
 extern "C" void HaloScript_Start_m3715680484 ();
 extern "C" void HaloScript_Awake_m2778646051 ();
 extern "C" void HaloScript_SetShader_m628701545 ();
@@ -24553,7 +24547,7 @@ extern "C" void IDelaunayTriangulation_get_Measurements_m3024908 ();
 extern "C" void IDelaunayTriangulation_set_Measurements_m2132011183 ();
 extern "C" void IDelaunayTriangulation_get_Extremes_m2478141141 ();
 extern "C" void IDelaunayTriangulation_set_Extremes_m3411688870 ();
-extern "C" void IDelaunayTriangulation_get_Tetrahedrons_m2656063597 ();
+extern "C" void IDelaunayTriangulation_get_Tetrahedrons_m2315687054 ();
 extern "C" void IDelaunayTriangulation__ctor_m2740697879 ();
 extern "C" void IDelaunayTriangulation_get_SuperTetrahedron_m3988854085 ();
 extern "C" void IDelaunayTriangulation_Init_m2108658704 ();
@@ -24703,15 +24697,12 @@ extern "C" void Tetrahedron_BarycentricInterpolation_m2635364970 ();
 extern "C" void Tetrahedron_Multiply_m2461613452 ();
 extern "C" void Tetrahedron_Includes_m591035506 ();
 extern "C" void Tetrahedron_CalculateArtificial_m2894758897 ();
-extern "C" void Triangle_get_Measurements_m2365734194 ();
-extern "C" void Triangle_set_Measurements_m2042949125 ();
 extern "C" void Triangle_get_Normal_m734785959 ();
 extern "C" void Triangle__ctor_m12414590 ();
 extern "C" void Triangle_Equals_m3579520273 ();
-extern "C" void Triangle_GetHashCode_m3713074486 ();
 extern "C" void Triangle_InSamePlane_m1847228897 ();
 extern "C" void Utils__ctor_m2052061147 ();
-extern const Il2CppMethodPointer g_MethodPointers[24694] = 
+extern const Il2CppMethodPointer g_MethodPointers[24685] = 
 {
 	U3CPrivateImplementationDetailsU3E_ComputeStringHash_m4063532059,
 	mincore_EnumDynamicTimeZoneInformation_m2602101295,
@@ -44709,11 +44700,6 @@ extern const Il2CppMethodPointer g_MethodPointers[24694] =
 	MonoTODOAttribute__ctor_m1337412070,
 	MonoTODOAttribute__ctor_m1016023335,
 	SR_GetString_m4069745605,
-	BitHelper__ctor_m4144361707,
-	BitHelper__ctor_m803369760,
-	BitHelper_MarkBit_m1489953058,
-	BitHelper_IsMarked_m718240981,
-	BitHelper_ToIntArrayLength_m356303542,
 	Error_ArgumentNull_m219206370,
 	Error_NoElements_m207875825,
 	Error_NotSupported_m1072967690,
@@ -45079,7 +45065,6 @@ extern const Il2CppMethodPointer g_MethodPointers[24694] =
 	Mesh_get_subMeshCount_m3992802841,
 	Mesh_RecalculateBoundsImpl_m2362089642,
 	Mesh_RecalculateNormalsImpl_m3102285457,
-	Mesh_RecalculateTangentsImpl_m2340358000,
 	Mesh_PrintErrorCantAccessChannel_m2109128075,
 	Mesh_DefaultDimensionForChannel_m576040980,
 	Mesh_SafeLength_m4176809041,
@@ -45096,7 +45081,6 @@ extern const Il2CppMethodPointer g_MethodPointers[24694] =
 	Mesh_GetTriangles_m973693202,
 	Mesh_RecalculateBounds_m39931642,
 	Mesh_RecalculateNormals_m467587154,
-	Mesh_RecalculateTangents_m1236595664,
 	MeshFilter_get_mesh_m3346355278,
 	MeshFilter_set_mesh_m1415871686,
 	MeshFilter_get_sharedMesh_m1726897210,
@@ -49200,12 +49184,13 @@ extern const Il2CppMethodPointer g_MethodPointers[24694] =
 	CircumSphereTest__ctor_m2435872283,
 	DelaunayTriangulation__ctor_m1713470808,
 	DelaunayTriangulation_Add_m1502842403,
+	DelaunayTriangulation_Add_Coroutine_m21643331,
 	DelaunayTriangulation_UpdateExtremes_m3022943299,
 	DelaunayTriangulation_Generate_m993253844,
 	DelaunayTriangulation_EdgeInBadTriangles_m2632976803,
 	DelaunayTriangulation_AddAll_m1243550635,
-	U3CU3Ec__DisplayClass1_0__ctor_m3196769865,
-	U3CU3Ec__DisplayClass1_0_U3CAddU3Eb__0_m4132780162,
+	U3CU3Ec__DisplayClass2_0__ctor_m284737407,
+	U3CU3Ec__DisplayClass2_0_U3CAdd_CoroutineU3Eb__0_m1534135383,
 	DelaunayTriangulationMock__ctor_m2654512117,
 	DelaunayTriangulationMock_Add_m1275342963,
 	DelaunayTriangulationMock_AddAll_m2117464913,
@@ -49226,18 +49211,18 @@ extern const Il2CppMethodPointer g_MethodPointers[24694] =
 	DelaunayTriangulatorTest_ManyRandomTest_m1109109228,
 	DelaunayTriangulatorTest_CubeTest_m993566620,
 	DelaunayTriangulatorTest__ctor_m1536197186,
-	U3CCubeTestU3Ed__7__ctor_m4050665614,
-	U3CCubeTestU3Ed__7_System_IDisposable_Dispose_m1425730964,
-	U3CCubeTestU3Ed__7_MoveNext_m116984691,
-	U3CCubeTestU3Ed__7_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m2820450537,
-	U3CCubeTestU3Ed__7_System_Collections_IEnumerator_Reset_m3948583357,
-	U3CCubeTestU3Ed__7_System_Collections_IEnumerator_get_Current_m1502534222,
-	U3CIterativeRandomTestU3Ed__5__ctor_m459056113,
-	U3CIterativeRandomTestU3Ed__5_System_IDisposable_Dispose_m255354362,
-	U3CIterativeRandomTestU3Ed__5_MoveNext_m2440756360,
-	U3CIterativeRandomTestU3Ed__5_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m3089355999,
-	U3CIterativeRandomTestU3Ed__5_System_Collections_IEnumerator_Reset_m1517571206,
-	U3CIterativeRandomTestU3Ed__5_System_Collections_IEnumerator_get_Current_m1518461567,
+	U3CCubeTestU3Ed__9__ctor_m757807672,
+	U3CCubeTestU3Ed__9_System_IDisposable_Dispose_m2738938133,
+	U3CCubeTestU3Ed__9_MoveNext_m3996584802,
+	U3CCubeTestU3Ed__9_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m999858572,
+	U3CCubeTestU3Ed__9_System_Collections_IEnumerator_Reset_m1256710811,
+	U3CCubeTestU3Ed__9_System_Collections_IEnumerator_get_Current_m424949648,
+	U3CIterativeRandomTestU3Ed__7__ctor_m2716510280,
+	U3CIterativeRandomTestU3Ed__7_System_IDisposable_Dispose_m2605619331,
+	U3CIterativeRandomTestU3Ed__7_MoveNext_m2440963286,
+	U3CIterativeRandomTestU3Ed__7_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m1627630518,
+	U3CIterativeRandomTestU3Ed__7_System_Collections_IEnumerator_Reset_m2584877257,
+	U3CIterativeRandomTestU3Ed__7_System_Collections_IEnumerator_get_Current_m3806817914,
 	HaloScript_Start_m3715680484,
 	HaloScript_Awake_m2778646051,
 	HaloScript_SetShader_m628701545,
@@ -49249,7 +49234,7 @@ extern const Il2CppMethodPointer g_MethodPointers[24694] =
 	IDelaunayTriangulation_set_Measurements_m2132011183,
 	IDelaunayTriangulation_get_Extremes_m2478141141,
 	IDelaunayTriangulation_set_Extremes_m3411688870,
-	IDelaunayTriangulation_get_Tetrahedrons_m2656063597,
+	IDelaunayTriangulation_get_Tetrahedrons_m2315687054,
 	IDelaunayTriangulation__ctor_m2740697879,
 	IDelaunayTriangulation_get_SuperTetrahedron_m3988854085,
 	IDelaunayTriangulation_Init_m2108658704,
@@ -49399,12 +49384,9 @@ extern const Il2CppMethodPointer g_MethodPointers[24694] =
 	Tetrahedron_Multiply_m2461613452,
 	Tetrahedron_Includes_m591035506,
 	Tetrahedron_CalculateArtificial_m2894758897,
-	Triangle_get_Measurements_m2365734194,
-	Triangle_set_Measurements_m2042949125,
 	Triangle_get_Normal_m734785959,
 	Triangle__ctor_m12414590,
 	Triangle_Equals_m3579520273,
-	Triangle_GetHashCode_m3713074486,
 	Triangle_InSamePlane_m1847228897,
 	Utils__ctor_m2052061147,
 };

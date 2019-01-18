@@ -8,12 +8,14 @@
 	SubShader
 	{
 		Tags { "Queue" = "Transparent" "RenderType" = "Transparent"}
-		Blend SrcAlpha OneMinusSrcAlpha
-		ZWrite off
-		Cull front
+		
 
 		Pass
 		{
+			Blend SrcAlpha OneMinusSrcAlpha
+			ZWrite off
+			Cull front
+
 			CGPROGRAM
 			#pragma vertex vert alpha:fade
 			#pragma fragment frag alpha:fade

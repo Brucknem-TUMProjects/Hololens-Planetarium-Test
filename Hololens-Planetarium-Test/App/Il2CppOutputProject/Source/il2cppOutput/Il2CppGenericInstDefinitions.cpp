@@ -732,9 +732,6 @@ extern const Il2CppType Tetrahedron_t2299011221_0_0_0;
 extern const Il2CppType Triangle_t425130489_0_0_0;
 extern const Il2CppType MonoTetrahedron_t2998538235_0_0_0;
 extern const Il2CppType MonoMeasurement3D_t2194813700_0_0_0;
-extern const Il2CppType Slot_t2879456564_0_0_0;
-extern const Il2CppType HashSet_1_t478415445_0_0_0;
-extern const Il2CppType ISet_1_t554399475_0_0_0;
 extern const Il2CppType HandsManager_t1017542450_0_0_0;
 extern const Il2CppType MeshFilter_t3523625662_0_0_0;
 extern const Il2CppType SurfaceObject_t63294545_0_0_0;
@@ -960,7 +957,6 @@ extern const Il2CppType Enumerable_First_m2942320219_gp_0_0_0_0;
 extern const Il2CppType Enumerable_TryGetFirst_m3112043420_gp_0_0_0_0;
 extern const Il2CppType Enumerable_Last_m2981379197_gp_0_0_0_0;
 extern const Il2CppType Enumerable_TryGetLast_m1845224548_gp_0_0_0_0;
-extern const Il2CppType Enumerable_ToList_m742020033_gp_0_0_0_0;
 extern const Il2CppType Enumerable_Where_m264777709_gp_0_0_0_0;
 extern const Il2CppType Iterator_1_t315481196_gp_0_0_0_0;
 extern const Il2CppType WhereEnumerableIterator_1_t4246211650_gp_0_0_0_0;
@@ -2742,12 +2738,6 @@ static const RuntimeType* GenInst_MonoTetrahedron_t2998538235_0_0_0_Types[] = { 
 extern const Il2CppGenericInst GenInst_MonoTetrahedron_t2998538235_0_0_0 = { 1, GenInst_MonoTetrahedron_t2998538235_0_0_0_Types };
 static const RuntimeType* GenInst_MonoMeasurement3D_t2194813700_0_0_0_Types[] = { (&MonoMeasurement3D_t2194813700_0_0_0) };
 extern const Il2CppGenericInst GenInst_MonoMeasurement3D_t2194813700_0_0_0 = { 1, GenInst_MonoMeasurement3D_t2194813700_0_0_0_Types };
-static const RuntimeType* GenInst_Slot_t2879456564_0_0_0_Types[] = { (&Slot_t2879456564_0_0_0) };
-extern const Il2CppGenericInst GenInst_Slot_t2879456564_0_0_0 = { 1, GenInst_Slot_t2879456564_0_0_0_Types };
-static const RuntimeType* GenInst_HashSet_1_t478415445_0_0_0_Types[] = { (&HashSet_1_t478415445_0_0_0) };
-extern const Il2CppGenericInst GenInst_HashSet_1_t478415445_0_0_0 = { 1, GenInst_HashSet_1_t478415445_0_0_0_Types };
-static const RuntimeType* GenInst_ISet_1_t554399475_0_0_0_Types[] = { (&ISet_1_t554399475_0_0_0) };
-extern const Il2CppGenericInst GenInst_ISet_1_t554399475_0_0_0 = { 1, GenInst_ISet_1_t554399475_0_0_0_Types };
 static const RuntimeType* GenInst_HandsManager_t1017542450_0_0_0_Types[] = { (&HandsManager_t1017542450_0_0_0) };
 extern const Il2CppGenericInst GenInst_HandsManager_t1017542450_0_0_0 = { 1, GenInst_HandsManager_t1017542450_0_0_0_Types };
 static const RuntimeType* GenInst_MeshFilter_t3523625662_0_0_0_Types[] = { (&MeshFilter_t3523625662_0_0_0) };
@@ -3210,8 +3200,6 @@ static const RuntimeType* GenInst_Enumerable_Last_m2981379197_gp_0_0_0_0_Types[]
 extern const Il2CppGenericInst GenInst_Enumerable_Last_m2981379197_gp_0_0_0_0 = { 1, GenInst_Enumerable_Last_m2981379197_gp_0_0_0_0_Types };
 static const RuntimeType* GenInst_Enumerable_TryGetLast_m1845224548_gp_0_0_0_0_Types[] = { (&Enumerable_TryGetLast_m1845224548_gp_0_0_0_0) };
 extern const Il2CppGenericInst GenInst_Enumerable_TryGetLast_m1845224548_gp_0_0_0_0 = { 1, GenInst_Enumerable_TryGetLast_m1845224548_gp_0_0_0_0_Types };
-static const RuntimeType* GenInst_Enumerable_ToList_m742020033_gp_0_0_0_0_Types[] = { (&Enumerable_ToList_m742020033_gp_0_0_0_0) };
-extern const Il2CppGenericInst GenInst_Enumerable_ToList_m742020033_gp_0_0_0_0 = { 1, GenInst_Enumerable_ToList_m742020033_gp_0_0_0_0_Types };
 static const RuntimeType* GenInst_Enumerable_Where_m264777709_gp_0_0_0_0_Types[] = { (&Enumerable_Where_m264777709_gp_0_0_0_0) };
 extern const Il2CppGenericInst GenInst_Enumerable_Where_m264777709_gp_0_0_0_0 = { 1, GenInst_Enumerable_Where_m264777709_gp_0_0_0_0_Types };
 static const RuntimeType* GenInst_Enumerable_Where_m264777709_gp_0_0_0_0_Boolean_t97287965_0_0_0_Types[] = { (&Enumerable_Where_m264777709_gp_0_0_0_0), (&Boolean_t97287965_0_0_0) };
@@ -3470,7 +3458,7 @@ static const RuntimeType* GenInst_ConfiguredTaskAwaiter_t107639853_0_0_0_U3CGetN
 extern const Il2CppGenericInst GenInst_ConfiguredTaskAwaiter_t107639853_0_0_0_U3CGetNonFileStreamAsyncU3Ed__1_t2377854195_0_0_0 = { 2, GenInst_ConfiguredTaskAwaiter_t107639853_0_0_0_U3CGetNonFileStreamAsyncU3Ed__1_t2377854195_0_0_0_Types };
 static const RuntimeType* GenInst_ConfiguredTaskAwaiter_t107639853_0_0_0_U3CGetEntityAsyncU3Ed__0_t2214286444_0_0_0_Types[] = { (&ConfiguredTaskAwaiter_t107639853_0_0_0), (&U3CGetEntityAsyncU3Ed__0_t2214286444_0_0_0) };
 extern const Il2CppGenericInst GenInst_ConfiguredTaskAwaiter_t107639853_0_0_0_U3CGetEntityAsyncU3Ed__0_t2214286444_0_0_0 = { 2, GenInst_ConfiguredTaskAwaiter_t107639853_0_0_0_U3CGetEntityAsyncU3Ed__0_t2214286444_0_0_0_Types };
-extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[1201] = 
+extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[1197] = 
 {
 	&GenInst_RuntimeObject_0_0_0,
 	&GenInst_Byte_t1134296376_0_0_0,
@@ -4309,9 +4297,6 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[1201] =
 	&GenInst_Tetrahedron_t2299011221_0_0_0_Boolean_t97287965_0_0_0,
 	&GenInst_MonoTetrahedron_t2998538235_0_0_0,
 	&GenInst_MonoMeasurement3D_t2194813700_0_0_0,
-	&GenInst_Slot_t2879456564_0_0_0,
-	&GenInst_HashSet_1_t478415445_0_0_0,
-	&GenInst_ISet_1_t554399475_0_0_0,
 	&GenInst_HandsManager_t1017542450_0_0_0,
 	&GenInst_MeshFilter_t3523625662_0_0_0,
 	&GenInst_SurfaceObject_t63294545_0_0_0,
@@ -4543,7 +4528,6 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[1201] =
 	&GenInst_Enumerable_TryGetFirst_m3112043420_gp_0_0_0_0,
 	&GenInst_Enumerable_Last_m2981379197_gp_0_0_0_0,
 	&GenInst_Enumerable_TryGetLast_m1845224548_gp_0_0_0_0,
-	&GenInst_Enumerable_ToList_m742020033_gp_0_0_0_0,
 	&GenInst_Enumerable_Where_m264777709_gp_0_0_0_0,
 	&GenInst_Enumerable_Where_m264777709_gp_0_0_0_0_Boolean_t97287965_0_0_0,
 	&GenInst_Iterator_1_t315481196_gp_0_0_0_0,

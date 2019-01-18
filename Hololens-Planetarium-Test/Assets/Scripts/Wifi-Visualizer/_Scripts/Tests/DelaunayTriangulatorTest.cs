@@ -4,14 +4,31 @@ using UnityEngine;
 
 public class DelaunayTriangulatorTest : MonoBehaviour
 {
-
+    public Shader tetrahedron;
+    public Shader measurement;
     float delay = 0.5f;
     float size = 2;
     float lastUpdate;
 
     void Start()
     {
-        //StartCoroutine(IterativeRandomTest());
+        //new Tetrahedron(
+        //    new Measurement3D(0, 0, 0),
+        //    new Measurement3D(0, 0, 1),
+        //    new Measurement3D(0, 1, 0),
+        //    new Measurement3D(1, 0, 0)
+        //    );
+        
+        //new Tetrahedron(
+        //    new Measurement3D(1, 0, 1),
+        //    new Measurement3D(0, 0, 1),
+        //    new Measurement3D(0, 1, 0),
+        //    new Measurement3D(1, 0, 0)
+        //    );
+
+        //GameObject gameObject = new GameObject("test");
+        //gameObject.AddComponent<Meshre>
+
     }
 
     private void Update()
