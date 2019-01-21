@@ -15,14 +15,13 @@
 
 		CGPROGRAM
 		#pragma surface surf Standard alpha:fade
-		#pragma target 3.0
+		//#pragma target 3.0
 
 		struct Input {
 			float3 viewDir;
 			float2 uv_MainTex;
 		};
 
-		sampler2D _MainTex;
 		fixed4 _Color;
 		float _Transparency;
 		float _Falloff;

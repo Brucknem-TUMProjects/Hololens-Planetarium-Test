@@ -79,6 +79,7 @@ public class Measurement3D
     public Measurement3D(float x, float y, float z, bool isArtificial = false) : this(new Vector3(x, y, z), "", "", 0, isArtificial) { }
     public Measurement3D(float x, float y, float z) : this(new Vector3(x, y, z), "", "", 0, false) { }
     public Measurement3D(Vector3 position, Signal signal) : this(new Vector3(position.x, position.y, position.z), signal.SSID, signal.MAC, signal.Decibel, false) { }
+    public Measurement3D(Vector3 position, bool isArtificial = false) : this(position, "", "", 1, isArtificial) { }
 
     public static implicit operator Vector3(Measurement3D measurement)
     {

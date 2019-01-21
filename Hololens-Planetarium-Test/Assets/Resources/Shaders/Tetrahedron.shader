@@ -2,19 +2,19 @@
 {
 	Properties
 	{
-		_Transparency("Transparency", Range(0,1)) = 0.2
+		_Transparency("Transparency", Range(0,1)) = 0.05
 	}
 
 	SubShader
 	{
-		Tags { "Queue" = "Transparent" "RenderType" = "Transparent"}
-		
+		Tags { "Queue" = "Transparent"}
+		LOD 10000
 
 		Pass
 		{
 			Blend SrcAlpha OneMinusSrcAlpha
 			ZWrite off
-			Cull front
+			//Cull front
 
 			CGPROGRAM
 			#pragma vertex vert alpha:fade

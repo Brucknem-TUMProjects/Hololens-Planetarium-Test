@@ -4,34 +4,125 @@ using UnityEngine;
 
 public class GridManager : MonoBehaviour
 {
-    public int xx = 10;
-    public int yy = 10;
-    public int zz = 10;
+    public float dx;
+    public float dy;
+    public float dz;
 
-    public float dx = 0.2f;
-    public float dy = 0.2f;
-    public float dz = 0.2f;
+    [Range(1,5)]
+    public int gridRadius;
+
+    public List<MonoMeasurement3D> measurements;
 
     // Use this for initialization
     void Start()
     {
-        Camera.main.GetComponent<SphereCollider>().radius = (Mathf.Min(dx, dy, dz) - 0.05f) / 2f - 0.001f;
-        for (float x = 0; x <= xx; x++)
+        float size = Mathf.Min(dx, dy, dz) / 4f;
+        Camera.main.GetComponent<CapsuleCollider>().height = size * 4 ;
+        Camera.main.GetComponent<CapsuleCollider>().radius = size ;
+        Camera.main.GetComponent<CapsuleCollider>().center = new Vector3(0, 0, size * 2) ;
+
+        for (int i = 0; i < 125; i++)
         {
-            for (float y = 0; y <= yy; y++)
+            GameObject obj = new GameObject("Mono Measurement (" + i + ")");
+            MonoMeasurement3D mono = obj.AddComponent<MonoMeasurement3D>();
+            mono.SetSize(size);
+            mono.SetMeasurement(new Measurement3D(0, 0, 0, true), false);
+            obj.transform.parent = transform;
+            measurements.Add(mono);
+        }
+        Update();
+    }
+
+    private void Update()
+    {
+        Vector3 midpoint = Midpoint();
+
+        for (int x = -gridRadius; x <= gridRadius; x++)
+        {
+            for (int y = -gridRadius; y <= gridRadius; y++)
             {
-                for (float z = 0; z <= zz; z++)
+                for (int z = -gridRadius; z <= gridRadius; z++)
                 {
-                    GameObject obj = new GameObject("Mono Measurement (" + x + "," + y + "," + z + ")");
-                    MonoMeasurement3D mono = obj.AddComponent<MonoMeasurement3D>();
-                    mono.SetMeasurement(new Measurement3D(
-                        ((x / xx) - 0.5f) * (xx * dx),
-                        ((y / yy) - 0.5f) * (yy * dy),
-                        ((z / zz) - 0.5f) * (zz * dz),
-                        true));
-                    obj.transform.parent = transform;
+                    int i = (x + gridRadius) + (y + gridRadius) * (2 * gridRadius + 1)+ (z + gridRadius) * (2 * gridRadius + 1) * (2 * gridRadius + 1);
+                    Vector3 v = new Vector3(midpoint.x + x * dx,
+                            midpoint.y + y * dy,
+                            midpoint.z + z * dz);
+
+                    if (DelaunayTriangulator.Instance.Triangulation.Contains(v))
+                    {
+                        measurements[i].gameObject.SetActive(false);
+                    }
+                    else {
+                        measurements[i].SetMeasurement(new Measurement3D(v, true), true);
+                        measurements[i].gameObject.SetActive(true);
+                    }
                 }
             }
         }
+    }
+
+    private Vector3 Midpoint()
+    {
+        Vector3 midpoint = Camera.main.transform.position;
+        float x = Nearest(midpoint.x, dx);
+        float y = Nearest(midpoint.y, dy);
+        float z = Nearest(midpoint.z, dz);
+        return new Vector3(x, y, z);
+    }
+
+    private float Nearest(float current, float delta)
+    {
+        if (current < 0)
+        {
+            return NearestNeg(current, delta);
+        }
+        else if (current > 0)
+        {
+            return NearestPos(current, delta);
+        }
+        return 0;
+    }
+
+    private float NearestPos(float current, float delta)
+    {
+        float actual = current;
+
+        while (actual > delta)
+        {
+            actual -= delta;
+        }
+
+        float value;
+
+        if (actual > delta / 2)
+        {
+            value = current - actual + delta;
+        }
+        else
+        {
+            value = current - actual;
+        }
+        return value;
+    }
+
+    private float NearestNeg(float current, float delta)
+    {
+        float actual = Mathf.Abs(current);
+
+        while (actual > delta)
+        {
+            actual -= delta;
+        }
+
+        float value;
+        if (actual > delta / 2)
+        {
+            value = current - (delta - actual);
+        }
+        else
+        {
+            value = current + actual;
+        }
+        return value;
     }
 }

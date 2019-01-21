@@ -21,23 +21,9 @@ public class MonoTetrahedron : MonoBehaviour
 
         meshFilter.mesh.vertices = tetrahedron.Vectors.ToArray();
         meshFilter.mesh.triangles = tetrahedron.Indices.ToArray();
-
-        //meshFilter.mesh.RecalculateBounds();
-        //meshFilter.mesh.RecalculateNormals();
-        //meshFilter.mesh.RecalculateTangents();
-
-        meshFilter.mesh.colors = Colors();
+        meshFilter.mesh.colors = tetrahedron.Colors;
     }
 
-    private Color[] Colors()
-    {
-        List<Color> colors = new List<Color>();
-        foreach (Measurement3D measurement in tetrahedron.Measurements)
-        {
-            colors.Add(measurement.Color);
-        }
-        return colors.ToArray();
-    }
 
     private void Initialize()
     {
@@ -46,6 +32,7 @@ public class MonoTetrahedron : MonoBehaviour
         gameObject.AddComponent<MeshRenderer>().material = new Material(Shader.Find("Custom/Tetrahedron"));
         initialized = true;
     }
+
 
     private void DestroyIfArtificial()
     {

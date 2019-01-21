@@ -7,10 +7,12 @@ public class DelaunayTriangulator : MonoBehaviour
     private List<MonoTetrahedron> tetrahedrons;
     private List<MonoMeasurement3D> measurements;
 
+    private GameObject allMeshes;
+
     private GameObject measurementsContainer;
     private GameObject tetrahedronsContainer;
 
-    private IDelaunayTriangulation triangulation;
+    public IDelaunayTriangulation Triangulation { get; private set; }
 
     static DelaunayTriangulator mInstance;
 
@@ -33,13 +35,17 @@ public class DelaunayTriangulator : MonoBehaviour
     public void Reset()
     {
         toAddQueue = new Queue<Measurement3D>();
-        triangulation = new DelaunayTriangulation();
+        Triangulation = new DelaunayTriangulation();
         tetrahedrons = new List<MonoTetrahedron>();
         measurements = new List<MonoMeasurement3D>();
         measurementsContainer = new GameObject("Measurements");
         tetrahedronsContainer = new GameObject("Tetrahedrons");
+        allMeshes = new GameObject("All Meshed");
         measurementsContainer.transform.parent = transform;
         tetrahedronsContainer.transform.parent = transform;
+        allMeshes.transform.parent = transform;
+        allMeshes.AddComponent<MeshRenderer>().material = new Material(Shader.Find("Custom/Tetrahedron"));
+        allMeshes.AddComponent<MeshFilter>();
     }
 
     private void Update()
@@ -49,18 +55,18 @@ public class DelaunayTriangulator : MonoBehaviour
             return;
         }
 
-        if (!triangulation.IsBusy)
+        if (!Triangulation.IsBusy)
         {
             if (toAddQueue.Count > 0)
             {
-                triangulation.Add(toAddQueue.Dequeue());
+                Triangulation.Add(toAddQueue.Dequeue());
             }
         }
 
-        if (triangulation.IsUpdated)
+        if (Triangulation.IsUpdated)
         {
             Render();
-            triangulation.IsUpdated = false;
+            Triangulation.IsUpdated = false;
         }
     }
 
@@ -77,36 +83,71 @@ public class DelaunayTriangulator : MonoBehaviour
 
     public void Generate(List<Measurement3D> measurements)
     {
-        triangulation.Generate(measurements);
+        Triangulation.Generate(measurements);
     }
 
     private void Render()
     {
         RenderTetrahedrons();
-        //RenderMeasurements();
+        RenderMeasurements();
     }
 
     private void RenderMeasurements()
     {
-        //float size = triangulation.AverageDistance * 0.1f;
+        float size = Triangulation.AverageDistance * 0.1f;
 
-        for (int i = 0; i < triangulation.Measurements.Count; i++)
+        for (int i = 0; i < Triangulation.Measurements.Count; i++)
         {
             while (i >= measurements.Count)
             {
                 GameObject obj = new GameObject("Measurement " + i);
-                measurements.Add(obj.AddComponent<MonoMeasurement3D>());
-                obj.SetActive(true);
+                MonoMeasurement3D mono = (obj.AddComponent<MonoMeasurement3D>());
+                measurements.Add(mono);
+                mono.SetSize(size);
                 obj.transform.parent = measurementsContainer.transform;
             }
-            measurements[i].SetMeasurement(triangulation.Measurements[i]);
+            measurements[i].SetMeasurement(Triangulation.Measurements[i], false);
+            measurements[i].gameObject.SetActive(true);
         }
     }
 
     private void RenderTetrahedrons()
     {
-        IEnumerator<Tetrahedron> toRender = triangulation.Tetrahedrons.GetEnumerator();
+        //RenderAllByItself();
+        RenderAllInOne();
+    }
 
+    private void RenderAllInOne()
+    {
+        IEnumerator<Tetrahedron> toRender = Triangulation.Tetrahedrons.GetEnumerator();
+        List<Vector3> vertices = new List<Vector3>();
+        List<int> triangles = new List<int>();
+        List<Color> colors = new List<Color>();
+
+        int i = 0;
+        while (toRender.MoveNext())
+        {
+            Tetrahedron tetrahedron = toRender.Current;
+            vertices.AddRange(tetrahedron.Vectors);
+            colors.AddRange(tetrahedron.Colors);
+
+            foreach (int x in tetrahedron.Indices)
+            {
+                triangles.Add(x + 4 * i);
+            }
+
+            i++;
+        }
+
+        MeshFilter filter = allMeshes.GetComponent<MeshFilter>();
+        filter.mesh.vertices = vertices.ToArray();
+        filter.mesh.triangles = triangles.ToArray();
+        filter.mesh.colors = colors.ToArray();
+    }
+
+    private void RenderAllByItself()
+    {
+        IEnumerator<Tetrahedron> toRender = Triangulation.Tetrahedrons.GetEnumerator();
         int i = 0;
         while (toRender.MoveNext())
         {

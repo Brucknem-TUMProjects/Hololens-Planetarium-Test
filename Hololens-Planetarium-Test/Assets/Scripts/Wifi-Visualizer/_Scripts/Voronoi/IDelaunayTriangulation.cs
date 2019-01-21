@@ -7,8 +7,14 @@ public abstract class IDelaunayTriangulation
 {
     public List<Tetrahedron> Triangulation { get; protected set; }
     public List<Measurement3D> Measurements { get; protected set; }
+    protected List<Vector3> Positions { get; set; }
     public bool IsUpdated { get; set; }
     public bool IsBusy { get; protected set; }
+
+    public bool Contains(Vector3 other)
+    {
+        return Positions.Contains(other);
+    }
 
     public IEnumerable<Tetrahedron> Tetrahedrons
     {
@@ -39,6 +45,7 @@ public abstract class IDelaunayTriangulation
     protected void Init()
     {
         Measurements = new List<Measurement3D>();
+        Positions = new List<Vector3>();
         InitTriangulation();
     }
 

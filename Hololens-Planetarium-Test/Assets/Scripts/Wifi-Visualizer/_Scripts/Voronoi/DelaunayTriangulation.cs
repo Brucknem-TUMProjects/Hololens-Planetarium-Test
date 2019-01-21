@@ -27,6 +27,7 @@ public class DelaunayTriangulation : IDelaunayTriangulation
     {
         IsBusy = true;
         Measurements.Add(measurement);
+        Positions.Add(measurement);
 
         //      badTriangles:= empty set
         List<Tetrahedron> badTetrahedrons = GetBadTetrahedrons(measurement);

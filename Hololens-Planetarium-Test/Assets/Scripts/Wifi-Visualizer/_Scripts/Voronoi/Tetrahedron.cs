@@ -110,4 +110,16 @@ public class Tetrahedron
         }
     }
 
+    public Color[] Colors
+    {
+        get
+        {
+            List<Color> colors = new List<Color>();
+            foreach (Measurement3D measurement in Measurements)
+            {
+                colors.Add(measurement.Color);
+            }
+            return colors.ToArray();
+        }
+    }
 }
