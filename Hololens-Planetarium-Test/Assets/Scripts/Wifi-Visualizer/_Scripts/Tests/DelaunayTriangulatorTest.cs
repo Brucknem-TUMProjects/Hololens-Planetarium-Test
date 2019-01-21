@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class DelaunayTriangulatorTest : MonoBehaviour
 {
+    public TextMesh text;
     public Shader tetrahedron;
     public Shader measurement;
     float delay = 0.5f;
     float size = 2;
     float lastUpdate;
-
+    int i = 0;
     void Start()
     {
         //new Tetrahedron(
@@ -33,10 +34,12 @@ public class DelaunayTriangulatorTest : MonoBehaviour
 
     private void Update()
     {
-        if (Time.time - lastUpdate > 0.5)
+        if (i < 100 && Time.time - lastUpdate > 0.5)
         {
             lastUpdate = Time.time;
             DelaunayTriangulator.Instance.Add(new Measurement3D(Random.Range(-size / 2, size / 2), Random.Range(-size / 2, size / 2), Random.Range(1, size + 1), "", "", Random.Range(-80, -30), false));
+            i++;
+            text.text = i + "";
         }
     }
 

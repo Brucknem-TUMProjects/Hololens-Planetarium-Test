@@ -28,9 +28,11 @@
     </Application>
   </Applications>
   <Capabilities>
+    <Capability Name="internetClient" />
     <Capability Name="internetClientServer" />
     <Capability Name="privateNetworkClientServer" />
     <uap2:Capability Name="spatialPerception" />
     <DeviceCapability Name="microphone" />
+    <DeviceCapability Name="wiFiControl" />
   </Capabilities>
 </Package>

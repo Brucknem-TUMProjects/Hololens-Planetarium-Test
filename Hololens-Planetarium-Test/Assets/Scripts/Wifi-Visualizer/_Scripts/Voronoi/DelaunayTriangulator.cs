@@ -14,6 +14,8 @@ public class DelaunayTriangulator : MonoBehaviour
 
     static DelaunayTriangulator mInstance;
 
+    Queue<Measurement3D> toAddQueue;
+
     public static DelaunayTriangulator Instance
     {
         get
@@ -30,42 +32,63 @@ public class DelaunayTriangulator : MonoBehaviour
 
     public void Reset()
     {
+        toAddQueue = new Queue<Measurement3D>();
         triangulation = new DelaunayTriangulation();
         tetrahedrons = new List<MonoTetrahedron>();
         measurements = new List<MonoMeasurement3D>();
         measurementsContainer = new GameObject("Measurements");
         tetrahedronsContainer = new GameObject("Tetrahedrons");
-        measurementsContainer.transform.parent = transform.parent;
-        tetrahedronsContainer.transform.parent = transform.parent;
+        measurementsContainer.transform.parent = transform;
+        tetrahedronsContainer.transform.parent = transform;
+    }
+
+    private void Update()
+    {
+        if(mInstance == null)
+        {
+            return;
+        }
+
+        if (!triangulation.IsBusy)
+        {
+            if (toAddQueue.Count > 0)
+            {
+                triangulation.Add(toAddQueue.Dequeue());
+            }
+        }
+
+        if (triangulation.IsUpdated)
+        {
+            Render();
+            triangulation.IsUpdated = false;
+        }
     }
 
     public void Add(Measurement3D measurement)
     {
-        triangulation.Add(measurement);
-        Render();
+        toAddQueue.Enqueue(measurement);
+        //Render();
     }
 
     public void AddAll(List<Measurement3D> measurements)
     {
-        triangulation.AddAll(measurements);
-        Render();
+        measurements.ForEach(m => toAddQueue.Enqueue(m));
     }
 
     public void Generate(List<Measurement3D> measurements)
     {
         triangulation.Generate(measurements);
-        Render();
     }
 
     private void Render()
     {
         RenderTetrahedrons();
-        RenderMeasurements();
+        //RenderMeasurements();
     }
 
     private void RenderMeasurements()
     {
-        float size = triangulation.AverageDistance * 0.1f;
+        //float size = triangulation.AverageDistance * 0.1f;
 
         for (int i = 0; i < triangulation.Measurements.Count; i++)
         {
@@ -76,7 +99,7 @@ public class DelaunayTriangulator : MonoBehaviour
                 obj.SetActive(true);
                 obj.transform.parent = measurementsContainer.transform;
             }
-            measurements[i].SetMeasurement(triangulation.Measurements[i], size);
+            measurements[i].SetMeasurement(triangulation.Measurements[i]);
         }
     }
 

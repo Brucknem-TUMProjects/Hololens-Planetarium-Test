@@ -1,12 +1,23 @@
-﻿using System.Collections.Generic;
+﻿using System.Linq;
+using System.Collections.Generic;
 using UnityEngine;
-using System.Linq;
-using System.Collections;
+using System.Threading;
+using System;
+
+#if !UNITY_EDITOR && UNITY_METRO
+using System.Threading;
+using System.Threading.Tasks;
+#endif
+
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
+
 
 public class DelaunayTriangulation : IDelaunayTriangulation
 {
     public DelaunayTriangulation() : base() { }
-    
+
     public override void Add(Measurement3D measurement)
     {
         Add_Coroutine(measurement);
@@ -14,38 +25,22 @@ public class DelaunayTriangulation : IDelaunayTriangulation
 
     private void Add_Coroutine(Measurement3D measurement)
     {
+        IsBusy = true;
         Measurements.Add(measurement);
-        UpdateExtremes(measurement);
 
         //      badTriangles:= empty set
-        List<Tetrahedron> badTetrahedrons = new List<Tetrahedron>();
-        //   for each triangle in triangulation do // first find all the triangles that are no longer valid due to the insertion
-        foreach (Tetrahedron tetrahedron in Triangulation)
-        {
-            //          if point is inside circumcircle of triangle
-            if (tetrahedron.Includes(measurement))
-            {
-                //         add triangle to badTriangles
-                badTetrahedrons.Add(tetrahedron);
-            }
-        }
+        List<Tetrahedron> badTetrahedrons = GetBadTetrahedrons(measurement);
+
         //   polygon := empty set
-        List<Triangle> polygon = new List<Triangle>();
-        //   for each triangle in badTriangles do // find the boundary of the polygonal hole
-        foreach (Tetrahedron tetrahedron in badTetrahedrons)
-        {
-            //          for each edge in triangle do
-            foreach (Triangle triangle in tetrahedron.Triangles)
-            {
-                //                  if edge is not shared by any other triangles in badTriangles
-                if (!EdgeInBadTriangles(badTetrahedrons.Where(t => !t.Equals(tetrahedron)), triangle))
-                {
-                    //                     add edge to polygon
-                    polygon.Add(triangle);
-                }
-                //yield return null;
-            }
-        }
+        List<Triangle> polygon = TriangleTest(badTetrahedrons);
+
+        UpdateTriangulation(measurement, badTetrahedrons, polygon);
+        IsBusy = false;
+        IsUpdated = true;
+    }
+
+    private void UpdateTriangulation(Measurement3D measurement, List<Tetrahedron> badTetrahedrons, List<Triangle> polygon)
+    {
         //   for each triangle in badTriangles do // remove them from the data structure
         foreach (Tetrahedron tetrahedron in badTetrahedrons)
         {
@@ -71,21 +66,41 @@ public class DelaunayTriangulation : IDelaunayTriangulation
         }
     }
 
-    protected override void UpdateExtremes(Measurement3D measurement)
+    private List<Triangle> TriangleTest(List<Tetrahedron> badTetrahedrons)
     {
-        float[] pos = measurement.PositionArray;
+        List<Triangle> polygon = new List<Triangle>();
 
-        for (int i = 0; i < Extremes.GetLength(0); i++)
+        //   for each triangle in badTriangles do // find the boundary of the polygonal hole
+        foreach (Tetrahedron tetrahedron in badTetrahedrons)
         {
-            if (pos[i] < Extremes[i, 0])
+            //          for each edge in triangle do
+            foreach (Triangle triangle in tetrahedron.Triangles)
             {
-                Extremes[i, 0] = pos[i];
-            }
-            if (pos[i] > Extremes[i, 1])
-            {
-                Extremes[i, 1] = pos[i];
+                //                  if edge is not shared by any other triangles in badTriangles
+                if (!EdgeInBadTriangles(badTetrahedrons.Where(t => !t.Equals(tetrahedron)), triangle))
+                {
+                    //                     add edge to polygon
+                    polygon.Add(triangle);
+                }
             }
         }
+        return polygon;
+    }
+
+    private List<Tetrahedron> GetBadTetrahedrons(Measurement3D measurement)
+    {
+        List<Tetrahedron> badTetrahedrons = new List<Tetrahedron>();
+        //   for each triangle in triangulation do // first find all the triangles that are no longer valid due to the insertion
+        foreach (Tetrahedron tetrahedron in Triangulation)
+        {
+            //          if point is inside circumcircle of triangle
+            if (tetrahedron.Includes(measurement))
+            {
+                //         add triangle to badTriangles
+                badTetrahedrons.Add(tetrahedron);
+            }
+        }
+        return badTetrahedrons;
     }
 
     public override void Generate(List<Measurement3D> measurements)
@@ -95,40 +110,35 @@ public class DelaunayTriangulation : IDelaunayTriangulation
         Init();
         //for each point in pointList do // add all the points one at a time to the triangulation
         AddAll(measurements);
-        //for each triangle in triangulation // done inserting points, now clean up
-        //foreach (Tetrahedron tetrahedron in Triangulation)
-        //{
-        //    //   if triangle contains a vertex from original super-triangle
-        //    if (tetrahedron.IsArtificial)
-        //    {
-        //        //      remove triangle from triangulation
-        //        Triangulation.Remove(tetrahedron);
-        //    }
-        //}
-        //return triangulation
     }
+
 
     public bool EdgeInBadTriangles(IEnumerable<Tetrahedron> tetrahedrons, Triangle triangle)
     {
         //                  if edge is not shared by any other triangles in badTriangles
         foreach (Tetrahedron otherTetrahedron in tetrahedrons)
         {
-            foreach(Triangle otherTriangle in otherTetrahedron.Triangles)
-            {
-                if (otherTriangle.Equals(triangle))
+                if (otherTetrahedron.Triangles.Contains(triangle))
                 {
                     return true;
                 }
-            }
         }
         return false;
     }
 
     public override void AddAll(List<Measurement3D> measurements)
     {
+        AddAll_Coroutine(measurements);
+    }
+
+    private void AddAll_Coroutine(List<Measurement3D> measurements)
+    {
+        IsBusy = true;
         foreach (Measurement3D measurement in measurements)
         {
             Add(measurement);
+            IsUpdated = false;
         }
+        IsBusy = false;
     }
 }

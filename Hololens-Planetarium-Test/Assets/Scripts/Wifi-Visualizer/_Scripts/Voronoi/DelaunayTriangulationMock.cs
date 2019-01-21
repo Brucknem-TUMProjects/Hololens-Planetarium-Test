@@ -39,8 +39,4 @@ public class DelaunayTriangulationMock : IDelaunayTriangulation
         Triangulation.Add(new Tetrahedron(Measurements[0], Measurements[2], Measurements[6], Measurements[7]));
         Triangulation.Add(new Tetrahedron(Measurements[0], Measurements[4], Measurements[6], Measurements[7]));
     }
-
-    protected override void UpdateExtremes(Measurement3D measurement)
-    {
-    }
 }

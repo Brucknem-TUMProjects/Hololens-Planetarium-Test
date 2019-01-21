@@ -48,4 +48,13 @@ public class Triangle
     {
         return Vector3.Dot(Normal, other.Position - a) == 0;
     }
+
+    public override int GetHashCode()
+    {
+        var hashCode = 1474027755;
+        hashCode = hashCode * a.GetHashCode();
+        hashCode = hashCode * b.GetHashCode();
+        hashCode = hashCode * c.GetHashCode();
+        return hashCode;
+    }
 }

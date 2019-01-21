@@ -1,13 +1,15 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using System;
 
 public abstract class IDelaunayTriangulation
 {
     public List<Tetrahedron> Triangulation { get; protected set; }
     public List<Measurement3D> Measurements { get; protected set; }
-    public float[,] Extremes { get; protected set; }
-    
+    public bool IsUpdated { get; set; }
+    public bool IsBusy { get; protected set; }
+
     public IEnumerable<Tetrahedron> Tetrahedrons
     {
         get
@@ -38,7 +40,6 @@ public abstract class IDelaunayTriangulation
     {
         Measurements = new List<Measurement3D>();
         InitTriangulation();
-        InitExtremes();
     }
 
     private void InitTriangulation()
@@ -49,20 +50,10 @@ public abstract class IDelaunayTriangulation
         };
     }
 
-    private void InitExtremes()
-    {
-        Extremes = new float[3, 2];
-        for (int i = 0; i < Extremes.GetLength(0); i++)
-        {
-            Extremes[i, 0] = float.MaxValue;
-            Extremes[i, 1] = float.MinValue;
-        }
-    }
 
     public abstract void Generate(List<Measurement3D> measurements);
     public abstract void Add(Measurement3D measurement);
     public abstract void AddAll(List<Measurement3D> measurement);
-    protected abstract void UpdateExtremes(Measurement3D measurement);
 
     public float AverageDistance
     {

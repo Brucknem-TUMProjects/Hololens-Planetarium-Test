@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Tetrahedron 3
-  m_Shader: {fileID: 4800000, guid: db1cdec40bd7740489788f130b13f23c, type: 3}
+  m_Shader: {fileID: 4800000, guid: d3a8163592688374b8ec9f9815ffa464, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -59,16 +59,16 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _Falloff: 1
+    - _Falloff: 2.52
     - _Glossiness: 0.5
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _SrcBlend: 1
-    - _Transparency: 0.453
+    - _Transparency: 0.463
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0, g: 1, b: 0.2965517, a: 1}
+    - _Color: {r: 1, g: 0, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
