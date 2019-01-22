@@ -46,11 +46,11 @@ public class Measurement3D
     {
         get
         {
-            if (IsArtificial)
-            {
+            //if (IsArtificial)
+            //{
                 return 2;
-            }
-            return (float)((Decibel + 80) / 50.0f) * 6 + 2;
+            //}
+            //return (float)((Decibel + 80) / 50.0f) * 6 + 2;
         }
     }
 

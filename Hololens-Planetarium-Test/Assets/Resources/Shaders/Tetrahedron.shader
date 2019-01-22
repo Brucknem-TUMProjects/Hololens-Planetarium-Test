@@ -10,6 +10,11 @@
 		Tags { "Queue" = "Transparent"}
 		LOD 10000
 
+		Pass{
+			ZWrite On
+			ColorMask 0
+		}
+
 		Pass
 		{
 			Blend SrcAlpha OneMinusSrcAlpha

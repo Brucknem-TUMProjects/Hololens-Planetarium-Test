@@ -114,7 +114,7 @@ public class DelaunayTriangulator : MonoBehaviour
     private void RenderTetrahedrons()
     {
         //RenderAllByItself();
-        RenderAllInOne();
+        //RenderAllInOne();
     }
 
     private void RenderAllInOne()
