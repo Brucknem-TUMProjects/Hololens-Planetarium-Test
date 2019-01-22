@@ -17,9 +17,6 @@ public class GridManager : MonoBehaviour
     void Start()
     {
         float size = Mathf.Min(dx, dy, dz) / 4f;
-        Camera.main.GetComponent<CapsuleCollider>().height = size * 4 ;
-        Camera.main.GetComponent<CapsuleCollider>().radius = size ;
-        Camera.main.GetComponent<CapsuleCollider>().center = new Vector3(0, 0, size * 2) ;
 
         for (int i = 0; i < 125; i++)
         {
