@@ -28,10 +28,6 @@ public class ShowIP : MonoBehaviour {
 #endif
 
     void Start () {
-        //text.text = Network.player.ipAddress;
-#if UNITY_WSA && !UNITY_EDITOR
-        text.text = GetLocalIp();
-#endif
-
+        text.text = new UnityEngine.Networking.NetworkManager().networkAddress;
     }
 }

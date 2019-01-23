@@ -7,7 +7,7 @@
 # Default behavior is to never overwrite files
 Hololens-Planetarium-Test.sln: 757C2AB644503B84344149C67F1A3E94
 Hololens-Planetarium-Test\App.cs: modified
-Hololens-Planetarium-Test\Hololens-Planetarium-Test.csproj: 4B765396EA56C4E4C07AAB99F50F3D2B
+Hololens-Planetarium-Test\Hololens-Planetarium-Test.csproj: CF2B0051C422CA26CBC249178E0473FF
 Hololens-Planetarium-Test\Hololens-Planetarium-Test.csproj.user: modified
 Hololens-Planetarium-Test\Package.appxmanifest: modified
 Hololens-Planetarium-Test\project.json: 1D02BC64BAC0D041019673A1C4C51737

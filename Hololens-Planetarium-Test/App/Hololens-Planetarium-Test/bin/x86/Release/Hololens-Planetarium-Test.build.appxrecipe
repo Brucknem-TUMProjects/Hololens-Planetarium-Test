@@ -412,6 +412,9 @@
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\Vuforia.dll">
       <PackagePath>Vuforia.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\PlaneFinding.dll">
+      <PackagePath>PlaneFinding.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\Data\boot.config">
       <PackagePath>Data\boot.config</PackagePath>
     </AppxPackagedFile>

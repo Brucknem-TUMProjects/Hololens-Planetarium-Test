@@ -62,7 +62,7 @@ public class Measurement3D
             {
                 return 1.5f;
             }
-            return (float)((Decibel + 30.0f) / -100.0f) + 0.5f;
+            return (float)((Decibel + 30.0f) / -100.0f) * 2;
         }
     }
 
@@ -94,5 +94,21 @@ public class Measurement3D
     public override string ToString()
     {
         return Id;
+    }
+
+    public override bool Equals(object obj)
+    {
+        if (obj == null || GetType() != obj.GetType())
+        {
+            return false;
+        }
+
+        return ((Measurement3D)obj).Position.Equals(Position);
+    }
+
+    // override object.GetHashCode
+    public override int GetHashCode()
+    {
+        return Position.GetHashCode();
     }
 }

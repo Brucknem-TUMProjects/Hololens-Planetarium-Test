@@ -10,28 +10,21 @@ public class GridManager : MonoBehaviour
 
     [Range(1,5)]
     public int gridRadius;
+    private int width;
+    private float size;
 
-    private List<MonoMeasurement3D> measurements;
+    public MeasurementPlacer measurementPlacer;
+
+    private List<MonoMeasurement3D> gridPoints;
     private Vector3 lastMidpoint;
 
 
     // Use this for initialization
     void Start()
     {
-        measurements = new List<MonoMeasurement3D>();
+        gridPoints = new List<MonoMeasurement3D>();
+
         lastMidpoint = Midpoint();
-        float size = Mathf.Min(dx, dy, dz) / 4f;
-
-        for (int i = 0; i < 125; i++)
-        {
-            GameObject obj = new GameObject("Mono Measurement (" + i + ")");
-            MonoMeasurement3D mono = obj.AddComponent<MonoMeasurement3D>();
-            mono.SetSize(size);
-            mono.SetMeasurement(new Measurement3D(0, 0, 0, true), false);
-            obj.transform.parent = transform;
-            measurements.Add(mono);
-        }
-
         SetPoints();
     }
 
@@ -48,26 +41,48 @@ public class GridManager : MonoBehaviour
     private void SetPoints()
     {
         lastMidpoint = Midpoint();
+        size = Mathf.Min(dx, dy, dz) / 4f;
+        width = 2 * gridRadius + 1;
 
-        for (int x = -gridRadius; x <= gridRadius; x++)
+        while (gridPoints.Count > width * width * width)
+        {
+            Destroy(gridPoints[0].gameObject);
+            gridPoints.RemoveAt(0);
+        }
+
+        for (int z = -gridRadius; z <= gridRadius; z++)
         {
             for (int y = -gridRadius; y <= gridRadius; y++)
             {
-                for (int z = -gridRadius; z <= gridRadius; z++)
+                for (int x = -gridRadius; x <= gridRadius; x++)
                 {
-                    int i = (x + gridRadius) + (y + gridRadius) * (2 * gridRadius + 1) + (z + gridRadius) * (2 * gridRadius + 1) * (2 * gridRadius + 1);
+                    int i = (x + gridRadius);
+                    i += (y + gridRadius) * width;
+                    i += (z + gridRadius) * width * width;
+
+                    if(i >= gridPoints.Count)
+                    {
+                        GameObject obj = new GameObject("Mono Measurement (" + i + ")");
+                        MonoMeasurement3D mono = obj.AddComponent<MonoMeasurement3D>();
+                        mono.SetSize(size);
+                        mono.SetMeasurement(new Measurement3D(0, 0, 0, true), false);
+                        obj.transform.parent = transform;
+                        gridPoints.Add(mono);
+                    }
+                    
+
                     Vector3 v = new Vector3(lastMidpoint.x + x * dx,
                             lastMidpoint.y + y * dy,
                             lastMidpoint.z + z * dz);
 
-                    if (DelaunayTriangulator.Instance.Triangulation.Contains(v))
+                    if (measurementPlacer.Contains(v))
                     {
-                        measurements[i].gameObject.SetActive(false);
+                        gridPoints[i].gameObject.SetActive(false);
                     }
                     else
                     {
-                        measurements[i].SetMeasurement(new Measurement3D(v, true), true);
-                        measurements[i].gameObject.SetActive(true);
+                        gridPoints[i].SetMeasurement(new Measurement3D(v, true), true);
+                        gridPoints[i].gameObject.SetActive(true);
                     }
                 }
             }
