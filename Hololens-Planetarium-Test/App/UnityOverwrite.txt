@@ -6,8 +6,8 @@
 # Write a line equal to 'keep-all' (without quotes) to keep files regardless their modification (preserved accross builds)
 # Default behavior is to never overwrite files
 Hololens-Planetarium-Test.sln: 757C2AB644503B84344149C67F1A3E94
-Hololens-Planetarium-Test\App.cs: 4B8A369FC60C5030EF4D6DD53209EF86
-Hololens-Planetarium-Test\Hololens-Planetarium-Test.csproj: 93D5430C0516719CC6AB9397B9226EA2
+Hololens-Planetarium-Test\App.cs: modified
+Hololens-Planetarium-Test\Hololens-Planetarium-Test.csproj: 4B765396EA56C4E4C07AAB99F50F3D2B
 Hololens-Planetarium-Test\Hololens-Planetarium-Test.csproj.user: modified
 Hololens-Planetarium-Test\Package.appxmanifest: modified
 Hololens-Planetarium-Test\project.json: 1D02BC64BAC0D041019673A1C4C51737
@@ -31,7 +31,6 @@ Hololens-Planetarium-Test\bin\x86\Release\AppX\Assets\Square44x44Logo.targetsize
 Hololens-Planetarium-Test\bin\x86\Release\AppX\Assets\StoreLogo.png: 90BD194CA4A7CFFF3E8B8222229857FB
 Hololens-Planetarium-Test\bin\x86\Release\AppX\Assets\Wide310x150Logo.scale-200.png: C96846A80DF667F87355569CD816192D
 Hololens-Planetarium-Test\bin\x86\Release\AppX\Properties\Default.rd.xml: 72EB282657164E79A1C42F6240984826
-Hololens-Planetarium-Test\obj\x86\Master\Hololens-Planetarium-Test.csproj.CopyComplete: D41D8CD98F00B204E9800998ECF8427E
 Hololens-Planetarium-Test\obj\x86\Release\Hololens-Planetarium-Test.csproj.CopyComplete: D41D8CD98F00B204E9800998ECF8427E
-Hololens-Planetarium-Test\Properties\AssemblyInfo.cs: CDA7458BF67D8BD5BB92C6AC3E0A68AA
+Hololens-Planetarium-Test\Properties\AssemblyInfo.cs: modified
 Hololens-Planetarium-Test\Properties\Default.rd.xml: 72EB282657164E79A1C42F6240984826

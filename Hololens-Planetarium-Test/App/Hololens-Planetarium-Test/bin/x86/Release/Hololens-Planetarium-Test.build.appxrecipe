@@ -403,8 +403,14 @@
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\PlaneFinding.dll">
-      <PackagePath>PlaneFinding.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\Data\StreamingAssets\Vuforia\WifiVisualizer.xml">
+      <PackagePath>Data\StreamingAssets\Vuforia\WifiVisualizer.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\VuforiaWrapper.dll">
+      <PackagePath>VuforiaWrapper.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\Vuforia.dll">
+      <PackagePath>Vuforia.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\Data\boot.config">
       <PackagePath>Data\boot.config</PackagePath>
@@ -445,6 +451,9 @@
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\Data\nativePlugins.txt">
       <PackagePath>Data\nativePlugins.txt</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\Data\StreamingAssets\Vuforia\WifiVisualizer.dat">
+      <PackagePath>Data\StreamingAssets\Vuforia\WifiVisualizer.dat</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17763.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
@@ -454,8 +463,8 @@
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.TilemapModule.dll">
       <PackagePath>UnityEngine.TilemapModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.TextRenderingModule.dll">
-      <PackagePath>UnityEngine.TextRenderingModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.UNETModule.dll">
+      <PackagePath>UnityEngine.UNETModule.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.UIModule.dll">
       <PackagePath>UnityEngine.UIModule.dll</PackagePath>
@@ -463,14 +472,17 @@
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.UIElementsModule.dll">
       <PackagePath>UnityEngine.UIElementsModule.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.StyleSheetsModule.dll">
+      <PackagePath>UnityEngine.StyleSheetsModule.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.SpriteMaskModule.dll">
       <PackagePath>UnityEngine.SpriteMaskModule.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.ScreenCaptureModule.dll">
       <PackagePath>UnityEngine.ScreenCaptureModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.PhysicsModule.dll">
-      <PackagePath>UnityEngine.PhysicsModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.TextRenderingModule.dll">
+      <PackagePath>UnityEngine.TextRenderingModule.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.TerrainPhysicsModule.dll">
       <PackagePath>UnityEngine.TerrainPhysicsModule.dll</PackagePath>
@@ -478,11 +490,11 @@
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.TerrainModule.dll">
       <PackagePath>UnityEngine.TerrainModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.StyleSheetsModule.dll">
-      <PackagePath>UnityEngine.StyleSheetsModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.UnityAnalyticsModule.dll">
+      <PackagePath>UnityEngine.UnityAnalyticsModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.UNETModule.dll">
-      <PackagePath>UnityEngine.UNETModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.WebModule.dll">
+      <PackagePath>UnityEngine.WebModule.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.VRModule.dll">
       <PackagePath>UnityEngine.VRModule.dll</PackagePath>
@@ -490,14 +502,11 @@
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.VideoModule.dll">
       <PackagePath>UnityEngine.VideoModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.VehiclesModule.dll">
-      <PackagePath>UnityEngine.VehiclesModule.dll</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.WindModule.dll">
       <PackagePath>UnityEngine.WindModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.WebModule.dll">
-      <PackagePath>UnityEngine.WebModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.UnityWebRequestModule.dll">
+      <PackagePath>UnityEngine.UnityWebRequestModule.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.UnityWebRequestAudioModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestAudioModule.dll</PackagePath>
@@ -505,8 +514,8 @@
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.UnityConnectModule.dll">
       <PackagePath>UnityEngine.UnityConnectModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.UnityAnalyticsModule.dll">
-      <PackagePath>UnityEngine.UnityAnalyticsModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.VehiclesModule.dll">
+      <PackagePath>UnityEngine.VehiclesModule.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.UnityWebRequestWWWModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestWWWModule.dll</PackagePath>
@@ -514,8 +523,8 @@
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.UnityWebRequestTextureModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestTextureModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.UnityWebRequestModule.dll">
-      <PackagePath>UnityEngine.UnityWebRequestModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.PhysicsModule.dll">
+      <PackagePath>UnityEngine.PhysicsModule.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.ClothModule.dll">
       <PackagePath>UnityEngine.ClothModule.dll</PackagePath>
@@ -594,6 +603,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.HoloLens.dll">
       <PackagePath>UnityEngine.HoloLens.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\Vuforia.UnityExtensions.dll">
+      <PackagePath>Vuforia.UnityExtensions.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.Networking.dll">
       <PackagePath>UnityEngine.Networking.dll</PackagePath>

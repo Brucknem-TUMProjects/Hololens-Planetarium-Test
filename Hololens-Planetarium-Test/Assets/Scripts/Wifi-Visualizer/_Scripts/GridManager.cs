@@ -11,11 +11,15 @@ public class GridManager : MonoBehaviour
     [Range(1,5)]
     public int gridRadius;
 
-    public List<MonoMeasurement3D> measurements;
+    private List<MonoMeasurement3D> measurements;
+    private Vector3 lastMidpoint;
+
 
     // Use this for initialization
     void Start()
     {
+        measurements = new List<MonoMeasurement3D>();
+        lastMidpoint = Midpoint();
         float size = Mathf.Min(dx, dy, dz) / 4f;
 
         for (int i = 0; i < 125; i++)
@@ -27,12 +31,23 @@ public class GridManager : MonoBehaviour
             obj.transform.parent = transform;
             measurements.Add(mono);
         }
-        Update();
+
+        SetPoints();
     }
 
     private void Update()
     {
-        Vector3 midpoint = Midpoint();
+        if (lastMidpoint == Midpoint())
+        {
+            return;
+        }
+
+        SetPoints();
+    }
+
+    private void SetPoints()
+    {
+        lastMidpoint = Midpoint();
 
         for (int x = -gridRadius; x <= gridRadius; x++)
         {
@@ -40,16 +55,17 @@ public class GridManager : MonoBehaviour
             {
                 for (int z = -gridRadius; z <= gridRadius; z++)
                 {
-                    int i = (x + gridRadius) + (y + gridRadius) * (2 * gridRadius + 1)+ (z + gridRadius) * (2 * gridRadius + 1) * (2 * gridRadius + 1);
-                    Vector3 v = new Vector3(midpoint.x + x * dx,
-                            midpoint.y + y * dy,
-                            midpoint.z + z * dz);
+                    int i = (x + gridRadius) + (y + gridRadius) * (2 * gridRadius + 1) + (z + gridRadius) * (2 * gridRadius + 1) * (2 * gridRadius + 1);
+                    Vector3 v = new Vector3(lastMidpoint.x + x * dx,
+                            lastMidpoint.y + y * dy,
+                            lastMidpoint.z + z * dz);
 
                     if (DelaunayTriangulator.Instance.Triangulation.Contains(v))
                     {
                         measurements[i].gameObject.SetActive(false);
                     }
-                    else {
+                    else
+                    {
                         measurements[i].SetMeasurement(new Measurement3D(v, true), true);
                         measurements[i].gameObject.SetActive(true);
                     }
