@@ -24,10 +24,11 @@ public class MeasurementPlacer : MonoBehaviour {
         return Positions.Contains(measurement);
     }
     
-    public void AddMono(Measurement3D measurement)
+    private void AddMono(Measurement3D measurement)
     {
         GameObject obj = new GameObject("Measurement " + Monos.Count);
         MonoMeasurement3D mono = (obj.AddComponent<MonoMeasurement3D>());
+        mono.SetMeasurement(measurement);
         mono.SetSize(measurement.Transparency);
         obj.transform.parent = transform;
         Monos.Add(mono);

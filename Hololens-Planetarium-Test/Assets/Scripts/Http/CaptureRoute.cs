@@ -10,6 +10,7 @@ public class CaptureRoute : MonoBehaviour {
 
     public TextMesh text;
     public IMarkerBehaviour marker;
+    public MeasurementPlacer measurementPlacer;
 
     [UnityHttpRoute("/capture")]
     public void RouteIndex(HttpRequest request, HttpResponse response) {
@@ -25,6 +26,8 @@ public class CaptureRoute : MonoBehaviour {
         if (marker.IsTracked)
         {
             Measurement3D measurement = new Measurement3D(marker.Position, request.Args["ssid"], request.Args["mac"], int.Parse(request.Args["db"]));
+            measurementPlacer.Add(measurement);
+            text.text = measurement.ToString();
         }
     }
 }

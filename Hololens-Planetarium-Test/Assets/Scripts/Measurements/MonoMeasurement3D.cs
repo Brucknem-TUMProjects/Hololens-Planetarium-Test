@@ -6,17 +6,12 @@ public class MonoMeasurement3D : MonoBehaviour {
     public Measurement3D Measurement { get; private set; }
     private bool initialized = false;
     private MeshRenderer rend;
-    SphereCollider coll;
 
-    public void SetMeasurement(Measurement3D measurement, bool withCollider)
+    public void SetMeasurement(Measurement3D measurement)
     {
         if (!initialized)
         {
             Initialize();
-        }
-        if (withCollider)
-        {
-            AddCollider();
         }
         Measurement = measurement;        
         transform.position = measurement;
@@ -38,30 +33,9 @@ public class MonoMeasurement3D : MonoBehaviour {
         initialized = true;
     }
 
-    private void AddCollider()
-    {
-        if (coll == null)
-        {
-            coll = gameObject.AddComponent<SphereCollider>();
-        }
-        coll.radius = 0.5f;
-        coll.isTrigger = true;
-    }
-
     public void FixedUpdate()
     {
         //transform.LookAt(Camera.main.transform);
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        Debug.Log("Collision");
-        if (other.tag != "MainCamera")
-        {
-            return;
-        }
-        Measurement3D current = WiFiScanner.Instance.Scan(transform.position);
-        DelaunayTriangulator.Instance.Add(current);
     }
 
     public void SetSize(float radius)

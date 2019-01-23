@@ -17,7 +17,7 @@ public abstract class IMarkerBehaviour : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        debug.text = IsTracked + "";
+        //debug.text = IsTracked + "";
     }
 
     public abstract bool IsTracked { get; }
