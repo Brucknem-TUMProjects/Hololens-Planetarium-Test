@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Hololens-Planetarium-Test")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("DefaultCompany")]
+[assembly: AssemblyCompany("Geraffel")]
 [assembly: AssemblyProduct("Hololens-Planetarium-Test")]
-[assembly: AssemblyCopyright("Copyright © DefaultCompany 2015")]
+[assembly: AssemblyCopyright("Copyright © Geraffel 2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

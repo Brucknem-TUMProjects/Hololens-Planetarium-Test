@@ -16,7 +16,7 @@ public class MonoMeasurement3D : MonoBehaviour {
         Measurement = measurement;        
         transform.position = measurement;
         rend.material.color = measurement.Color;
-        rend.material.SetFloat("_Falloff", measurement.Falloff);
+        //rend.material.SetFloat("_Falloff", measurement.Falloff);
         rend.material.SetFloat("_Transparency", measurement.Transparency);
     }
 
@@ -28,16 +28,9 @@ public class MonoMeasurement3D : MonoBehaviour {
 
         rend = gameObject.AddComponent<MeshRenderer>();
         rend.material = new Material(Shader.Find("Custom/SphereSurf"));
-        //Texture2D texture = (Texture2D)Resources.Load("Images/FadeOutBillboard");
-        //rend.material.SetTexture("_MainTex", texture);
         initialized = true;
     }
-
-    public void FixedUpdate()
-    {
-        //transform.LookAt(Camera.main.transform);
-    }
-
+    
     public void SetSize(float radius)
     {
         transform.localScale = Vector3.one * radius;

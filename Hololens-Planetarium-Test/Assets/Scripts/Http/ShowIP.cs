@@ -12,7 +12,6 @@ using Windows.Networking;
 
 public class ShowIP : MonoBehaviour
 {
-
     public TextMesh text;
 #if UNITY_WSA && !UNITY_EDITOR
     public string GetLocalIpv4()

@@ -21,6 +21,7 @@
 		void surf (Input IN, inout SurfaceOutputStandard o) {
 			// Albedo comes from a texture tinted by color
 			o.Albedo = _Color;
+			o.Emission = _Color;
 			o.Alpha = _Transparency;
 		}
 		ENDCG

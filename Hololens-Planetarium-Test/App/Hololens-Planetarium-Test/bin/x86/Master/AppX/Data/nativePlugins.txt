@@ -1,3 +1,0 @@
-VuforiaWrapper.dll
-Vuforia.dll
-PlaneFinding.dll

@@ -9,7 +9,7 @@
     <SolutionConfiguration>Release|x86</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>78cfc8ee-8c57-48a3-9e09-785cc36feaf7</PackageIdentityName>
-    <PackageIdentityPublisher>CN=DefaultCompany</PackageIdentityPublisher>
+    <PackageIdentityPublisher>CN=Geraffel</PackageIdentityPublisher>
     <IntermediateOutputPath>C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\obj\x86\Release\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
@@ -411,9 +411,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\Vuforia.dll">
       <PackagePath>Vuforia.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\PlaneFinding.dll">
-      <PackagePath>PlaneFinding.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\Data\boot.config">
       <PackagePath>Data\boot.config</PackagePath>

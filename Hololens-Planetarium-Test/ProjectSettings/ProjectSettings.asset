@@ -11,7 +11,7 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
+  companyName: Geraffel
   productName: Hololens-Planetarium-Test
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -66,7 +66,7 @@ PlayerSettings:
   defaultIsFullScreen: 1
   defaultIsNativeResolution: 1
   macRetinaSupport: 1
-  runInBackground: 0
+  runInBackground: 1
   captureSingleScreen: 0
   muteOtherAudioSources: 0
   Prepare IOS For Recording: 0
@@ -81,7 +81,7 @@ PlayerSettings:
   useMacAppStoreValidation: 0
   macAppStoreCategory: public.app-category.games
   gpuSkinning: 0
-  graphicsJobs: 1
+  graphicsJobs: 0
   xboxPIXTextureCapture: 0
   xboxEnableAvatar: 0
   xboxEnableKinect: 0
@@ -166,7 +166,7 @@ PlayerSettings:
   CreateWallpaper: 0
   APKExpansionFiles: 0
   keepLoadedShadersAlive: 1
-  StripUnusedMeshComponents: 1
+  StripUnusedMeshComponents: 0
   VertexChannelCompressionMask:
     serializedVersion: 2
     m_Bits: 4294967055
@@ -255,7 +255,6 @@ PlayerSettings:
     m_Enabled: 1
     m_Devices:
     - WindowsMR
-    - Vuforia
   m_BuildTargetEnableVuforiaSettings:
   - m_BuildTarget: Metro
     m_Enabled: 1
@@ -556,11 +555,11 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: Hololens-Planetarium-Test
   metroPackageVersion: 1.0.0.0
-  metroCertificatePath: Assets\WSATestCertificate.pfx
-  metroCertificatePassword: 
-  metroCertificateSubject: DefaultCompany
-  metroCertificateIssuer: DefaultCompany
-  metroCertificateNotAfter: 80a2ef1885cdd501
+  metroCertificatePath: Assets/WSATestCertificate.pfx
+  metroCertificatePassword: mhaebmhaeb
+  metroCertificateSubject: Geraffel
+  metroCertificateIssuer: Geraffel
+  metroCertificateNotAfter: 8040c04214d3d501
   metroApplicationDescription: Hololens-Planetarium-Test
   wsaImages: {}
   metroTileShortName: Hololens-Planetarium-Test
@@ -587,19 +586,19 @@ PlayerSettings:
       InputInjectionBrokered: False
       InternetClient: True
       InternetClientServer: True
-      Location: False
+      Location: True
       Microphone: True
       MusicLibrary: False
-      Objects3D: False
+      Objects3D: True
       PhoneCall: False
-      PicturesLibrary: True
+      PicturesLibrary: False
       PrivateNetworkClientServer: True
-      Proximity: False
+      Proximity: True
       RemovableStorage: False
       SharedUserCertificates: False
       SpatialPerception: True
       UserAccountInformation: False
-      VideosLibrary: True
+      VideosLibrary: False
       VoipCall: False
       WebCam: True
   metroFTAName: 

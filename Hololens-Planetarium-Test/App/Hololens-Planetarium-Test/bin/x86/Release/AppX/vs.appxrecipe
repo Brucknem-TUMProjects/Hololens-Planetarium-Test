@@ -9,7 +9,7 @@
     <SolutionConfiguration>Release|x86</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>78cfc8ee-8c57-48a3-9e09-785cc36feaf7</PackageIdentityName>
-    <PackageIdentityPublisher>CN=DefaultCompany</PackageIdentityPublisher>
+    <PackageIdentityPublisher>CN=Geraffel</PackageIdentityPublisher>
     <IntermediateOutputPath>C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\obj\x86\Release\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
@@ -19,24 +19,24 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\bin\x86\Release\AppX</LayoutDir>
-    <RegisteredManifestChecksum>658EDC7F4E69F25C70B1C9B6443EE968C3F8311CFCB27AC9FB630CF8F41E5084</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>Hololens-Planetarium-Test_1.0.0.0_x86__pzq3xp76mxafg</RegisteredPackageMoniker>
-    <RegisteredUserModeAppID>Hololens-Planetarium-Test_pzq3xp76mxafg!App</RegisteredUserModeAppID>
+    <RegisteredManifestChecksum>B427939AAB74F2BCFDA3F89AED0F229CB584E4D2F82CE48AFA474A59F8A1FB0A</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>Hololens-Planetarium-Test_1.0.0.0_x86__evvcwn55nrsmt</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>Hololens-Planetarium-Test_evvcwn55nrsmt!App</RegisteredUserModeAppID>
     <RegisteredPackageID>Hololens-Planetarium-Test</RegisteredPackageID>
-    <RegisteredPackagePublisher>CN=DefaultCompany</RegisteredPackagePublisher>
+    <RegisteredPackagePublisher>CN=Geraffel</RegisteredPackagePublisher>
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\bin\x86\Release\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-01-23T12:12:07.409</Modified>
+      <Modified>2019-01-24T18:48:38.369</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\bin\x86\Release\Hololens-Planetarium-Test.exe">
       <PackagePath>entrypoint\Hololens-Planetarium-Test.exe</PackagePath>
-      <Modified>2019-01-23T12:11:51.024</Modified>
+      <Modified>2019-01-24T18:48:22.774</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\.nuget\packages\microsoft.applicationinsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -500,45 +500,45 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\Resource.res">
       <PackagePath>Resource.res</PackagePath>
-      <Modified>2019-01-23T12:11:17.447</Modified>
+      <Modified>2019-01-24T18:47:54.039</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-01-23T10:45:05.000</Modified>
+      <Modified>2018-01-06T16:55:58.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-01-23T10:45:05.001</Modified>
+      <Modified>2018-01-06T16:55:58.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-01-23T10:45:05.002</Modified>
+      <Modified>2018-01-06T16:55:58.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-01-23T10:45:05.003</Modified>
+      <Modified>2018-01-06T16:55:58.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-01-23T10:45:05.003</Modified>
+      <Modified>2018-01-06T16:55:58.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-01-23T10:45:05.004</Modified>
+      <Modified>2018-01-06T16:55:58.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2019-01-23T10:45:05.045</Modified>
+      <Modified>2018-01-06T16:55:58.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\Data\StreamingAssets\Vuforia\WifiVisualizer.xml">
       <PackagePath>Data\StreamingAssets\Vuforia\WifiVisualizer.xml</PackagePath>
-      <Modified>2019-01-23T10:53:26.000</Modified>
+      <Modified>2019-01-24T18:10:28.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\VuforiaWrapper.dll">
       <PackagePath>VuforiaWrapper.dll</PackagePath>
@@ -548,21 +548,17 @@
       <PackagePath>Vuforia.dll</PackagePath>
       <Modified>2017-10-31T19:07:50.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\PlaneFinding.dll">
-      <PackagePath>PlaneFinding.dll</PackagePath>
-      <Modified>2016-05-05T20:08:34.000</Modified>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\Data\boot.config">
       <PackagePath>Data\boot.config</PackagePath>
-      <Modified>2019-01-23T12:10:24.559</Modified>
+      <Modified>2019-01-24T18:47:02.130</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\Data\globalgamemanagers">
       <PackagePath>Data\globalgamemanagers</PackagePath>
-      <Modified>2019-01-23T12:10:23.763</Modified>
+      <Modified>2019-01-24T18:47:01.325</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\Data\level0">
       <PackagePath>Data\level0</PackagePath>
-      <Modified>2019-01-23T12:10:22.564</Modified>
+      <Modified>2019-01-24T18:47:00.205</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\Data\Resources\unity default resources">
       <PackagePath>Data\Resources\unity default resources</PackagePath>
@@ -570,43 +566,43 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\Data\Resources\unity_builtin_extra">
       <PackagePath>Data\Resources\unity_builtin_extra</PackagePath>
-      <Modified>2019-01-23T12:10:24.557</Modified>
+      <Modified>2019-01-24T18:47:02.126</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\Data\globalgamemanagers.assets">
       <PackagePath>Data\globalgamemanagers.assets</PackagePath>
-      <Modified>2019-01-23T12:10:23.944</Modified>
+      <Modified>2019-01-24T18:47:01.465</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\Data\resources.assets">
       <PackagePath>Data\resources.assets</PackagePath>
-      <Modified>2019-01-23T12:10:23.999</Modified>
+      <Modified>2019-01-24T18:47:01.517</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\Data\sharedassets0.assets">
       <PackagePath>Data\sharedassets0.assets</PackagePath>
-      <Modified>2019-01-23T12:10:24.081</Modified>
+      <Modified>2019-01-24T18:47:01.594</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\Data\level0.resS">
       <PackagePath>Data\level0.resS</PackagePath>
-      <Modified>2019-01-23T12:10:22.558</Modified>
+      <Modified>2019-01-24T18:47:00.200</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\Data\resources.assets.resS">
       <PackagePath>Data\resources.assets.resS</PackagePath>
-      <Modified>2019-01-23T12:10:23.995</Modified>
+      <Modified>2019-01-24T18:47:01.513</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\Data\sharedassets0.assets.resS">
       <PackagePath>Data\sharedassets0.assets.resS</PackagePath>
-      <Modified>2019-01-23T12:10:24.077</Modified>
+      <Modified>2019-01-24T18:47:01.590</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\Data\managedAssemblies.txt">
       <PackagePath>Data\managedAssemblies.txt</PackagePath>
-      <Modified>2019-01-23T12:11:17.331</Modified>
+      <Modified>2019-01-24T18:47:53.959</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\Data\nativePlugins.txt">
       <PackagePath>Data\nativePlugins.txt</PackagePath>
-      <Modified>2019-01-23T12:11:17.336</Modified>
+      <Modified>2019-01-24T18:47:53.962</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\Data\StreamingAssets\Vuforia\WifiVisualizer.dat">
       <PackagePath>Data\StreamingAssets\Vuforia\WifiVisualizer.dat</PackagePath>
-      <Modified>2019-01-23T10:53:26.000</Modified>
+      <Modified>2019-01-24T18:10:28.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17763.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -614,211 +610,211 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\bin\x86\Release\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2019-01-23T12:11:52.707</Modified>
+      <Modified>2019-01-24T18:34:47.571</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.TilemapModule.dll">
       <PackagePath>UnityEngine.TilemapModule.dll</PackagePath>
-      <Modified>2019-01-23T12:12:04.162</Modified>
+      <Modified>2019-01-24T18:48:35.528</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.UNETModule.dll">
       <PackagePath>UnityEngine.UNETModule.dll</PackagePath>
-      <Modified>2019-01-23T12:12:04.206</Modified>
+      <Modified>2019-01-24T18:48:35.570</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.UIModule.dll">
       <PackagePath>UnityEngine.UIModule.dll</PackagePath>
-      <Modified>2019-01-23T12:12:04.236</Modified>
+      <Modified>2019-01-24T18:48:35.611</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.UIElementsModule.dll">
       <PackagePath>UnityEngine.UIElementsModule.dll</PackagePath>
-      <Modified>2019-01-23T12:12:04.308</Modified>
+      <Modified>2019-01-24T18:48:35.667</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.StyleSheetsModule.dll">
       <PackagePath>UnityEngine.StyleSheetsModule.dll</PackagePath>
-      <Modified>2019-01-23T12:12:04.336</Modified>
+      <Modified>2019-01-24T18:48:35.720</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.SpriteMaskModule.dll">
       <PackagePath>UnityEngine.SpriteMaskModule.dll</PackagePath>
-      <Modified>2019-01-23T12:12:04.358</Modified>
+      <Modified>2019-01-24T18:48:35.742</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.ScreenCaptureModule.dll">
       <PackagePath>UnityEngine.ScreenCaptureModule.dll</PackagePath>
-      <Modified>2019-01-23T12:12:04.380</Modified>
+      <Modified>2019-01-24T18:48:35.767</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.TextRenderingModule.dll">
       <PackagePath>UnityEngine.TextRenderingModule.dll</PackagePath>
-      <Modified>2019-01-23T12:12:04.406</Modified>
+      <Modified>2019-01-24T18:48:35.796</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.TerrainPhysicsModule.dll">
       <PackagePath>UnityEngine.TerrainPhysicsModule.dll</PackagePath>
-      <Modified>2019-01-23T12:12:04.432</Modified>
+      <Modified>2019-01-24T18:48:35.819</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.TerrainModule.dll">
       <PackagePath>UnityEngine.TerrainModule.dll</PackagePath>
-      <Modified>2019-01-23T12:12:04.463</Modified>
+      <Modified>2019-01-24T18:48:35.850</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.UnityAnalyticsModule.dll">
       <PackagePath>UnityEngine.UnityAnalyticsModule.dll</PackagePath>
-      <Modified>2019-01-23T12:12:04.489</Modified>
+      <Modified>2019-01-24T18:48:35.877</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.WebModule.dll">
       <PackagePath>UnityEngine.WebModule.dll</PackagePath>
-      <Modified>2019-01-23T12:12:04.516</Modified>
+      <Modified>2019-01-24T18:48:35.908</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.VRModule.dll">
       <PackagePath>UnityEngine.VRModule.dll</PackagePath>
-      <Modified>2019-01-23T12:12:04.556</Modified>
+      <Modified>2019-01-24T18:48:35.951</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.VideoModule.dll">
       <PackagePath>UnityEngine.VideoModule.dll</PackagePath>
-      <Modified>2019-01-23T12:12:04.582</Modified>
+      <Modified>2019-01-24T18:48:35.979</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.WindModule.dll">
       <PackagePath>UnityEngine.WindModule.dll</PackagePath>
-      <Modified>2019-01-23T12:12:04.604</Modified>
+      <Modified>2019-01-24T18:48:36.001</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.UnityWebRequestModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestModule.dll</PackagePath>
-      <Modified>2019-01-23T12:12:04.635</Modified>
+      <Modified>2019-01-24T18:48:36.036</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.UnityWebRequestAudioModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestAudioModule.dll</PackagePath>
-      <Modified>2019-01-23T12:12:04.657</Modified>
+      <Modified>2019-01-24T18:48:36.059</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.UnityConnectModule.dll">
       <PackagePath>UnityEngine.UnityConnectModule.dll</PackagePath>
-      <Modified>2019-01-23T12:12:04.681</Modified>
+      <Modified>2019-01-24T18:48:36.083</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.VehiclesModule.dll">
       <PackagePath>UnityEngine.VehiclesModule.dll</PackagePath>
-      <Modified>2019-01-23T12:12:04.704</Modified>
+      <Modified>2019-01-24T18:48:36.106</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.UnityWebRequestWWWModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestWWWModule.dll</PackagePath>
-      <Modified>2019-01-23T12:12:04.732</Modified>
+      <Modified>2019-01-24T18:48:36.132</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.UnityWebRequestTextureModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestTextureModule.dll</PackagePath>
-      <Modified>2019-01-23T12:12:04.754</Modified>
+      <Modified>2019-01-24T18:48:36.160</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.PhysicsModule.dll">
       <PackagePath>UnityEngine.PhysicsModule.dll</PackagePath>
-      <Modified>2019-01-23T12:12:04.793</Modified>
+      <Modified>2019-01-24T18:48:36.194</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.ClothModule.dll">
       <PackagePath>UnityEngine.ClothModule.dll</PackagePath>
-      <Modified>2019-01-23T12:12:04.816</Modified>
+      <Modified>2019-01-24T18:48:36.218</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.AudioModule.dll">
       <PackagePath>UnityEngine.AudioModule.dll</PackagePath>
-      <Modified>2019-01-23T12:12:04.847</Modified>
+      <Modified>2019-01-24T18:48:36.257</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.ARModule.dll">
       <PackagePath>UnityEngine.ARModule.dll</PackagePath>
-      <Modified>2019-01-23T12:12:04.874</Modified>
+      <Modified>2019-01-24T18:48:36.291</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.DirectorModule.dll">
       <PackagePath>UnityEngine.DirectorModule.dll</PackagePath>
-      <Modified>2019-01-23T12:12:04.896</Modified>
+      <Modified>2019-01-24T18:48:36.314</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.CrashReportingModule.dll">
       <PackagePath>UnityEngine.CrashReportingModule.dll</PackagePath>
-      <Modified>2019-01-23T12:12:04.918</Modified>
+      <Modified>2019-01-24T18:48:36.339</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.CoreModule.dll">
       <PackagePath>UnityEngine.CoreModule.dll</PackagePath>
-      <Modified>2019-01-23T12:12:05.373</Modified>
+      <Modified>2019-01-24T18:48:36.702</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.AccessibilityModule.dll">
       <PackagePath>UnityEngine.AccessibilityModule.dll</PackagePath>
-      <Modified>2019-01-23T12:12:05.406</Modified>
+      <Modified>2019-01-24T18:48:36.725</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\Assembly-CSharp.dll">
       <PackagePath>Assembly-CSharp.dll</PackagePath>
-      <Modified>2019-01-23T12:12:05.515</Modified>
+      <Modified>2019-01-24T18:48:36.780</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.AnimationModule.dll">
       <PackagePath>UnityEngine.AnimationModule.dll</PackagePath>
-      <Modified>2019-01-23T12:12:05.560</Modified>
+      <Modified>2019-01-24T18:48:36.833</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.AIModule.dll">
       <PackagePath>UnityEngine.AIModule.dll</PackagePath>
-      <Modified>2019-01-23T12:12:05.586</Modified>
+      <Modified>2019-01-24T18:48:36.866</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.dll">
       <PackagePath>UnityEngine.dll</PackagePath>
-      <Modified>2019-01-23T12:10:50.200</Modified>
+      <Modified>2019-01-24T18:47:26.778</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.ParticlesLegacyModule.dll">
       <PackagePath>UnityEngine.ParticlesLegacyModule.dll</PackagePath>
-      <Modified>2019-01-23T12:12:05.614</Modified>
+      <Modified>2019-01-24T18:48:36.892</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.JSONSerializeModule.dll">
       <PackagePath>UnityEngine.JSONSerializeModule.dll</PackagePath>
-      <Modified>2019-01-23T12:12:05.637</Modified>
+      <Modified>2019-01-24T18:48:36.919</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.Physics2DModule.dll">
       <PackagePath>UnityEngine.Physics2DModule.dll</PackagePath>
-      <Modified>2019-01-23T12:12:05.678</Modified>
+      <Modified>2019-01-24T18:48:36.961</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.PerformanceReportingModule.dll">
       <PackagePath>UnityEngine.PerformanceReportingModule.dll</PackagePath>
-      <Modified>2019-01-23T12:12:05.710</Modified>
+      <Modified>2019-01-24T18:48:36.986</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.ParticleSystemModule.dll">
       <PackagePath>UnityEngine.ParticleSystemModule.dll</PackagePath>
-      <Modified>2019-01-23T12:12:05.778</Modified>
+      <Modified>2019-01-24T18:48:37.028</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.GridModule.dll">
       <PackagePath>UnityEngine.GridModule.dll</PackagePath>
-      <Modified>2019-01-23T12:12:05.806</Modified>
+      <Modified>2019-01-24T18:48:37.051</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.GameCenterModule.dll">
       <PackagePath>UnityEngine.GameCenterModule.dll</PackagePath>
-      <Modified>2019-01-23T12:12:05.852</Modified>
+      <Modified>2019-01-24T18:48:37.084</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.InputModule.dll">
       <PackagePath>UnityEngine.InputModule.dll</PackagePath>
-      <Modified>2019-01-23T12:12:05.885</Modified>
+      <Modified>2019-01-24T18:48:37.107</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.IMGUIModule.dll">
       <PackagePath>UnityEngine.IMGUIModule.dll</PackagePath>
-      <Modified>2019-01-23T12:12:05.945</Modified>
+      <Modified>2019-01-24T18:48:37.169</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.ImageConversionModule.dll">
       <PackagePath>UnityEngine.ImageConversionModule.dll</PackagePath>
-      <Modified>2019-01-23T12:12:05.971</Modified>
+      <Modified>2019-01-24T18:48:37.192</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.Timeline.dll">
       <PackagePath>UnityEngine.Timeline.dll</PackagePath>
-      <Modified>2019-01-23T12:12:06.032</Modified>
+      <Modified>2019-01-24T18:48:37.253</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\nunit.framework.dll">
       <PackagePath>nunit.framework.dll</PackagePath>
-      <Modified>2019-01-23T12:12:06.092</Modified>
+      <Modified>2019-01-24T18:48:37.326</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.UI.dll">
       <PackagePath>UnityEngine.UI.dll</PackagePath>
-      <Modified>2019-01-23T12:12:06.201</Modified>
+      <Modified>2019-01-24T18:48:37.457</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.Analytics.dll">
       <PackagePath>UnityEngine.Analytics.dll</PackagePath>
-      <Modified>2019-01-23T12:12:06.227</Modified>
+      <Modified>2019-01-24T18:48:37.498</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.HoloLens.dll">
       <PackagePath>UnityEngine.HoloLens.dll</PackagePath>
-      <Modified>2019-01-23T12:12:06.265</Modified>
+      <Modified>2019-01-24T18:48:37.538</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\Vuforia.UnityExtensions.dll">
       <PackagePath>Vuforia.UnityExtensions.dll</PackagePath>
-      <Modified>2019-01-23T12:12:06.341</Modified>
+      <Modified>2019-01-24T18:48:37.640</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\UnityEngine.Networking.dll">
       <PackagePath>UnityEngine.Networking.dll</PackagePath>
-      <Modified>2019-01-23T12:12:06.440</Modified>
+      <Modified>2019-01-24T18:48:37.742</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ga58lum\Documents\Hololens-Planetarium-Test\Hololens-Planetarium-Test\App\Hololens-Planetarium-Test\bin\x86\Release\Core\Hololens-Planetarium-Test.exe">
       <PackagePath>Hololens-Planetarium-Test.exe</PackagePath>
-      <Modified>2019-01-23T12:12:07.400</Modified>
+      <Modified>2019-01-24T18:48:38.358</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
